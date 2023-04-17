@@ -1,0 +1,767 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/css/main.css">
+<title>메인페이지</title>
+</head>
+<body class="home">
+	<div id="app">
+		<div class="__cov-progress"
+			style="background-color: rgb(0, 199, 174); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div>
+		<!-- <header class="global-header hide-border-bottom" id="app-header"></header> 진혁님 -->
+		<div id="app-sticky-nav" class="vue-portal-target"></div>
+		<div id="app-body">
+			<div class="home">
+				<!-- 메인배너 -->
+				<div class="observer-container">
+					<div class="main-banner" id="banner">
+						<div class="slick-slider slick-initialized">
+							<div class="slick-list">
+								<div class="slick-track" style="width: 12610px; opacity: 1;">
+									<!-- 같은거 복붙 (6개) -->
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item" style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/3.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/1.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/2.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/3.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/4.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/5.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item" style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/6.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- 여기까지 -->
+								</div>
+							</div>
+						</div>
+						<div class="button-wrapper">
+							<div class="slide-button prev-button">
+								<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTE0IDE5LTctNyA3LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
+							</div>
+							<div class="slide-button next-button">
+								<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEwIDE5IDctNy03LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
+							</div>
+						</div>
+						<div class="indicator">1/6</div>
+					</div>
+				</div>
+				<!-- 게시판 아이콘 -->
+				<ul class="main-category category-list container">
+					<!-- 같은거 복붙 (8개) -->
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/java_icon.png" class="category-img">
+								<p class="category-title">Java</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/C_icon.png" class="category-img">
+								<p class="category-title">C</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/python_icon.png" class="category-img">
+								<p class="category-title">Python</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/oracle_icon.png" class="category-img">
+								<p class="category-title">Oracle</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/mysql_icon.png" class="category-img">
+								<p class="category-title">MySQL</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/html_icon.png" class="category-img">
+								<p class="category-title">HTML</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/css_icon.png" class="category-img">
+								<p class="category-title">CSS</p>
+							</div>
+					</a></li>
+					<li class="category-item"><a href="">
+							<div class="category-icon">
+								<img src="../../static/image/javascript_icon.png" class="category-img">
+								<p class="category-title">JS</p>
+							</div>
+					</a></li>
+					<!-- 여기까지 -->
+				</ul>
+				<!-- 숨고 인기 서비스 -> 스터디 모집 -->
+				<div class="main-service container no-mobile-padding">
+					<h2 class="title">인기 스터디 모집</h2>
+					<div class="main-desktop-slide">
+						<div class="slick-slider slick-initialized">
+							<button type="button" class="slick-arrow slick-prev slick-disabled" style="display: block;">Previous</button>
+							<div class="slick-list">
+								<div class="slick-track"
+									style="width: 1976px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+									<!-- 이런거 여러개 복붙 (8개) -->
+									<div class="slick-slide" aria-hidden="" style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre="" src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png" alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre="" src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png" alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
+										<div>
+											<a href="" style="width: 100%; display: inline-block;">
+												<div class="main-service-card">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
+													<p class="service-name">영어 과외</p>
+													<div class="request-count">
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!-- 여기까지 -->
+								</div>
+							</div>
+							<button type="button" class="slick-arrow slick-next"
+								style="display: block;">Next</button>
+						</div>
+					</div>
+				</div>
+				<!-- 숨고 커뮤니티에 물어보세요 -> 노하우 자유/칼럼 -->
+				<div class="main-community slide-knowhow-list container">
+					<section class="header short-bottom">
+						<h2 class="title">전문가의 노하우 공유</h2>
+						<a href="" class="go-list" data-testid="community-home"> <span>전체보기</span>
+							<img
+							src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwNTMuMDAwMDAwLCAtMjAyLjAwMDAwMCkgdHJhbnNsYXRlKDQ4NS4wMDAwMDAsIDE4OC4wMDAwMDApIHRyYW5zbGF0ZSg1NjguMDAwMDAwLCAxNC4wMDAwMDApIi8+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjMDBDN0FFIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTEgMTNMNiA4IDExIDMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDUzLjAwMDAwMCwgLTIwMi4wMDAwMDApIHRyYW5zbGF0ZSg0ODUuMDAwMDAwLCAxODguMDAwMDAwKSB0cmFuc2xhdGUoNTY4LjAwMDAwMCwgMTQuMDAwMDAwKSB0cmFuc2xhdGUoOC41MDAwMDAsIDguMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC04LjUwMDAwMCwgLTguMDAwMDAwKSIvPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+							alt="">
+						</a>
+					</section>
+					<div class="main-community-contents">
+						<div class="desktop-section">
+							<div class="curation-container half-list">
+								<ul data-testid="curation-list" class="curation-list">
+									<li data-testid="curation-item" class="curation-list-item">
+										<!-- 글 개수만큼 붙여넣기 (3개) --> <a href=""
+										class="curation-list-wrapper">
+											<div class="curation-contents has-thumbnail">
+												<p class="topic-name">궁금해요</p>
+												<p class="curation-title">메인페이지 언제 끝나요?</p>
+												<p class="curation-content">흑흑 눈이 너무 아파용 메인페이지 왜 이렇게
+													길어요ㅠㅠ 그래도 계속 갑니다 언능 끝내고 싶어요 다들 파이티이이이이잉</p>
+												<div class="curation-reactions">
+													<span class="view-count">123</span> <span
+														class="comment-count">12</span>
+												</div>
+											</div>
+									</a> <a href="" class="curation-list-wrapper">
+											<div class="curation-contents has-thumbnail">
+												<p class="topic-name">궁금해요</p>
+												<p class="curation-title">메인페이지 언제 끝나요?</p>
+												<p class="curation-content">흑흑 눈이 너무 아파용 메인페이지 왜 이렇게
+													길어요ㅠㅠ 그래도 계속 갑니다 언능 끝내고 싶어요 다들 파이티이이이이잉</p>
+												<div class="curation-reactions">
+													<span class="view-count">123</span> <span
+														class="comment-count">12</span>
+												</div>
+											</div>
+									</a> <a href="" class="curation-list-wrapper">
+											<div class="curation-contents has-thumbnail">
+												<p class="topic-name">궁금해요</p>
+												<p class="curation-title">메인페이지 언제 끝나요?</p>
+												<p class="curation-content">흑흑 눈이 너무 아파용 메인페이지 왜 이렇게
+													길어요ㅠㅠ 그래도 계속 갑니다 언능 끝내고 싶어요 다들 파이티이이이이잉</p>
+												<div class="curation-reactions">
+													<span class="view-count">123</span> <span
+														class="comment-count">12</span>
+												</div>
+											</div>
+									</a> <!-- 여기까지 -->
+									</li>
+								</ul>
+							</div>
+							<div class="knowhow-container half-list">
+								<!-- 같은거 복붙 (2개) -->
+								<a href="" class="knowhow-card-slide" data-testid="knowhow-item">
+									<img class="thumb-image" data-src=""
+									src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?h=320&w=480"
+									alt="" lazy="loaded">
+									<div class="card-desc">
+										<p class="service">소묘/드로잉 레슨</p>
+										<div class="collapsed">
+											<div class="line-clamp"
+												style="line-height: 1.5; max-height: 3rem;">
+												<p class="title">시간 가는 줄 모르는 수업</p>
+											</div>
+										</div>
+										<p class="author">임희수</p>
+									</div>
+								</a> <a href="" class="knowhow-card-slide"
+									data-testid="knowhow-item"> <img class="thumb-image"
+									data-src=""
+									src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?h=320&w=480"
+									alt="" lazy="loaded">
+									<div class="card-desc">
+										<p class="service">소묘/드로잉 레슨</p>
+										<div class="collapsed">
+											<div class="line-clamp"
+												style="line-height: 1.5; max-height: 3rem;">
+												<p class="title">시간 가는 줄 모르는 수업</p>
+											</div>
+										</div>
+										<p class="author">임희수</p>
+									</div>
+								</a>
+								<!-- 여기까지 -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 지금 바로 원하는 서비스를 받아보세요 -> 필요없음 -->
+				<!-- <div class="observer-container container no-mobile-padding"></div> -->
+				<!-- 지금 인기 있는 고수 -> 전문가 랭킹 -->
+				<div class="observer-container container no-mobile-padding">
+					<div class="main-popular-pro">
+						<section class="header">
+							<h2 class="title">지금 인기 있는 전문가</h2>
+							<a href="" class="go-list"> <span>전체보기</span> <img
+								src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwNTMuMDAwMDAwLCAtMjAyLjAwMDAwMCkgdHJhbnNsYXRlKDQ4NS4wMDAwMDAsIDE4OC4wMDAwMDApIHRyYW5zbGF0ZSg1NjguMDAwMDAwLCAxNC4wMDAwMDApIi8+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjMDBDN0FFIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTEgMTNMNiA4IDExIDMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDUzLjAwMDAwMCwgLTIwMi4wMDAwMDApIHRyYW5zbGF0ZSg0ODUuMDAwMDAwLCAxODguMDAwMDAwKSB0cmFuc2xhdGUoNTY4LjAwMDAwMCwgMTQuMDAwMDAwKSB0cmFuc2xhdGUoOC41MDAwMDAsIDguMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC04LjUwMDAwMCwgLTguMDAwMDAwKSIvPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+								alt="">
+							</a>
+						</section>
+						<section class="chips">
+							<!-- 여러개 복붙 -->
+							<button type="button" class="btn btn-secondary chip selected">
+								<span>전문가 종류</span>
+							</button>
+							<button type="button" class="btn btn-secondary chip">
+								<span>정해야하는데</span>
+							</button>
+							<button type="button" class="btn btn-secondary chip">
+								<span>저희는</span>
+							</button>
+							<button type="button" class="btn btn-secondary chip">
+								<span>종류가 없어요</span>
+							</button>
+							<!-- 여기까지 -->
+						</section>
+						<div class="main-desktop-slide">
+							<div class="slick-slider slick-initialized">
+								<button type="button"
+									class="slick-arrow slick-prev slick-disabled"
+									style="display: block;">Previous</button>
+								<div class="slick-list">
+									<div class="slick-track"
+										style="width: 2574px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+										<!-- 고수 링크 -->
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<section class="meet-provider">
+														<img class="meet-provider-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1NiA1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTS0xMTItMjE4NWgxMTcwdjUzNzFILTExMnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIgLTEyKSI+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9IiNGMkYyRjIiIHdpZHRoPSIxODIiIGhlaWdodD0iMTgyIiByeD0iOCIvPgogICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiPgogICAgICAgICAgICAgICAgPGNpcmNsZSBmaWxsPSIjRDRFMEZFIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGN4PSIyOCIgY3k9IjI4IiByPSIyOCIvPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTM0LjI3IDE2LjA3OGEzLjI3OCAzLjI3OCAwIDAgMC0zLjI4IDMuMTYybC0uMzY1IDEwLjc5NWg3LjI5MWwtLjM2NS0xMC43OTVhMy4yNzggMy4yNzggMCAwIDAtMy4yOC0zLjE2MnpNMjEuMjkyIDE2LjA3OGEzLjI3NyAzLjI3NyAwIDAgMC0zLjI4IDMuMTYybC0uMzY2IDEwLjc5NWg3LjI5MWwtLjM2NS0xMC43OTVhMy4yNzggMy4yNzggMCAwIDAtMy4yOC0zLjE2MnoiIGZpbGw9IiM1MDgwRkEiLz4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Im0zNi44NzcgMTcuOTg1LTcuOTQ4LjUwNmMtLjYxOS4wMzktMS4yNC4wMzktMS44NTggMGwtNy45NDgtLjUwNmE1LjI0NiA1LjI0NiAwIDAgMC01LjUzIDQuNDY4bC0xLjM0MyA5LjE4MmgzMS41bC0xLjM0My05LjE4MmE1LjI0NiA1LjI0NiAwIDAgMC01LjUzLTQuNDY4eiIgZmlsbD0iIzgwQTNGQyIvPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTM4LjEzNSAyNi4yNTVoLTIwLjI3Yy0zLjEwMSAwLTUuNjE1IDIuNTA2LTUuNjE1IDUuNTk4IDAgMy4wOTEgMi41MTQgNS41OTcgNS42MTUgNS41OTdoMjAuMjdjMy4xMDEgMCA1LjYxNS0yLjUwNiA1LjYxNS01LjU5NyAwLTMuMDkyLTIuNTE0LTUuNTk4LTUuNjE1LTUuNTk4eiIgZmlsbD0iIzQyNzBGOCIvPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTM1IDM5LjkyMmMtMy41NDQgMC02LjQxNy0yLjg2NC02LjQxNy02LjM5NyAwLTMuNTMzIDIuODczLTYuMzk3IDYuNDE3LTYuMzk3IDMuNTQzIDAgNi40MTYgMi44NjQgNi40MTYgNi4zOTcgMCAzLjUzMy0yLjg3MyA2LjM5Ny02LjQxNiA2LjM5N3oiIGZpbGw9IiMyQzNFRDAiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTM0Ljk5OSAzNy4xNmEzLjY0IDMuNjQgMCAwIDEtMy42NDYtMy42MzVBMy42NCAzLjY0IDAgMCAxIDM1IDI5Ljg5YTMuNjQgMy42NCAwIDAgMSAzLjY0NiAzLjYzNSAzLjY0IDMuNjQgMCAwIDEtMy42NDYgMy42MzV6IiBmaWxsPSIjRUZGNEZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMC43MDggMzkuOTIyYy0zLjU0MyAwLTYuNDE2LTIuODY0LTYuNDE2LTYuMzk3IDAtMy41MzMgMi44NzMtNi4zOTcgNi40MTYtNi4zOTcgMy41NDQgMCA2LjQxNyAyLjg2NCA2LjQxNyA2LjM5NyAwIDMuNTMzLTIuODczIDYuMzk3LTYuNDE3IDYuMzk3eiIgZmlsbD0iIzJDM0VEMCIgZmlsbC1ydWxlPSJub256ZXJvIi8+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAuNzA4IDM3LjE2YTMuNjQgMy42NCAwIDAgMS0zLjY0Ni0zLjYzNSAzLjY0IDMuNjQgMCAwIDEgMy42NDYtMy42MzUgMy42NCAzLjY0IDAgMCAxIDMuNjQ2IDMuNjM1IDMuNjQgMy42NCAwIDAgMS0zLjY0NiAzLjYzNXoiIGZpbGw9IiNFRkY0RkYiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span class="meet-provider-text total">1234명</span>
+														<span class="meet-provider-text">의</span> <br>
+														<div class="meet-provider-link">
+															<span class="meet-provider-text">전문가 만나보기</span> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxMnYxMkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzJEMkQyRCIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTQgMTAgNC00LTQtNCIvPgogICAgPC9nPgo8L3N2Zz4K">
+														</div>
+													</section>
+												</a>
+											</div>
+										</div>
+										<!-- 이런거 여러개 복붙 (고수 명수) -->
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img
+																	src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Im03LjQ5NiAxLjU5NiAxLjQwNyAyLjc0MiAzLjE0NS40NGMuOTEuMTI3IDEuMjc1IDEuMjA0LjYxNSAxLjgyMmwtMi4yNzYgMi4xMzQuNTM4IDMuMDE1Yy4xNTUuODcyLS43OTcgMS41MzgtMS42MTIgMS4xMjZMNi41IDExLjQ1MmwtMi44MTMgMS40MjNjLS44MTUuNDEyLTEuNzY3LS4yNTQtMS42MTItMS4xMjZsLjUzOC0zLjAxNUwuMzM3IDYuNmMtLjY2LS42MTgtLjI5Ni0xLjY5NS42MTUtMS44MjJsMy4xNDUtLjQ0IDEuNDA3LTIuNzQyQzUuOTEyLjggNy4wODguOCA3LjQ5NiAxLjU5NiIgZmlsbD0iI0ZGQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo="
+																	alt=""> <span class="rate">4.8</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>경력 4년</span> <span
+																class="avg-response-time has-career"> 평균 30분 내 응답
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img
+																	src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Im03LjQ5NiAxLjU5NiAxLjQwNyAyLjc0MiAzLjE0NS40NGMuOTEuMTI3IDEuMjc1IDEuMjA0LjYxNSAxLjgyMmwtMi4yNzYgMi4xMzQuNTM4IDMuMDE1Yy4xNTUuODcyLS43OTcgMS41MzgtMS42MTIgMS4xMjZMNi41IDExLjQ1MmwtMi44MTMgMS40MjNjLS44MTUuNDEyLTEuNzY3LS4yNTQtMS42MTItMS4xMjZsLjUzOC0zLjAxNUwuMzM3IDYuNmMtLjY2LS42MTgtLjI5Ni0xLjY5NS42MTUtMS44MjJsMy4xNDUtLjQ0IDEuNDA3LTIuNzQyQzUuOTEyLjggNy4wODguOCA3LjQ5NiAxLjU5NiIgZmlsbD0iI0ZGQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo="
+																	alt=""> <span class="rate">4.8</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>경력 4년</span> <span
+																class="avg-response-time has-career"> 평균 30분 내 응답
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img
+																	src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Im03LjQ5NiAxLjU5NiAxLjQwNyAyLjc0MiAzLjE0NS40NGMuOTEuMTI3IDEuMjc1IDEuMjA0LjYxNSAxLjgyMmwtMi4yNzYgMi4xMzQuNTM4IDMuMDE1Yy4xNTUuODcyLS43OTcgMS41MzgtMS42MTIgMS4xMjZMNi41IDExLjQ1MmwtMi44MTMgMS40MjNjLS44MTUuNDEyLTEuNzY3LS4yNTQtMS42MTItMS4xMjZsLjUzOC0zLjAxNUwuMzM3IDYuNmMtLjY2LS42MTgtLjI5Ni0xLjY5NS42MTUtMS44MjJsMy4xNDUtLjQ0IDEuNDA3LTIuNzQyQzUuOTEyLjggNy4wODguOCA3LjQ5NiAxLjU5NiIgZmlsbD0iI0ZGQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo="
+																	alt=""> <span class="rate">4.8</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>경력 4년</span> <span
+																class="avg-response-time has-career"> 평균 30분 내 응답
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img
+																	src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Im03LjQ5NiAxLjU5NiAxLjQwNyAyLjc0MiAzLjE0NS40NGMuOTEuMTI3IDEuMjc1IDEuMjA0LjYxNSAxLjgyMmwtMi4yNzYgMi4xMzQuNTM4IDMuMDE1Yy4xNTUuODcyLS43OTcgMS41MzgtMS42MTIgMS4xMjZMNi41IDExLjQ1MmwtMi44MTMgMS40MjNjLS44MTUuNDEyLTEuNzY3LS4yNTQtMS42MTItMS4xMjZsLjUzOC0zLjAxNUwuMzM3IDYuNmMtLjY2LS42MTgtLjI5Ni0xLjY5NS42MTUtMS44MjJsMy4xNDUtLjQ0IDEuNDA3LTIuNzQyQzUuOTEyLjggNy4wODguOCA3LjQ5NiAxLjU5NiIgZmlsbD0iI0ZGQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo="
+																	alt=""> <span class="rate">4.8</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>경력 4년</span> <span
+																class="avg-response-time has-career"> 평균 30분 내 응답
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
+										<!-- 여기까지 -->
+									</div>
+								</div>
+								<button type="button" class="slick-arrow slick-next"
+									style="display: block;">Next</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 중간 고정 배너 -->
+				<div class="main-app-banner container">
+					<div class="app-download-banner"></div>
+				</div>
+				<!-- 쓱싹쓱싹 청소하는 날, 오늘도 운동 완료, 자동차를 부탁해, 무엇이든 고치는 고수들, 취미 생활도 나답게 -> 핫한 질문, 미답변 질문-->
+				<div class="main-exhibition container no-mobile-padding">
+					<div class="exhibition-item">
+						<h2 class="title">핫한 질문</h2>
+						<div class="main-desktop-slide">
+							<div class="slick-slider slick-initialized">
+								<button type="button"
+									class="slick-arrow slick-prev slick-disabled"
+									style="display: block;">Previous</button>
+								<div class="slick-list">
+									<div class="slick-track"
+										style="width: 1482px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+										<!-- 이런거 여러개 복붙 -->
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/java_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/css_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/oracle_icon.png" alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<!-- 여기까지 -->
+									</div>
+								</div>
+								<button type="button" class="slick-arrow slick-next"
+									style="display: block;">Next</button>
+							</div>
+						</div>
+					</div>
+					<div class="exhibition-item">
+						<h2 class="title">미답변 질문</h2>
+						<div class="main-desktop-slide">
+							<div class="slick-slider slick-initialized">
+								<button type="button"
+									class="slick-arrow slick-prev slick-disabled"
+									style="display: block;">Previous</button>
+								<div class="slick-list">
+									<div class="slick-track"
+										style="width: 1482px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+										<!-- 이런거 여러개 복붙 -->
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/C_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/html_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/python_icon.png" alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/javascript_icon.png" alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<!-- 여기까지 -->
+									</div>
+								</div>
+								<button type="button" class="slick-arrow slick-next"
+									style="display: block;">Next</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 전국 숨은 고수 -> 전문가 지도-->
+				<div class="main-pro-locations container no-mobile-padding">
+					<div class="header">
+						<h2 class="title">전국 전문가</h2>
+						<div class="desc">
+							믿을 수 있는 전문가를 <br class="d-none d-sm-block"> itPocket 단 한 곳에서
+							찾으세요
+						</div>
+					</div>
+					<ul class="location-list">
+						<!-- 여러개 복붙 -->
+						<li class="location-item"><a href="">서울</a></li>
+						<li class="location-item"><a href="">세종</a></li>
+						<li class="location-item"><a href="">강원</a></li>
+						<li class="location-item"><a href="">인천</a></li>
+						<li class="location-item"><a href="">경기</a></li>
+						<li class="location-item"><a href="">충북</a></li>
+						<li class="location-item"><a href="">충남</a></li>
+						<li class="location-item"><a href="">경북</a></li>
+						<li class="location-item"><a href="">대전</a></li>
+						<li class="location-item"><a href="">대구</a></li>
+						<li class="location-item"><a href="">전북</a></li>
+						<li class="location-item"><a href="">울산</a></li>
+						<li class="location-item"><a href="">광주</a></li>
+						<li class="location-item"><a href="">경남</a></li>
+						<li class="location-item"><a href="">부산</a></li>
+						<li class="location-item"><a href="">전남</a></li>
+						<li class="location-item"><a href="">제주</a></li>
+						<!-- 여기까지 -->
+					</ul>
+				</div>
+				<!-- 숨고 이야기 -> 필요없음-->
+				<!-- <div class="main-magazine margin-offset container no-mobile-padding"></div> -->
+				<!-- 전문가로 활동하시나요? -> 필요없음 -->
+				<!-- <div class="main-pro-info container no-mobile-margin"></div> -->
+				<div class="main-model-wrapper"></div>
+			</div>
+		</div>
+		<!-- <nav id="app-footer" class="footer-container"></nav> 진혁님 -->
+		<div class="vue-portal-target"></div>
+		<div></div>
+	</div>
+</body>
+</html>
