@@ -11,6 +11,14 @@
 	max-width: 100%;
 }
 
+.container {
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* 시작 */
 .pro-knowhow-detail {
 	width: 37.5rem;

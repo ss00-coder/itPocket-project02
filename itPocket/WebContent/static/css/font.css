@@ -23,7 +23,7 @@
 }
 
 .sg-text-gray-400 {
-	color: rgba(169, 169, 169, var(- -tw-text-opacity));
+	color: rgb(169, 169, 169);
 }
 
 .sg-text-gray-500 {

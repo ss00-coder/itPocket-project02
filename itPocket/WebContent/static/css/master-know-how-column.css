@@ -47,6 +47,10 @@
 	color: #323232;
 }
 
+[type=button]:not(:disabled) {
+    cursor: pointer;
+}
+
 .write-button {
 	display: flex;
 	justify-content: center;
