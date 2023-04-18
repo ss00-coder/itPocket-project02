@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>언어별 q&a 게시판</title>
+<title>노하우 게시판(자유)</title>
 <link rel="stylesheet" href="../../static/css/public.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
 <link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/list-by-language.css">
+<link rel="stylesheet" href="../../static/css/master-know-how-free.css">
 <link rel="stylesheet" href="../../static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,11 +41,11 @@
 									<li class="nav-item left-section-item"><a href="study.jsp"
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
-									<!-- 노하우 -->
-									<li class="nav-item left-section-item"><a
-										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
+									<!-- 마켓 -->
+									<li class="nav-item left-section-item"><a href="master-know-how-free.jsp" class="gnb-link">
+											<span>노하우</span>
 									</a></li>
-									<!-- Q&A -->
+									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a
 										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
 									</a></li>
@@ -95,14 +95,14 @@
 						<div class="observer-container">
 							<section class="community-header">
 								<!-- 커뮤니티 제목 -->
-								<h1 class="community-title">Q&A 게시판</h1>
+								<h1 class="community-title">고수의 노하우</h1>
 								<!-- 글쓰기 버튼 -->
 								<div>
 									<div class="write-button-desktop">
 										<a href="write.jsp">
-											<button type="button" class="btn write-button btn-primary">
-												글쓰기 <i class="write"></i>
-											</button>
+										<button type="button" class="btn write-button btn-primary">
+											글쓰기 <i class="write"></i>
+										</button>
 										</a>
 									</div>
 								</div>
@@ -110,9 +110,11 @@
 						</div>
 						<!-- 숨고생활, 고수의 노하우 -->
 						<ul class="category">
-							<li id="ul-li1" class="link-text router-link-active"></li>
+							<li id="ul-li1" class="link-text router-link-active"><a
+								href="master-know-how-free.jsp" class="link-text router-link-active">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400">
+								<a href="master-know-how-column.jsp" class="link-text">칼럼</a>
 							</li>
 						</ul>
 						<!-- 그 아래 모든 내용 -->
@@ -138,7 +140,7 @@
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/community/f1e39209-9357-4412-b962-99a9d62e6cc5.png">
 													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">Java</span>
+													class="sg-text-body2 sg-font-regular sg-text-gray-400">궁금해요</span>
 											</a></li>
 											<!-- 얼마예요 -->
 											<li><a class="topic-link-item router-link-active">
@@ -146,7 +148,7 @@
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/community/a283e912-b56e-4310-8fa1-2c619bd0332d.png">
 													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">c</span>
+													class="sg-text-body2 sg-font-regular sg-text-gray-400">얼마예요</span>
 											</a></li>
 											<!-- 고수찾아요 -->
 											<li><a class="topic-link-item router-link-active">
@@ -154,7 +156,7 @@
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/profile/b3326101-bf1e-4004-8fa1-b5a0724f9e62.png">
 													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">Python</span>
+													class="sg-text-body2 sg-font-regular sg-text-gray-400">고수찾아요</span>
 											</a></li>
 											<!-- 함께해요 -->
 											<li><a class="topic-link-item router-link-active">
@@ -162,7 +164,7 @@
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/profile/ea04ebe5-4787-4b56-99a7-308c6310d972.png">
 													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">Oracle</span>
+													class="sg-text-body2 sg-font-regular sg-text-gray-400">함께해요</span>
 											</a></li>
 											<!-- 고수소식 -->
 											<li><a class="topic-link-item router-link-active">
@@ -170,28 +172,7 @@
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/profile/8dbafccb-92f6-4be2-b50c-a4eade43585f.png">
 													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">MySQL</span>
-											</a></li>
-											<li><a class="topic-link-item router-link-active">
-													<div class="icon-wrapper">
-														<img
-															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/profile/8dbafccb-92f6-4be2-b50c-a4eade43585f.png">
-													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">HTML</span>
-											</a></li>
-											<li><a class="topic-link-item router-link-active">
-													<div class="icon-wrapper">
-														<img
-															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/profile/8dbafccb-92f6-4be2-b50c-a4eade43585f.png">
-													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">CSS</span>
-											</a></li>
-											<li><a class="topic-link-item router-link-active">
-													<div class="icon-wrapper">
-														<img
-															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/profile/8dbafccb-92f6-4be2-b50c-a4eade43585f.png">
-													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">JavaScript</span>
+													class="sg-text-body2 sg-font-regular sg-text-gray-400">고수소식</span>
 											</a></li>
 										</ul>
 									</section>
@@ -407,7 +388,8 @@
 					<ul class="content-list">
 						<li class="open-padding"><span
 							class="text-middle title category"> 숨고소개 <span
-								class="new-badge" style="display: none;">N</span> <!----></span>
+								class="new-badge" style="display: none;">N</span>
+							<!----></span>
 							<div>
 								<a href="/about" class="text-middle category">회사소개 <span
 									class="new-badge" style="display: none;">N</span>
@@ -508,5 +490,5 @@
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/list-by-language.js"></script>
+<script src="../../static/js/master-know-how-free.js"></script>
 </html>
