@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/administrator-comment.css">
+<link rel="stylesheet" href="../../static/css/administrator-comment2.css">
 <title>댓글 관리</title>
 </head>
 <body>
@@ -26,13 +26,12 @@
         </div>
         <section class="body">
             <div class="board-wrap">
-                <div class="board-subtitle">
-                    <h3>댓글 목록</h3>
-                </div>
                 <div class="board-body">
                     <div class="board-list-wrap">
-                        <input type="text" placeholder="댓글 검색" class="select"> <!-- 버튼 없는데 입력 어떻게 함? -->
-                        <input type="button" class="button-delete" value="댓글 삭제">
+                    	<div class="buttons">
+	                        <input type="text" placeholder="댓글 검색" class="select"> <!-- 버튼 없는데 입력 어떻게 함? -->
+	                        <input type="button" class="button-delete" value="댓글 삭제">
+                    	</div>
                         <div class="board-list">
                             <div class="top">
                                 <div class="checkbox"></div>

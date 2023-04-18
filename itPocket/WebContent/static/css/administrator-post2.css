@@ -6,16 +6,15 @@
 }
 
 body{
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 1080px;
 }
 
 .wrap{
-    /* height: 100%; */
     width: 100%;
     height: 100%;
+    position: relative;
 }
-
 
 a{
     text-decoration: none;
@@ -23,93 +22,107 @@ a{
 }
 
 nav.menu{
-    width: 200px;
-    background-color: #3c3c3c;
-    height: 781px;
+    width: 18rem;
+    background-color: #FFD5A6;
+    height: 1080px;
     position: fixed;
+    z-index: 2;
 }
 
 .logo {
-    height: 48px;
+    height: 3.9rem;
 }
 
 .menu li a{
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     display: block;
     padding: 0 20px;
-    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .menu li a:hover{
-    background-color: #282828;
+    background-color: #FFB788;
 }
 
 .menu li .active {
-    background-color: #282828;
+    background-color: #FFB788;
 }
 
 div.title{
     position: fixed;
-    height: 50px;
-    line-height: 50px;
-    margin-left: 200px;
-    padding-left: 20px;
-    width: 1220px;
-    background-color: #fafafa;
+    height: 4rem;
+    /* line-height: 60px; */
+    display: flex;
+    align-items: center;
+    width: 1920px;
+    background-color: #f3f3f3; 
+    /* #f9f9f9; */
+}
+
+h4{
+	padding-left: 20rem;
+	font-size: 20px;
 }
 
 section.body{
-    background-color: #dcdcdc;
-    padding: 20px 20px 20px 220px;
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
 }
 
 .board-wrap{
-    margin: 50px auto 0;
-    width: 1100px;
-    height: 690px;
-}
-
-.board-subtitle{
-    margin: 15px 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+    width: 102rem;
+    height: 63.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .board-body{
-    width: 100%;
-    height: 620px;
-    background-color: #fafafa;
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
+    background-color: white;
     box-shadow: 1px 1px 3px 1px gray;
 }
 
+.buttons{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 60px;
+	margin-right: 60px;
+}
+
 input.select{
-    margin: 50px 30px 10px;
     border: 2px solid gray;
     border-radius: 10px;
-    width: 200px;
-    height: 30px;
-    line-height: 30px;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 18px;
     background-color: white;
+    margin-right: 50px;
 }
 
 .button-delete {
+    border-radius: 10px;
     cursor: pointer;
-    margin: 55px 30px 10px;
-    width: 100px;
-    height: 30px;
-    border: 0;
-    color: white;
+    width: 150px;
+    height: 40px;
     text-align: center;
-    background-color: #149494;
-    float: right;
-    font-size: 12px;
-     /* #CD1F48; */
+    font-size: 18px;
+    border: 2px solid #FFB788;
+    background-color: #ffd4a5;
 }
 
 .board-list{
-    border-top: 2px solid #000;
-    margin-top: 40px;
+	margin-top : 40px;
 }
 
 .board-list div.post{
@@ -118,21 +131,22 @@ input.select{
 }
 
 .board-list div.top{
+    border-top: 1.5px solid #000;
     border-bottom: 1px solid #999;
     font-weight: bold;
     font-size: 0;
 }
 
 .board-list .post:last-child{
-    border-bottom: 2px solid #000;
+    border-bottom: 1.5px solid #000;
 }
 
 .board-list div div {
     display: inline-block;
     vertical-align: middle;
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
-    padding: 10px 0;
+    padding: 14px 0;
 }
 
 .board-list .checkbox {
@@ -167,16 +181,16 @@ input.select{
 }
 
 .board-page{
-    margin-top: 30px;
     text-align: center;
     font-size: 0;
+    margin-top: 60px;
 }
 
 .board-page a{
     display: inline-block;
     width: 20px;
     height: 20px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .board-page a.number.active{

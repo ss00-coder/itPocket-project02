@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/administrator-member.css">
+<link rel="stylesheet" href="../../static/css/administrator-member2.css">
 <title>회원 관리</title>
 </head>
 <body>
@@ -27,123 +27,145 @@
         </div>
         <section class="body">
             <div class="board-wrap">
-                <div class="board-subtitle">
-                    <h3>회원 목록</h3>
-                </div>
                 <div class="board-body">
                     <div class="board-list-wrap">
-                        <input type="text" placeholder="게시글 제목 검색" class="select"> <!-- 버튼 없는데 입력 어떻게 함? -->
-                        <input type="button" class="button-delete" value="게시글 삭제">
+                    	<div class="buttons">
+	                        <input type="text" placeholder="회원 검색" class="select"> <!-- 버튼 없는데 입력 어떻게 함? -->
+	                        <input type="button" class="button-expert" value="전문가">
+	                        <input type="button" class="button-delete" value="회원 탈퇴">
+                    	</div>
                         <div class="board-list">
                             <div class="top">
                                 <div class="checkbox"></div>
-                                <div class="post-id">게시글 번호</div>
-                                <div class="post-type">카테고리</div>
-                                <div class="post-name">제목</div>
-                                <div class="post-content">내용</div>
-                                <div class="post-register-date">작성날짜</div>
-                                <div class="member-id">회원번호</div>
-                                <div class="post-is-blinded">삭제여부</div>
+                                <div class="member-id">회원 번호</div>
+                                <div class="member-name">이름</div>
+                                <div class="member-email">이메일</div>
+                                <div class="member-region">지역</div>
+                                <div class="member-type">구분</div>
+                                <div class="member-expert">전문가</div>
+                                <div class="member-recommended">추천수</div>
+                                <div class="member-register-date">가입일</div>
+                                <div class="member-is-remaining">탈퇴여부</div>
                             </div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">10</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">10</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">9</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">9</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">8</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">8</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">7</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">7</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">6</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">6</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">5</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">5</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">4</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">4</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">3</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">3</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">2</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-id">2</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
-                            <div class="post"><a href="">
+                            <div class="member"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">1</div>
-                                <div class="post-type">스터디</div>
-                                <div class="post-name">스터디구함</div>
-                                <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
-                                <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
-                                <div class="post-is-blinded">삭제됨</div>
+                                <div class="member-name">임희수</div>
+                                <div class="member-email">ss00.coder@gmail.com</div>
+                                <div class="member-region">서울</div>
+                                <div class="member-type">코린이</div>
+                                <div class="member-expert">X</div>
+                                <div class="member-recommended">2</div>
+                                <div class="member-register-date">2023.04.16</div>
+                                <div class="member-is-remaining">일반회원</div>
                             </a></div>
                         </div>
                         <div class="board-page">
