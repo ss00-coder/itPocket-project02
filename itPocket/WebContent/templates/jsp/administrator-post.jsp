@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../static/css/administrator.css">
-<title>관리자페이지</title>
+<link rel="stylesheet" href="../../static/css/administrator-post.css">
+<title>게시글 관리</title>
 </head>
 <body>
     <div class="wrap">
@@ -15,10 +15,11 @@
             </div>
             <hr>
             <ul>
-                <li><a href="">사이트 바로가기</a></li>
-                <li><a href="" class="active">게시글 관리</a></li>
-                <li><a href="">댓글 관리</a></li>
-                <li><a href="">회원 관리</a></li>
+                <li><a href="main.jsp">사이트 바로가기</a></li>
+                <li><a href="administrator-post.jsp" class="active">게시글 관리</a></li>
+                <li><a href="administrator-comment.jsp">댓글 관리</a></li>
+                <li><a href="administrator-member.jsp">회원 관리</a></li>
+            </ul>
             </ul>
         </nav>
         <div class="title">
@@ -44,106 +45,106 @@
                                 <div class="member-id">회원번호</div>
                                 <div class="post-is-blinded">삭제여부</div>
                             </div>
-                            <div class="post">
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">10</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요.</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">9</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">8</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">7</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">6</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">5</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">4</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">3</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">2</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
-                            <div class="post">
+                            </a></div>
+                            <div class="post"><a href="">
                                 <div class="checkbox"><input type="checkbox"></div>
                                 <div class="post-id">1</div>
                                 <div class="post-type">스터디</div>
-                                <div class="post-name"><a href="">스터디구함</a></div>
+                                <div class="post-name">스터디구함</div>
                                 <div class="post-content">스터디원구해요.스터디원구해요.스터디원구해요</div>
                                 <div class="post-register-date">2023.04.16</div>
                                 <div class="member-id">1</div>
                                 <div class="post-is-blinded">삭제됨</div>
-                            </div>
+                            </a></div>
                         </div>
                         <div class="board-page">
                             <a href="" class="button first"><<</a>

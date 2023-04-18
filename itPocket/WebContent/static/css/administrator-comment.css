@@ -6,8 +6,8 @@
 }
 
 body{
-    width: 1440px;
-    height: 781px;
+    width: 100%;
+    height: 100%;
 }
 
 .wrap{
@@ -112,7 +112,7 @@ input.select{
     margin-top: 40px;
 }
 
-.board-list div.post{
+.board-list div.comment{
     border-bottom: 1px solid #ddd;
     font-size: 0;
 }
@@ -138,31 +138,22 @@ input.select{
 .board-list .checkbox {
     width: 5%;    
 }
-.board-list .post-id {
+.board-list .comment-id {
     width: 10%;    
 }
-.board-list .post-type {
-    width: 10%;    
-}
-.board-list .post-name {
-    width: 10%;    
+.board-list .comment-content {
+    width: 55%;    
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.board-list .post-content {
-    width: 35%;    
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.board-list .post-register-date {
+.board-list .comment-register-date {
     width: 10%;    
 }
 .board-list .member-id {
     width: 10%;    
 }
-.board-list .post-is-blinded {
+.board-list .post-id {
     width: 10%;    
 }
 

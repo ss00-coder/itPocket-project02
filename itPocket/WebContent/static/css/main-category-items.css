@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+.main-category.category-list .category-item:hover {
+    background: #fafafa;
+    transform: translateY(-0.25rem);
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+.category-item {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px gray;
+}
+
+.category-item.java{
+	background: linear-gradient(#ff885c 70%, #06a7d9 30%);
+	/* background-color: #c9c7f8; */
+}
+.category-item.c{
+	background-color: #05a6e8;
+}
+.category-item.python{
+	background: linear-gradient(#00c4ff 70%, #fff007 30%);
+	/* background-color: #85ea67; */
+}
+.category-item.oracle{
+	background-color: #ff0052;
+}
+.category-item.mysql{
+	background: linear-gradient(#05a6e8 70%, #ff9808 30%);
+	/* background-color: #ff9808; */
+}
+.category-item.html{
+	background-color: #ff4b21;
+}
+.category-item.css{
+	background-color: #00c4ff;
+}
+.category-item.javascript{
+	background-color: #fff007;
+}
+
+.main-category.category-list .category-title {
+	transform: translateY(-0.2rem);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
