@@ -239,16 +239,16 @@
 						<section class="chips">
 							<!-- 여러개 복붙 -->
 							<button type="button" class="btn btn-secondary chip selected">
-								<span>전문가 종류</span>
+								<span>종합 랭킹</span>
 							</button>
 							<button type="button" class="btn btn-secondary chip">
-								<span>정해야하는데</span>
+								<span>칼럼 조회순</span>
 							</button>
 							<button type="button" class="btn btn-secondary chip">
-								<span>저희는</span>
+								<span>최다 답변순</span>
 							</button>
 							<button type="button" class="btn btn-secondary chip">
-								<span>종류가 없어요</span>
+								<span>칼럼 추천순</span>
 							</button>
 							<!-- 여기까지 -->
 						</section>

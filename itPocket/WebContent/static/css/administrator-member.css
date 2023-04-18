@@ -5,9 +5,13 @@
     padding: 0;
 }
 
+html{
+	height: 100%
+}
+
 body{
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 100%;
 }
 
 .wrap{
@@ -22,47 +26,47 @@ a{
 }
 
 nav.menu{
-    width: 18rem;
-    background-color: #FFD5A6;
-    height: 1080px;
+    width: 15%;
+    background-color: #E5BEEC;
+    height: 100%;
     position: fixed;
     z-index: 2;
 }
 
 .logo {
-    height: 3.9rem;
+    height: 7%;
 }
 
 .menu li a{
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     display: block;
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .menu li a:hover{
-    background-color: #FFB788;
+    background-color: #917FB3;
 }
 
 .menu li .active {
-    background-color: #FFB788;
+    background-color: #917FB3;
 }
 
 div.title{
     position: fixed;
-    height: 4rem;
+    height: 7%;
     /* line-height: 60px; */
     display: flex;
     align-items: center;
-    width: 1920px;
+    width: 100%;
     background-color: #f3f3f3; 
-    /* #f9f9f9; */
+    z-index: 1;    
 }
 
 h4{
-	padding-left: 20rem;
+	padding-left: 16%;
 	font-size: 20px;
 }
 
@@ -76,8 +80,8 @@ section.body{
 	position: absolute;
 	right: 0;
 	bottom: 0;
-    width: 102rem;
-    height: 63.5rem;
+    width: 85%;
+    height: 93%;
     display: flex;
     align-items: center;
 }
@@ -94,47 +98,55 @@ section.body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-top: 60px;
-	margin-right: 60px;
+	margin-top: 35px;
+	margin-right: 30px;
 }
 
 input.select{
     border: 2px solid gray;
     border-radius: 10px;
-    width: 300px;
-    height: 40px;
-    line-height: 40px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 12px;
     background-color: white;
-    margin-right: 50px;
+}
+
+
+.button-select{
+	width: 30px;
+	height: 30px;
+    margin-right: 20px;
 }
 
 .button-expert {
     border-radius: 10px;
     cursor: pointer;
-    width: 150px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     text-align: center;
-    font-size: 18px;
-    border: 2px solid #FFB788;
-    background-color: #ffd4a5;
-    margin-right: 30px;
+    font-size: 12px;
+    border: none;
+    background-color: #E5BEEC;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
 .button-delete {
     border-radius: 10px;
     cursor: pointer;
-    width: 150px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     text-align: center;
-    font-size: 18px;
-    border: 2px solid #FFB788;
-    background-color: #ffd4a5;
+    font-size: 12px;
+    border: none;
+    background-color: #E5BEEC;
+    font-weight: bold;
 }
 
 .board-list{
-	margin-top : 40px;
+	margin-top : 35px;
 }
 
 .board-list div.member{
@@ -156,9 +168,9 @@ input.select{
 .board-list div div {
     display: inline-block;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
-    padding: 14px 0;
+    padding: 10px 0;
 }
 
 .board-list .checkbox {
@@ -198,14 +210,14 @@ input.select{
 .board-page{
     text-align: center;
     font-size: 0;
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .board-page a{
     display: inline-block;
     width: 20px;
     height: 20px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .board-page a.number.active{

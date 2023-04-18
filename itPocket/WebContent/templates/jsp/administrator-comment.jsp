@@ -19,6 +19,7 @@
                 <li><a href="administrator-post.jsp">게시글 관리</a></li>
                 <li><a href="administrator-comment.jsp" class="active">댓글 관리</a></li>
                 <li><a href="administrator-member.jsp">회원 관리</a></li>
+                <li><a href="administrator-enquiry.jsp">문의사항 관리</a></li>                
             </ul>
         </nav>
         <div class="title">
@@ -29,7 +30,8 @@
                 <div class="board-body">
                     <div class="board-list-wrap">
                     	<div class="buttons">
-	                        <input type="text" placeholder="댓글 검색" class="select"> <!-- 버튼 없는데 입력 어떻게 함? -->
+	                        <input type="text" placeholder="댓글 검색" class="select">
+	                        <input type="image" src="../../static/image/select.png" class="button-select">
 	                        <input type="button" class="button-delete" value="댓글 삭제">
                     	</div>
                         <div class="board-list">
