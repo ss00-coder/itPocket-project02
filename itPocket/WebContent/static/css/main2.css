@@ -98,6 +98,12 @@ div {
     overflow: hidden;
 }
 
+.banner-item img{
+	width: 970px;
+	height: 280px;
+	object-fit: scale-down;
+}
+
 .indicator{
     /* width: 2rem; */
     /* height: 1rem; */
@@ -473,7 +479,7 @@ button, select {
 }
 
 .go-list{
-    color: #00c7ae;
+    color: #77037B;
     /* font-size: .875rem; */
     display: flex;
     align-items: center;
@@ -483,7 +489,7 @@ button, select {
 .go-list img {
     /* width: 0.75rem; */
     margin-left: 0.125rem;
-    width: 1rem;
+    width: 1.3rem;
     margin-top: 0.125rem;
 }
 
@@ -701,9 +707,14 @@ button, select {
     font-weight: 400;
 }
 
+.main-popular-pro .chips .chip:hover{
+    color: #2d2d2d;
+    background-color: #e1e1e1;
+}
+
 .main-popular-pro .chips .chip.selected {
-    background: #eafaf9;
-    color: #00c7ae;
+    background: #E5BEEC;
+    color: #2A2F4F;
 }
 
 .main-popular-pro .chips .chip.selected>span{
@@ -713,7 +724,7 @@ button, select {
 .meet-provider{
     /* width: 7.5rem; */
     /* height: 10rem; */
-    padding: 0.75rem;
+    padding: 1.25rem 0.75rem;
     border-radius: 8px;
     background-color: #f2f2f2;
     width: 11.375rem;
@@ -726,8 +737,8 @@ button, select {
     /* height: 3rem; */
     /* margin-bottom: 0.5625rem; */
     margin-bottom: 1rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .meet-provider .meet-provider-text {
@@ -738,7 +749,7 @@ button, select {
 }
 
 .meet-provider .meet-provider-text.total {
-    color: #2257df;
+    color: #77037B;
 }
 
 .meet-provider .meet-provider-link {
@@ -765,7 +776,7 @@ button, select {
 .main-pro-card {
     /* width: 10rem; */
     /* height: 10rem; */
-    padding: 0.75rem;
+    padding: 1.25rem 0.75rem;
     border-radius: 8px;
     background-color: #fafafa;
     width: 11.375rem;
@@ -789,8 +800,8 @@ button, select {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .main-pro-card .header .review {
@@ -799,10 +810,16 @@ button, select {
     justify-content: center;
 }
 
+.main-pro-card .header .review img {
+	width: 15px;
+	height: 15px;
+	object-fit: cover; 
+}
+
 .main-pro-card .header .review .rate {
     font-size: .875rem;
-    font-weight: 700;
-    margin: 0 0.125rem;
+    font-weight: 600;
+    margin: 0 0.3rem;
 }
 
 .main-pro-card p{
@@ -823,7 +840,8 @@ button, select {
 
 .main-pro-card .chips {
     width: 100%;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: flex-start;
     gap: 0.25rem;
     /* margin-bottom: 0.75rem; */
@@ -871,15 +889,15 @@ button, select {
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    /* height: 0; */
-    /* padding-top: 22.15743%; */
+    height: 0;
+    padding-top: 22.15743%;
     width: 60.625rem;
     height: 5.625rem;
     border-radius: 0.5rem;
     padding: 0;
-    background-image: url(../../static/image/middle_banner.png);
+    background-image: url(../../static/image/middle_banner3.png);
 }
-
+ 
 .main-exhibition .exhibition-item {
     /* margin-bottom: 4rem; */
     margin-bottom: 4.6875rem;
@@ -977,8 +995,8 @@ button, select {
 
 .main-pro-locations .location-item>a {
     font-size: .875rem;
-    background-color: #eafaf9;
-    color: #00c7ae;
+    background-color: #E5BEEC;
+    color: #2A2F4F;
     /* width: 100%; */
     display: block;
     border-radius: 36px;
@@ -996,4 +1014,9 @@ button, select {
     width: unset;
     padding: 0 1rem 1.5rem 0;
     padding-bottom: 0;
+}
+
+button.btn-primary.pro-signup-btn {
+	background-color: #7149C6;
+	border: 1px solid #7149C6;
 }
