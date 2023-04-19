@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../static/css/font.css">
 <link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/global-header-main.css">
+<link rel="stylesheet" href="../../static/css/global-header-main2.css">
 <link rel="stylesheet" href="../../static/css/main2.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
 <link rel="stylesheet" href="../../static/css/main-category-items.css">
@@ -276,6 +276,102 @@
 											</div>
 										</div>
 										<!-- 이런거 여러개 복붙 (고수 명수) -->
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img src="../../static/image/like.png" alt=""> 
+																<span class="rate">200</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips" style="display: none;">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>조회수 100</span> 
+															<span
+																class="avg-response-time has-career"> 답변 총 100개
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img src="../../static/image/like.png" alt=""> 
+																<span class="rate">200</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips" style="display: none;">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>조회수 100</span> 
+															<span
+																class="avg-response-time has-career"> 답변 총 100개
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<div class="main-pro-card" data-testid="main-pro-card">
+														<section class="header">
+															<div
+																style="background-image: url(https://dmmj3ljielax6.cloudfront.net/upload/profile/5c22b328-1141-4d29-abb4-e9d4087bb7a9.jpg);"
+																class="thumb" data-src="" lazy="loaded"></div>
+															<!-- 프로필 사진 -->
+															<div class="review">
+																<img src="../../static/image/like.png" alt=""> 
+																<span class="rate">200</span>
+															</div>
+														</section>
+														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
+														<section class="chips" style="display: none;">
+															<span class="soomgopay-chip d-flex"> <img
+																src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgZmlsbD0iIzUwODBGQSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iMyIvPgogICAgICAgIDxwYXRoIGQ9Ik04LjU1MyAyLjQwMkM4LjI1NSAyLjEzNCA3Ljg2OSAyIDcuMzk2IDJjLS42MyAwLTEuMTcuMTg3LTEuNjIuNTZhMi4wMyAyLjAzIDAgMCAwLS43NTYgMS4zNzljLS4wMTUuMTcxLS4wMTIuNTY2LjIxNSAxLjA3LjExNS4yMjYuMzA0LjQ5LjU3Ljc5Mi4zOC40MzUuNjI4Ljc1Ni43NDMuOTY0LjExNS4yMDcuMTcyLjQzNy4xNzIuNjkgMCAuNDAxLS4xNDEuNzQ5LS40MjQgMS4wNDQtLjI4My4yOTUtLjYxNi40NDMtMSAuNDQzLS4zNDYgMC0uNjMzLS4xMTItLjg1OC0uMzM1YTEuMTQ0IDEuMTQ0IDAgMCAxLS4zMzgtLjg0OWMwLS4yMTYuMDY0LS40MzUuMTkzLS42NTYuMTI4LS4yMi4yODctLjM5Mi40NzktLjUxNmwtLjAwMi0uMDAyYS41NTMuNTUzIDAgMCAwIC4yNy0uNDc3YzAtLjMwNC0uMjQtLjU1LS41MzYtLjU1YS41Mi41MiAwIDAgMC0uMjUyLjA2NVY1LjYyYy0uMDkxLjA1NS0uMTgzLjEyMS0uMjc4LjE5OEMzLjMyNCA2LjM0NiAzIDcuMDA0IDMgNy43OTNjMCAuNjQ1LjIwOSAxLjE3NC42MjYgMS41ODcuNDE3LjQxMy45NTEuNjIgMS42MDQuNjIuODQyIDAgMS41MjQtLjMwNyAyLjA0NC0uOTJhMi4zMyAyLjMzIDAgMCAwIC41NzEtMS41NmMwLS42MS0uMjE1LTEuMTg5LS42NDYtMS43MzZsLS4yMjMtLjI3Ni0uMTQ0LS4xODgtLjU0OC0uNzAxYy0uMzAyLS4zOC0uMTc1LS43ODUtLjE3NS0uNzg1LjA1LS4xOTEuMTc0LS4zNjUuMzc0LS41Mi4yNDgtLjE5NC41MjMtLjI5LjgyNS0uMjlhLjguOCAwIDAgMSAuNDY0LjEyYy4xMTYuMDgxLjE3NC4xODguMTc0LjMyIDAgLjI0Ny0uMTUuNDAzLS40NS40NzFsLjAwMS4wMDFhLjUxNi41MTYgMCAwIDAtLjQwNi41MWMwIC4yODcuMjI2LjUyLjUwNS41Mi4wNCAwIC4wNzktLjAwNS4xMTYtLjAxNC4yNC0uMDQzLjQzMy0uMTEuNTc4LS4yMDUuNDczLS4zMDIuNzEtLjczNy43MS0xLjMwNCAwLS40MjYtLjE0OS0uNzczLS40NDctMS4wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+																alt=""> <span>숨고페이</span>
+															</span>
+														</section>
+														<section class="sub-info">
+															<span>조회수 100</span> 
+															<span
+																class="avg-response-time has-career"> 답변 총 100개
+															</span>
+														</section>
+													</div>
+												</a>
+											</div>
+										</div>
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
@@ -984,4 +1080,6 @@
 		<div></div>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/main.js"></script>
 </html>
