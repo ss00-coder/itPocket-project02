@@ -151,11 +151,6 @@ textarea {
   display: block;
 }
 
-/* .invalid-feedback {
-  margin-top: 0.25rem;
-  font-size: 80%;
-  color: #fa5963;
-} */
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
@@ -214,3 +209,4 @@ a:hover {
   margin-bottom: 0.75rem;
   font-weight: 400;
 }
+
