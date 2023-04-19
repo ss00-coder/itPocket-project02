@@ -918,7 +918,7 @@
 				</div>
 				<!-- 쓱싹쓱싹 청소하는 날, 오늘도 운동 완료, 자동차를 부탁해, 무엇이든 고치는 고수들, 취미 생활도 나답게 -> 핫한 질문, 미답변 질문-->
 				<div class="main-exhibition container no-mobile-padding">
-					<div class="exhibition-item">
+					<div class="exhibition-item hot">
 						<h2 class="title">핫한 질문</h2>
 						<div class="main-desktop-slide">
 							<div class="slick-slider slick-initialized">
@@ -969,6 +969,26 @@
 												</a>
 											</div>
 										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
 										<!-- 여기까지 -->
 									</div>
 								</div>
@@ -977,7 +997,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="exhibition-item">
+					<div class="exhibition-item no-answer">
 						<h2 class="title">미답변 질문</h2>
 						<div class="main-desktop-slide">
 							<div class="slick-slider slick-initialized">
@@ -1004,6 +1024,26 @@
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src="" src="../../static/image/html_icon.png"
 													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/python_icon.png" alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/python_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
