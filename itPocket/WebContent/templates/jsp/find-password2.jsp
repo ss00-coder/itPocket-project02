@@ -91,7 +91,7 @@
         			<div data-v-5bbda200 class = "card"> <!-- flex -->
         				<div data-v-26dc1aa5 data-v-5bbda200 class="form-row"> <!-- flex -->
         					<div data-v-26dc1aa5 class = "col-12">
-        						<img data-v-26dc1aa5 src="../../static/image/email-find-icon.png"
+        						<img data-v-26dc1aa5 src="../../static/image/email-find-icon.png" height = "100px" width = "90px"
         						 class = "email-find-icon">
         					</div>
         					<div data-v-26dc1aa5 class = "col-12">
