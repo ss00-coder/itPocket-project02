@@ -22,7 +22,7 @@
 .input-group.suggestion-opened{
     width: 17.5rem;
     padding: 0 0.6875rem;
-    border: 0.125rem solid #00c7ae;
+    border: 0.125rem solid #7149C6;
     position: relative;
     height: 2.75rem;
     background: #fff;
@@ -67,7 +67,7 @@
     font-size: .875rem;
     line-height: 1.5;
     height: auto;
-    caret-color: #00c7ae;
+    caret-color: #7149C6;
     color: #323232;
     padding: 0;
     background: #f4f4f4;
@@ -78,7 +78,7 @@
 input.form-control:focus {
     color: #323232;
     background-color: #fff;
-    border-color: #00c7ae;
+    border-color: #7149C6;
     outline: 0;
     box-shadow: none;
 }

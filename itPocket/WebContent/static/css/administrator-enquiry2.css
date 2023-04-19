@@ -116,19 +116,6 @@ input.select{
 .button-select{
 	width: 30px;
 	height: 30px;
-    margin-right: 20px;
-}
-
-.button-delete {
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    font-size: 12px;
-    border: none;
-    background-color: #E5BEEC;
-    font-weight: bold;
 }
 
 .board-list{
@@ -165,9 +152,6 @@ input.select{
 .board-list .post-id {
     width: 10%;    
 }
-.board-list .post-type {
-    width: 10%;    
-}
 .board-list .post-name {
     width: 10%;    
     text-overflow: ellipsis;
@@ -175,7 +159,7 @@ input.select{
     overflow: hidden;
 }
 .board-list .post-content {
-    width: 35%;    
+    width: 45%;    
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -186,7 +170,7 @@ input.select{
 .board-list .member-id {
     width: 10%;    
 }
-.board-list .post-is-blinded {
+.board-list .post-is-answered {
     width: 10%;    
 }
 .board-page{

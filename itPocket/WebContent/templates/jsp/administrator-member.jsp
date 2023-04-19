@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/administrator-member2.css">
+<link rel="stylesheet" href="../../static/css/administrator-member.css">
 <title>회원 관리</title>
 </head>
 <body>
@@ -19,6 +19,7 @@
                 <li><a href="administrator-post.jsp">게시글 관리</a></li>
                 <li><a href="administrator-comment.jsp">댓글 관리</a></li>
                 <li><a href="administrator-member.jsp"  class="active">회원 관리</a></li>
+                <li><a href="administrator-enquiry.jsp">문의사항 관리</a></li>  
             </ul>
             </ul>
         </nav>
@@ -30,7 +31,8 @@
                 <div class="board-body">
                     <div class="board-list-wrap">
                     	<div class="buttons">
-	                        <input type="text" placeholder="회원 검색" class="select"> <!-- 버튼 없는데 입력 어떻게 함? -->
+	                        <input type="text" placeholder="회원 검색" class="select">
+	                        <input type="image" src="../../static/image/select.png" class="button-select">
 	                        <input type="button" class="button-expert" value="전문가">
 	                        <input type="button" class="button-delete" value="회원 탈퇴">
                     	</div>
