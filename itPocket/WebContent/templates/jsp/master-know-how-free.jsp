@@ -15,6 +15,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
+
 </head>
 <body class="life-topic">
 	<div class="webp-bgroup">
@@ -42,8 +43,8 @@
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a href="master-know-how-free.jsp" class="gnb-link">
-											<span>노하우</span>
+									<li class="nav-item left-section-item"><a
+										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a
@@ -100,9 +101,9 @@
 								<div>
 									<div class="write-button-desktop">
 										<a href="write.jsp">
-										<button type="button" class="btn write-button btn-primary">
-											글쓰기 <i class="write"></i>
-										</button>
+											<button type="button" class="btn write-button btn-primary">
+												글쓰기 <i class="write"></i>
+											</button>
 										</a>
 									</div>
 								</div>
@@ -111,7 +112,8 @@
 						<!-- 숨고생활, 고수의 노하우 -->
 						<ul class="category">
 							<li id="ul-li1" class="link-text router-link-active"><a
-								href="master-know-how-free.jsp" class="link-text router-link-active">자유</a></li>
+								href="master-know-how-free.jsp"
+								class="link-text router-link-active">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400">
 								<a href="master-know-how-column.jsp" class="link-text">칼럼</a>
@@ -211,11 +213,11 @@
 									<div class="slick-slider slick-initialized">
 										<!-- <버튼 -->
 										<button type="button" class="slick-arrow slick-prev"
-											style="display: none;"></button>
+											style="display: none;">prev</button>
 										<!-- 공지사항 배너 -->
 										<div class="slick-list">
 											<div class="slick-track"
-												style="width: 1020px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+												style="width: 1224px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
 												<!-- 배너 하나 -->
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
@@ -267,22 +269,73 @@
 														</a>
 													</div>
 												</div>
+												<!-- 4번째 베너 -->
+												<div class="slick-slide slick-active slick-current"
+													style="outline: none; width: 204px;">
+													<div>
+														<a style="width: 100%; display: inline-block;">
+															<div class="curation-item admin-post">
+																<p
+																	class="topic sg-text-subhead7 sg-font-medium sg-text-gray-500">공지사항</p>
+																<h3
+																	class="sg-text-subhead2 sg-font-bold sg-text-gray-900">숨고
+																	50만 캐시와 쿠폰 받으세요🎁</h3>
+																<p
+																	class="user-name sg-text-description sg-font-regular sg-text-white">Soomgo</p>
+															</div>
+														</a>
+													</div>
+												</div>
+												<!-- 5번쨰 베너 -->
+												<div class="slick-slide slick-active slick-current"
+													style="outline: none; width: 204px;">
+													<div>
+														<a style="width: 100%; display: inline-block;">
+															<div class="curation-item admin-post">
+																<p
+																	class="topic sg-text-subhead7 sg-font-medium sg-text-gray-500">공지사항</p>
+																<h3
+																	class="sg-text-subhead2 sg-font-bold sg-text-gray-900">숨고
+																	50만 캐시와 쿠폰 받으세요🎁</h3>
+																<p
+																	class="user-name sg-text-description sg-font-regular sg-text-white">Soomgo</p>
+															</div>
+														</a>
+													</div>
+												</div>
+												<!-- 6번쨰 베너 -->
+												<div class="slick-slide slick-active slick-current"
+													style="outline: none; width: 204px;">
+													<div>
+														<a style="width: 100%; display: inline-block;">
+															<div class="curation-item admin-post">
+																<p
+																	class="topic sg-text-subhead7 sg-font-medium sg-text-gray-500">공지사항</p>
+																<h3
+																	class="sg-text-subhead2 sg-font-bold sg-text-gray-900">숨고
+																	50만 캐시와 쿠폰 받으세요🎁</h3>
+																<p
+																	class="user-name sg-text-description sg-font-regular sg-text-white">Soomgo</p>
+															</div>
+														</a>
+													</div>
+												</div>
 											</div>
 										</div>
 										<!-- >버튼 -->
 										<button type="button" class="slick-arrow slick-next"
-											style="display: none;"></button>
+											style="display: block;">next</button>
 									</div>
 								</section>
 								<!-- 서비스, 지역 -->
-								<section class="service-area-filter all fixed">
+								<!-- 								<section class="service-area-filter all fixed">
 									<button type="button" class="btn btn-none chip-btn filter-btn">
 										<span>서비스</span>
 									</button>
 									<button type="button" class="btn btn-none chip-btn filter-btn">
 										<span>지역</span>
 									</button>
-								</section>
+								</section> -->
 								<!-- 커뮤니티 글 -->
 								<article class="community-feed-list">
 									<ul class="feed-list">
@@ -388,8 +441,7 @@
 					<ul class="content-list">
 						<li class="open-padding"><span
 							class="text-middle title category"> 숨고소개 <span
-								class="new-badge" style="display: none;">N</span>
-							<!----></span>
+								class="new-badge" style="display: none;">N</span> <!----></span>
 							<div>
 								<a href="/about" class="text-middle category">회사소개 <span
 									class="new-badge" style="display: none;">N</span>

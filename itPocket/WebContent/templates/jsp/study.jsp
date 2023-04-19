@@ -43,8 +43,8 @@
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>노하우</span>
+									<li class="nav-item left-section-item"><a
+										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a
@@ -93,9 +93,8 @@
 				<!-- 고수찾기, 서비스, 지역 -->
 				<header class="search-pro-header-desktop">
 					<h1 class="heading-title">스터디 찾기</h1>
-					
 					<section class="service-area-filter-mobile-b">
-						<button type="button" class="btn filter-btn btn-none">서비스</button>
+						<button type="button" class="btn filter-btn btn-none">분야</button>
 						<button type="button" class="btn filter-btn btn-none">지역</button>
 					</section>
 				</header>
@@ -411,5 +410,110 @@
 			</div>
 		</nav>
 	</div>
+	<!-- 모달창 -->
+	<div id="search-service-modal___BV_modal_outer_"
+		style="position: absolute; z-index: 1040;">
+		<div id="search-service-modal"
+			class="modal fade show search-pro-filter-modal" style="display: none">
+			<div
+				class="modal-dialog modal-md modal-dialog-centered mobile-full-modal">
+				<div id="search-service-modal___BV_modal_content_"
+					class="modal-content">
+					<div id="search-service-modal___BV_modal_body_" class="modal-body">
+						<div class="tabs" id="__BVID__782">
+							<!-- 서비스 지역 -->
+							<div>
+								<ul class="nav nav-tabs" id="__BVID__782__BV_tab_controls_">
+									<li class="nav-item"><a class="nav-link active"
+										id="__BVID__783___BV_tab_button__">분야</a></li>
+									<li class="nav-item"><a class="nav-link"
+										id="__BVID__795___BV_tab_button__">지역</a></li>
+									<button class="btn btn-none" type="button">
+										<img
+											src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTkgNy44NjlMMTYuNDM0LjQzNGwxLjEzMiAxLjEzMkwxMC4xMyA5bDcuNDM1IDcuNDM0LTEuMTMyIDEuMTMyTDkgMTAuMTNsLTcuNDM0IDcuNDM1LTEuMTMyLTEuMTMyTDcuODcgOSAuNDM0IDEuNTY2IDEuNTY2LjQzNCA5IDcuODd6Ii8+CiAgICA8L2RlZnM+CiAgICA8dXNlIGZpbGw9IiMzMjMyMzIiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI2EiLz4KPC9zdmc+Cg==">
+									</button>
+								</ul>
+							</div>
+							<!-- 리스트 -->
+							<!-- 분야,지역 클릭시 나오는 ul -->
+							<div class="tab-content" id="__BVID__782__BV_tab_container_">
+								<!-- 분야 클릭시 나오는 ul -->
+								<div class="tab-pane active" id="__BVID__783">
+									<div class="search-service-autocomplete">
+										<input type="text" placeholder="어떤 분야의 고수를 찾으세요?"
+											class="autocomplete-input form-control" id="__BVID__786">
+										<div class="option-group-selectbox">
+											<ul class="sphare">
+												<li class="level1">전체
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">레슨
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">레슨
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">레슨
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">레슨
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">레슨
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">레슨
+													<div class="bottom-border"></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 지역 클릭시 나오는 ul -->
+								<div class="tab-pane" id="__BVID__783" style="display: none;">
+									<div class="option-group-selectbox">
+										<div class="option-group-selectbox">
+											<ul class="area">
+												<li class="all level1">전국
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">서울
+													<div class="bottom-border"></div>
+												</li>
+
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="search-service-modal___BV_modal_backdrop_"
+			class="modal-backdrop" style="display: none"></div>
+	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/study.js"></script>
 </html>
