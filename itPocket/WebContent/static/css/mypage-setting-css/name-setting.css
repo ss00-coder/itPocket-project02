@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 * {
     word-break: break-word;
     box-sizing: border-box;
@@ -172,6 +170,7 @@ input.form-control.is-valid {
     border: 0.0625rem solid #e1e1e1;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none;
 }
 
 .button-group {
@@ -227,4 +226,31 @@ input.form-control.is-valid {
 .btn-active {
     text-decoration: none;
     border: none;
+}
+
+#pw-text {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #fa5963;
+}
+
+#app-header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.global-header {
+    z-index: 1020;
+    display: block;
+}
+
+#app-header {
+    border-bottom: 0.0625rem solid #f2f2f2;
+    height: 4.5rem;
+}
+
+section.d-none {
+	margin: 0px;
 }
