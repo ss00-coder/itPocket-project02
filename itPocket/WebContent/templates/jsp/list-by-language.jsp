@@ -223,7 +223,7 @@
 									<!-- 지금 가장 뜨거운 숨고픽 -->
 									<div class="curation-header">
 										<h2 class="sg-text-headline sg-font-bold sg-text-gray-900">지금
-											가장 뜨거운 숨고픽🔥</h2>
+											지금 가장 뜨거운 핫토픽🔥</h2>
 										<span class="curation-page">1/2</span>
 									</div>
 									<!-- 공지사항 -->
@@ -243,10 +243,10 @@
 																<p
 																	class="topic sg-text-subhead7 sg-font-medium sg-text-gray-500">공지사항</p>
 																<h3
-																	class="sg-text-subhead2 sg-font-bold sg-text-gray-900">숨고생활
-																	가이드라인 🤝</h3>
+																	class="sg-text-subhead2 sg-font-bold sg-text-gray-900">
+																	추천수 랭킹 게시글 🤝</h3>
 																<p
-																	class="user-name sg-text-description sg-font-regular sg-text-white">Soomgo</p>
+																	class="user-name sg-text-description sg-font-regular sg-text-white">itPocket</p>
 															</div>
 														</a>
 													</div>
