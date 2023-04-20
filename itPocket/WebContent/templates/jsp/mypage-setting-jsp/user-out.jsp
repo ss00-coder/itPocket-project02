@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<link rel="stylesheet" href="../../../static/css/mypage-setting-css/name-setting.css">
+<link rel="stylesheet" href="../../../static/css/mypage-setting-css/user-out.css">
 <link rel="stylesheet" href="../../../static/css/font.css">
 <link rel="stylesheet" href="../../../static/css/public.css">
 <link rel="stylesheet" href="../../../static/css/global-header.css">
@@ -16,8 +16,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <header id="app-header" class="global-header">
+	<div id="app">
+		<header id="app-header" class="global-header">
 			<div class="global-navigation-bar">
 				<section class="d-none d-lg-block d-xl-block d-xl-block">
 					<div class="desktop-header">
@@ -88,39 +88,72 @@
 					</div>
 				</section>
 			</div>
-        </header>
-        <div id="app-body">
-            <div class="container container-md">
-                <main class="account-info-container">
-                    <h1>이름 수정</h1>
-                    <div class="sign-container secondary lg">
-                        <div class="header">
-                            <div class="title">
-                                <img
-                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAgMEwyMCAwIDIwIDIwIDAgMjB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIgLTMwMSkgdHJhbnNsYXRlKDE2IDI4MSkgdHJhbnNsYXRlKDE2IDIwKSIvPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMzMjMyMzIiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEwIDJjLTQuNDE2IDAtOCAzLjU4NC04IDhzMy41ODQgOCA4IDggOC0zLjU4NCA4LTgtMy41ODQtOC04LTh6bS44IDEySDkuMlY5LjJoMS42VjE0em0wLTYuNEg5LjJWNmgxLjZ2MS42eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyIC0zMDEpIHRyYW5zbGF0ZSgxNiAyODEpIHRyYW5zbGF0ZSgxNiAyMCkiLz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==">
-                                <span>아무내용이나 입력해주세요</span>
-                            </div>
-                        </div>
-                    </div>
-                    <section>
-                        <fieldset class="form-group text-field">
-                            <legend class="bv-no-focus-ring col-form-label pt-0">
-                                이름
-                            </legend>
-                            <div>
-                                <input type="text" placeholder="이름(실명)을 입력해 주세요" class="form-control is-valid">
-                            </div>
-                            <div id="pw-text" >이름을 입력해주세요</div>
-                        </fieldset>
-                    </section>
-                    <footer class="button-group">
-                        <a href="" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
-                        <button type="button" class="btn btn-primary">수정 완료</button>
-                    </footer>
-                </main>
-            </div>
-        </div>
-        <nav id="app-footer" class="footer-container">
+		</header>
+		<div id="app-body">
+			<div class="container container-md">
+				<main class="account-info-container">
+					<h1>계정 탈퇴</h1>
+					<section>
+						<article>
+							<h3>숨고 탈퇴 전 꼭 확인해 주세요</h3>
+							<div class="check-list">
+								<ol>
+									<li>탈퇴시 모든 개인정보가 삭제되며, 구매하신 캐시는 소멸되며 환불되지 않습니다.</li>
+									<li>숨고 이용에 불편이 있어 탈퇴를 고민하신다면, support@soomgo.com 또는 <span
+										class="color-teal">1599-5319</span> 로 문의 바랍니다.
+									</li>
+									<li>위 내용을 모두 확인하였고, 탈퇴 완료 시 내용에 동의합니다.</li>
+								</ol>
+							</div>
+						</article>
+						<article>
+							<h3>탈퇴 사유</h3>
+							<ul class="answer-section">
+								<li class="answer-item">
+									<div class="answer-item">
+										<input type="radio"> <label> <span
+											class="radio"></span> <span class="text"> 알림이 너무 많이 와요
+										</span>
+										</label>
+									</div>
+								</li>
+
+								<li class="answer-item">
+									<div class="answer-item">
+										<input type="radio"> <label> <span
+											class="radio"></span> <span class="text"> 사용하기 어려워요 </span>
+										</label>
+									</div>
+								</li>
+
+								<li class="answer-item">
+									<div class="answer-item">
+										<input type="radio"> <label> <span
+											class="radio"></span> <span class="text"> 오류가 많아서 불편해요
+										</span>
+										</label>
+									</div>
+								</li>
+
+								<li class="answer-item">
+									<div class="answer-item">
+										<input type="radio"> <label> <span
+											class="radio"></span> <span class="text"> 기타 </span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</article>
+					</section>
+					<footer class="button-group">
+						<a href="" target="_self"
+							class="btn router-link-active btn-outline-primary">취소</a>
+						<button type="button" class="btn btn-primary">탈퇴 완료</button>
+					</footer>
+				</main>
+			</div>
+		</div>
+		<nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
 					<p class="text contact">1599-5319</p>
@@ -241,9 +274,6 @@
 				</div>
 			</div>
 		</nav>
-    </div>
+	</div>
 </body>
-<script src="../../../static/js/mypage-setting-js/name-setting.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
 </html>
