@@ -89,6 +89,8 @@
 				</section>
 			</div>
         </header>
+        
+        <!-- 중간 메뉴 -->
         <div id="app-body">
             <div class="my-page-community-activity-container">
                 <div class="community-activity-container">
@@ -103,7 +105,33 @@
                             메뉴2
                         </li>
                     </ul>
-                    <section class="community-content-section white">
+                    
+                    <section class="community-activity-content-section">
+                    	<section class="community-activity-list-section">
+                    		<ul class="community-activity-list">
+                    			<li class="community-activity-item">
+                    				<div class="collapsed">
+                    					<div class="line-clamp" style="line-height: 1.5; max-height: 3rem; -webkit-line-clamp: 2; margin: 0 0 0.25rem;">
+                    						<p class="community-activity-content sg-text-subhead5 sg-font-medium">내가 쓴 글 나오는 곳</p>
+                    					</div>
+                    				</div>
+                    				<div class="collapsed">
+                    					<div class="line-clamp" style="line-height: 1.5; max-height: 1.5rem; -webkit-line-clamp: 1;">
+                    						<p class="community-activity-title sg-text-body2 sg-font-regular sg-text-gray-500">제목이 나오는 곳</p>
+                    					</div>
+                    				</div>
+                    				<span class="sg-text-body2 sg-font-regular sg-text-gray-300">
+                    					2023.04.20
+                    				</span>
+                    			</li>
+                    		</ul>
+                    		<div class="infinite-loading-container">
+                    			
+                    		</div>
+                    	</section>
+                    </section>
+                    
+                    <!-- <section class="community-content-section white">
                         <article class="no-items align-self-center text-center no-items">
                             <i>
                                 <img src="https://assets.cdn.soomgo.com/icons/icon-coupon-empty.svg" alt="empty">
@@ -111,7 +139,7 @@
                             <h3>작성 글이 없습니다</h3>
                             <p class="help-block p2">설명글을 입력하세요</p>
                         </article>
-                    </section>
+                    </section> -->
                 </div>
             </div>
         </div>
