@@ -88,7 +88,18 @@
 				<main>
 					<article>
 					<!--문의 내역-->
-						<div class="page-header"><h1>문의내역</h1></div>
+						<div class="page-header"><h1>문의내역</h1>
+							<div>
+							<!--글쓰기 버튼-->
+								<div class="write-button-desktop">
+									<a href="write.jsp">
+										<button type="button" class="btn write-button btn-primary">
+											글쓰기 <i class="write"></i>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
 						<section class="qna-list customer no-qna">
 							<div class="list-wrap"></div>
 							<div class="infinite-loading-container">
