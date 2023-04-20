@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/administrator-enquiry2.css">
+<link rel="stylesheet" href="../../static/css/administrator-inquiry2.css">
 <title>문의사항 관리</title>
 </head>
 <body>

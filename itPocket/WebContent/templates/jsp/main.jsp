@@ -10,9 +10,8 @@
 <link rel="stylesheet" href="../../static/css/font.css">
 <link rel="stylesheet" href="../../static/css/public.css">
 <link rel="stylesheet" href="../../static/css/global-header-main2.css">
-<link rel="stylesheet" href="../../static/css/main2.css">
+<link rel="stylesheet" href="../../static/css/main.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/main-category-items.css">
 <title>메인페이지</title>
 </head>
 <body class="home">
@@ -96,13 +95,14 @@
 					<div class="main-banner" id="banner">
 						<div class="slick-slider slick-initialized">
 							<div class="slick-list">
-								<div class="slick-track" style="width: 12610px; opacity: 1;">
+								<div class="slick-track" style="width: 12610px; opacity: 1; transform: translate(-970px);">
 									<!-- 같은거 복붙 (6개) -->
 									<div class="slick-slide" style="outline: none; width: 970px;">
 										<div>
-											<div class="banner-item" style="width: 100%; display: inline-blick;">
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
 												<a href="" target="_self">
-													<img src="../../static/image/main_banner3.png" class="banner-image">
+													<img src="../../static/image/main_banner6.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -166,11 +166,20 @@
 											</div>
 										</div>
 									</div>
+									<div class="slick-slide" style="outline: none; width: 970px;">
+										<div>
+											<div class="banner-item" style="width: 100%; display: inline-blick;">
+												<a href="" target="_self">
+													<img src="../../static/image/main_banner1.png" class="banner-image">
+												</a>
+											</div>
+										</div>
+									</div>
 									<!-- 여기까지 -->
 								</div>
 							</div>
 						</div>
-						<div class="button-wrapper">
+						<div class="button-wrapper" style="display: none;">
 							<div class="slide-button prev-button">
 								<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTE0IDE5LTctNyA3LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
 							</div>
@@ -918,7 +927,7 @@
 				</div>
 				<!-- 쓱싹쓱싹 청소하는 날, 오늘도 운동 완료, 자동차를 부탁해, 무엇이든 고치는 고수들, 취미 생활도 나답게 -> 핫한 질문, 미답변 질문-->
 				<div class="main-exhibition container no-mobile-padding">
-					<div class="exhibition-item">
+					<div class="exhibition-item hot">
 						<h2 class="title">핫한 질문</h2>
 						<div class="main-desktop-slide">
 							<div class="slick-slider slick-initialized">
@@ -969,6 +978,26 @@
 												</a>
 											</div>
 										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
 										<!-- 여기까지 -->
 									</div>
 								</div>
@@ -977,7 +1006,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="exhibition-item">
+					<div class="exhibition-item no-answer">
 						<h2 class="title">미답변 질문</h2>
 						<div class="main-desktop-slide">
 							<div class="slick-slider slick-initialized">
@@ -1004,6 +1033,26 @@
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src="" src="../../static/image/html_icon.png"
 													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/python_icon.png" alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="../../static/image/python_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>

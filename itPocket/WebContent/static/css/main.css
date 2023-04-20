@@ -79,13 +79,13 @@ div {
     left: 0;
     display: block;
     margin: 0;
-    /* transform: translate3d(-970px, 0px, 0px); */
 }
 
 .slick-track:after, .slick-track:before {
     display: table;
     content: "";
 }
+
 .slick-slide{
     cursor: pointer;
     display: block;
@@ -203,13 +203,62 @@ li{
 
 .main-category.category-list .category-item {
     /* width: 25%; */
-    padding: 0 0.5rem;
+    padding: 0 0.4rem;
     text-align: center;
-    width: 6rem;
-    height: 6rem;
+    width: 5.6rem;
+    height: 5.6rem;
     border-radius: 12px;
     transition: all .2s ease;
     margin-bottom: 0;
+}
+
+.main-category.category-list .category-item:hover {
+    background: #fafafa;
+    transform: translateY(-0.25rem);
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+.main-category.category-list .category-item:hover .category-title {
+	color: black;
+}
+
+.category-item {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.category-item.java{
+	background: linear-gradient(#f2b476 0% 68%, white 68% 73%, #50acf5 73% 100%);
+}
+.category-item.c{
+	background-color: #37419f;
+}
+.category-item.python{
+	background: linear-gradient(#50acf5 0% 68%, white 68% 73%, #f7ce70 73% 100%);
+}
+.category-item.oracle{
+	background-color: #dc4a4a;
+}
+.category-item.mysql{
+	background: linear-gradient(#50acf5 0% 68%, white 68% 73%, #f2b476 73% 100%);
+}
+.category-item.html{
+	background-color: #e84e6b;
+}
+.category-item.css{
+	background-color: #50acf5;
+}
+.category-item.javascript{
+	background-color: #ffbd59;
+}
+
+.main-category.category-list div.category-title {
+	color : white;
+	transform: translateY(-0.2rem);
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 a{
@@ -718,7 +767,7 @@ button, select {
 }
 
 .main-popular-pro .chips .chip.selected>span{
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .meet-provider{
@@ -995,8 +1044,8 @@ button, select {
 
 .main-pro-locations .location-item>a {
     font-size: .875rem;
-    background-color: #E5BEEC;
-    color: #2A2F4F;
+    background-color: #7149C6;
+    color: white;
     /* width: 100%; */
     display: block;
     border-radius: 36px;
@@ -1012,7 +1061,7 @@ button, select {
 
 .main-pro-locations .location-item {
     width: unset;
-    padding: 0 1rem 1.5rem 0;
+    padding: 0.5rem 1rem 1.5rem 0;
     padding-bottom: 0;
 }
 
