@@ -1,4 +1,9 @@
+/**
+ * 
+ */
+
 /* main.jsp */
+
 
 
 /* 어떤 서비스가 필요하세요 focus 이벤트 */
@@ -14,9 +19,69 @@ $form_control.on("focusout", function(){
 });
 
 /* 메인 배너 */
+let main_count = 1;
+let check = true;
+const $main_banner = $(".main-banner");
+const $main_track = $(".main-banner .slick-track");
+const $main_prev = $(".main-banner .prev-button");
+const $main_next = $(".main-banner .next-button");
+const $main_buttons = $(".main-banner .button-wrapper");
+const $indicator = $(".main-banner .indicator");
 
+	
+/* 오토슬라이드 */
+let slide = setInterval(() => autoSlide(), 2000);
+function autoSlide(){
+    check = false;
+    $main_track.css("transform", `translate(${-970 * ++main_count}px)`);
+    $main_track.css("transition", "transform 0.7s");
+    if(main_count == 7) {
+        main_count = 1;
+        setTimeout(() => {
+		    $main_track.css("transform", `translate(-970px)`);
+		    $main_track.css("transition", "transform 0s");
+        }, 700);
+    }
+	$indicator.text(`${main_count}/6`);
+    setTimeout(() => {check = true;}, 700);
+}
 
+/* 앞뒤 버튼 생기게 하기 */
+$main_banner.hover(function(){
+	$main_buttons.show(200);
+	},function(){
+	$main_buttons.hide(200);
+});
 
+/* 앞뒤 버튼 클릭 이벤트 */
+$main_prev.on("click",function(){
+	if(!check){return;}
+	clearInterval(slide);
+	autoSlideReverse();
+	slide = setInterval(() => autoSlide(), 2000);
+});
+
+$main_next.on("click",function(){
+	if(!check){return;}
+	clearInterval(slide);
+	autoSlide();
+	slide = setInterval(() => autoSlide(), 2000);
+});
+
+function autoSlideReverse(){
+    check = false;
+    $main_track.css("transform", `translate(${-970 * --main_count}px)`);
+    $main_track.css("transition", "transform 0.7s");
+    if(main_count == 0) {
+        main_count = 6;
+        setTimeout(() => {
+		    $main_track.css("transform", `translate(-5820px)`);
+		    $main_track.css("transition", "transform 0s");
+        }, 700);
+    }
+	$indicator.text(`${main_count}/6`);
+    setTimeout(() => {check = true;}, 700);
+}
 
 /* 전문가 랭킹 */
 let pro_count = 0;
@@ -126,6 +191,3 @@ $pro_buttons.each((i, pro_button) => {
 		$pro_button.addClass("selected");
 	})
 });
-
-
-

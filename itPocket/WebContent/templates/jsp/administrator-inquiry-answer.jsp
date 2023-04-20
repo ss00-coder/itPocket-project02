@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/administrator-enquiry-answer.css">
+<link rel="stylesheet" href="../../static/css/administrator-inquiry-answer.css">
 <title>문의사항 답변</title>
 </head>
 <body>
