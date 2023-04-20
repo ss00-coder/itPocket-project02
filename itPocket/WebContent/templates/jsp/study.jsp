@@ -110,12 +110,9 @@
 									<span>초기화</span>
 								</div>
 							</div>
+							<!-- 그림 이미지 -->
 							<div class="content">
 								<div class="let-choose-service d-none d-lg-block d-xl-block">
-									<h3>스터디 분야를 선택해 주세요.</h3>
-									<p>
-										스터디 분야를 선택해서 나에게 딱 맞는 <br> 스터디를 필터링해 찾아볼 수 있어요!
-									</p>
 								</div>
 							</div>
 						</div>
@@ -135,7 +132,7 @@
 						</div>
 						<section class="search-keyword-input-desktop">
 							<div class="input-group">
-								<input type="text" placeholder="내 주변 고수 누가 있지?"
+								<input type="text" placeholder="내 주변 스터디 뭐가 있지?"
 									class="form-control">
 							</div>
 						</section>
