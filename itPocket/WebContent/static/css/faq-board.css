@@ -129,6 +129,43 @@ li {
 	list-style: none;
 }
 
+dl {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+dt {
+	padding: 1rem 0.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s;
+    border-bottom: 0.0625rem solid #f2f2f2;
+    margin: 0;
+}
+
+dt.closed {
+    cursor: pointer;
+}
+
+dd.closed {
+    display: none;
+}
+
+.user-question::before {
+	margin-right: 0.5rem;
+    content: "Q.";
+    font-weight: 700;
+}
+
+.qna-list img {
+	margin-left: 1rem;
+    transform: rotate(0);
+    transition: all .3s;
+}
+
 .qna-list-item {
 	margin: 0;
     border-bottom: 0.0625rem solid #f2f2f2;

@@ -118,6 +118,16 @@ li {
     color: rgb(50, 50, 50);
     margin-bottom: 0px;
 }
+/* 글쓰기 버튼  */
+.write-button {
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	height: 2.5rem;
+	padding: 0.625rem 1.625rem 0.625rem 1.5625rem;
+	border-radius: 6px;
+	border: none;
+}
 
 .my-ip-qna .qna-list {
 	background: none;

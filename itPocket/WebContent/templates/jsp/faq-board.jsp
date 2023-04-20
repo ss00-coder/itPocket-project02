@@ -95,32 +95,70 @@
 						<span role="button" class="service-select">서비스별 질문보기</span>
 						<!--문의 목록-->
 						<article class="qna-list">
-							<ul>
-								<li class="qna-list-item"><a class="qna-link-list">
-									노하우 칼럼 게시판에는 어떤걸 적어야하나요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									스터디는 어떻게 모집해야 하나요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									스터디 글을 끌올하는 방법은 없나요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									전문가와 비전문가는 어떻게 구분하나요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									전공자가 아닌 사람도 전문가가 될수있나요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									itpocket에 문의하고싶은 내용이 있는데 어디서 할 수 있나요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									전문가 랭킹의 기준을 알고 싶어요</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-									전문가가 아니지만 칼럼을 작성하고 싶어요</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">
-										문법공부 VS 회화공부, 차이는 무엇인가요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">영어과외
-										선생님을 잘 구하는 방법은 무엇인가요?</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">효과적인
-										영어 공부법을 추천해주세요.</a></li>
-								<li class="qna-list-item"><a class="qna-link-list">에어컨
-										배관 청소는 필수인가요?</a></li>
-							</ul>
+							<dl class="faq-question">
+								<dt>
+									<span class="user-question">스터디는 어떻게 모집해야 하나요?</span>
+								</dt>
+								<dd>
+									<p>스터디 자유모집 게시판에서 자유롭게 글을 올리고 모집하면 됩니다.
+								</dd>
+								<dt>
+									<span class="user-question">스터디 글을 끌올하는 방법은 없나요?</span>
+								</dt>
+								<dd>
+									<p>자신이 게시한 글에가서 수정을 통해 재등록하면 됩니다.
+								</dd>
+								<dt>
+									<span class="user-question">전문가와 비전문가는 어떻게 구분하나요?</span>
+								</dt>
+								<dd>
+									<p>인증된 전문가는 프로필 옆에 전문가 뱃지로 표시됩니다. 
+								</dd>
+								<dt>
+									<span class="user-question">전공자가 아닌 사람도 전문가가 될수있나요?</span>
+								</dt>
+								<dd>
+									<p>전공자나 관련직종이 아닌사람도 추천과 게시물들을 통해 전문가로 선정될수 있습니다.
+								</dd>
+								<dt>
+									<span class="user-question">문의하고싶은 내용이 있는데 어디서 할 수 있나요?</span>
+								</dt>
+								<dd>
+									<p>프로필 -> 마이페이지 -> 1:1문의에서 문의글을 작성할 수 있습니다.
+								</dd>
+								<dt>
+									<span class="user-question">전문가 랭킹의 기준을 알고 싶어요</span>
+								</dt>
+								<dd>
+									<p>전문가 랭킹은 각 게시글의 추천수, 칼럼의 좋아요수가 종합되어 선정됩니다.
+								</dd>
+								<dt>
+									<span class="user-question">전문가가 아니지만 칼럼을 작성하고 싶어요</span>
+								</dt>
+								<dd>
+									<p>전문가가 아니여도 칼럼은 작성가능합니다. 다만, 전문가 랭킹에는 추천수가 집계되지 않습니다.
+								</dd>
+								<dt>
+									<span class="user-question">탈퇴 후 재가입 할 수 있나요?</span>
+								</dt>
+								<dd>
+									<p>탈퇴 후 30일 이후 재가입이 가능합니다. 단, 전에 작성했던 모든 댓글과 게시글은 삭제되니 주의해주세요.
+								</dd>
+								<dt>
+									<span class="user-question">아이디를 수정하고 싶어요</span>
+								</dt>
+								<dd>
+									<p>아이디는 변경이 불가합니다. 아이디 변경을 원하실 경우 회원 탈퇴 후 새로운 아이디로 재가입 후 이용하실 수 있습니다.
+								</dd>
+								<dt>
+									<span class="user-question">개인정보를 수정하고 싶어요</span>
+								</dt>
+								<dd>
+									<p>프로필 -> 마이페이지 에서 수정이 가능합니다.
+								</dd>
+								
+							</dl>
+							
 						</article>
 					</article>
 					<!--위로 가기 버튼-->
@@ -257,4 +295,5 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="../../static/js/top-button.js"></script>
+<script src="../../static/js/faq-board.js"></script>
 </html>
