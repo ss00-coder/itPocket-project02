@@ -98,7 +98,7 @@
 										autocorrect="off" spellcheck="false" autocapitalize="off"
 										data-vv-validate-on="blur" aria-invalid="true"
 										id="__BVID__367" aria-required="true" />
-									 <div data-v-2e241a14="" class="invalid-feedback">
+									 <div data-v-2e241a14="" class="invalid-feedback" id="email-feedback">
                       					이메일 주소를 입력해주세요.
                     				</div>
 									<!---->
@@ -282,4 +282,6 @@
 			</div>
 		</nav>
 </body>
+<script src="../../static/js/login.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </html>
