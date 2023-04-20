@@ -38,12 +38,12 @@ body {
   min-height: 100%;
 }
 
-.login-page[data-v-e48acaee] {
+.login-page {
   background-color: #fafafa;
   padding: 5rem 0;
 }
 
-.login-page h2[data-v-e48acaee] {
+.login-page h2 {
   text-align: center;
   margin-bottom: 2.5rem;
   font-weight: 500;
@@ -62,7 +62,7 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-.card[data-v-e48acaee] {
+.card{
   width: 100%;
   max-width: 26.5rem;
   border: 0.0625rem solid #f2f2f2;
@@ -91,7 +91,7 @@ form {
   padding-left: 0.3125rem;
 }
 
-.login-form .form-group[data-v-2e241a14] {
+.login-form .form-group {
   margin-bottom: 1.5rem;
 }
 
@@ -101,7 +101,7 @@ fieldset {
   border: 0;
 }
 
-.login-form[data-v-2e241a14] .col-form-label {
+.login-form .col-form-label {
   padding-bottom: 0.375rem;
 }
 
@@ -118,11 +118,11 @@ legend {
   padding: 0;
 }
 
-/* .login-form .text-input.invalid[data-v-2e241a14] {
+ .login-form .text-input.invalid {
   border: 0.0625rem solid #fa5963;
-} */
+} 
 
-.login-form .text-input[data-v-2e241a14] {
+.login-form .text-input {
   padding: 0.75rem;
   border-radius: 4px;
   border: 0.0625rem solid #e1e1e1;
@@ -151,6 +151,21 @@ textarea {
   display: block;
 }
 
+.invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #fa5963;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.form-group .form-text.text-invalid {
+    color: #ff3131;
+}
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
@@ -176,23 +191,23 @@ textarea {
   border-radius: 0.25rem;
 }
 
-.login-form .reset-password-or-signup-wrapper[data-v-2e241a14] {
+.login-form .reset-password-or-signup-wrapper {
   display: flex;
 }
 
-.login-form .reset-password-or-signup-wrapper > div[data-v-2e241a14] {
+.login-form .reset-password-or-signup-wrapper > div {
   display: flex;
   margin: 0 auto 2rem;
   font-size: 0.875rem;
 }
 
-.login-form .reset-password-or-signup-wrapper > div > a[data-v-2e241a14] {
+.login-form .reset-password-or-signup-wrapper > div > a {
   color: #737373;
   padding: 0.375rem 0.5rem;
   font-weight: 400;
 }
 
-.login-form .reset-password-or-signup-wrapper > div > .line[data-v-2e241a14] {
+.login-form .reset-password-or-signup-wrapper > div > .line {
   margin: auto 0.75rem;
   width: 0.0625rem;
   height: 0.75rem;
@@ -204,7 +219,7 @@ a:hover {
   text-decoration: none;
 }
 
-.login-form .btn[data-v-2e241a14] {
+.login-form .btn {
   width: 100%;
   margin-bottom: 0.75rem;
   font-weight: 400;
