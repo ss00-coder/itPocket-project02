@@ -118,9 +118,9 @@ legend {
   padding: 0;
 }
 
-/* .login-form .text-input.invalid[data-v-2e241a14] {
+ .login-form .text-input.invalid[data-v-2e241a14] {
   border: 0.0625rem solid #fa5963;
-} */
+} 
 
 .login-form .text-input[data-v-2e241a14] {
   padding: 0.75rem;
@@ -151,6 +151,21 @@ textarea {
   display: block;
 }
 
+.invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #fa5963;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.form-group .form-text.text-invalid {
+    color: #ff3131;
+}
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
