@@ -16,6 +16,7 @@
 </head>
 <body class="home">
 	<div id="app">
+	
 		<div class="__cov-progress" style="background-color: rgb(0, 199, 174); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div>
 		<!-- <header class="global-header hide-border-bottom" id="app-header"></header> 진혁님 -->
 		<header class="global-header">
@@ -26,7 +27,7 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a> 
+								<a href="main.jsp"> 
 									<img src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
 								</a>
 							</div>
@@ -38,15 +39,15 @@
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp" class="gnb-link"> 
-										<span>고수찾기</span>
+										<span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a class="gnb-link">
-										<span>마켓</span>
+										<span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a href="list-by-language.jsp" class="gnb-link"> 
-										<span>커뮤니티</span>
+										<span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
