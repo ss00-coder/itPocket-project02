@@ -245,5 +245,4 @@
 </body>
 <script src="../../../static/js/mypage-setting-js/name-setting.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
 </html>
