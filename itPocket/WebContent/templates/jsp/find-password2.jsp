@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../../static/css/find-password2.css">
     <link rel="stylesheet" href="../../static/css/list-by-language.css">
     <link rel="stylesheet" href="../../static/css/global-header.css">
+    <link rel="stylesheet" href="../../static/css/font.css">
+    <link rel="stylesheet" href="../../static/css/public.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
 	<title>비밀번호 재설정을 위한 이메일 발송</title>
 </head>
 <body class = "find-password-done">

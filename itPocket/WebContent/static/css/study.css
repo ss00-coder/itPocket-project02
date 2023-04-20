@@ -144,6 +144,8 @@
 .search-pro-auto-quote-filter .let-choose-service {
 	width: 18.75rem;
 	padding: 1.5rem 2rem 3.75rem 1.1875rem;
+	height: 174px;
+    background-size: cover;
 	border-radius: 8px;
 	background-image: url("../../static/image/study_img.png");
 	letter-spacing: -.01875rem;

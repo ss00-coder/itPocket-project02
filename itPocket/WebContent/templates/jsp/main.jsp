@@ -81,7 +81,7 @@
 							</nav>
 							<!-- 고수가입 -->
 							<button type="button" class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
 					</div>
