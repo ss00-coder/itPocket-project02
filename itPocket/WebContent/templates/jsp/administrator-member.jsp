@@ -17,11 +17,19 @@
             </div>
             <hr>
             <ul class="menu-list">
-                <li><a href="main.jsp">사이트 바로가기</a></li><hr>
-                <li><a href="administrator-post.jsp">게시글 관리</a></li><hr>
-                <li><a href="administrator-comment.jsp">댓글 관리</a></li><hr>
-                <li><a href="administrator-member.jsp" class="active">회원 관리</a></li><hr>
-                <li><a href="administrator-inquiry.jsp">문의사항 관리</a></li>  
+				<li><a href="main.jsp">사이트 바로가기</a></li><hr>
+                <li><a href="administrator-post.jsp">
+                	<span><img src="../../static/image/post_icon.png">&nbsp;&nbsp;게시글 관리</span>
+               	</a></li><hr>
+                <li><a href="administrator-comment.jsp">
+                	<span><img src="../../static/image/comment_icon.png">&nbsp;&nbsp;댓글 관리</span>
+                </a></li><hr>
+                <li><a href="administrator-member.jsp" class="active">
+                	<span><img src="../../static/image/member_icon.png">&nbsp;&nbsp;회원 관리</span>
+                </a></li><hr>
+                <li><a href="administrator-inquiry.jsp">
+                	<span><img src="../../static/image/post_icon.png">&nbsp;&nbsp;문의사항 관리</span>
+                </a></li>  
             </ul>
         </nav>
         <div class="title">
