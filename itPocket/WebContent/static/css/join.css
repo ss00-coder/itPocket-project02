@@ -64,7 +64,7 @@ body {
     letter-spacing: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     margin-top: 0;
 }
 
@@ -182,7 +182,7 @@ input {
     width: 3.125rem;
     z-index: 10;
     text-align: right;
-    color: #00c7ae;
+    color: #655DBB!important;
     font-weight: 400;
 }
 
@@ -259,3 +259,16 @@ input[type=checkbox], input[type=radio] {
     transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.signup-form button.btn.btn-signup[data-v-2ef2701c] {
+    margin-top: 0.75rem;
+}
+
+.signup-form button.btn[data-v-2ef2701c] {
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #655DBB!important;
+    border-color: #655DBB!important;
+}

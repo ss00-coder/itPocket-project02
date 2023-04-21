@@ -169,7 +169,7 @@ textarea {
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
-  border-color: #00c7ae;
+  border-color: #655DBB!important;
 }
 
 .custom-select.is-valid,
@@ -181,8 +181,8 @@ textarea {
 
 .btn-primary {
   color: #fff;
-  background-color: #00c7ae;
-  border-color: #00c7ae;
+  background-color: #655DBB!important;
+  border-color: #655DBB!important;
 }
 
 .btn {
