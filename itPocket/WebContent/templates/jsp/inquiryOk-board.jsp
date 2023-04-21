@@ -11,6 +11,7 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="../../static/css/inquiry-board.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
+<link rel="stylesheet" href="../../static/css/footer.css">
 <link rel="shortcut icon" href="../../static/image/shortcut.png">
 <title>1:1 문의</title>
 </head>
