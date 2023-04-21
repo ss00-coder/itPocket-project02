@@ -1071,3 +1071,7 @@ button.btn-primary.pro-signup-btn {
 	background-color: #7149C6;
 	border: 1px solid #7149C6;
 }
+
+.footer-container-row{
+	margin-bottom: 0px!important; 
+}

@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<link rel="shortcut icon" href="../../../static/image/shortcut.png">
 <link rel="stylesheet" href="../../../static/css/mypage-setting-css/my-answer-list.css">
 <link rel="stylesheet" href="../../../static/css/font.css">
 <link rel="stylesheet" href="../../../static/css/public.css">
@@ -25,27 +25,27 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a> <img
-									src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
+								<a href="../main.jsp">
+									<img src="../../../static/image/logo.png">
 								</a>
 							</div>
 							<nav>
 								<ul class="nav-list">
 									<!--서비스 요청-->
 									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>서비스요청</span>
+										class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!--고수찾기-->
 									<li class="nav-item left-section-item"><a href="study.jsp"
-										class="gnb-link"> <span>고수찾기</span>
+										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!--마켓-->
 									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>마켓</span>
+											<span>노하우</span>
 									</a></li>
 									<!--커뮤니티-->
 									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>커뮤니티</span>
+										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
