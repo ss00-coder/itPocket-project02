@@ -10,6 +10,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
+<link rel="shortcut icon" href="../../static/image/shortcut.png">
 <title>login</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
 				<section class="d-none d-lg-block d-xl-block d-xl-block">
 					<div class="desktop-header">
 						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
-						<div class="left-sec tion">
+						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
 								<a> <img
@@ -80,7 +81,7 @@
 					</div>
 				</section>
 			</div>
-		</header>
+		</header>	
 		<div data-v-e48acaee="" data-testid="login-page" class="login-page">
 			<h2 data-v-e48acaee="">로그인</h2>
 			<div data-v-e48acaee="" class="card">
