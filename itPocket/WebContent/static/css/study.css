@@ -614,7 +614,7 @@
 	content: "";
 	position: absolute;
 	height: 0.125rem;
-	background-color: #00c7ae;
+	background-color: #7149C6;
 	left: 0.375rem;
 	right: 0.375rem;
 	bottom: 0.125rem;
@@ -666,7 +666,7 @@
 }
 
 .search-pro-filter-modal .tabs .nav-link.active {
-	color: #00c7ae;
+	color: #7149C6;
 }
 
 .search-pro-filter-modal .tabs .nav-link {
