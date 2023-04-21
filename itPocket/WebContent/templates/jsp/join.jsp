@@ -161,56 +161,7 @@
 									</div>
 								</fieldset>
 							</div>
-							<div data-v-2ef2701c="" class="col-12">
-								<section data-v-17616218="" data-v-2ef2701c="">
-									<div data-v-17616218=""
-										class="all-check custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input"
-											value="true" id="__BVID__357"><label
-											class="custom-control-label" for="__BVID__357"><span
-											data-v-17616218="" data-testid="all-check-btn"
-											class="all-check-label">전체동의</span></label>
-									</div>
-									<div data-v-17616218="" class="terms-container">
-										<div data-v-8c4aecaa="" data-v-17616218="" role="group"
-											tabindex="-1" class="bv-no-focus-ring" name="agreeToTerms"
-											data-vv-validate-on="blur" aria-invalid="false"
-											id="__BVID__359">
-											<ul data-v-8c4aecaa="">
-												<li data-v-8c4aecaa="" class="term-item"><div
-														data-v-8c4aecaa="" class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input"
-															value="termsOfService" id="__BVID__360"
-															name="__BVID__359"><label
-															class="custom-control-label" for="__BVID__360"><p
-																data-v-8c4aecaa="" class="term-label">(필수) 이용약관 동의</p></label>
-													</div>
-													<button data-v-8c4aecaa="" type="button"
-														class="btn detail-button btn-none">보기</button></li>
-												<li data-v-8c4aecaa="" class="term-item"><div
-														data-v-8c4aecaa="" class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input"
-															value="privacyUse" id="__BVID__361" name="__BVID__359"><label
-															class="custom-control-label" for="__BVID__361"><p
-																data-v-8c4aecaa="" class="term-label">(필수) 개인정보 수집 및
-																이용 동의</p></label>
-													</div>
-													<button data-v-8c4aecaa="" type="button"
-														class="btn detail-button btn-none">보기</button></li>
-												<li data-v-8c4aecaa="" class="term-item"><div
-														data-v-8c4aecaa="" class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input"
-															value="moreThan14" id="__BVID__362" name="__BVID__359"><label
-															class="custom-control-label" for="__BVID__362"><p
-																data-v-8c4aecaa="" class="term-label">(필수) 14세 이상입니다</p></label>
-													</div> <!----></li>
-											</ul>
-										</div>
-										<p data-v-17616218="" class="error-message"
-											style="display: none;"></p>
-									</div>
-								</section>
-							</div>
+							
 							<div data-v-2ef2701c="" class="col-12">
 								<button data-v-2ef2701c="" data-testid="btn-signup"
 									type="submit" class="btn btn-signup btn-primary">
