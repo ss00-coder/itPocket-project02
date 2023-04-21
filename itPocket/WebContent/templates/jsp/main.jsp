@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="../../static/css/main.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
 <title>메인페이지</title>
+<link rel="shortcut icon" href="../../static/image/shortcut.png">
 </head>
 <body class="home">
 	<div id="app">
@@ -28,7 +29,7 @@
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
 								<a href="main.jsp"> 
-									<img src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
+									<img src="../../static/image/logo.png">
 								</a>
 							</div>
 							<nav>
@@ -113,7 +114,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="" target="_self">
-													<img src="../../static/image/main_banner1.png" class="banner-image">
+													<img src="../../static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
 										</div>
@@ -171,7 +172,7 @@
 										<div>
 											<div class="banner-item" style="width: 100%; display: inline-blick;">
 												<a href="" target="_self">
-													<img src="../../static/image/main_banner1.png" class="banner-image">
+													<img src="../../static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
 										</div>
@@ -1031,6 +1032,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 247px;">
 											<div>
+												
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src="" src="../../static/image/html_icon.png"
 													alt="" lazy="loaded">
