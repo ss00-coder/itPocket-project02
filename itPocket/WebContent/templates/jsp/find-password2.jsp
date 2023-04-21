@@ -7,7 +7,7 @@
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/find-password2.css">
-    <link rel="stylesheet" href="../../static/css/list-by-language.css">
+    <link rel="stylesheet" href="../../static/css/footer.css">
     <link rel="stylesheet" href="../../static/css/global-header.css">
     <link rel="stylesheet" href="../../static/css/font.css">
     <link rel="stylesheet" href="../../static/css/public.css">
@@ -123,7 +123,7 @@
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
 					<p class="text contact">1599-5319</p>
-					<p class="text middle">
+					<p class="text-middle">
 						평일 10:00 - 18:00 <br> (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
 					</p>
 					<a class="download"
@@ -140,75 +140,71 @@
 				</div>
 				<div class="col-content right">
 					<ul class="content-list">
-						<li class="open-padding"><span class="text-middle title category"> 숨고소개 <span class="new-badge" style="display: none;">N</span><!----></span>
+						<li class="open-padding"><span
+							class="text-middle title category"> 숨고소개 <span
+								class="new-badge" style="display: none;">N</span>
+							<!----></span>
 							<div>
-								<a href="/about" class="text-middle category">회사소개
-									<span class="new-badge" style="display:none;">N</span>
+								<a href="/about" class="text-middle category">회사소개 <span
+									class="new-badge" style="display: none;">N</span>
+								</a> <a href="https://soomgo.career.greetinghr.com/"
+									class="text-middle category">채용안내 <span class="new-badge"
+									style="display: none;">N</span>
+								</a> <a href="https://blog.soomgo.com" class="text-middle category">팀블로그
+									<span class="new-badge" style="display: none;">N</span>
 								</a>
-								<a href="https://soomgo.career.greetinghr.com/" class="text-middle category">채용안내 
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-								<a href="https://blog.soomgo.com" class="text-middle category">팀블로그
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-							</div>
-						</li>
-						<li class="open-padding">
-							<span class="text-middle title category">고객안내
-								<span class="new-badge" style="display:none;">N</span>
-							</span>
+							</div></li>
+						<li class="open-padding"><span
+							class="text-middle title category">고객안내 <span
+								class="new-badge" style="display: none;">N</span>
+						</span>
 							<div>
-								<a href="/how-it-works" class="text-middle category">이용안내
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-								<a href="/safety" class="text-middle category">안전정책
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-								<a href="/prices" class="text-middle category">예상금액
-									<span class="new-badge" style="display:none;">N</span>
+								<a href="/how-it-works" class="text-middle category">이용안내 <span
+									class="new-badge" style="display: none;">N</span>
+								</a> <a href="/safety" class="text-middle category">안전정책 <span
+									class="new-badge" style="display: none;">N</span>
+								</a> <a href="/prices" class="text-middle category">예상금액 <span
+									class="new-badge" style="display: none;">N</span>
 								</a><a href="/search/pro?from=footer" class="text-middle category">고수찾기
-									<span class="new-badge" style="display:none;">N</span>
+									<span class="new-badge" style="display: none;">N</span>
+								</a> <a href="https://help.soomgo.com/hc/ko/articles/360056329911"
+									class="text-middle category">숨고보증 <span class="new-badge"
+									style="display: none;">N</span>
+								</a> <a href="/questions/"
+									class="text-middle category router-link-exact-active router-link-active">고수에게묻다
+									<span class="new-badge" style="display: none;">N</span>
 								</a>
-								<a href="https://help.soomgo.com/hc/ko/articles/360056329911" class="text-middle category">숨고보증
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-								<a href="/questions/" class="text-middle category router-link-exact-active router-link-active">고수에게묻다
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-							</div>
-						</li>
-						<li class="open-padding">
-							<span class="text-middle title category">고수안내
-								<span class="new-badge" style="display:none;">N</span>
-							</span>
+							</div></li>
+						<li class="open-padding"><span
+							class="text-middle title category">고수안내 <span
+								class="new-badge" style="display: none;">N</span>
+						</span>
 							<div>
 								<a href="/how-soomgo-works" class="text-middle category">이용안내
-									<span class="new-badge" style="display:none;">N</span>
+									<span class="new-badge" style="display: none;">N</span>
+								</a> <a href="https://help.soomgo.com/hc/ko/categories/115001218027"
+									class="text-middle category">고수가이드 <span class="new-badge"
+									style="display: none;">N</span>
+								</a> <a href="/pro" class="text-middle category">고수가입 <span
+									class="new-badge" style="display: none;">N</span>
+								</a> <a href="/pro-center" class="text-middle category">고수센터 <span
+									class="new-badge" style="display: none;">N</span>
 								</a>
-								<a href="https://help.soomgo.com/hc/ko/categories/115001218027" class="text-middle category">고수가이드
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-								<a href="/pro" class="text-middle category">고수가입
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-								<a href="/pro-center" class="text-middle category">고수센터
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-							</div>
-						</li>
-						<li class="open-padding">
-							<span class="text-middle title category">고객센터
-								<span class="new-badge" style="display:none;">N</span>
-							</span>
+							</div></li>
+						<li class="open-padding"><span
+							class="text-middle title category">고객센터 <span
+								class="new-badge" style="display: none;">N</span>
+						</span>
 							<div>
-								<a href="https://help.soomgo.com/hc/ko/categories/360002081551-%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD" class="text-middle category">공지사항
-									<span class="new-badge" style="display:none;">N</span>
+								<a
+									href="https://help.soomgo.com/hc/ko/categories/360002081551-%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD"
+									class="text-middle category">공지사항 <span class="new-badge"
+									style="display: none;">N</span>
+								</a> <a href="https://help.soomgo.com/hc/ko"
+									class="text-middle category">자주묻는질문 <span class="new-badge"
+									style="display: none;">N</span>
 								</a>
-								<a href="https://help.soomgo.com/hc/ko" class="text-middle category">자주묻는질문
-									<span class="new-badge" style="display:none;">N</span>
-								</a>
-							</div>
-						</li>
+							</div></li>
 					</ul>
 				</div>
 			</div>
@@ -217,22 +213,29 @@
 					<div class="col-content term-content">
 						<div class="col-content-list-term" data-v-4e4965bd="">
 							<div class="terms-group">
-								<a href="/terms/usage" class="text term">이용약관</a>
-								<a href="/terms/privacy" class="text term">개인정보처리방침</a>
+								<a href="/terms/usage" class="text term">이용약관</a> <a
+									href="/terms/privacy" class="text term">개인정보처리방침</a>
 							</div>
 							<div class="terms-group">
-								<a href="/terms/location" class="text term">위치기반 서비스 이용약관</a>
-								<a target="_blank" rel="nofollow" href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208822325" class="text term"> 사업자 정보확인 </a>
+								<a href="/terms/location" class="text term">위치기반 서비스 이용약관</a> <a
+									target="_blank" rel="nofollow"
+									href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208822325"
+									class="text term"> 사업자 정보확인 </a>
 							</div>
 						</div>
 						<div class="col-content-list-term">
-							<span class="text term-text" data-v-4e4965bd=""> (주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다. </span>
+							<span class="text term-text" data-v-4e4965bd="">
+								(주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행,
+								계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다. </span>
 						</div>
 						<ul class="col-content-guide">
-							<li class="text"> 상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H · 개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415, L7 강남타워 5층 </li>
-							<li class="text"> 사업자등록번호:120-88-22325 · 통신판매업신고증:제 2021-서울강남-00551 호 · 직업정보제공사업 신고번호:서울청 제 2019-21호 </li>
+							<li class="text">상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H ·
+								개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415, L7 강남타워 5층</li>
+							<li class="text">사업자등록번호:120-88-22325 · 통신판매업신고증:제
+								2021-서울강남-00551 호 · 직업정보제공사업 신고번호:서울청 제 2019-21호</li>
 							<li class="text">고객센터:1599-5319 · 이메일:support@soomgo.com</li>
-							<li class="text">Copyright ©Brave Mobile Inc. All Rights Reserved.</li>
+							<li class="text">Copyright ©Brave Mobile Inc. All Rights
+								Reserved.</li>
 						</ul>
 					</div>
 				</div>
