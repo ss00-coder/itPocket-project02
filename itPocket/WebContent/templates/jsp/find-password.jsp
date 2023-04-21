@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/find-password.css">
-    <link rel="stylesheet" href="../../static/css/list-by-language.css">
-    <link rel="stylesheet" href="../../static/css/global-header.css">
+    <link rel="stylesheet" href="../../static/css/font.css">
+    <link rel="stylesheet" href="../../static/css/public.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
     <title>비밀번호 찾기</title>
 </head>
     <meta name="msapplication-TileColor" content="#da532c">
@@ -103,7 +106,7 @@
 	        				<div data-v-4d09de91 class = "form-row"> <!-- 이메일 주소 입력칸 속 더 작은(?) 박스 -->
 	        					<div data-v-4d09de91 class = "col-12">
 	        						<fieldset class = "form-group" id = "__BVID__640"> <!-- "가입한 이메일 주소를 입력해주세요" 및 입력 칸  -->
-	        							<legend tabindex = "-1" class = "bv-no-focus-ring col-form-labelpt-0" id = "__BVID__640__BV_label_">가입한 이메일 주소를 입력해주세요</legend>
+	        							<legend tabindex = "-1" class = "bv-no-focus-ring col-form-label pt-0" id = "__BVID__640__BV_label_">가입한 이메일 주소를 입력해주세요</legend>
 	        							<div>
 	        								<input data-v-4d09de91 name = "email" type="text" placeholder = "example@itPocket.com" 
 	        								class = "form-control" data-vv-name = "email" aria-invaild = "false" id= "__BVID__641">
@@ -258,4 +261,6 @@
     </div>
     
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/find-password.js"></script>
 </html>
