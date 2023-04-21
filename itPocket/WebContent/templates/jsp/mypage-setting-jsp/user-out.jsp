@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>계정 탈퇴</title>
 <link rel="shortcut icon" href="../../../static/image/shortcut.png">
 <link rel="stylesheet" href="../../../static/css/mypage-setting-css/user-out.css">
 <link rel="stylesheet" href="../../../static/css/font.css">

@@ -79,6 +79,15 @@ p {
     margin-bottom: 1rem;
 }
 
+.nav-list .nav-item{
+	padding: 0;
+}
+
+.open-padding{
+	margin: 0;
+}
+
+
 #app {
     text-size-adjust: 100%;
     display: flex;
@@ -300,9 +309,9 @@ section.d-none {
     font-weight: 400;
 }
 
-.footer-container-row .col-content .col-content-list-term .terms-group:first-child {
+/* .footer-container-row .col-content .col-content-list-term .terms-group:first-child {
     margin: 0 1.875rem 0 0;
-}
+} */
 
 .text {
 	padding: 0;

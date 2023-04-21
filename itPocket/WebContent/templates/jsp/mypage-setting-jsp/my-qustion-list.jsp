@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>내 질문 목록</title>
 <link rel="shortcut icon" href="../../../static/image/shortcut.png">
 <link rel="stylesheet" href="../../../static/css/mypage-setting-css/my-qustion-list.css">
 <link rel="stylesheet" href="../../../static/css/font.css">
@@ -93,7 +93,7 @@
             <div class="my-page-community-activity-container">
                 <div class="community-activity-container">
                     <section class="community-title-section">
-                        <h1 class="community-activity-title">내질문 목록</h1>
+                        <h1 class="community-activity-title">내 질문 목록</h1>
                     </section>
                     <ul class="tab-list">
                         <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
