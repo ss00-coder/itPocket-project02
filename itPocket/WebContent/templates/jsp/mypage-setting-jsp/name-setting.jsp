@@ -89,16 +89,17 @@
 				</section>
 			</div>
         </header>
+        <!-- 중간부분 -->
         <div id="app-body">
             <div class="container container-md">
                 <main class="account-info-container">
-                    <h1>이름 수정</h1>
+                    <h1>닉네임 수정</h1>
                     <div class="sign-container secondary lg">
                         <div class="header">
                             <div class="title">
                                 <img
                                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAgMEwyMCAwIDIwIDIwIDAgMjB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIgLTMwMSkgdHJhbnNsYXRlKDE2IDI4MSkgdHJhbnNsYXRlKDE2IDIwKSIvPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMzMjMyMzIiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEwIDJjLTQuNDE2IDAtOCAzLjU4NC04IDhzMy41ODQgOCA4IDggOC0zLjU4NCA4LTgtMy41ODQtOC04LTh6bS44IDEySDkuMlY5LjJoMS42VjE0em0wLTYuNEg5LjJWNmgxLjZ2MS42eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyIC0zMDEpIHRyYW5zbGF0ZSgxNiAyODEpIHRyYW5zbGF0ZSgxNiAyMCkiLz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==">
-                                <span>아무내용이나 입력해주세요</span>
+                                <span>비방 및 욕설이 들어간 닉네임은 삼가주세요</span>
                             </div>
                         </div>
                     </div>
@@ -108,9 +109,9 @@
                                 이름
                             </legend>
                             <div>
-                                <input type="text" placeholder="이름(실명)을 입력해 주세요" class="form-control is-valid">
+                                <input type="text" placeholder="닉네임을 입력해 주세요" class="form-control is-valid">
                             </div>
-                            <div id="pw-text" >이름을 입력해주세요</div>
+                            <div id="pw-text" >닉네임을 입력해주세요</div>
                         </fieldset>
                     </section>
                     <footer class="button-group">
