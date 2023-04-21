@@ -156,12 +156,12 @@
 			</div>
 		</div>
 	</div>
-	<!-- 하단부  -->
+	<!--하단부-->
 		<nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
 					<p class="text contact">1599-5319</p>
-					<p class="text middle">
+					<p class="text-middle">
 						평일 10:00 - 18:00 <br> (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
 					</p>
 					<a class="download"
@@ -180,7 +180,8 @@
 					<ul class="content-list">
 						<li class="open-padding"><span
 							class="text-middle title category"> 숨고소개 <span
-								class="new-badge" style="display: none;">N</span> <!----></span>
+								class="new-badge" style="display: none;">N</span>
+							<!----></span>
 							<div>
 								<a href="/about" class="text-middle category">회사소개 <span
 									class="new-badge" style="display: none;">N</span>
