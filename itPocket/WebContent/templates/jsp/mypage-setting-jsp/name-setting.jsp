@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>닉네임 수정</title>
 <link rel="shortcut icon" href="../../../static/image/shortcut.png">
 <link rel="stylesheet" href="../../../static/css/mypage-setting-css/name-setting.css">
 <link rel="stylesheet" href="../../../static/css/font.css">

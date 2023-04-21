@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Insert title here</title>
+<title>비밀번호 변경</title>
 <link rel="shortcut icon" href="../../../static/image/shortcut.png">
 <link rel="stylesheet" href="../../../static/css/mypage-setting-css/password-setting.css">
 <link rel="stylesheet" href="../../../static/css/font.css">
