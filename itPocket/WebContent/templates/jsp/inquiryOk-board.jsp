@@ -9,11 +9,10 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/faq-board.css">
+<link rel="stylesheet" href="../../static/css/inquiry-board.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
 <link rel="shortcut icon" href="../../static/image/shortcut.png">
-<title>자주 묻는 질문</title>
+<title>1:1 문의</title>
 </head>
 <body>
 	<div class="app">
@@ -86,85 +85,64 @@
 		</header>
 		<!--중단부 -->
 		<div id="app-body">
-			<div class="container">
-				<main class="page-content">
+			<div class="container container-md">
+				<main>
 					<article>
-						<!--게시판 헤더-->
-						<h1 class="page-heading-h1 font-weight-bold">
-							<i>👋🏼</i> 자주 묻는 질문
-						</h1>
-						<!--문의 목록-->
-						<article class="qna-list">
-							<dl class="faq-question-list">
-								<dt class="faq-question">
-									<span class="user-question">스터디는 어떻게 모집해야 하나요?</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>스터디 자유모집 게시판에서 자유롭게 글을 올리고 모집하면 됩니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">스터디 글을 끌올하는 방법은 없나요?</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>자신이 게시한 글에가서 수정을 통해 재등록하면 됩니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">전문가와 비전문가는 어떻게 구분하나요?</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>인증된 전문가는 프로필 옆에 전문가 뱃지로 표시됩니다. 
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">전공자가 아닌 사람도 전문가가 될수있나요?</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>전공자나 관련직종이 아닌사람도 추천과 게시물들을 통해 전문가로 선정될수 있습니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">문의하고싶은 내용이 있는데 어디서 할 수 있나요?</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>프로필 -> 마이페이지 -> 1:1문의에서 문의글을 작성할 수 있습니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">전문가 랭킹의 기준을 알고 싶어요</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>전문가 랭킹은 각 게시글의 추천수, 칼럼의 좋아요수가 종합되어 선정됩니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">전문가가 아니지만 칼럼을 작성하고 싶어요</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>전문가가 아니여도 칼럼은 작성가능합니다. 다만, 전문가 랭킹에는 추천수가 집계되지 않습니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">탈퇴 후 재가입 할 수 있나요?</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>탈퇴 후 30일 이후 재가입이 가능합니다. 단, 전에 작성했던 모든 댓글과 게시글은 삭제되니 주의해주세요.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">아이디를 수정하고 싶어요</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>아이디는 변경이 불가합니다. 아이디 변경을 원하실 경우 회원 탈퇴 후 새로운 아이디로 재가입 후 이용하실 수 있습니다.
-								</dd>
-								<dt class="faq-question">
-									<span class="user-question">개인정보를 수정하고 싶어요</span>
-								</dt>
-								<dd class="faq-answer">
-									<p>프로필 -> 마이페이지 에서 수정이 가능합니다.
-								</dd>
-								
-							</dl>
-							
-						</article>
+					<!--문의 내역-->
+						<div class="page-header"><h1>문의내역</h1>
+							<div>
+							<!--글쓰기 버튼-->
+								<div class="write-button-desktop">
+									<a href="write.jsp">
+										<button type="button" class="btn write-button btn-primary">
+											글쓰기 <i class="write"></i>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<section class="qna-list customer no-qna">
+							<div class="list-wrap">
+							<!--문의 항목-->
+							<article class="inquiry-qna-item">
+								<section class="summary">
+								<div class="inquiry-qna-head"><span class="waiting-answer">답변대기</span></div>
+								<div><p class="inquiry-qna-title">전문가가 될려면 어떻게 해야하나요?</p></div>
+								<div class="author">
+								<!--  -->
+								<p class="created-at">2023.04.21</p>
+								</div>
+								</section>
+							</article>
+							</div>
+							<div class="infinite-loading-container">
+								<div class="infinite-status-prompt" style="display: none;">
+									<div>
+										<div class="indicator-body center" style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(0, 199, 174) rgba(0, 199, 174, 0.2) rgba(0, 199, 174, 0.2); border-image: initial;"></div>
+										<p style="display: none;"></p>
+									</div>
+								</div>
+								<div class="infinite-status-prompt" style="display: none;">
+									<!-- 빈 문의 내역 -->
+									<article class="no-items align-self-center text-center">
+										<i><img src="../../static/image/question.svg" alt="empty"></i>
+										<h3>작성하신 문의내역이 없습니다.</h3>
+										<footer class="footer-buttons m-auto">
+											<div class="no-results-cta">
+											<!-- 문의글 쓰기 추가해야함 -->
+												<a class="btn btn-primary" href="write.jsp">문의글 작성하기</a>
+											</div>
+										</footer>
+									</article>
+								</div>
+								<div class="infinite-status-prompt" style="color: rgb(102, 102, 102); font-size: 14px; padding: 10px 0px;"></div>
+								<div class="infinite-status-prompt" style="color: rgb(102, 102, 102); font-size: 14px; padding: 10px 0px; display: none;">
+									<br>
+									<button class="btn-try-infinite"></button>
+								</div>
+							</div>
+						</section>
 					</article>
-					<!--위로 가기 버튼-->
-					<a id="top-btn" class="top-btn" role="button" aria-label="위로 가기 버튼" style="right: 211px;">
-						<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAgMEgyNFYyNEgweiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyMy4wMDAwMDAsIC02ODAuMDAwMDAwKSB0cmFuc2xhdGUoMzExLjAwMDAwMCwgNjY4LjAwMDAwMCkgdHJhbnNsYXRlKDEyLjAwMDAwMCwgMTIuMDAwMDAwKSIvPgogICAgICAgICAgICAgICAgICAgIDxnIHN0cm9rZT0iI0I1QjVCNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik03IDBMNyAxNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyMy4wMDAwMDAsIC02ODAuMDAwMDAwKSB0cmFuc2xhdGUoMzExLjAwMDAwMCwgNjY4LjAwMDAwMCkgdHJhbnNsYXRlKDEyLjAwMDAwMCwgMTIuMDAwMDAwKSB0cmFuc2xhdGUoNS4wMDAwMDAsIDQuNTAwMDAwKSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMCA3TDcgMCAxNCA3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIzLjAwMDAwMCwgLTY4MC4wMDAwMDApIHRyYW5zbGF0ZSgzMTEuMDAwMDAwLCA2NjguMDAwMDAwKSB0cmFuc2xhdGUoMTIuMDAwMDAwLCAxMi4wMDAwMDApIHRyYW5zbGF0ZSg1LjAwMDAwMCwgNC41MDAwMDApIi8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="위로 가기">
-					</a>
 				</main>
 			</div>
 		</div>
@@ -293,7 +271,4 @@
 		</nav>
 	</div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/top-button.js"></script>
-<script src="../../static/js/faq-board.js"></script>
 </html>
