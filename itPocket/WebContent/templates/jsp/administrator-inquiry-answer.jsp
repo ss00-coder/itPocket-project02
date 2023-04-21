@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/administrator-post.css">
 <link rel="stylesheet" href="../../static/css/administrator-inquiry-answer.css">
+<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
 <title>문의사항 답변</title>
 <link rel="shortcut icon" href="../../static/image/shortcut.png">
 </head>

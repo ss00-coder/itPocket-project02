@@ -189,9 +189,9 @@ section.body{
 }
 
 .comment-content{
-	width: 900px;
-	height: 100px;
-	font-size: 13px;
+	width: 80%;
+	height: 65%;
+	font-size: 1rem;
 	padding: 10px;
 	resize: none;
 }
