@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
-
+<link rel="shortcut icon" href="../../static/image/shortcut.png">
 </head>
 <body class="life-topic">
 	<div class="webp-bgroup">
@@ -25,11 +25,11 @@
 						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
-							<div class="logo">
-								<a> <img
-									src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
-								</a>
-							</div>
+                     <div class="logo">
+                        <a href="main.jsp"> 
+                           <img src="../../static/image/logo.png">
+                        </a>
+                     </div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->

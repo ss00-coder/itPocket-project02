@@ -126,7 +126,7 @@ li .link-text {
 }
 
 li.selected {
-	background-color: #eafaf9;
+	background-color: #cabee3;
 }
 
 .topic li {
@@ -341,7 +341,7 @@ li.selected span {
 }
 
 .curation .slick-slide:first-child .admin-post {
-	background-color: #00c7ae;
+	background-color: #655DBB;
 }
 
 .curation-item {
