@@ -5,31 +5,40 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../../static/css/administrator-inquiry-answer.css">
+<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
 <title>문의사항 답변</title>
+<link rel="shortcut icon" href="../../static/image/shortcut.png">
 </head>
 <body>
-	<div class="wrap">
+    <div class="wrap">
         <nav class="menu">
             <div class="logo">
-                <img src="" alt="">
+                <img src="../../static/image/logo.png" alt="">
             </div>
             <hr>
-            <ul>
-                <li><a href="main.jsp">사이트 바로가기</a></li>
-                <li><a href="administrator-post.jsp">게시글 관리</a></li>
-                <li><a href="administrator-comment.jsp">댓글 관리</a></li>
-                <li><a href="administrator-member.jsp">회원 관리</a></li>
-                <li><a href="administrator-enquiry.jsp" class="active">문의사항 관리</a></li>
-            </ul>
+            <ul class="menu-list">
+				<li><a href="main.jsp">사이트 바로가기</a></li><hr>
+                <li><a href="administrator-post.jsp">
+                	<span><img src="../../static/image/post_icon.png">&nbsp;&nbsp;게시글 관리</span>
+               	</a></li><hr>
+                <li><a href="administrator-comment.jsp">
+                	<span><img src="../../static/image/comment_icon.png">&nbsp;&nbsp;댓글 관리</span>
+                </a></li><hr>
+                <li><a href="administrator-member.jsp">
+                	<span><img src="../../static/image/member_icon.png">&nbsp;&nbsp;회원 관리</span>
+                </a></li><hr>
+                <li><a href="administrator-inquiry.jsp" class="active">
+                	<span><img src="../../static/image/post_icon.png">&nbsp;&nbsp;문의사항 관리</span>
+                </a></li>  
             </ul>
         </nav>
         <div class="title">
-            <h4>문의사항 관리</h4>
+            <span>문의사항 관리</span>
         </div>
         <section class="body">
             <div class="board-wrap">
                 <div class="board-body">
-                    <div class="board-view-wrap">
+                	<div class="board-list-wrap">
                         <div class="board-view">
 							<div class="name">
 								<h2>글이 안써져여</h2>
@@ -67,13 +76,11 @@
 								글이 안써져요. 글이 안써져요. 글이 안써져요.
 							</div>
                         </div>
-                    </div>
-
-                   	<div class="comment">
-                   		<textarea placeholder="답변을 입력해주세요." class="comment-content"></textarea>
-                        <input type="button" class="button-end" value="답변 달기">
-                   	</div>
-                        
+	                   	<div class="comment">
+	                   		<textarea placeholder="답변을 입력해주세요." class="comment-content"></textarea>
+	                        <input type="button" class="button-end" value="답변 달기">
+	                   	</div>
+                	</div>
                 </div>
             </div>
         </section>
