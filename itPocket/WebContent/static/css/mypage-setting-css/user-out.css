@@ -163,12 +163,12 @@ input {
 }
 
 .button-group .btn-cancel.btn-active {
-    color: #00c7ae;
+    color: #655dbb!important;
     background: #fff;
 }
 
 .button-group .btn-cancel {
-    color: #00c7ae;
+    color: #655dbb!important;
     border: 0.0625rem solid #e1e1e1;
 }
 
@@ -196,8 +196,8 @@ input {
 
 .btn-primary {
     color: #fff;
-    background-color: #00c7ae;
-    border-color: #00c7ae;
+    background-color: #655dbb!important;
+    border-color: #655dbb!important;
 }
 
 .button-group>.btn+.btn {
@@ -234,7 +234,7 @@ input {
 }
 
 .color-teal {
-    color: #00c7ae;
+    color: #655dbb!important;
 }
 
 .check-list ol li+li {
@@ -307,8 +307,8 @@ input+label {
 }
 
 .btn-outline-primary {
-    color: #00c7ae;
-	border: 0.0625rem solid #00c7ae!important;
+    color: #655dbb!important;
+	border: 0.0625rem solid #655dbb!important;
     text-decoration: none;
 }
 
@@ -327,8 +327,8 @@ input+label {
 
 .btn-primary {
     color: #fff;
-    background-color: #00c7ae;
-    border-color: #00c7ae;
+    background-color: #655dbb!important;
+    border-color: #655dbb!important;
 }
 
 #app-header {
