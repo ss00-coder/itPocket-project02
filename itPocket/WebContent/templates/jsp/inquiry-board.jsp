@@ -11,6 +11,7 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="../../static/css/inquiry-board.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
+<link rel="shortcut icon" href="../../static/image/shortcut.png">
 <title>1:1 문의</title>
 </head>
 <body>
@@ -23,10 +24,10 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a> <img
-									src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
-								</a>
-							</div>
+                       			<a href="main.jsp"> 
+                           		<img src="../../static/image/logo.png">
+                        		</a>
+                     		</div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
@@ -112,7 +113,7 @@
 								<div class="infinite-status-prompt">
 									<article class="no-items align-self-center text-center">
 									<!-- 빈 문의 내역 -->
-										<i><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MSA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEyODAlIiBpZD0iOThxZzh3ZHdpYiI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMEM3QUUiIG9mZnNldD0iMCUiLz4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzRCQzhFNCIgb2Zmc2V0PSIxMDAlIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iNTAlIiB4Mj0iMTAwJSIgeTI9IjUwJSIgaWQ9Ijh0cHkyaGxiNGUiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDBDN0FFIiBvZmZzZXQ9IjAlIi8+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM0QkM4RTQiIG9mZnNldD0iMTAwJSIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdGggZD0iTTQwIDgwYzIyLjA5MSAwIDQwLTE3LjkwOSA0MC00MFM2Mi4wOTEgMCA0MCAwIDAgMTcuOTA5IDAgNDBzMTcuOTA5IDQwIDQwIDQweiIgaWQ9InBjcnNucTlzaGEiLz4KICAgICAgICA8cGF0aCBkPSJNNDAgODBjMjIuMDkxIDAgNDAtMTcuOTA5IDQwLTQwUzYyLjA5MSAwIDQwIDAgMCAxNy45MDkgMCA0MHMxNy45MDkgNDAgNDAgNDB6IiBpZD0idWFudGkzdmxlZCIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBvcGFjaXR5PSIuNTAyIj4KICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjUpIj4KICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJ0d2ZmMmw0NTRjIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwY3JzbnE5c2hhIi8+CiAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNDAgODBjMjIuMDkxIDAgNDAtMTcuOTA5IDQwLTQwUzYyLjA5MSAwIDQwIDAgMCAxNy45MDkgMCA0MHMxNy45MDkgNDAgNDAgNDB6IiBmaWxsPSJ1cmwoIzk4cWc4d2R3aWIpIiBtYXNrPSJ1cmwoI3R3ZmYybDQ1NGMpIi8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjUpIj4KICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtY3o0cXlpNWxmIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiN1YW50aTN2bGVkIi8+CiAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNDAgODBjMjIuMDkxIDAgNDAtMTcuOTA5IDQwLTQwUzYyLjA5MSAwIDQwIDAgMCAxNy45MDkgMCA0MHMxNy45MDkgNDAgNDAgNDB6IiBmaWxsPSJ1cmwoIzh0cHkyaGxiNGUpIiBtYXNrPSJ1cmwoI21jejRxeWk1bGYpIi8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI0ZGRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My45NzIgMjVjMi41IDAgNC41MjggMi4wMDEgNC41MjggNC40N3YyNS4zOGMwIDEuMjM1LTEuMDE0IDIuMjM2LTIuMjY0IDIuMjM2YTIuMjc5IDIuMjc5IDAgMCAxLTEuNjA0LS42NThsLTUuMTk1LTUuMTQ2aC0yMi40MWMtMi41IDAtNC41MjctMi4wMDEtNC41MjctNC40N1YyOS40N0MyMi41IDI3IDI0LjUyNyAyNSAyNy4wMjggMjVoMjYuOTQ0em0wIDIuOTA1SDI3LjAyOGMtLjgwMyAwLTEuNDY2LjU4OS0xLjU3IDEuMzUybC0uMDE1LjIxM3YxNy4zNDJjMCAuNzkyLjU5NiAxLjQ0NyAxLjM3IDEuNTVsLjIxNS4wMTVoMjIuNDFjLjY3IDAgMS4zMTcuMjI1IDEuODM2LjYzNWwuMjQ4LjIyIDQuMDM1IDMuOTk2VjI5LjQ3YzAtLjc5Mi0uNTk2LTEuNDQ3LTEuMzctMS41NWwtLjIxNS0uMDE1eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNNDYuODkgMzMuMWExLjM1IDEuMzUgMCAwIDEgLjE4MyAyLjY4OGwtLjE4My4wMTJoLTEyLjZhMS4zNSAxLjM1IDAgMCAxLS4xODMtMi42ODhsLjE4My0uMDEyaDEyLjZ6TTQwLjU5IDM5Ljc2YTEuMzUgMS4zNSAwIDAgMSAuMTgzIDIuNjg4bC0uMTgzLjAxMmgtNi4zYTEuMzUgMS4zNSAwIDAgMS0uMTgzLTIuNjg4bC4xODMtLjAxMmg2LjN6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="empty"></i>
+										<i><img src="../../static/image/question.svg" alt="empty"></i>
 										<h3>작성하신 문의내역이 없습니다.</h3>
 										<footer class="footer-buttons m-auto">
 											<div class="no-results-cta">
