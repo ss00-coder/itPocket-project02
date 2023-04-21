@@ -7,17 +7,19 @@
 <link rel="stylesheet" href="../../static/css/login.css" />
 <link rel="stylesheet" href="../../static/css/inquiry-board.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+	rel="stylesheet">
 <title>login</title>
 </head>
 <body>
 	<div id="app-body">
-	<header class="global-header">
+		<header class="global-header">
 			<div class="global-navigation-bar">
 				<section class="d-none d-lg-block d-xl-block d-xl-block">
 					<div class="desktop-header">
 						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
-						<div class="left-section">
+						<div class="left-sec tion">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
 								<a> <img
@@ -98,9 +100,8 @@
 										autocorrect="off" spellcheck="false" autocapitalize="off"
 										data-vv-validate-on="blur" aria-invalid="true"
 										id="__BVID__367" aria-required="true" />
-									 <div data-v-2e241a14="" class="invalid-feedback" id="email-feedback">
-                      					이메일 주소를 입력해주세요.
-                    				</div>
+									<div data-v-2e241a14="" class="invalid-feedback"
+										id="email-feedback">이메일 주소를 입력해주세요.</div>
 									<!---->
 									<!---->
 									<!---->
@@ -112,8 +113,7 @@
 								id="__BVID__368">
 								<legend tabindex="-1"
 									class="bv-no-focus-ring col-form-label pt-0"
-									id="__BVID__368__BV_label_"> 비밀번호
-								</legend>
+									id="__BVID__368__BV_label_"> 비밀번호 </legend>
 								<div>
 									<input data-v-2e241a14="" name="password" type="password"
 										placeholder="비밀번호를 입력해주세요." autocomplete="off"
@@ -121,10 +121,9 @@
 										data-testid="login-password" x-autocompletetype="off"
 										autocorrect="off" spellcheck="false" autocapitalize="off"
 										data-vv-validate-on="blur" aria-invalid="true"
-										id="__BVID__369" aria-required="true" />
-										<small data-v-2e241a14="" class="form-text text-invalid">
-											비밀번호를 입력해주세요.
-										</small>
+										id="__BVID__369" aria-required="true" /> <small
+										data-v-2e241a14="" class="form-text text-invalid">
+										비밀번호를 입력해주세요. </small>
 									<!---->
 									<!---->
 									<!---->
@@ -136,8 +135,8 @@
 							<button data-v-2e241a14="" data-testid="btn-login" type="submit"
 								class="btn btn-login btn-primary">
 								<span data-v-2e241a14="">이메일 로그인</span><span data-v-2e241a14=""
-									style="display: none"><div
-										data-v-fc3fcce8="" data-v-2e241a14="" class="">
+									style="display: none"><div data-v-fc3fcce8=""
+										data-v-2e241a14="" class="">
 										<div data-v-fc3fcce8="" class="indicator-body"
 											style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
 										<p data-v-fc3fcce8="" style="display: none"></p>
@@ -158,8 +157,7 @@
 				</form>
 			</div>
 		</div>
-	</div>
-	<nav id="app-footer" class="footer-container">
+		<nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
 					<p class="text contact">1599-5319</p>
@@ -182,8 +180,7 @@
 					<ul class="content-list">
 						<li class="open-padding"><span
 							class="text-middle title category"> 숨고소개 <span
-								class="new-badge" style="display: none;">N</span>
-							<!----></span>
+								class="new-badge" style="display: none;">N</span> <!----></span>
 							<div>
 								<a href="/about" class="text-middle category">회사소개 <span
 									class="new-badge" style="display: none;">N</span>
@@ -281,6 +278,7 @@
 				</div>
 			</div>
 		</nav>
+	</div>
 </body>
 <script src="../../static/js/login.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
