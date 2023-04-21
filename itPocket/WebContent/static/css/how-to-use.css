@@ -19,6 +19,14 @@ body {
     background-color: #fff;
 }
 
+.container {
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #app-body {
     height: 100%;
     position: relative;
@@ -77,7 +85,7 @@ img {
 }
 
 .guide-for-user .hero {
-	background-image: linear-gradient(180deg,rgba(0,5,13,0),rgba(0,5,13,.3)),url(https://assets.cdn.soomgo.com/images/guide-for-user/img-customer-howto-hero@3x.png);
+	background-image: linear-gradient(180deg,rgba(0,5,13,0),rgba(0,5,13,.3)),url(../../static/image/how-to-use.jpg);
 	padding: 8.25rem 0;
 	height: 30rem;
     background-position: 50%;
@@ -137,10 +145,10 @@ img {
     line-height: 1.5;
 }
 
-.btn-primary {
+.webp-bgroup .btn-primary {
     color: #fff;
-    background-color: #00c7ae;
-    border-color: #00c7ae;
+    background-color: #7149c6;
+    border-color: #7149c6;
 }
 
 .guide-for-user .contents-section {
@@ -182,7 +190,7 @@ img {
 .guide-for-user .how-to-use .image-content {
     padding: 2.5625rem 3.75rem 0;
     margin-left: 2.5rem;
-    background-color: #eafaf9;
+    background-color: #e3dffd;
     border-radius: 16px;
     width: 50%;
 }
@@ -260,13 +268,15 @@ img {
 }
 
 .guide-for-user .contents-item .cta span {
-    color: #00c7ae;
+    color: #7149C6;
     font-size: 1rem;
     margin-right: 0.125rem;
 }
 
 .guide-for-user .use-in-other-ways .icon {
     position: absolute;
-    right: 1.5rem;
-    bottom: 1.5rem;
+    right: 2rem;
+    width: 5.5rem;
+    bottom: 2rem;
+    object-fit: contain;
 }
