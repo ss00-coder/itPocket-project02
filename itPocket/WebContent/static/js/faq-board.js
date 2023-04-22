@@ -22,11 +22,3 @@ $('dl').each( function() {
             dd.removeClass("closed");
         }
     });
-
-$('dt').click(function(){
-	 if ($('.faq-answer').css('display') == 'block') {
-            $('.faq-answer').css('display', 'none');
-        } else {
-            $('.faq-answer').css('display', 'block');
-        }
-})
