@@ -34,19 +34,19 @@
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>서비스요청</span>
+											<span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp"
-										class="gnb-link"> <span>고수찾기</span>
+										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>마켓</span>
+											<span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>커뮤니티</span>
+										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>

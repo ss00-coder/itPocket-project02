@@ -5,10 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>언어별 q&a 게시판</title>
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/font.css">
 <link rel="stylesheet" href="../../static/css/list-by-language.css">
+<link rel="stylesheet" href="../../static/css/global-header.css">
+<link rel="stylesheet" href="../../static/css/public.css">
+<link rel="stylesheet" href="../../static/css/font.css">
 <link rel="stylesheet" href="../../static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>서비스요청</span>
+										class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp"

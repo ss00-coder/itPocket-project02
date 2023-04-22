@@ -36,7 +36,7 @@
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>서비스요청</span>
+										class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp"

@@ -37,7 +37,7 @@
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>서비스요청</span>
+											<span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp"
@@ -445,22 +445,19 @@
 												<li class="level1">전체
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">레슨
+												<li class="parent level1">직장인
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">레슨
+												<li class="parent level1">취준생
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">레슨
+												<li class="parent level1">학생
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">레슨
+												<li class="parent level1">자기개발
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">레슨
-													<div class="bottom-border"></div>
-												</li>
-												<li class="parent level1">레슨
+												<li class="parent level1">취미
 													<div class="bottom-border"></div>
 												</li>
 											</ul>
@@ -478,26 +475,55 @@
 												<li class="parent level1">서울
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">서울
+												<li class="parent level1">세종
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">서울
+												<li class="parent level1">강원
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">서울
+												<li class="parent level1">인천
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">서울
+												<li class="parent level1">경기
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">서울
+												<li class="parent level1">충북
 													<div class="bottom-border"></div>
 												</li>
-												<li class="parent level1">서울
+												<li class="parent level1">충남
 													<div class="bottom-border"></div>
 												</li>
-
-
+												<li class="parent level1">경북
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">대전
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">대구
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">전북
+													<div class="bottom-border"></div>													
+												</li>
+												<li class="parent level1">울산
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">광주
+													<div class="bottom-border"></div>													
+												</li>
+												</li>
+												<li class="parent level1">경남
+													<div class="bottom-border"></div>													
+												</li>
+												<li class="parent level1">부산
+													<div class="bottom-border"></div>
+												</li>
+												<li class="parent level1">전남
+													<div class="bottom-border"></div>													
+												</li>	
+												<li class="parent level1">제주
+													<div class="bottom-border"></div>													
+												</li>																																				
 											</ul>
 										</div>
 									</div>
