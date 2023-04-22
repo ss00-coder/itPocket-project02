@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../../static/image/shortcut.png">
+	<link rel="logo" href="../../static/image/logo.png">
 	<title>비밀번호 재설정을 위한 이메일 발송</title>
 </head>
 <body class = "find-password-done">
@@ -29,8 +31,8 @@
                   <div class="left-section">
                      <!-- 숨고 로고 대체제 만들어야되요 -->
                      <div class="logo">
-                        <a> <img
-                           src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
+                        <a href="main.jsp"> 
+                           <img src="../../static/image/logo.png">
                         </a>
                      </div>
                      <nav>
