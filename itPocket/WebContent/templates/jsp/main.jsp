@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="../../static/css/font.css">
 <link rel="stylesheet" href="../../static/css/public.css">
 <link rel="stylesheet" href="../../static/css/global-header-main2.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
 <link rel="stylesheet" href="../../static/css/main.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
+<link rel="stylesheet" href="../../static/css/footer.css">
 <title>메인페이지</title>
 <link rel="shortcut icon" href="../../static/image/shortcut.png">
 </head>
@@ -36,7 +36,7 @@
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
+									<li class="nav-item left-section-item"><a href="how-to-use.jsp" class="gnb-link">
 										<span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
@@ -44,7 +44,7 @@
 										<span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
+									<li class="nav-item left-section-item"><a href="master-know-how-free.jsp" class="gnb-link">
 										<span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
@@ -58,7 +58,6 @@
 						<div class="center-section">
 							<div class="service-searcher-desktop">
 								<form class="global-search-bar">
-									<!--  suggestion-opened js로 넣어야할듯 -->
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQgNCkiIHN0cm9rZT0iI0I1QjVCNSIgc3Ryb2tlLXdpZHRoPSIxLjYiPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGN4PSI2LjUiIGN5PSI2LjUiIHI9IjYuNSIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Im0xMS41IDExLjUgNSA1Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
@@ -76,9 +75,9 @@
 							<nav class="nav-list">
 								<ul class="nav-list">
 									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a class="gnb-link"><span>로그인</span> </a></li>
+									<li class="nav-item right-section-item"><a href="login.jsp" class="gnb-link"><span>로그인</span> </a></li>
 									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a class="gnb-link"><span>회원가입</span> </a></li>
+									<li class="nav-item right-section-item"><a href="join.jsp" class="gnb-link"><span>회원가입</span> </a></li>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
@@ -114,7 +113,7 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
+												<a href="main.jsp" target="_self">
 													<img src="../../static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
@@ -124,7 +123,7 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
+												<a href="main.jsp" target="_self">
 													<img src="../../static/image/main_banner2.png" class="banner-image">
 												</a>
 											</div>
@@ -134,7 +133,7 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
+												<a href="master-know-how-free.jsp" target="_self">
 													<img src="../../static/image/main_banner3.png" class="banner-image">
 												</a>
 											</div>
@@ -144,7 +143,7 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
+												<a href="study.jsp" target="_self">
 													<img src="../../static/image/main_banner4.png" class="banner-image">
 												</a>
 											</div>
@@ -154,7 +153,7 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
+												<a href="list-by-language.jsp" target="_self">
 													<img src="../../static/image/main_banner5.png" class="banner-image">
 												</a>
 											</div>
@@ -172,7 +171,7 @@
 									<div class="slick-slide" style="outline: none; width: 970px;">
 										<div>
 											<div class="banner-item" style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
+												<a href="main.jsp" target="_self">
 													<img src="../../static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
@@ -196,42 +195,42 @@
 				<!-- 게시판 아이콘 -->
 				<ul class="main-category category-list container">
 					<!-- 같은거 복붙 (8개) -->
-					<li class="category-item java"><a href="">
+					<li class="category-item java"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">Java</div>
 							</div>
 					</a></li>
-					<li class="category-item c"><a href="">
+					<li class="category-item c"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">C</div>
 							</div>
 					</a></li>
-					<li class="category-item python"><a href="">
+					<li class="category-item python"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">Python</div>
 							</div>
 					</a></li>
-					<li class="category-item oracle"><a href="">
+					<li class="category-item oracle"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">Oracle</div>
 							</div>
 					</a></li>
-					<li class="category-item mysql"><a href="">
+					<li class="category-item mysql"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">MySQL</div>
 							</div>
 					</a></li>
-					<li class="category-item html"><a href="">
+					<li class="category-item html"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">HTML</div>
 							</div>
 					</a></li>
-					<li class="category-item css"><a href="">
+					<li class="category-item css"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">CSS</div>
 							</div>
 					</a></li>
-					<li class="category-item javascript"><a href="">
+					<li class="category-item javascript"><a href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">JavaScript</div>
 							</div>
@@ -291,7 +290,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -323,7 +322,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -355,7 +354,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -387,7 +386,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -419,7 +418,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -451,7 +450,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -483,7 +482,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -515,7 +514,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -547,7 +546,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -579,7 +578,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -611,7 +610,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -643,7 +642,7 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp" style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -847,8 +846,8 @@
 							<div class="curation-container half-list">
 								<ul data-testid="curation-list" class="curation-list">
 									<li data-testid="curation-item" class="curation-list-item">
-										<!-- 글 개수만큼 붙여넣기 (3개) --> <a href=""
-										class="curation-list-wrapper">
+										<!-- 글 개수만큼 붙여넣기 (3개) --> 
+										<a href="master-know-how-free-detail.jsp" class="curation-list-wrapper">
 											<div class="curation-contents has-thumbnail">
 												<p class="topic-name">궁금해요</p>
 												<p class="curation-title">메인페이지 언제 끝나요?</p>
@@ -859,7 +858,8 @@
 														class="comment-count">12</span>
 												</div>
 											</div>
-									</a> <a href="" class="curation-list-wrapper">
+										</a> 
+										<a href="master-know-how-free-detail.jsp" class="curation-list-wrapper">
 											<div class="curation-contents has-thumbnail">
 												<p class="topic-name">궁금해요</p>
 												<p class="curation-title">메인페이지 언제 끝나요?</p>
@@ -870,7 +870,8 @@
 														class="comment-count">12</span>
 												</div>
 											</div>
-									</a> <a href="" class="curation-list-wrapper">
+										</a> 
+										<a href="master-know-how-free-detail.jsp" class="curation-list-wrapper">
 											<div class="curation-contents has-thumbnail">
 												<p class="topic-name">궁금해요</p>
 												<p class="curation-title">메인페이지 언제 끝나요?</p>
@@ -881,13 +882,14 @@
 														class="comment-count">12</span>
 												</div>
 											</div>
-									</a> <!-- 여기까지 -->
+										</a> 
+										<!-- 여기까지 -->
 									</li>
 								</ul>
 							</div>
 							<div class="knowhow-container half-list">
 								<!-- 같은거 복붙 (2개) -->
-								<a href="" class="knowhow-card-slide" data-testid="knowhow-item">
+								<a href="master-know-how-free-detail.jsp" class="knowhow-card-slide" data-testid="knowhow-item">
 									<img class="thumb-image" data-src=""
 									src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?h=320&w=480"
 									alt="" lazy="loaded">
@@ -901,7 +903,8 @@
 										</div>
 										<p class="author">임희수</p>
 									</div>
-								</a> <a href="" class="knowhow-card-slide"
+								</a> 
+								<a href="master-know-how-free-detail.jsp" class="knowhow-card-slide"
 									data-testid="knowhow-item"> <img class="thumb-image"
 									data-src=""
 									src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?h=320&w=480"
@@ -926,7 +929,7 @@
 				<!-- <div class="observer-container container no-mobile-padding"></div> -->
 				<!-- 중간 고정 배너 -->
 				<div class="main-app-banner container">
-					<div class="app-download-banner"></div>
+					<a href=""><div class="app-download-banner"></div></a>
 				</div>
 				<!-- 쓱싹쓱싹 청소하는 날, 오늘도 운동 완료, 자동차를 부탁해, 무엇이든 고치는 고수들, 취미 생활도 나답게 -> 핫한 질문, 미답변 질문-->
 				<div class="main-exhibition container no-mobile-padding">
