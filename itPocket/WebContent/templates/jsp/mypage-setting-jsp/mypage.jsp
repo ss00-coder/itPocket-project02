@@ -89,6 +89,7 @@
 				</section>
 			</div>
         </header>
+        <!-- 중간부분 -->
         <div id="app-body">
             <div class="container container-md">
                 <div class="mypage-container">
@@ -96,7 +97,7 @@
 
                     <!-- 상단부 메뉴 -->
                     <div class="profile-container underline">
-                        <a href="../account-setting/account-setting.html" class="profile-setting">
+                        <a href="account-setting.jsp" class="profile-setting">
                             <span class="thumb">
                                 <span class="user-profile-picture h-100">
                                     <div data-name="image" class="is-square"></div>
@@ -130,7 +131,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="" class="sub-menu-list">
+                                <a href="../profile.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나의 고수 페이지로 이동</span>
@@ -152,7 +153,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="../my-qustion-list/my-qustion-list.html" class="sub-menu-list">
+                                <a href="my-qustion-list.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 질문</span>
@@ -166,7 +167,7 @@
                                 </a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="../my-answer-list/my-answer-list.html" class="sub-menu-list">
+                                <a href="my-answer-list.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 답변</span>
@@ -180,7 +181,7 @@
                                 </a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="../my-comment-list/my-comment-list.html" class="sub-menu-list">
+                                <a href="my-comment-list.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 댓글</span>
@@ -198,20 +199,20 @@
                         <!-- 세번째 메뉴 -->
                         <ul class="underline">
                             <li class="main-menu">
-                                스터디 모집
+                                스터디 찾기
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="" class="sub-menu-list">
+                                <a href="../study.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
-                                            <span class="sub-menu-title">나만의 스터디 모집</span>
+                                            <span class="sub-menu-title">스터디 모집글 보러가기</span>
                                         </div>
                                     </div>
                                     <div class="arrow">
                                         <span class="right-arrow">
                                             <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
-                                        </span>
+                                        </span>	
                                     </div>
                                 </a>
                             </li>
@@ -257,7 +258,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="" class="sub-menu-list">
+                                <a href="../inquiry-board.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">문의내역</span>

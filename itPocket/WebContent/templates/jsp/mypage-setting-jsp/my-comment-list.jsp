@@ -97,11 +97,14 @@
                     </section>
                     <ul class="tab-list">
                         <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
-                            메뉴1
+                            스터디
                         </li>
                         <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
-                            메뉴2
+                            노하우
                         </li>
+                        <!-- <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
+                            
+                        </li> -->
                     </ul>
                     <section class="community-content-section white">
                         <article class="no-items align-self-center text-center no-items">
