@@ -272,3 +272,11 @@ input[type=checkbox], input[type=radio] {
     background-color: #655DBB!important;
     border-color: #655DBB!important;
 }
+
+.container {
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}

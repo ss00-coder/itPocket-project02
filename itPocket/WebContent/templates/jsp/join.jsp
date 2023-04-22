@@ -5,13 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../../static/css/join.css" />
-<link rel="stylesheet" href="../../static/css/inquiry-board.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
+<link rel="stylesheet" href="../../static/css/public.css">
+<link rel="stylesheet" href="../../static/css/font.css">
+<link rel="stylesheet" href="../../static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
+<link rel="shortcut icon" href="../../static/image/shortcut.png">
 <title>join</title>
 </head>
 <body class="sign-up">
@@ -25,27 +28,26 @@
 							<div class="left-section">
 								<!-- 숨고 로고 대체제 만들어야되요 -->
 								<div class="logo">
-									<a> <img
-										src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
+									<a href="main.jsp"> <img src="../../static/image/logo.png">
 									</a>
 								</div>
 								<nav>
 									<ul class="nav-list">
 										<!-- 서비스 요청 -->
 										<li class="nav-item left-section-item "><a
-											class="gnb-link"> <span>서비스요청</span>
+											class="gnb-link"> <span>사이트소개</span>
 										</a></li>
 										<!-- 고수찾기 -->
 										<li class="nav-item left-section-item"><a
-											href="study.jsp" class="gnb-link"> <span>고수찾기</span>
+											href="study.jsp" class="gnb-link"> <span>스터디</span>
 										</a></li>
-										<!-- 마켓 -->
+										<!-- 노하우 -->
 										<li class="nav-item left-section-item"><a
-											class="gnb-link"> <span>마켓</span>
+											href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
 										</a></li>
-										<!-- 커뮤니티 -->
+										<!-- Q&A -->
 										<li class="nav-item left-section-item"><a
-											href="list-by-language.jsp" class="gnb-link"> <span>커뮤니티</span>
+											href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
 										</a></li>
 									</ul>
 								</nav>
@@ -161,7 +163,7 @@
 									</div>
 								</fieldset>
 							</div>
-							
+
 							<div data-v-2ef2701c="" class="col-12">
 								<button data-v-2ef2701c="" data-testid="btn-signup"
 									type="submit" class="btn btn-signup btn-primary">
@@ -313,7 +315,7 @@
 				</div>
 			</div>
 		</nav>
-		
+
 	</div>
 </body>
 </html>

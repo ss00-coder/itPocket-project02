@@ -1,21 +1,21 @@
 package com.app.member.domain;
 
 public class MemberVO {
-	   private Long memberId;
-	   private String memberEmai;
-	   private String memberPassword;
-	   private String memberNickname;
-	   private String memberRegion;
-	   private String memberRegisterDate;
-	   private boolean memberIsExpert;
-	   private boolean memberIsRemaining;
-	   private String memberType;
-	   private String memberFile_name;
-	   private String memberFileOriginal_name;
-	   private String memberFilePath;
-	   private int memberFileSize;
-	   
-	   public MemberVO() {;}
+	private Long memberId;
+	private String memberEmai;
+	private String memberPassword;
+	private String memberNickname;
+	private String memberRegion;
+	private String memberRegisterDate;
+	private boolean memberIsExpert;
+	private boolean memberIsRemaining;
+	private String memberType;
+	private String memberFile_name;
+	private String memberFileOriginal_name;
+	private String memberFilePath;
+	private int memberFileSize;
+
+	public MemberVO() {;}
 
 	public Long getMemberId() {
 		return memberId;
@@ -155,7 +155,5 @@ public class MemberVO {
 			return false;
 		return true;
 	}
-	   
-	   
-	
+
 }

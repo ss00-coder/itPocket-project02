@@ -5,8 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../../static/css/login.css" />
-<link rel="stylesheet" href="../../static/css/inquiry-board.css">
 <link rel="stylesheet" href="../../static/css/global-header.css">
+<link rel="stylesheet" href="../../static/css/public.css">
+<link rel="stylesheet" href="../../static/css/font.css">
+<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
@@ -15,6 +19,7 @@
 </head>
 <body>
 	<div id="app-body">
+		<!-- 상단부 -->
 		<header class="global-header">
 			<div class="global-navigation-bar">
 				<section class="d-none d-lg-block d-xl-block d-xl-block">
@@ -23,27 +28,26 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a> <img
-									src="https://assets.cdn.soomgo.com/icons/icon-navi-logo.svg">
+								<a href="main.jsp"> <img src="../../static/image/logo.png">
 								</a>
 							</div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>서비스요청</span>
+										class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp"
-										class="gnb-link"> <span>고수찾기</span>
+										class="gnb-link"> <span>스터디</span>
 									</a></li>
-									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>마켓</span>
-									</a></li>
-									<!-- 커뮤니티 -->
+									<!-- 노하우 -->
 									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>커뮤니티</span>
+										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
+									</a></li>
+									<!-- Q&A -->
+									<li class="nav-item left-section-item"><a
+										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
@@ -81,34 +85,39 @@
 					</div>
 				</section>
 			</div>
-		</header>	
+		</header>
+		<!-- 중단부 -->
 		<div data-v-e48acaee="" data-testid="login-page" class="login-page">
 			<h2 data-v-e48acaee="">로그인</h2>
 			<div data-v-e48acaee="" class="card">
 				<form data-v-2e241a14="" data-v-e48acaee="" autocomplete="off"
 					class="">
 					<div data-v-2e241a14="" class="form-row login-form">
+						<!-- 이메일 -->
 						<div data-v-2e241a14="" class="col-12">
 							<fieldset data-v-2e241a14="" class="form-group" id="__BVID__366">
 								<legend tabindex="-1"
 									class="bv-no-focus-ring col-form-label pt-0"
 									id="__BVID__366__BV_label_"> 이메일 </legend>
 								<div>
+									<!-- 이메일 입력 input 테그 -->
 									<input data-v-2e241a14="" name="email" type="email"
 										placeholder="example@soomgo.com" autocomplete="off"
-										class="text-input form-control is-invalid invalid"
-										data-testid="login-email" x-autocompletetype="off"
-										autocorrect="off" spellcheck="false" autocapitalize="off"
-										data-vv-validate-on="blur" aria-invalid="true"
-										id="__BVID__367" aria-required="true" />
+										class="text-input form-control" data-testid="login-email"
+										x-autocompletetype="off" autocorrect="off" spellcheck="false"
+										autocapitalize="off" data-vv-validate-on="blur"
+										aria-invalid="true" id="__BVID__367" aria-required="true" />
+									<!-- 미입력시 등장 -->
 									<div data-v-2e241a14="" class="invalid-feedback"
-										id="email-feedback">이메일 주소를 입력해주세요.</div>
+										id="email-feedback" style="display: none;">이메일 주소를
+										입력해주세요.</div>
 									<!---->
 									<!---->
 									<!---->
 								</div>
 							</fieldset>
 						</div>
+						<!-- 비밀번호 -->
 						<div data-v-2e241a14="" class="col-12">
 							<fieldset data-v-2e241a14="" class="form-group password"
 								id="__BVID__368">
@@ -116,28 +125,26 @@
 									class="bv-no-focus-ring col-form-label pt-0"
 									id="__BVID__368__BV_label_"> 비밀번호 </legend>
 								<div>
+									<!-- 비밀번호 입력 input 테그 -->								
 									<input data-v-2e241a14="" name="password" type="password"
 										placeholder="비밀번호를 입력해주세요." autocomplete="off"
-										class="text-input form-control is-valid"
+										class="text-input form-control"
 										data-testid="login-password" x-autocompletetype="off"
 										autocorrect="off" spellcheck="false" autocapitalize="off"
 										data-vv-validate-on="blur" aria-invalid="true"
-										id="__BVID__369" aria-required="true" /> <small
-										data-v-2e241a14="" class="form-text text-invalid">
-										비밀번호를 입력해주세요. </small>
-									<!---->
-									<!---->
-									<!---->
-									<!---->
+										id="__BVID__369" aria-required="true" />
+									<!-- 미입력시 등장 -->
+									<small data-v-2e241a14="" class="form-text text-invalid"
+										style="display: none;"> 비밀번호를 입력해주세요. </small>
 								</div>
 							</fieldset>
 						</div>
+						<!-- 이메일 로그인 버튼 파트 -->
 						<div data-v-2e241a14="" class="col-12">
 							<button data-v-2e241a14="" data-testid="btn-login" type="submit"
 								class="btn btn-login btn-primary">
 								<span data-v-2e241a14="">이메일 로그인</span><span data-v-2e241a14=""
-									style="display: none"><div data-v-fc3fcce8=""
-										data-v-2e241a14="" class="">
+									style="display: none"><div>
 										<div data-v-fc3fcce8="" class="indicator-body"
 											style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
 										<p data-v-fc3fcce8="" style="display: none"></p>
@@ -158,6 +165,7 @@
 				</form>
 			</div>
 		</div>
+		<!-- 하단부 -->
 		<nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
