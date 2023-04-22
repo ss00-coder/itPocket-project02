@@ -90,6 +90,7 @@
 				</section>
 			</div>
         </header>
+        <!-- 중간부분 -->
         <div id="app-body">
             <div class="container container-md">
                 <h1>비밀번호 변경</h1>
@@ -100,10 +101,10 @@
                             <legend class="bv-no-focus-ring col-form-label pt-0">기존 비밀번호</legend>
                             <div>
                                 <div class="input-group current-password">
-                                    <input type="password" placeholder="현재 비밀번호를 입력해주세요" class="form-control is-invalid">
+                                    <input type="password" placeholder="현재 비밀번호를 입력해주세요" class="form-control is-invalid" name="top-input">
                                     <button class="btn btn-secondary" type="button">표시</button>
                                 </div>
-                                <!-- <div class="invalid-feedback">비밀번호를 입력해주세요.</div> -->
+                                <div id="top-div" class="invalid-feedback" >비밀번호를 입력해주세요.</div>
                             </div>
                         </fieldset>
                     </div>
@@ -113,10 +114,10 @@
                             <legend class="bv-no-focus-ring col-form-label pt-0">새로운 비밀번호</legend>
                             <div>
                                 <div class="input-group current-password">
-                                    <input type="password" placeholder="영문+숫자 조합 8자리 이상 입력하주세요" class="form-control is-invalid">
+                                    <input type="password" placeholder="영문+숫자 조합 8자리 이상 입력하주세요" class="form-control is-invalid" name="middle-input">
                                     <!-- <button class="btn btn-secondary" type="button">표시</button> -->
                                 </div>
-                                <!-- <div class="invalid-feedback">비밀번호를 입력해주세요.</div> -->
+                                <div id="middle-div" class="invalid-feedback">비밀번호를 입력해주세요.</div>
                             </div>
                         </fieldset>
                     </div>
@@ -125,10 +126,10 @@
                             <legend class="bv-no-focus-ring col-form-label pt-0">새로운 비밀번호 확인</legend>
                             <div>
                                 <div class="input-group current-password">
-                                    <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" class="form-control is-invalid">
+                                    <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" class="form-control is-invalid" name="bottom-input">
                                     <!-- <button class="btn btn-secondary" type="button">표시</button> -->
                                 </div>
-                                <!-- <div class="invalid-feedback">비밀번호를 한번 더 입력해주세요.</div> -->
+                                <div id="bottom-div" class="invalid-feedback">비밀번호를 한번 더 입력해주세요.</div>
                             </div>
                         </fieldset>
                     </div>
@@ -262,4 +263,6 @@
 		</nav>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../../static/js/mypage-setting-js/password-setting.js"></script>
 </html>

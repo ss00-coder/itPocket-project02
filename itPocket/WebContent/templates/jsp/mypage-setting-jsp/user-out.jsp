@@ -111,36 +111,63 @@
 							<h3>탈퇴 사유</h3>
 							<ul class="answer-section">
 								<li class="answer-item">
-									<div class="answer-item">
-										<input type="radio"> <label> <span
-											class="radio"></span> <span class="text"> 알림이 너무 많이 와요
-										</span>
+									<div class="radio-group">
+										<input type="radio"> 
+										<label id="label-one"> 
+											<span class="radio"></span> 
+											<span class="text color-one"> 알림이 너무 많이 와요</span>
 										</label>
+										<div class="description-wrapper one">
+											<span>
+												너무 많은 알림을 받는다면, 
+												<span class="color-teal">알림설정</span>에서 알림 제한 시간을 정할 수 있어요.
+											</span>
+										</div>
 									</div>
 								</li>
 
 								<li class="answer-item">
-									<div class="answer-item">
-										<input type="radio"> <label> <span
-											class="radio"></span> <span class="text"> 사용하기 어려워요 </span>
+									<div class="radio-group">
+										<input type="radio"> 
+										<label id="label-two"> 
+											<span class="radio">
+											</span> <span class="text color-two"> 사용하기 어려워요 </span>
 										</label>
+										<div class="description-wrapper two">
+											<span>
+												어떤 부분에서 사용이 어려우신가요?
+												<span class="color-teal">고객센터</span>에 문의해주시면 자세하게 알려드릴게요.
+											</span>
+										</div>
 									</div>
 								</li>
 
 								<li class="answer-item">
-									<div class="answer-item">
-										<input type="radio"> <label> <span
+									<div class="radio-group">
+										<input type="radio"> <label id="label-three"> <span
 											class="radio"></span> <span class="text"> 오류가 많아서 불편해요
 										</span>
 										</label>
+										<div class="description-wrapper">
+											<span>
+												불편사항을  
+												<span class="color-teal">고객센터</span>에 알려주시면 최대한 빨리 해결해드릴게요.
+											</span>
+										</div>
 									</div>
 								</li>
 
 								<li class="answer-item">
-									<div class="answer-item">
-										<input type="radio"> <label> <span
+									<div class="radio-group">
+										<input type="radio"> <label id="label-four"> <span
 											class="radio"></span> <span class="text"> 기타 </span>
 										</label>
+										<div class="description-wrapper">
+											<span>
+												기타의견을  
+												<span class="color-teal">고객센터</span>에 알려주시면 의견에 대한 피드백을 적극 반영할게요.
+											</span>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -277,4 +304,6 @@
 		</nav>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../../static/js/mypage-setting-js/user-out.js"></script>
 </html>
