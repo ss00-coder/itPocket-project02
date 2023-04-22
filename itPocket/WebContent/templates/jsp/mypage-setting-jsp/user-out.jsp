@@ -99,9 +99,9 @@
 							<h3>itPocket 탈퇴 전 꼭 확인해 주세요</h3>
 							<div class="check-list">
 								<ol>
-									<li>탈퇴 시 개인 정보가 30일간 유지되오며, 30일 이후 정보가 폐지됩니다.</li>
-									<li>숨고 이용에 불편이 있어 탈퇴를 고민하신다면, support@itpocket.com 또는 <span
-										class="color-teal">1599-5319</span> 로 문의 바랍니다.
+									<li>탈퇴 시 개인 정보가 30일간 유지되오며, 30일 이후 정보가 삭제됩니다.</li>
+									<li>itPocket 이용에 불편이 있어 탈퇴를 고민하신다면, support@itpocket.com <br> 
+										또는 <span class="color-teal">1599-5319</span> 로 문의 바랍니다.
 									</li>	
 									<li>위 내용을 모두 확인하였고, 탈퇴 완료 시 내용에 동의합니다.</li>
 								</ol>

@@ -93,14 +93,17 @@
             <div class="my-page-community-activity-container">
                 <div class="community-activity-container">
                     <section class="community-title-section">
-                        <h1 class="community-activity-title">내 질문 목록</h1>
+                        <h1 class="community-activity-title">내 글 목록</h1>
                     </section>
                     <ul class="tab-list">
                         <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
-                            메뉴1
+                            Q&A
                         </li>
                         <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
-                            메뉴2
+                           	스터디
+                        </li>
+                        <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
+                            노하우
                         </li>
                     </ul>
                     <section class="community-content-section white">

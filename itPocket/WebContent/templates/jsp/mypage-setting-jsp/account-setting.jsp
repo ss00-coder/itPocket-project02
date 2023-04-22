@@ -89,6 +89,7 @@
 				</section>
 			</div>
         </header>
+        <!-- 중간 부분 -->
         <div id="app-body">
             <div class="container container-md">
                 <main class="account-info-container">
@@ -104,7 +105,7 @@
                     <!-- 회원 관리 메뉴 -->
                     <section>
                         <ul class="account-info">
-                            <a class="item-container">
+                            <a href="name-setting.jsp" class="item-container">
                                 <div class="item">
                                     <div class="item-title">이름</div>
                                     <div class="item-info">홍길동</div>
@@ -113,7 +114,7 @@
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
                                 </div>
                             </a>
-                            <a class="item-container" href="">
+                            <a class="item-container" href="email-setting.jsp">
                                 <div class="item">
                                     <div class="item-title">이메일</div>
                                     <div class="item-info">
@@ -125,7 +126,7 @@
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
                                 </div>
                             </a>
-                            <a class="item-container">
+                            <a class="item-container" href="password-setting.jsp">
                                 <div class="item">
                                     <div class="item-title">비밀번호</div>
                                     <div class="item-info">•••••••</div>
@@ -147,7 +148,7 @@
 
                         <!-- 회원 탈퇴 -->
                         <ul class="delete-account">
-                            <a class="item-container">
+                            <a class="item-container" href="user-out.jsp">
                                 <div class="item">계정 탈퇴</div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">

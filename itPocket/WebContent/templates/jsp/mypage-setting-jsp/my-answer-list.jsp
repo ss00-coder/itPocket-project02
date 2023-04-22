@@ -99,11 +99,11 @@
                     </section>
                     <ul class="tab-list">
                         <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
-                            메뉴1
+                            Q&A
                         </li>
-                        <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
+                        <!-- <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
                             메뉴2
-                        </li>
+                        </li> -->
                     </ul>
                     
                     <section class="community-activity-content-section">
