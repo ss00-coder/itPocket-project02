@@ -4,17 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/login.css" />
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/login.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
-<link rel="shortcut icon" href="../../static/image/shortcut.png">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath}/static/image/shortcut.png">
 <title>login</title>
 </head>
 <body>
@@ -28,7 +34,8 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a href="main.jsp"> <img src="../../static/image/logo.png">
+								<a href="main.jsp"> <img
+									src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
@@ -90,61 +97,44 @@
 		<div data-v-e48acaee="" data-testid="login-page" class="login-page">
 			<h2 data-v-e48acaee="">로그인</h2>
 			<div data-v-e48acaee="" class="card">
-				<form data-v-2e241a14="" data-v-e48acaee="" autocomplete="off"
-					class="">
+				<form action="loginOk.member" method="post">
 					<div data-v-2e241a14="" class="form-row login-form">
 						<!-- 이메일 -->
 						<div data-v-2e241a14="" class="col-12">
 							<fieldset data-v-2e241a14="" class="form-group" id="__BVID__366">
-								<legend tabindex="-1"
-									class="bv-no-focus-ring col-form-label pt-0"
+								<legend class="bv-no-focus-ring col-form-label pt-0"
 									id="__BVID__366__BV_label_"> 이메일 </legend>
 								<div>
 									<!-- 이메일 입력 input 테그 -->
-									<input data-v-2e241a14="" name="email" type="email"
+									<input name="memberEmail" type="text"
 										placeholder="example@soomgo.com" autocomplete="off"
-										class="text-input form-control" data-testid="login-email"
-										x-autocompletetype="off" autocorrect="off" spellcheck="false"
-										autocapitalize="off" data-vv-validate-on="blur"
-										aria-invalid="true" id="__BVID__367" aria-required="true" />
+										class="text-input form-control" id="__BVID__367" />
 									<!-- 미입력시 등장 -->
-									<div data-v-2e241a14="" class="invalid-feedback"
-										id="email-feedback" style="display: none;">이메일 주소를
-										입력해주세요.</div>
-									<!---->
-									<!---->
-									<!---->
+									<div class="invalid-feedback" id="email-feedback"
+										style="display: none;">이메일 주소를 입력해주세요.</div>
 								</div>
 							</fieldset>
 						</div>
 						<!-- 비밀번호 -->
-						<div data-v-2e241a14="" class="col-12">
-							<fieldset data-v-2e241a14="" class="form-group password"
-								id="__BVID__368">
-								<legend tabindex="-1"
-									class="bv-no-focus-ring col-form-label pt-0"
+						<div class="col-12">
+							<fieldset class="form-group password" id="__BVID__368">
+								<legend class="bv-no-focus-ring col-form-label pt-0"
 									id="__BVID__368__BV_label_"> 비밀번호 </legend>
 								<div>
-									<!-- 비밀번호 입력 input 테그 -->								
-									<input data-v-2e241a14="" name="password" type="password"
+									<!-- 비밀번호 입력 input 테그 -->
+									<input name="memberPassword" type="password"
 										placeholder="비밀번호를 입력해주세요." autocomplete="off"
-										class="text-input form-control"
-										data-testid="login-password" x-autocompletetype="off"
-										autocorrect="off" spellcheck="false" autocapitalize="off"
-										data-vv-validate-on="blur" aria-invalid="true"
-										id="__BVID__369" aria-required="true" />
+										class="text-input form-control" id="__BVID__369" />
 									<!-- 미입력시 등장 -->
-									<small data-v-2e241a14="" class="form-text text-invalid"
-										style="display: none;"> 비밀번호를 입력해주세요. </small>
+									<small class="form-text text-invalid" style="display: none;">
+										비밀번호를 입력해주세요. </small>
 								</div>
 							</fieldset>
 						</div>
 						<!-- 이메일 로그인 버튼 파트 -->
 						<div data-v-2e241a14="" class="col-12">
-							<button data-v-2e241a14="" data-testid="btn-login" type="submit"
-								class="btn btn-login btn-primary">
-								<span data-v-2e241a14="">이메일 로그인</span><span data-v-2e241a14=""
-									style="display: none"><div>
+							<button type="submit" class="btn btn-login btn-primary">
+								<span>이메일 로그인</span><span style="display: none"><div>
 										<div data-v-fc3fcce8="" class="indicator-body"
 											style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
 										<p data-v-fc3fcce8="" style="display: none"></p>

@@ -15,51 +15,11 @@
 
 	<servlet>
 		<servlet-name>Member</servlet-name>
-		<servlet-class>com.app.member.MemberFrontController</servlet-class>
+		<servlet-class>com.itPocket.member.MemberFrontController</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>Member</servlet-name>
 		<url-pattern>*.member</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Comment</servlet-name>
-		<servlet-class>com.app.member.CommentFrontController</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Comment</servlet-name>
-		<url-pattern>*.comment</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>File</servlet-name>
-		<servlet-class>com.app.member.FileFrontController</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>File</servlet-name>
-		<url-pattern>*.file</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Post</servlet-name>
-		<servlet-class>com.app.member.PostFrontController</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Post</servlet-name>
-		<url-pattern>*.post</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Recommend</servlet-name>
-		<servlet-class>com.app.member.RecommendFrontController</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Recommend</servlet-name>
-		<url-pattern>*.recommend</url-pattern>
 	</servlet-mapping>
 </web-app>
