@@ -2,7 +2,7 @@ package com.app.comment.dao;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.app.mybatis.config.MyBatisConfig;
+import com.mybatis.config.MyBatisConfig;
 
 public class CommentDAO {
 	   public SqlSession sqlSession;

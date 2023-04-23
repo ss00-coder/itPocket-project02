@@ -89,7 +89,7 @@
 			<div data-v-59ba51f2="" data-testid="customer-signup-page"
 				class="customer-signup-page">
 				<div data-v-59ba51f2="">
-					<h1 data-v-59ba51f2="">숨고에 오신 것을 환영합니다</h1>
+					<h1 data-v-59ba51f2="">itPocket에 오신 것을 환영합니다</h1>
 					<div data-v-59ba51f2="" class="card">
 						<div data-v-2ef2701c="" data-v-59ba51f2="" no-gutters=""
 							data-testid="signup-form" class="form-row signup-form">

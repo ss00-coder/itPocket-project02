@@ -17,4 +17,8 @@
          </dataSource>
       </environment>
    </environments>
+   
+	<mappers>
+		<mapper resource="com/mybatis/mapper/memberMapper.xml"/>
+	</mappers>   
 </configuration>
