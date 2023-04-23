@@ -1,4 +1,4 @@
-package com.app.member.domain;
+package com.itPocket.member.domain;
 
 public class MemberVO {
 	private Long memberId;
