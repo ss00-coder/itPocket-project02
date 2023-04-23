@@ -156,7 +156,7 @@
                                 <a href="my-qustion-list.jsp" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
-                                            <span class="sub-menu-title">나만의 질문</span>
+                                            <span class="sub-menu-title">나만의 글</span>
                                         </div>
                                     </div>
                                     <div class="arrow">

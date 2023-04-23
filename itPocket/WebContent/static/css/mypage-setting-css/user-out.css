@@ -350,3 +350,15 @@ input+label {
 section.d-none {
 	margin: 0px;
 }
+
+.description-wrapper {
+    font-size: .875rem!important;
+    border-radius: 8px!important;
+    background-color: #f2f2f2!important;
+    padding: 0.5rem 1rem!important;
+    margin: 0 0 1rem 2.25rem!important;
+}
+
+.description-wrapper .color-teal {
+    color: #655dbb;
+}
