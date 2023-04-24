@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.mybatis.config.MyBatisConfig;
+import com.itPocket.mybatis.config.MyBatisConfig;
 
 public class MemberDAO {
    public SqlSession sqlSession;

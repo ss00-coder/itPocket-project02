@@ -1,4 +1,4 @@
-package com.mybatis.config;
+package com.itPocket.mybatis.config;
 
 import java.io.IOException;
 import java.io.Reader;
