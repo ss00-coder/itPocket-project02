@@ -14,12 +14,12 @@ import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
 
-public class CheckEmailOkController implements Action {
+public class CheckNicknameOkController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
-		String memberEmail = memberDAO.selectEmail(req.getParameter("memberEmail"));
-		boolean check = memberEmail == null;
+		String memberNickname = memberDAO.selectNickname(req.getParameter("memberNickname"));
+		boolean check = memberNickname == null;
 		JSONObject result = new JSONObject();
 		
 		try {
@@ -34,4 +34,5 @@ public class CheckEmailOkController implements Action {
 
 		return null;
 	}
+
 }

@@ -19,6 +19,11 @@ public class MemberDAO {
 	   sqlSession.insert("member.insert", memberVO);
    }
    
+   //닉네임 중복검사
+   public String selectNickname(String memberNickname) {
+	   return sqlSession.selectOne("member.selectNickname",memberNickname);
+   }
+   
    //이메일 중복검사
    public String selectEmail(String memberEmail) {
 	   return sqlSession.selectOne("member.selectEmail",memberEmail);
@@ -32,6 +37,6 @@ public class MemberDAO {
 	  
 	   
 	   return sqlSession.selectOne("member.login",loginMap);
-   }
+   }  
    
 }
