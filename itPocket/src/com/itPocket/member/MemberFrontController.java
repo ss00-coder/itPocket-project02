@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
+import com.itPocket.member.controller.CheckEmailOkController;
+import com.itPocket.member.controller.CheckNicknameOkController;
 import com.itPocket.member.controller.JoinOkController;
 import com.itPocket.member.controller.LoginOkController;
 
@@ -23,7 +25,13 @@ public class MemberFrontController extends HttpServlet {
 		if (target.equals("join")) {
 			result = new Result();
 			result.setPath("templates/jsp/join.jsp");
-		} 
+		}	
+		else if(target.equals("checkNicknameOk")) {
+			result = new CheckNicknameOkController().execute(req, resp);			
+		}
+		else if(target.equals("checkEmailOk")) {
+			result = new CheckEmailOkController().execute(req, resp);			
+		}
 		else if (target.equals("joinOk")) {
 			result = new JoinOkController().execute(req, resp);
 		} 
@@ -42,7 +50,7 @@ public class MemberFrontController extends HttpServlet {
 		else if (target.equals("mypage")) {
 			result = new Result();
 			result.setPath("templates/jsp/mypage/mypage.jsp");
-		} 
+		}
 
 		if (result != null) {
 			if (result.isRedirect()) {

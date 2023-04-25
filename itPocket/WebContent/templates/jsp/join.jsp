@@ -25,74 +25,74 @@
 </head>
 <body class="sign-up">
 	<div id="app" class="webp-bgroup" data-is-loaded="true">
-		<div id="app-body">
-			<header class="global-header">
-				<div class="global-navigation-bar">
-					<section class="d-none d-lg-block d-xl-block d-xl-block">
-						<div class="desktop-header">
-							<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
-							<div class="left-section">
-								<!-- 숨고 로고 대체제 만들어야되요 -->
-								<div class="logo">
-									<a href="main"> <img
-										src="${pageContext.request.contextPath}/static/image/logo.png">
-									</a>
-								</div>
-								<nav>
-									<ul class="nav-list">
-										<!-- 서비스 요청 -->
-										<li class="nav-item left-section-item "><a
-											class="gnb-link"> <span>사이트소개</span>
-										</a></li>
-										<!-- 고수찾기 -->
-										<li class="nav-item left-section-item"><a
-											href="study.jsp" class="gnb-link"> <span>스터디</span>
-										</a></li>
-										<!-- 노하우 -->
-										<li class="nav-item left-section-item"><a
-											href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
-										</a></li>
-										<!-- Q&A -->
-										<li class="nav-item left-section-item"><a
-											href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
-										</a></li>
-									</ul>
-								</nav>
+		<header class="global-header">
+			<div class="global-navigation-bar">
+				<section class="d-none d-lg-block d-xl-block d-xl-block">
+					<div class="desktop-header">
+						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
+						<div class="left-section">
+							<!-- 숨고 로고 대체제 만들어야되요 -->
+							<div class="logo">
+								<a href="main"> <img
+									src="${pageContext.request.contextPath}/static/image/logo.png">
+								</a>
 							</div>
-							<!-- 어떤 서비스가 필요하세요(이부분은 희수님만 하시면 됩니당)-->
-							<div class="center-section" style="display: none;">
-								<div class="service-searcher-desktop">
-									<form class="global-search-bar">
-										<div class="input-group">
-											<div class="input-group-prepend"></div>
-											<input type="text" placeholder="어떤 서비스가 필요하세요?">
-											<div class="input-group-append"></div>
-										</div>
-									</form>
-								</div>
-							</div>
-							<!-- 로그인, 회원가입, 고수가입 -->
-							<div class="right-section">
-								<nav class="nav-list">
-									<ul class="nav-list">
-										<!-- 로그인 -->
-										<li class="nav-item right-section-item"><a
-											href="login.member" class="gnb-link"><span>로그인</span> </a></li>
-										<!-- 회원가입 -->
-										<li class="nav-item right-section-item"><a
-											href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
-									</ul>
-								</nav>
-								<!-- 고수가입 -->
-								<button type="button"
-									class="btn pro-signup-btn right-section-item btn-primary">
-									<a>전문가신청</a>
-								</button>
+							<nav>
+								<ul class="nav-list">
+									<!-- 서비스 요청 -->
+									<li class="nav-item left-section-item "><a
+										class="gnb-link"> <span>사이트소개</span>
+									</a></li>
+									<!-- 고수찾기 -->
+									<li class="nav-item left-section-item"><a href="study.jsp"
+										class="gnb-link"> <span>스터디</span>
+									</a></li>
+									<!-- 노하우 -->
+									<li class="nav-item left-section-item"><a
+										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
+									</a></li>
+									<!-- Q&A -->
+									<li class="nav-item left-section-item"><a
+										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+									</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- 어떤 서비스가 필요하세요(이부분은 희수님만 하시면 됩니당)-->
+						<div class="center-section" style="display: none;">
+							<div class="service-searcher-desktop">
+								<form class="global-search-bar">
+									<div class="input-group">
+										<div class="input-group-prepend"></div>
+										<input type="text" placeholder="어떤 서비스가 필요하세요?">
+										<div class="input-group-append"></div>
+									</div>
+								</form>
 							</div>
 						</div>
-					</section>
-				</div>
-			</header>
+						<!-- 로그인, 회원가입, 고수가입 -->
+						<div class="right-section">
+							<nav class="nav-list">
+								<ul class="nav-list">
+									<!-- 로그인 -->
+									<li class="nav-item right-section-item"><a
+										href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+									<!-- 회원가입 -->
+									<li class="nav-item right-section-item"><a
+										href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
+								</ul>
+							</nav>
+							<!-- 고수가입 -->
+							<button type="button"
+								class="btn pro-signup-btn right-section-item btn-primary">
+								<a>전문가신청</a>
+							</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</header>
+		<div id="app-body">
 			<div data-v-59ba51f2="" data-testid="customer-signup-page"
 				class="customer-signup-page">
 				<div data-v-59ba51f2="">
@@ -316,7 +316,6 @@
 				</div>
 			</div>
 		</nav>
-
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

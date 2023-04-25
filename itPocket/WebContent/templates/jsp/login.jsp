@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -147,7 +147,7 @@
 								<a data-v-2e241a14="" href="/find-password/" class="">비밀번호
 									찾기</a>
 								<div data-v-2e241a14="" class="line"></div>
-								<a data-v-2e241a14="" href="join.jsp" class="">회원가입</a>
+								<a data-v-2e241a14="" href="join.member" class="">회원가입</a>
 							</div>
 						</div>
 					</div>
