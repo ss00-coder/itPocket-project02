@@ -26,7 +26,7 @@
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
 								<a href="../main.jsp">
-									<img src="../../../static/image/logo.png">
+									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
@@ -75,7 +75,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage"
+									<li class="nav-item right-section-item"><a href="mypage.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
