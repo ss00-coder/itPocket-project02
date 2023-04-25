@@ -22,7 +22,22 @@
 		<servlet-name>Member</servlet-name>
 		<url-pattern>*.member</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mypage</servlet-name>
+		<servlet-class>com.itPocket.mypage.MypageFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mypage</servlet-name>
+		<url-pattern>*.mypage</url-pattern>
+	</servlet-mapping>
 	
+	<servlet-mapping>
+		<servlet-name>Mypage</servlet-name>
+		<url-pattern>/mypage</url-pattern>
+	</servlet-mapping>
+
 	<servlet>
 		<servlet-name>Main</servlet-name>
 		<servlet-class>com.itPocket.main.MainFrontController</servlet-class>
@@ -32,4 +47,5 @@
 		<servlet-name>Main</servlet-name>
 		<url-pattern>/main</url-pattern>
 	</servlet-mapping>
+
 </web-app>
