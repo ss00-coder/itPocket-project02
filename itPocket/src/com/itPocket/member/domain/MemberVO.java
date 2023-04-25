@@ -2,7 +2,7 @@ package com.itPocket.member.domain;
 
 public class MemberVO {
 	private Long memberId;
-	private String memberEmai;
+	private String memberEmail;
 	private String memberPassword;
 	private String memberNickname;
 	private String memberRegion;
@@ -26,11 +26,11 @@ public class MemberVO {
 	}
 
 	public String getMemberEmai() {
-		return memberEmai;
+		return memberEmail;
 	}
 
-	public void setMemberEmai(String memberEmai) {
-		this.memberEmai = memberEmai;
+	public void setMemberEmai(String memberEmail) {
+		this.memberEmail = memberEmail;
 	}
 
 	public String getMemberPassword() {
@@ -123,7 +123,7 @@ public class MemberVO {
 
 	@Override
 	public String toString() {
-		return "MemberVO [memberId=" + memberId + ", memberEmai=" + memberEmai + ", memberPassword=" + memberPassword
+		return "MemberVO [memberId=" + memberId + ", memberEmail=" + memberEmail + ", memberPassword=" + memberPassword
 				+ ", memberNickname=" + memberNickname + ", memberRegion=" + memberRegion + ", memberRegisterDate="
 				+ memberRegisterDate + ", memberIsExpert=" + memberIsExpert + ", memberIsRemaining=" + memberIsRemaining
 				+ ", memberType=" + memberType + ", memberFile_name=" + memberFile_name + ", memberFileOriginal_name="

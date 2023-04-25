@@ -1,11 +1,11 @@
 package com.itPocket.member.controller;
 
 import java.io.IOException;
-import java.net.URLEncoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.itPocket.Action;
 import com.itPocket.Result;
@@ -15,28 +15,23 @@ public class LoginOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
-		req.setCharacterEncoding("UTF-8");
-
 		MemberDAO memberDAO = new MemberDAO();
+		Long memberId = memberDAO.login(req.getParameter("memberEmail"), req.getParameter("memberPassword"));
+		HttpSession session = req.getSession();		//다음페이지에서도 member_id를 쓰기위해
 		Result result = new Result();
-
-		String memberEmail = req.getParameter("memberEmail");
-		String memberPassword = req.getParameter("memberPassword");
 		
+		result.setRedirect(true);
 		
-		Long memberId = memberDAO.login(memberEmail, memberPassword);
-//		 성공시
-		if (memberId != null) {
-			System.out.println("성공");
-			result.setPath("login.member");
-		} 
-//		실패시
-		else {
-			System.out.println("실패");
-			result.setPath("login.member");
-		}
+		// 로그인 실패		
+ 		if(memberId == null) {
+ 			result.setPath(req.getContextPath() + "/login.member?login=false");
+ 		}
+ 		// 로그인 성공		
+ 		else {
+ 			session.setAttribute("memberId", memberId);
+ 			result.setPath(req.getContextPath() + "/main");
+ 		}
 
 		return result;
 	}
-
 }

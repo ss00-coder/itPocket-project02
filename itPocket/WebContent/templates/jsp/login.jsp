@@ -34,7 +34,7 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a href="main.jsp"> <img
+								<a href="main"> <img
 									src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
@@ -77,16 +77,16 @@
 								<ul class="nav-list">
 									<!-- 로그인 -->
 									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>로그인</span> </a></li>
+										href="login.member" class="gnb-link"><span>로그인</span> </a></li>
 									<!-- 회원가입 -->
 									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>회원가입</span> </a></li>
+										href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
 					</div>
@@ -279,6 +279,6 @@
 		</nav>
 	</div>
 </body>
-<script src="../../static/js/login.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/login.js"></script>
 </html>

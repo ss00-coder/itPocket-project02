@@ -2,8 +2,28 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="member">
 	
-	<!-- 아이디 비번 똑같은 걸로 찾아오는 쿼리 -->
+	<!-- 회원가입 -->
+	<insert id="insert">
+		insert into tbl_member
+		(
+			member_nickname,
+			member_email,
+			member_password
+		)
+		values(#{memberNickname}, #{memberEmail}, #{memberPassword})
+	</insert>
+
+	<!-- 중복검사 -->
+	<select id="selectEmail" resultType="string">
+		select member_email from tbl_member
+		where member_email = #{memberEmail}
+	</select>
+	
+	<!-- 로그인 -->
 	<select id="login" resultType="long">
-		select member_id from tbl_member where member_email = #{memberEmail} and member_password = #{memberPassword}
+		select member_id 
+		from tbl_member
+		where member_email = #{memberEmail} 
+		and member_password = #{memberPassword}
 	</select>
 </mapper>
