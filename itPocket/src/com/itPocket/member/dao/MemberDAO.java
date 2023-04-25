@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.itPocket.member.domain.MemberVO;
 import com.itPocket.mybatis.config.MyBatisConfig;
 
 public class MemberDAO {
@@ -11,6 +12,16 @@ public class MemberDAO {
    
    public MemberDAO() {
       sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+   }
+   
+   //회원가입
+   public void insert(MemberVO memberVO) {
+	   sqlSession.insert("member.insert", memberVO);
+   }
+   
+   //이메일 중복검사
+   public String selectEmail(String memberEmail) {
+	   return sqlSession.selectOne("member.selectEmail",memberEmail);
    }
    
    //로그인

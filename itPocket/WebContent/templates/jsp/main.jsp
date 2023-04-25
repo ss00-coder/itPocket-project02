@@ -7,14 +7,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/global-header-main2.css">
-<link rel="stylesheet" href="../../static/css/main.css">
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header-main2.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
 <title>메인페이지</title>
-<link rel="shortcut icon" href="../../static/image/shortcut.png">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
 </head>
 <body class="home">
 	<div id="app">
@@ -29,8 +29,8 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a href="main.jsp"> 
-									<img src="../../static/image/logo.png">
+								<a href="main"> 
+									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
@@ -75,9 +75,9 @@
 							<nav class="nav-list">
 								<ul class="nav-list">
 									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a href="login.jsp" class="gnb-link"><span>로그인</span> </a></li>
+									<li class="nav-item right-section-item"><a href="login.member" class="gnb-link"><span>로그인</span> </a></li>
 									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a href="join.jsp" class="gnb-link"><span>회원가입</span> </a></li>
+									<li class="nav-item right-section-item"><a href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
@@ -104,7 +104,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="" target="_self">
-													<img src="../../static/image/main_banner6.png" class="banner-image">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner6.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -114,7 +114,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="main.jsp" target="_self">
-													<img src="../../static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
 										</div>
@@ -124,7 +124,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="main.jsp" target="_self">
-													<img src="../../static/image/main_banner2.png" class="banner-image">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner2.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -134,7 +134,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="master-know-how-free.jsp" target="_self">
-													<img src="../../static/image/main_banner3.png" class="banner-image">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner3.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -144,7 +144,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="study.jsp" target="_self">
-													<img src="../../static/image/main_banner4.png" class="banner-image">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner4.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -154,7 +154,7 @@
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
 												<a href="list-by-language.jsp" target="_self">
-													<img src="../../static/image/main_banner5.png" class="banner-image">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner5.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -163,7 +163,7 @@
 										<div>
 											<div class="banner-item" style="width: 100%; display: inline-blick;">
 												<a href="" target="_self">
-													<img src="../../static/image/main_banner6.png" class="banner-image">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner6.png" class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -172,7 +172,7 @@
 										<div>
 											<div class="banner-item" style="width: 100%; display: inline-blick;">
 												<a href="main.jsp" target="_self">
-													<img src="../../static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
+													<img src="${pageContext.request.contextPath}/static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
 										</div>
@@ -243,7 +243,7 @@
 						<section class="header">
 							<h2 class="title">지금 인기 있는 전문가</h2>
 							<a href="" class="go-list"> <span>전체보기</span> 
-							<img src="../../static/image/arrow6.png" alt="">
+							<img src="${pageContext.request.contextPath}/static/image/arrow6.png" alt="">
 							</a>
 						</section>
 						<section class="chips">
@@ -275,7 +275,7 @@
 											<div>
 												<div style="width: 100%; display: inline-block;">
 													<section class="meet-provider">
-														<img class="meet-provider-icon"	src="../../static/image/find.png" alt=""> 
+														<img class="meet-provider-icon"	src="${pageContext.request.contextPath}/static/image/find.png" alt=""> 
 														<span class="meet-provider-text total">1234명</span>
 														<span class="meet-provider-text">의</span> <br>
 														<div class="meet-provider-link">
@@ -298,7 +298,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -330,7 +330,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -362,7 +362,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -394,7 +394,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -426,7 +426,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -458,7 +458,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -490,7 +490,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -522,7 +522,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -554,7 +554,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -586,7 +586,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -618,7 +618,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -650,7 +650,7 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="../../static/image/like.png" alt=""> 
+																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
 																<span class="rate">200</span>
 															</div>
 														</section>
@@ -948,7 +948,7 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/java_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/java_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -958,7 +958,7 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/css_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/css_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -969,7 +969,7 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="../../static/image/oracle_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/oracle_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -978,7 +978,7 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -988,7 +988,7 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -998,7 +998,7 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/mysql_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -1027,7 +1027,7 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/C_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/C_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -1038,7 +1038,7 @@
 											<div>
 												
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="../../static/image/html_icon.png"
+													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/html_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -1049,7 +1049,7 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="../../static/image/python_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/python_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1059,7 +1059,7 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="../../static/image/python_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/python_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1069,7 +1069,7 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="../../static/image/python_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/python_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1079,7 +1079,7 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="../../static/image/javascript_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/javascript_icon.png" alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1260,5 +1260,5 @@
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/main.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/main.js"></script>
 </html>

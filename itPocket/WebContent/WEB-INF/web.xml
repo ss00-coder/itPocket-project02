@@ -22,4 +22,14 @@
 		<servlet-name>Member</servlet-name>
 		<url-pattern>*.member</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Main</servlet-name>
+		<servlet-class>com.itPocket.main.MainFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Main</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
 </web-app>

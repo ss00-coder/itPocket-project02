@@ -4,17 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/join.css" />
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/join.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
-<link rel="shortcut icon" href="../../static/image/shortcut.png">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath}/static/image/shortcut.png">
 <title>join</title>
 </head>
 <body class="sign-up">
@@ -28,7 +34,8 @@
 							<div class="left-section">
 								<!-- 숨고 로고 대체제 만들어야되요 -->
 								<div class="logo">
-									<a href="main.jsp"> <img src="../../static/image/logo.png">
+									<a href="main"> <img
+										src="${pageContext.request.contextPath}/static/image/logo.png">
 									</a>
 								</div>
 								<nav>
@@ -70,16 +77,16 @@
 									<ul class="nav-list">
 										<!-- 로그인 -->
 										<li class="nav-item right-section-item"><a
-											class="gnb-link"><span>로그인</span> </a></li>
+											href="login.member" class="gnb-link"><span>로그인</span> </a></li>
 										<!-- 회원가입 -->
 										<li class="nav-item right-section-item"><a
-											class="gnb-link"><span>회원가입</span> </a></li>
+											href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
 									</ul>
 								</nav>
 								<!-- 고수가입 -->
 								<button type="button"
 									class="btn pro-signup-btn right-section-item btn-primary">
-									<a>고수가입</a>
+									<a>전문가신청</a>
 								</button>
 							</div>
 						</div>
@@ -90,93 +97,86 @@
 				class="customer-signup-page">
 				<div data-v-59ba51f2="">
 					<h1 data-v-59ba51f2="">itPocket에 오신 것을 환영합니다</h1>
-					<div data-v-59ba51f2="" class="card">
-						<div data-v-2ef2701c="" data-v-59ba51f2="" no-gutters=""
-							data-testid="signup-form" class="form-row signup-form">
-							<div data-v-2ef2701c="" class="col-12">
-								<fieldset data-v-2ef2701c="" class="form-group text-field"
-									id="__BVID__350">
-									<legend tabindex="-1"
-										class="bv-no-focus-ring col-form-label pt-0"
-										id="__BVID__350__BV_label_">이름</legend>
-									<div>
-										<input data-v-2ef2701c="" name="username" type="text"
-											placeholder="이름(실명)을 입력해주세요"
-											class="text-input form-control is-invalid invalid"
-											data-testid="signup-user-name" x-autocompletetype="off"
-											autocompletetype="off" autocorrect="off" spellcheck="true"
-											autocapitalize="off" maxlength="7" data-vv-validate-on="blur"
-											aria-invalid="true" id="__BVID__351" aria-required="true">
-										<!---->
-										<!---->
-										<!---->
-									</div>
-								</fieldset>
-							</div>
-							<div data-v-2ef2701c="" class="col-12">
-								<fieldset data-v-2ef2701c="" class="form-group text-field"
-									id="__BVID__352">
-									<legend tabindex="-1"
-										class="bv-no-focus-ring col-form-label pt-0"
-										id="__BVID__352__BV_label_">이메일</legend>
-									<div>
-										<input data-v-2ef2701c="" name="email" type="email"
-											placeholder="example@soomgo.com" autocomplete="off"
-											class="text-input form-control is-valid"
-											data-testid="signup-email" x-autocompletetype="off"
-											autocorrect="off" spellcheck="true" autocapitalize="off"
-											maxlength="30" data-vv-validate-on="blur" aria-invalid="true"
-											id="__BVID__353" aria-required="true">
-										<!---->
-										<!---->
-										<!---->
-										<!---->
-									</div>
-								</fieldset>
-							</div>
-							<div data-v-2ef2701c="" class="col-12">
-								<fieldset data-v-2ef2701c="" class="form-group text-field"
-									id="__BVID__354">
-									<legend tabindex="-1"
-										class="bv-no-focus-ring col-form-label pt-0"
-										id="__BVID__354__BV_label_">비밀번호</legend>
-									<div>
-										<div data-v-2ef2701c="" role="group"
-											class="input-group float-button-right">
-											<!---->
-											<input data-v-2ef2701c="" name="password" type="password"
-												placeholder="영문+숫자 조합 8자리 이상 입력해주세요"
-												autocomplete="new-password"
-												class="text-input form-control is-valid"
-												data-testid="signup-password" x-autocompletetype="off"
-												autocorrect="off" spellcheck="false" autocapitalize="off"
+					<!-- form 태그  -->
+					<form action="joinOk.member" method="post">
+						<div data-v-59ba51f2="" class="card">
+							<div data-v-2ef2701c="" data-v-59ba51f2="" no-gutters=""
+								data-testid="signup-form" class="form-row signup-form">
+								<div data-v-2ef2701c="" class="col-12">
+									<fieldset data-v-2ef2701c="" class="form-group text-field"
+										id="__BVID__350">
+										<legend tabindex="-1"
+											class="bv-no-focus-ring col-form-label pt-0"
+											id="__BVID__350__BV_label_">이름</legend>
+										<div>
+											<input data-v-2ef2701c="" name="memberNickname" type="text"
+												placeholder="이름(실명)을 입력해주세요"
+												class="text-input form-control is-invalid invalid"
+												data-testid="signup-user-name" x-autocompletetype="off"
+												autocompletetype="off" autocorrect="off" spellcheck="true"
+												autocapitalize="off" maxlength="7"
 												data-vv-validate-on="blur" aria-invalid="true"
-												id="__BVID__355" aria-required="true">
-											<button data-v-2ef2701c="" type="button"
-												class="btn password-show btn-secondary">표시</button>
-											<!---->
-										</div>
-										<!---->
-										<!---->
-										<!---->
-										<!---->
-									</div>
-								</fieldset>
-							</div>
+												id="__BVID__351" aria-required="true">
 
-							<div data-v-2ef2701c="" class="col-12">
-								<button data-v-2ef2701c="" data-testid="btn-signup"
-									type="submit" class="btn btn-signup btn-primary">
-									<span data-v-2ef2701c="">회원가입</span><span data-v-2ef2701c=""
-										style="display: none;"><div data-v-fc3fcce8=""
-											data-v-2ef2701c="" class="">
-											<div data-v-fc3fcce8="" class="indicator-body"
-												style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
-											<p data-v-fc3fcce8="" style="display: none;"></p>
-										</div></span>
-								</button>
-							</div>
-							<!-- <div data-v-2ef2701c="" class="col-12">
+										</div>
+									</fieldset>
+								</div>
+								<div data-v-2ef2701c="" class="col-12">
+									<fieldset data-v-2ef2701c="" class="form-group text-field"
+										id="__BVID__352">
+										<legend tabindex="-1"
+											class="bv-no-focus-ring col-form-label pt-0"
+											id="__BVID__352__BV_label_">이메일</legend>
+										<div>
+											<input data-v-2ef2701c="" name="memberEmail" type="email"
+												placeholder="example@soomgo.com" autocomplete="off"
+												class="text-input form-control is-valid"
+												data-testid="signup-email" x-autocompletetype="off"
+												autocorrect="off" spellcheck="true" autocapitalize="off"
+												maxlength="30" data-vv-validate-on="blur"
+												aria-invalid="true" id="__BVID__353" aria-required="true">
+										</div>
+									</fieldset>
+								</div>
+								<div data-v-2ef2701c="" class="col-12">
+									<fieldset data-v-2ef2701c="" class="form-group text-field"
+										id="__BVID__354">
+										<legend tabindex="-1"
+											class="bv-no-focus-ring col-form-label pt-0"
+											id="__BVID__354__BV_label_">비밀번호</legend>
+										<div>
+											<div data-v-2ef2701c="" role="group"
+												class="input-group float-button-right">
+												<!---->
+												<input data-v-2ef2701c="" name="memberPassword"
+													type="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요"
+													autocomplete="new-password"
+													class="text-input form-control is-valid"
+													data-testid="signup-password" x-autocompletetype="off"
+													autocorrect="off" spellcheck="false" autocapitalize="off"
+													data-vv-validate-on="blur" aria-invalid="true"
+													id="__BVID__355" aria-required="true">
+												<button data-v-2ef2701c="" type="button"
+													class="btn password-show btn-secondary">표시</button>
+												<!---->
+											</div>
+										</div>
+									</fieldset>
+								</div>
+
+								<div data-v-2ef2701c="" class="col-12">
+									<button data-v-2ef2701c="" data-testid="btn-signup"
+										type="submit" class="btn btn-signup btn-primary">
+										<span data-v-2ef2701c="">회원가입</span><span data-v-2ef2701c=""
+											style="display: none;"><div data-v-fc3fcce8=""
+												data-v-2ef2701c="" class="">
+												<div data-v-fc3fcce8="" class="indicator-body"
+													style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
+												<p data-v-fc3fcce8="" style="display: none;"></p>
+											</div></span>
+									</button>
+								</div>
+								<!-- <div data-v-2ef2701c="" class="col-12">
 								<button data-v-27635330="" data-v-2ef2701c="" type="button"
 									class="btn btn-signup btn-secondary">
 									<img data-v-27635330=""
@@ -188,9 +188,10 @@
 								<a data-v-2ef2701c="" href="/pro" class="pro-sign-up"> 고수로
 									가입하시나요? </a>
 							</div> -->
-							<!---->
+								<!---->
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -318,4 +319,6 @@
 
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/join.js"></script>
 </html>
