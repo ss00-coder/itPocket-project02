@@ -5,12 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>내 댓글 목록</title>
-<link rel="shortcut icon" href="../../../static/image/shortcut.png">
-<link rel="stylesheet" href="../../../static/css/mypage-setting-css/my-comment-list.css">
-<link rel="stylesheet" href="../../../static/css/font.css">
-<link rel="stylesheet" href="../../../static/css/public.css">
-<link rel="stylesheet" href="../../../static/css/global-header.css">
-<link rel="stylesheet" href="../../../static/css/footer.css">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/my-comment-list.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
 								<a href="../main.jsp">
-									<img src="../../../static/image/logo.png">
+									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
@@ -68,21 +68,21 @@
 								<ul class="nav-list">
 									<!--로그인-->
 									<li class="nav-item right-section-item">
-										<a class="gnb-link">
+										<a class="gnb-link" href="login.member">
 											<span>
-												로그인
+												로그아웃
 											</span> 
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>회원가입</span> </a></li>
+									<li class="nav-item right-section-item"><a href="mypage.member"
+										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
 							<!--고수가입-->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
 					</div>
