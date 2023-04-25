@@ -39,6 +39,10 @@ public class MemberFrontController extends HttpServlet {
 			result = new Result();
 			result.setPath("templates/jsp/main.jsp");
 		}
+		else if (target.equals("mypage")) {
+			result = new Result();
+			result.setPath("templates/jsp/mypage/mypage.jsp");
+		} 
 
 		if (result != null) {
 			if (result.isRedirect()) {

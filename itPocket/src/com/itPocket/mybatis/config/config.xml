@@ -25,6 +25,5 @@
    
 	<mappers>
 		<mapper resource="com/itPocket/mybatis/mapper/memberMapper.xml"/>
-		<mapper resource="com/itPocket/mybatis/mapper/mypageMapper.xml"/>
 	</mappers>   
 </configuration>
