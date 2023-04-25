@@ -24,6 +24,10 @@
    </environments>
    
 	<mappers>
-		<mapper resource="com/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/itPocket/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/itPocket/mybatis/mapper/commentMapper.xml"/>
+		<mapper resource="com/itPocket/mybatis/mapper/fileMapper.xml"/>
+		<mapper resource="com/itPocket/mybatis/mapper/postMapper.xml"/>
+		<mapper resource="com/itPocket/mybatis/mapper/recommendMapper.xml"/>
 	</mappers>   
 </configuration>
