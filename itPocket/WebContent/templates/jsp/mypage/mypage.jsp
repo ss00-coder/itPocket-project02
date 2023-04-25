@@ -5,12 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>마이 페이지</title>
-<link rel="shortcut icon" href="../../../static/image/shortcut.png">
-<link rel="stylesheet" href="../../../static/css/mypage-setting-css/mypage.css">
-<link rel="stylesheet" href="../../../static/css/font.css">
-<link rel="stylesheet" href="../../../static/css/public.css">
-<link rel="stylesheet" href="../../../static/css/global-header.css">
-<link rel="stylesheet" href="../../../static/css/footer.css">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/mypage.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
 								<a href="../main.jsp">
-									<img src="../../../static/image/logo.png">
+									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
