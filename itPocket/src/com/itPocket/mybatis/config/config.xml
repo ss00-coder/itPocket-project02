@@ -2,29 +2,34 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-   <settings>
-      <setting name="mapUnderscoreToCamelCase" value="true"/>
-   </settings>
-   
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+
 	<typeAliases>
-		<typeAlias type="com.itPocket.member.domain.MemberVO" alias="memberVO"/>
+		<typeAlias type="com.itPocket.member.domain.MemberVO"
+			alias="memberVO" />
+		<typeAlias type="com.itPocket.post.domain.PostDTO"
+			alias="postDTO" />
 	</typeAliases>
 
-   <environments default="mysql">
-      <environment id="mysql">
-         <transactionManager type="JDBC"/>
-         <dataSource type="POOLED">
-            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-             <!-- localhost:3306/(database 이름적기)-->
-            <property name="url" value="jdbc:mysql://localhost:3306/itpocket"/>
-            <property name="username" value="root"/>
-            <property name="password" value="1234"/>
-         </dataSource>
-      </environment>
-   </environments>
-   
+
+	<environments default="mysql">
+		<environment id="mysql">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+				<!-- localhost:3306/(database 이름적기) -->
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/itpocket" />
+				<property name="username" value="root" />
+				<property name="password" value="1234" />
+			</dataSource>
+		</environment>
+	</environments>
+
 	<mappers>
-		<mapper resource="com/itPocket/mybatis/mapper/memberMapper.xml"/>
-		<mapper resource="com/itPocket/mybatis/mapper/postMapper.xml"/>
-	</mappers>   
+		<mapper resource="com/itPocket/mybatis/mapper/memberMapper.xml" />
+		<mapper resource="com/itPocket/mybatis/mapper/postMapper.xml" />
+	</mappers>
 </configuration>
