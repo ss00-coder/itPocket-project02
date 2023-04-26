@@ -23,6 +23,7 @@ import com.itPocket.member.controller.PasswordSettingOkController;
 import com.itPocket.member.controller.RegionSettingController;
 import com.itPocket.member.controller.RegionSettingOkController;
 import com.itPocket.member.controller.UserOutOkController;
+import com.itPocket.member.controller.FindPasswordController;
 
 public class MemberFrontController extends HttpServlet {
 
@@ -57,6 +58,18 @@ public class MemberFrontController extends HttpServlet {
 			req.getSession().invalidate();		//모든정보 삭제
 			result = new Result();
 			result.setPath("templates/jsp/main.jsp");
+		}
+		else if(target.equals("findPassword")) {
+			result = new Result();
+			result.setPath("templates/jsp/find-password.jsp");
+		}
+		else if(target.equals("findPasswordOk")) {
+			result = new FindPasswordController().execute(req, resp);         
+		}
+		else if(target.equals("findPassword2")) {
+			result = new Result();
+			System.out.println("hi");
+			result.setPath("templates/jsp/find-password2.jsp");
 		}
 		else if (target.equals("mypageOk")) {
 			result = new MypageOkController().execute(req, resp);
