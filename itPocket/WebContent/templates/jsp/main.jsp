@@ -77,7 +77,7 @@
 									<!-- 로그인 -->
 									<li class="nav-item right-section-item"><a href="login.member" class="gnb-link"><span>로그인</span> </a></li>
 									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
+									<li class="nav-item right-section-item"><a href="mypageOk.member" class="gnb-link"><span>회원가입</span> </a></li>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
