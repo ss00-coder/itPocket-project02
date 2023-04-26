@@ -39,4 +39,19 @@ public class MemberDAO {
 	   return sqlSession.selectOne("member.login",loginMap);
    }  
    
+   //마이페이지 아이디로 회원조회
+   public MemberVO select(Long memberId) {
+	   return sqlSession.selectOne("member.select", memberId);
+   }
+   
+   //회원정보 수정
+	public void update(MemberVO memberVO) {
+		sqlSession.update("member.update", memberVO);
+	} 
+	
+	//회원탈퇴
+	public void updateIsRemaining(MemberVO memberVO) {
+		sqlSession.update("member.updateIsRemaining", memberVO);
+	} 
+
 }

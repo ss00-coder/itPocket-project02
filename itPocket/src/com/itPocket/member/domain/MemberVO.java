@@ -9,8 +9,8 @@ public class MemberVO {
 	private String memberRegisterDate;
 	private boolean memberIsExpert;
 	private boolean memberIsRemaining;
-	private String memberFile_name;
-	private String memberFileOriginal_name;
+	private String memberFileName;
+	private String memberFileOriginalName;
 	private String memberFilePath;
 	private int memberFileSize;
 
@@ -80,20 +80,20 @@ public class MemberVO {
 		this.memberIsRemaining = memberIsRemaining;
 	}
 
-	public String getMemberFile_name() {
-		return memberFile_name;
+	public String getMemberFileName() {
+		return memberFileName;
 	}
 
-	public void setMemberFile_name(String memberFile_name) {
-		this.memberFile_name = memberFile_name;
+	public void setMemberFile_name(String memberFileName) {
+		this.memberFileName = memberFileName;
 	}
 
 	public String getMemberFileOriginal_name() {
-		return memberFileOriginal_name;
+		return memberFileOriginalName;
 	}
 
-	public void setMemberFileOriginal_name(String memberFileOriginal_name) {
-		this.memberFileOriginal_name = memberFileOriginal_name;
+	public void setMemberFileOriginal_name(String memberFileOriginalName) {
+		this.memberFileOriginalName = memberFileOriginalName;
 	}
 
 	public String getMemberFilePath() {
@@ -118,7 +118,7 @@ public class MemberVO {
 		return "MemberVO [memberId=" + memberId + ", memberEmail=" + memberEmail + ", memberPassword=" + memberPassword
 				+ ", memberNickname=" + memberNickname + ", memberRegion=" + memberRegion + ", memberRegisterDate="
 				+ memberRegisterDate + ", memberIsExpert=" + memberIsExpert + ", memberIsRemaining=" + memberIsRemaining
-				+ ", memberFile_name=" + memberFile_name + ", memberFileOriginal_name=" + memberFileOriginal_name
+				+ ", memberFileName=" + memberFileName + ", memberFileOriginalName=" + memberFileOriginalName
 				+ ", memberFilePath=" + memberFilePath + ", memberFileSize=" + memberFileSize + "]";
 	}
 

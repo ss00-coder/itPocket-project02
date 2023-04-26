@@ -20,7 +20,7 @@
       $(".description-wrapper").hide();  
       $("#label").css("color", "#655dbb");  
       desc.show();
-      $("#label").css("color", "black"	); 
+      $("#label").css("color", "black"); 
     }
   });
 	

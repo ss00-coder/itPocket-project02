@@ -3,6 +3,8 @@
  */
 const $input = $('input');
 
+$('#pw-text').hide();
+
 $input.focus('click', function(event) { 
   	if($(event.target).val() != ""){
 		$(event.target).css({

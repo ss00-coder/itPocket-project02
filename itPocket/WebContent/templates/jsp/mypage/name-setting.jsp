@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +76,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -106,17 +107,17 @@
                     <section>
                         <fieldset class="form-group text-field">
                             <legend class="bv-no-focus-ring col-form-label pt-0">
-                                이름
+                                닉네임
                             </legend>
-                            <div>
-                                <input type="text" placeholder="닉네임을 입력해 주세요" class="form-control is-valid">
-                            </div>
-                            <div id="pw-text" >닉네임을 입력해주세요</div>
+                            <form action="nameSettingOk.member" id="form">
+                                <input name="memberNickname" type="text" placeholder="닉네임을 입력해 주세요" class="form-control is-valid" value="${memberNickname}">
+                            </form>
+                            <div id="pw-text">닉네임을 입력해주세요</div>
                         </fieldset>
                     </section>
                     <footer class="button-group">
-                        <a href="" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
-                        <button type="button" class="btn btn-primary">수정 완료</button>
+                        <a href="accountSettingOk.member" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
+                        <button form="form" type="submit" class="btn btn-primary">수정 완료</button>
                     </footer>
                 </main>
             </div>

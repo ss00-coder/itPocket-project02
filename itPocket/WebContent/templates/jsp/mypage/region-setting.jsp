@@ -1,17 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-
-<title>비밀번호 변경</title>
+<title>지역 수정</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/password-setting.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/email-setting.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/region-modal.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
@@ -76,7 +77,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -90,56 +91,126 @@
 				</section>
 			</div>
         </header>
-        <!-- 중간부분 -->
         <div id="app-body">
             <div class="container container-md">
-                <h1>비밀번호 변경</h1>
-                <!-- <div></div> -->
-                <div class="form-row">
-                    <div class="margin-bottom-24 col-12">
-                        <fieldset class="form-group current-password">
-                            <legend class="bv-no-focus-ring col-form-label pt-0">기존 비밀번호</legend>
-                            <div>
-                                <div class="input-group current-password">
-                                    <input type="password" placeholder="현재 비밀번호를 입력해주세요" class="form-control is-invalid" name="top-input">
-                                    <button class="btn btn-secondary" type="button">표시</button>
-                                </div>
-                                <div id="top-div" class="invalid-feedback" >비밀번호를 입력해주세요.</div>
-                            </div>
+                <main class="account-info-container">
+                    <h1>지역 수정</h1>
+                    <section>
+                        <fieldset class="form-group text-field">
+                            <legend class="bv-no-focus-ring col-form-label pt-0">
+                                지역
+                            </legend>
+                            <form action="regionSettingOk.member" id="form">
+	                            <section class="service-area-filter-mobile-b">
+									<button type="button" class="btn filter-btn btn-none"><c:out value="${memberRegion}"/></button>
+									<input name="memberRegion" type="hidden">
+								</section>
+							</form>	
                         </fieldset>
-                    </div>
-                    <!-- 새로운 비밀번호 -->
-                    <div class="margin-bottm-8 col-12">
-                        <fieldset class="form-group current-password">
-                            <legend class="bv-no-focus-ring col-form-label pt-0">새로운 비밀번호</legend>
-                            <form action="passwordSettingOk.member" method="post" id="form">
-                                <div class="input-group current-password">
-                                    <input name="memberNewPassword" type="password" placeholder="영문+숫자 조합 8자리 이상 입력하주세요" class="form-control is-invalid" name="middle-input">
-                                    <!-- <button class="btn btn-secondary" type="button">표시</button> -->
-                                </div>
-                                <div id="middle-div" class="invalid-feedback">비밀번호를 입력해주세요.</div>
-                            </form>
-                        </fieldset>
-                    </div>
-                    <div class="margin-bottm-8 col-12">
-                        <fieldset class="form-group current-password">
-                            <legend class="bv-no-focus-ring col-form-label pt-0">새로운 비밀번호 확인</legend>
-                            <div>
-                                <div class="input-group current-password">
-                                    <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" class="form-control is-invalid" name="bottom-input">
-                                    <!-- <button class="btn btn-secondary" type="button">표시</button> -->
-                                </div>
-                                <div id="bottom-div" class="invalid-feedback">비밀번호를 한번 더 입력해주세요.</div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <footer class="button-group">
-                    <a href="accountSettingOk.member" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
-                    <button form="form" type="submit" class="btn btn-primary">변경 완료</button>
-                </footer>
+                    </section>
+                    <footer class="button-group">
+                        <a href="accountSettingOk.member" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
+                        <button form="form" type="submit" class="btn btn-primary">수정 완료</button>
+                    </footer>
+                </main>
             </div>
         </div>
+       	<!-- 모달창 -->
+		<div id="search-service-modal___BV_modal_outer_"
+			style="position: absolute; z-index: 1040;">
+			<div id="search-service-modal"
+				class="modal fade show search-pro-filter-modal" style="display: none">
+				<div
+					class="modal-dialog modal-md modal-dialog-centered mobile-full-modal">
+					<div id="search-service-modal___BV_modal_content_"
+						class="modal-content">
+						<div id="search-service-modal___BV_modal_body_" class="modal-body">
+							<div class="tabs" id="__BVID__782">
+								<!-- 서비스 지역 -->
+								<div>
+									<ul class="nav nav-tabs" id="__BVID__782__BV_tab_controls_">
+										<li class="nav-item"><a class="nav-link active"
+											id="__BVID__795___BV_tab_button__">지역</a></li>
+										<button class="btn btn-none" type="button">
+											<img
+												src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTkgNy44NjlMMTYuNDM0LjQzNGwxLjEzMiAxLjEzMkwxMC4xMyA5bDcuNDM1IDcuNDM0LTEuMTMyIDEuMTMyTDkgMTAuMTNsLTcuNDM0IDcuNDM1LTEuMTMyLTEuMTMyTDcuODcgOSAuNDM0IDEuNTY2IDEuNTY2LjQzNCA5IDcuODd6Ii8+CiAgICA8L2RlZnM+CiAgICA8dXNlIGZpbGw9IiMzMjMyMzIiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI2EiLz4KPC9zdmc+Cg==">
+										</button>
+									</ul>
+								</div>
+								<!-- 리스트 -->
+									<!-- 지역 클릭시 나오는 ul -->
+									<div class="tab-pane" id="__BVID__783" style="display: block;">
+										<div class="option-group-selectbox">
+											<div class="option-group-selectbox">
+												<ul class="area">
+													<li class="all level1">전국
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">서울
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">세종
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">강원
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">인천
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">경기
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">충북
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">충남
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">경북
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">대전
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">대구
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">전북
+														<div class="bottom-border"></div>													
+													</li>
+													<li class="parent level1">울산
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">광주
+														<div class="bottom-border"></div>													
+													</li>
+													</li>
+													<li class="parent level1">경남
+														<div class="bottom-border"></div>													
+													</li>
+													<li class="parent level1">부산
+														<div class="bottom-border"></div>
+													</li>
+													<li class="parent level1">전남
+														<div class="bottom-border"></div>													
+													</li>	
+													<li class="parent level1">제주
+														<div class="bottom-border"></div>													
+													</li>																																				
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="search-service-modal___BV_modal_backdrop_"
+				class="modal-backdrop" style="display: none"></div>
+		</div>
         <nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
@@ -264,5 +335,6 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../../static/js/mypage-setting-js/password-setting.js"></script>
+<script src="../../../static/js/mypage-setting-js/email-setting.js"></script>
+<script src="../../../static/js/mypage-setting-js/region-modal.js"></script>
 </html>

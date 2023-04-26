@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +76,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -98,15 +99,15 @@
                             <legend class="bv-no-focus-ring col-form-label pt-0">
                                 이메일
                             </legend>
-                            <div>
-                                <input type="text" placeholder="example@soomgo.com" class="form-control is-valid">
+                            <form action="emailSettingOk.member" id="form">
+                                <input name="memberEmail" type="text" placeholder="example@soomgo.com" class="form-control is-valid" value="${memberEmail}">
                                 <div class="invalid-feedback" id="pw-text">이메일 주소를 입력해주세요.</div>
-                            </div>
+                            </form>
                         </fieldset>
                     </section>
                     <footer class="button-group">
-                        <a href="" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
-                        <button type="button" class="btn btn-primary">수정 완료</button>
+                        <a href="accountSettingOk.member" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
+                        <button form="form" type="submit" class="btn btn-primary">수정 완료</button>
                     </footer>
                 </main>
             </div>
