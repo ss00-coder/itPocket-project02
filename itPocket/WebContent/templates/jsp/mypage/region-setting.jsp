@@ -102,7 +102,14 @@
                             </legend>
                             <form action="regionSettingOk.member" id="form">
 	                            <section class="service-area-filter-mobile-b">
-									<button type="button" class="btn filter-btn btn-none"><c:out value="${memberRegion}"/></button>
+									<button type="button" class="btn filter-btn btn-none">
+										<c:choose>
+											<c:when test="${not empty memberRegion}">
+												<c:out value="${memberRegion}"/>
+											</c:when>
+											<c:otherwise>지역</c:otherwise>
+										</c:choose>
+									</button>
 									<input name="memberRegion" type="hidden">
 								</section>
 							</form>	

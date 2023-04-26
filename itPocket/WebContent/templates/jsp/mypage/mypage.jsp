@@ -101,7 +101,7 @@
                         <a href="accountSettingOk.member" class="profile-setting">
                             <span class="thumb">
                                 <span class="user-profile-picture h-100">
-                                    <div data-name="image" class="is-square"></div>
+                                    <div data-name="image" class="is-square" style="background-image: url(${pageContext.request.contextPath}/static/image/profile_icon.png);"></div>
                                 </span>
                             </span>
                             <span class="user-info">
