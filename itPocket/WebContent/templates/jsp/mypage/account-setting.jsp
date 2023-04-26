@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +76,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -105,50 +106,50 @@
                     <!-- 회원 관리 메뉴 -->
                     <section>
                         <ul class="account-info">
-                            <a href="name-setting.jsp" class="item-container">
+                            <a href="nameSetting.member" class="item-container">
                                 <div class="item">
-                                    <div class="item-title">이름</div>
-                                    <div class="item-info">홍길동</div>
+                                    <div class="item-title">닉네임</div>
+                                    <div class="item-info"><c:out value="${memberNickname}"/></div>
                                 </div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
                                 </div>
                             </a>
-                            <a class="item-container" href="email-setting.jsp">
+                            <a class="item-container" href="emailSetting.member">
                                 <div class="item">
                                     <div class="item-title">이메일</div>
                                     <div class="item-info">
                                         <!-- <img src="" > -->
-                                        <span>123456789@gmail.com</span>
+                                        <span><c:out value="${memberEmail}"/></span>
                                     </div>
                                 </div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
                                 </div>
                             </a>
-                            <a class="item-container" href="password-setting.jsp">
+                            <a class="item-container" href="passwordSetting.member">
                                 <div class="item">
                                     <div class="item-title">비밀번호</div>
-                                    <div class="item-info">•••••••</div>
+                                    <div class="item-info"><c:out value="${memberPassword}"/></div>
                                 </div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
                                 </div>
                             </a>
-                            <li class="item-container">
+                            <a class="item-container" href="regionSetting.member">
                                 <div class="item">
-                                    <div class="item-title">휴대전화 번호</div>
-                                    <div class="item-info">미인증</div>
+                                    <div class="item-title">지역</div>
+                                    <div class="item-info"><c:out value="${memberRegion}"/></div>
                                 </div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
                                 </div>
-                            </li>
+                            </a>
                         </ul>
 
                         <!-- 회원 탈퇴 -->
                         <ul class="delete-account">
-                            <a class="item-container" href="user-out.jsp">
+                            <a class="item-container" href="userOut.member">
                                 <div class="item">계정 탈퇴</div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
@@ -283,4 +284,5 @@
 		</nav>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </html>

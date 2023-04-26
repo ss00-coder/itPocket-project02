@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +76,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -97,7 +98,7 @@
 
                     <!-- 상단부 메뉴 -->
                     <div class="profile-container underline">
-                        <a href="account-setting.jsp" class="profile-setting">
+                        <a href="accountSettingOk.member" class="profile-setting">
                             <span class="thumb">
                                 <span class="user-profile-picture h-100">
                                     <div data-name="image" class="is-square"></div>
@@ -105,12 +106,12 @@
                             </span>
                             <span class="user-info">
                                 <span class="user-name">
-                                    <span class="name-length">홍길동</span>
+                                    <span class="name-length"><c:out value="${memberNickname}"/></span>
                                     <span class="user-type"> 고객님</span>
                                 </span>
                                 <span class="user-id">
                                     <!-- <img src="" alt=""> -->
-                                    <span class="id-length">123456789@gmail.com</span>
+                                    <span class="id-length"><c:out value="${memberEmail}"/></span>
                                 </span>
                             </span>
                             <div class="account-setting">
@@ -473,4 +474,5 @@
 		</nav>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </html>

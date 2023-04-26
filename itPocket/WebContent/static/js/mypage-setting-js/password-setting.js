@@ -9,6 +9,10 @@ const $button = $('.btn-secondary');
 const $control = $('.form-control[name=top-input]');
 let count = 0;
 
+$('#top-div').hide();
+$('#middle-div').hide();
+$('#bottom-div').hide();
+
 $inputtop.focus('click', function(event) { 
   	if($(event.target).val() != ""){
 		$(event.target).css({

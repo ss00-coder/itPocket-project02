@@ -25,7 +25,7 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a href="../main.jsp">
+								<a href="main">
 									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
@@ -75,7 +75,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -174,9 +174,9 @@
 						</article>
 					</section>
 					<footer class="button-group">
-						<a href="" target="_self"
+						<a href="accountSettingOk.member" target="_self"
 							class="btn router-link-active btn-outline-primary">취소</a>
-						<button type="button" class="btn btn-primary">탈퇴 완료</button>
+						<button type="submit" class="btn btn-primary" onClick="location.href='userOutOk.member'">탈퇴 완료</button>
 					</footer>
 				</main>
 			</div>
