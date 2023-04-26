@@ -97,7 +97,7 @@
 		<div data-v-e48acaee="" data-testid="login-page" class="login-page">
 			<h2 data-v-e48acaee="">로그인</h2>
 			<div data-v-e48acaee="" class="card">
-				<form action="loginOk.member" method="post">
+				<form action="loginOk.member" method="post" name="login">
 					<div data-v-2e241a14="" class="form-row login-form">
 						<!-- 이메일 -->
 						<div data-v-2e241a14="" class="col-12">
@@ -133,7 +133,7 @@
 						</div>
 						<!-- 이메일 로그인 버튼 파트 -->
 						<div data-v-2e241a14="" class="col-12">
-							<button type="submit" class="btn btn-login btn-primary">
+							<button type="button" class="btn btn-login btn-primary" onclick="send()">
 								<span>이메일 로그인</span><span style="display: none"><div>
 										<div data-v-fc3fcce8="" class="indicator-body"
 											style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
@@ -144,7 +144,7 @@
 						<div data-v-2e241a14=""
 							class="reset-password-or-signup-wrapper col-12">
 							<div data-v-2e241a14="">
-								<a data-v-2e241a14="" href="/find-password/" class="">비밀번호
+								<a data-v-2e241a14="" href="findPassword.member" class="">비밀번호
 									찾기</a>
 								<div data-v-2e241a14="" class="line"></div>
 								<a data-v-2e241a14="" href="join.member" class="">회원가입</a>

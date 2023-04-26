@@ -17,13 +17,14 @@ import com.itPocket.member.dao.MemberDAO;
 public class CheckEmailOkController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		resp.setContentType("text/html;charset=utf-8");
+		String memberEmail =req.getParameter("memberEmail");
 		MemberDAO memberDAO = new MemberDAO();
-		String memberEmail = memberDAO.selectEmail(req.getParameter("memberEmail"));
-		boolean check = memberEmail == null;
+		boolean check = memberDAO.selectEmail(memberEmail) == null;
 		JSONObject result = new JSONObject();
-		
 		try {
 			result.put("check", check);
+			result.put("length",memberEmail.length());
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.itPocket.Result;
 import com.itPocket.member.controller.CheckEmailOkController;
 import com.itPocket.member.controller.CheckNicknameOkController;
+import com.itPocket.member.controller.FindPasswordController;
 import com.itPocket.member.controller.JoinOkController;
 import com.itPocket.member.controller.LoginOkController;
 
@@ -51,7 +52,18 @@ public class MemberFrontController extends HttpServlet {
 			result = new Result();
 			result.setPath("templates/jsp/mypage/mypage.jsp");
 		}
-
+		else if(target.equals("findPassword")) {
+			result = new Result();
+			result.setPath("templates/jsp/find-password.jsp");
+		}
+		else if(target.equals("findPasswordOk")) {
+			result = new FindPasswordController().execute(req, resp);			
+		}
+		else if(target.equals("findPassword2")) {
+			result = new Result();
+ 			System.out.println("hi");
+			result.setPath("templates/jsp/find-password2.jsp");
+		}
 		if (result != null) {
 			if (result.isRedirect()) {
 				resp.sendRedirect(result.getPath());
