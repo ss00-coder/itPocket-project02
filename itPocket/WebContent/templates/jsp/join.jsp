@@ -98,7 +98,7 @@
 				<div data-v-59ba51f2="">
 					<h1 data-v-59ba51f2="">itPocket에 오신 것을 환영합니다</h1>
 					<!-- form 태그  -->
-					<form action="joinOk.member" method="post">
+					<form action="joinOk.member" method="post" name="join">
 						<div data-v-59ba51f2="" class="card">
 							<div data-v-2ef2701c="" data-v-59ba51f2="" no-gutters=""
 								data-testid="signup-form" class="form-row signup-form">
@@ -107,16 +107,17 @@
 										id="__BVID__350">
 										<legend tabindex="-1"
 											class="bv-no-focus-ring col-form-label pt-0"
-											id="__BVID__350__BV_label_">이름</legend>
+											id="__BVID__350__BV_label_">닉네임</legend>
 										<div>
 											<input data-v-2ef2701c="" name="memberNickname" type="text"
-												placeholder="이름(실명)을 입력해주세요"
+												placeholder="닉네임을 입력해주세요"
 												class="text-input form-control is-invalid invalid"
 												data-testid="signup-user-name" x-autocompletetype="off"
 												autocompletetype="off" autocorrect="off" spellcheck="true"
 												autocapitalize="off" maxlength="7"
 												data-vv-validate-on="blur" aria-invalid="true"
 												id="__BVID__351" aria-required="true">
+											<div class="invalid-feedback"></div>
 
 										</div>
 									</fieldset>
@@ -135,6 +136,7 @@
 												autocorrect="off" spellcheck="true" autocapitalize="off"
 												maxlength="30" data-vv-validate-on="blur"
 												aria-invalid="true" id="__BVID__353" aria-required="true">
+											<div class="invalid-feedback"></div>
 										</div>
 									</fieldset>
 								</div>
@@ -163,10 +165,10 @@
 										</div>
 									</fieldset>
 								</div>
-
+								
 								<div data-v-2ef2701c="" class="col-12">
 									<button data-v-2ef2701c="" data-testid="btn-signup"
-										type="submit" class="btn btn-signup btn-primary">
+										type="button" class="btn btn-signup btn-primary" onclick="send()">
 										<span data-v-2ef2701c="">회원가입</span><span data-v-2ef2701c=""
 											style="display: none;"><div data-v-fc3fcce8=""
 												data-v-2ef2701c="" class="">
