@@ -95,7 +95,14 @@
 		</header>
 		<!-- 중단부 -->
 		<div data-v-e48acaee="" data-testid="login-page" class="login-page">
-			<h2 data-v-e48acaee="">로그인</h2>
+			<c:choose>
+				<c:when test="${not empty param.login}">
+					<h2 data-v-e48acaee="">로그인 실패</h2>
+				</c:when>
+				<c:otherwise>
+					<h2 data-v-e48acaee="">로그인</h2>
+				</c:otherwise>
+			</c:choose>
 			<div data-v-e48acaee="" class="card">
 				<form action="loginOk.member" method="post" name="login">
 					<div data-v-2e241a14="" class="form-row login-form">
@@ -133,7 +140,8 @@
 						</div>
 						<!-- 이메일 로그인 버튼 파트 -->
 						<div data-v-2e241a14="" class="col-12">
-							<button type="button" class="btn btn-login btn-primary" onclick="send()">
+							<button type="button" class="btn btn-login btn-primary"
+								onclick="send()">
 								<span>이메일 로그인</span><span style="display: none"><div>
 										<div data-v-fc3fcce8="" class="indicator-body"
 											style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
