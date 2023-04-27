@@ -48,24 +48,19 @@
 		member_password, member_nickname, member_region, member_register_date,
 		member_is_expert, member_is_remaining, member_file_name,
 		member_file_original_name, member_file_path, member_file_size
-		from
-		tbl_member
+		from tbl_member
 		where member_id = #{memberId}
 	</select>
 
 	<update id="update">
 		update tbl_member
-		set member_nickname =
-		#{memberNickname}, member_email = #{memberEmail}, member_password =
-		#{memberPassword}, member_region = #{memberRegion}
-		where member_id =
-		#{memberId}
+		set member_nickname = #{memberNickname}, member_email = #{memberEmail}, member_password = #{memberPassword}, member_region = #{memberRegion}, member_file_name = #{memberFileName}, member_file_original_name = #{memberFileOriginalName}, member_file_size = #{memberFileSize}
+		where member_id = #{memberId}
 	</update>
 
 	<update id="updateIsRemaining">
 		update tbl_member
-		set member_is_remaining =
-		#{memberIsRemaining}
+		set member_is_remaining = #{memberIsRemaining}
 		where member_id = #{memberId}
 	</update>
 	

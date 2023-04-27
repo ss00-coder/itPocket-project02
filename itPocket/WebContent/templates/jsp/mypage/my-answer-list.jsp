@@ -25,7 +25,7 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a href="../main.jsp">
+								<a href="main">
 									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>

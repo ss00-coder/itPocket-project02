@@ -24,6 +24,16 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>Post</servlet-name>
+		<servlet-class>com.itPocket.post.PostFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Post</servlet-name>
+		<url-pattern>*.post</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>Main</servlet-name>
 		<servlet-class>com.itPocket.main.MainFrontController</servlet-class>
 	</servlet>

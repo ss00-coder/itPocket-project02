@@ -84,15 +84,15 @@ public class MemberVO {
 		return memberFileName;
 	}
 
-	public void setMemberFile_name(String memberFileName) {
+	public void setMemberFileName(String memberFileName) {
 		this.memberFileName = memberFileName;
 	}
 
-	public String getMemberFileOriginal_name() {
+	public String getMemberFileOriginalName() {
 		return memberFileOriginalName;
 	}
 
-	public void setMemberFileOriginal_name(String memberFileOriginalName) {
+	public void setMemberFileOriginalName(String memberFileOriginalName) {
 		this.memberFileOriginalName = memberFileOriginalName;
 	}
 

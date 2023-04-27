@@ -22,7 +22,7 @@ public class UserOutOkController implements Action {
 		
 		Long memberId = (Long)session.getAttribute("memberId");
 		memberVO = memberDAO.select(memberId);
-		memberVO.setMemberIsRemaining(true);
+		memberVO.setMemberIsRemaining(false);
 		
 		memberDAO.updateIsRemaining(memberVO);
 		System.out.println("들어옴");

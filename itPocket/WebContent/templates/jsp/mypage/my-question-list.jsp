@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>내 질문 목록</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/my-qustion-list.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/my-question-list.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
@@ -25,7 +26,7 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a href="../main.jsp">
+								<a href="main">
 									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
@@ -89,31 +90,26 @@
 				</section>
 			</div>
         </header>
-        <div id="app-body">
+        <div id="app-body" display="block">
             <div class="my-page-community-activity-container">
                 <div class="community-activity-container">
                     <section class="community-title-section">
                         <h1 class="community-activity-title">내 글 목록</h1>
                     </section>
                     <ul class="tab-list">
-                        <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
+                        <li class="${param.sort == null or param.sort == 'question' ? 'tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected' : 'tab sg-text-body2 sg-font-regular sg-text-gray-400'}">
                             Q&A
                         </li>
-                        <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
+                        <li class="${param.sort == 'study' ? 'tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected' : 'tab sg-text-body2 sg-font-regular sg-text-gray-400'}">
                            	스터디
                         </li>
-                        <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
+                        <li class="${param.sort == 'knowhow' ? 'tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected' : 'tab sg-text-body2 sg-font-regular sg-text-gray-400'}">
                             노하우
                         </li>
                     </ul>
                     <section class="community-content-section white">
-                        <article class="no-items align-self-center text-center no-items">
-                            <i>
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-coupon-empty.svg" alt="empty">
-                            </i>
-                            <h3>작성 글이 없습니다</h3>
-                            <p class="help-block p2">설명글을 입력하세요</p>
-                        </article>
+                    	<ul class="list">
+                        </ul>
                     </section>
                 </div>
             </div>
@@ -241,4 +237,10 @@
 		</nav>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let posts = JSON.parse(`${posts}`);
+	let contextPath = "${pageContext.request.contextPath}";
+</script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/list-my-page.js"></script>
 </html>

@@ -96,8 +96,8 @@ p {
 
 #app, #app-body {
     opacity: 1;
-    height: 100%;
-    position: relative;
+   /*  height: 100%; */
+   /*  position: relative; */
     flex-grow: 1;
     transition: opacity .3s ease-in;
 }
@@ -152,7 +152,7 @@ li.selected {
     font-weight: 700;
 }
 
-li+li {
+.tab-list li+li {
     margin-left: 1rem;
 }
 
