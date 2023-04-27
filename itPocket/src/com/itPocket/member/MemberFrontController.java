@@ -28,6 +28,7 @@ import com.itPocket.member.controller.RegionSettingController;
 import com.itPocket.member.controller.RegionSettingOkController;
 import com.itPocket.member.controller.UserOutOkController;
 import com.itPocket.member.controller.FindPasswordController;
+import com.itPocket.member.controller.FindPasswordController2;
 
 public class MemberFrontController extends HttpServlet {
 
@@ -74,9 +75,16 @@ public class MemberFrontController extends HttpServlet {
 		
 		else if(target.equals("findPassword2")) {
 			result = new Result();
-			System.out.println("hi");
 			result.setPath("templates/jsp/find-password2.jsp");
 		}
+		else if(target.equals("findPasswordSetting")) {
+			result = new Result();
+			result.setPath("templates/jsp/find-password-setting.jsp");
+		}
+		else if(target.equals("findPasswordOk2")) { 
+			result = new FindPasswordController2().execute(req, resp); 
+		}
+
 		else if (target.equals("mypageOk")) {
 			result = new MypageOkController().execute(req, resp);
 		}

@@ -38,6 +38,16 @@ public class MemberDAO {
 	   
 	   return sqlSession.selectOne("member.login",loginMap);
    }  
+
+   //비밀번호 재설정
+   public void updatePassword(String memberPassword, String memberEmail) {
+      HashMap<String, String> settingMap = new HashMap<String, String>();
+      settingMap.put("memberPassword", memberPassword);
+      settingMap.put("memberEmail", memberEmail);
+      
+      sqlSession.update("updatePassword",settingMap);
+   }
+
    
    //마이페이지 아이디로 회원조회
    public MemberVO select(Long memberId) {
