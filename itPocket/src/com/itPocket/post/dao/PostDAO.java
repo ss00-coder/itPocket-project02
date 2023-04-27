@@ -57,4 +57,11 @@ public class PostDAO {
 		return sqlSession.selectOne("post.selectCurrentSequence");
 	}
 	
+//		마이페이지에서 나의 글 조회
+	public List<PostDTO> selectMyQuestion(Long memberId, String sort){
+		HashMap<String, Object> selectMap = new HashMap<String, Object>();
+		selectMap.put("memberId", memberId);
+		selectMap.put("sort", sort);
+		return sqlSession.selectList("post.selectMyQuestion", selectMap);
+	}
 }

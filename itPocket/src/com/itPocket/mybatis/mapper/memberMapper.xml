@@ -42,7 +42,7 @@
 	
    	<update id="update">
 		update tbl_member
-		set member_nickname = #{memberNickname}, member_email = #{memberEmail}, member_password = #{memberPassword}, member_region = #{memberRegion}
+		set member_nickname = #{memberNickname}, member_email = #{memberEmail}, member_password = #{memberPassword}, member_region = #{memberRegion}, member_file_name = #{memberFileName}, member_file_original_name = #{memberFileOriginalName}, member_file_size = #{memberFileSize}
 		where member_id = #{memberId}
 	</update>
 	

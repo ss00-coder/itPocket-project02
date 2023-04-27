@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
+import com.itPocket.member.controller.AccountFileSettingOkController;
 import com.itPocket.member.controller.AccountSettingOkController;
 import com.itPocket.member.controller.CheckEmailOkController;
 import com.itPocket.member.controller.CheckNicknameOkController;
@@ -15,6 +16,9 @@ import com.itPocket.member.controller.EmailSettingController;
 import com.itPocket.member.controller.EmailSettingOkController;
 import com.itPocket.member.controller.JoinOkController;
 import com.itPocket.member.controller.LoginOkController;
+import com.itPocket.member.controller.MyAnswerListOkController;
+import com.itPocket.member.controller.MyCommentListOkController;
+import com.itPocket.member.controller.MyQuestionListOkController;
 import com.itPocket.member.controller.MypageOkController;
 import com.itPocket.member.controller.NameSettingController;
 import com.itPocket.member.controller.NameSettingOkController;
@@ -110,7 +114,22 @@ public class MemberFrontController extends HttpServlet {
 		else if (target.equals("userOutOk")) {
 			result = new UserOutOkController().execute(req, resp);
 		}
-		
+		else if (target.equals("myProfile")) {
+			result = new Result();
+			result.setPath("templates/jsp/profile.jsp");
+		}
+		else if (target.equals("myQuestionListOk")) {
+			result = new MyQuestionListOkController().execute(req, resp);
+		}
+		else if (target.equals("myAnswerListOk")) {
+			result = new MyAnswerListOkController().execute(req, resp);
+		}
+		else if (target.equals("myCommentListOk")) {
+			result = new MyCommentListOkController().execute(req, resp);
+		}
+		else if (target.equals("accountFileSettingOk")) {
+			result = new AccountFileSettingOkController().execute(req, resp);
+		}
 		if (result != null) {
 			if (result.isRedirect()) {
 				resp.sendRedirect(result.getPath());
