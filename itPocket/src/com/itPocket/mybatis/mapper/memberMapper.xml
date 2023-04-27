@@ -42,14 +42,6 @@
 		where member_email = #{memberEmail}
 	</update>
 	
-	<!-- 비밀번호 재설정 -->
-   <update id="updatePassword">
-      update tbl_member
-      set member_password = #{memberPassword}
-      where member_email = #{memberEmail}
-   </update>
-	
-	
 	<!-- 마이페이지 아이디로 회원조회 -->
 	<select id="select" resultType="memberVO">
 		select member_id, member_email,
@@ -62,17 +54,13 @@
 
 	<update id="update">
 		update tbl_member
-		set member_nickname =
-		#{memberNickname}, member_email = #{memberEmail}, member_password =
-		#{memberPassword}, member_region = #{memberRegion}
+		set member_nickname = #{memberNickname}, member_email = #{memberEmail}, member_password = #{memberPassword}, member_region = #{memberRegion}, member_file_name = #{memberFileName}, member_file_original_name = #{memberFileOriginalName}, member_file_size = #{memberFileSize}
 		where member_id = #{memberId}
 	</update>
 
 	<update id="updateIsRemaining">
 		update tbl_member
-		set member_is_remaining =
-		#{memberIsRemaining}
-		set member_nickname = #{memberNickname}, member_email = #{memberEmail}, member_password = #{memberPassword}, member_region = #{memberRegion}, member_file_name = #{memberFileName}, member_file_original_name = #{memberFileOriginalName}, member_file_size = #{memberFileSize}
+		set member_is_remaining = #{memberIsRemaining}
 		where member_id = #{memberId}
 	</update>
 	
