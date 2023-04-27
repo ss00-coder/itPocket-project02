@@ -26,7 +26,7 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a href="../main.jsp">
+								<a href="main">
 									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
@@ -101,7 +101,15 @@
                         <a href="accountSettingOk.member" class="profile-setting">
                             <span class="thumb">
                                 <span class="user-profile-picture h-100">
-                                    <div data-name="image" class="is-square" style="background-image: url(${pageContext.request.contextPath}/static/image/profile_icon.png);"></div>
+		            				<c:choose>
+											<c:when test="${not empty memberFileName}">
+					                            <img src="${pageContext.request.contextPath}/upload/${memberFileName}">
+											</c:when>
+											<c:otherwise>
+					                            <img src="${pageContext.request.contextPath}/static/image/profile_icon.png">
+											</c:otherwise>
+									</c:choose>                                	
+                                    <%-- <div data-name="image" class="is-square" style="background-image: url(${pageContext.request.contextPath}/static/image/profile_icon.png);"></div> --%>
                                 </span>
                             </span>
                             <span class="user-info">
@@ -132,7 +140,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="../profile.jsp" class="sub-menu-list">
+                                <a href="myProfile.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나의 전문가 페이지로 이동</span>
@@ -154,7 +162,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="my-qustion-list.jsp" class="sub-menu-list">
+                                <a href="myQuestionListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 글</span>
@@ -168,7 +176,7 @@
                                 </a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="my-answer-list.jsp" class="sub-menu-list">
+                                <a href="myAnswerListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 답변</span>
@@ -182,7 +190,7 @@
                                 </a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="my-comment-list.jsp" class="sub-menu-list">
+                                <a href="myCommentListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 댓글</span>
@@ -204,7 +212,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="../study.jsp" class="sub-menu-list">
+                                <a href="study.post" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">스터디 모집글 보러가기</span>

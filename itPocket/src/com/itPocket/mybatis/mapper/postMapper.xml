@@ -89,6 +89,14 @@
 	<select id="selectCurrentSequence" resultType="long">
 		select last_insert_id()
 	</select>
+	
+	<!-- 마이페이지 내 글 보기 -->
+	<select id="selectMyQuestion" resultType="postDTO">
+		select post_id, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname  
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and m.member_id = #{memberId} and post_type = #{sort}
+		order by post_id desc
+	</select>
 </mapper>
 
 
