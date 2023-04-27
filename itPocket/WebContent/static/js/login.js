@@ -8,7 +8,6 @@ $("input[name=memberEmail]").on("blur", function() {
 		$invalid_feeback.eq(0).css("display", "none");
 		checkEmail = true;
 	} else {
-		console.log("들어옴");
 		$invalid_feeback.eq(0).css("display", "block");
 		checkEmail = false;
 	}
@@ -21,14 +20,12 @@ $("input[name=memberPassword]").on("blur", function() {
 		$invalid_feeback.eq(0).css("display", "none");
 		checkPassword = true;
 	} else {
-		console.log("들어옴");
 		$invalid_feeback.eq(0).css("display", "block");
 		checkPassword = false;
 	}
 });
 
 function send() {
-	console.log("hi");
 	if(!checkEmail) {
 		return;
 	} else if(!checkPassword){

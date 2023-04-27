@@ -119,11 +119,11 @@
 			<div class="find-password-container" data-v-5bbda200>
 				<div class="find-password container" data-v-5bbda200>
 
-					<h2 data-v-5bbda200>비밀번호 찾기</h2>
+					<h2 data-v-5bbda200>비밀번호 재설정</h2>
 					<div data-v-5bbda200 class="card">
 						<!-- 이메일 주소 입력칸 -->
-						<form data-v-4d09de91 data-v-5bbda200
-							action="findPasswordOk.member" method="post">
+						<form data-v-4d09de91 data-v-5bbda200 action="findPasswordOk2.member" method="post"
+							name="setting">
 							<div data-v-4d09de91 class="form-row">
 								<!-- 이메일 주소 입력칸 속 더 작은(?) 박스 -->
 								<div data-v-4d09de91 class="col-12">
@@ -131,28 +131,28 @@
 										<!-- "가입한 이메일 주소를 입력해주세요" 및 입력 칸  -->
 										<legend tabindex="-1"
 											class="bv-no-focus-ring col-form-label pt-0"
-											id="__BVID__640__BV_label_">가입한 이메일 주소를 입력해주세요</legend>
+											id="__BVID__640__BV_label_">재설정할 비밀번호를 입력해주세요</legend>
 										<div>
-											<input data-v-4d09de91 name="memberEmail" type="text"
-												placeholder="example@itPocket.com" class="form-control"
+											<input data-v-4d09de91 name="memberPassword" type="password"
+												placeholder="영문+숫자 조합 8자리 이상 입력해주세요" class="form-control"
 												data-vv-name="email" aria-invaild="false" id="__BVID__641">
 										</div>
-										<c:if test="${not empty param.email}">
-											<small class="hide-text" style="color: red;">
-												없는 이메일입니다
-											</small>
-										</c:if>
+										<legend tabindex="-1"
+											class="bv-no-focus-ring col-form-label pt-0"
+											id="__BVID__640__BV_label_">비밀번호 확인</legend>
+										<div>
+											<input data-v-4d09de91 name="memberPasswordCheck"
+												type="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요"
+												class="form-control" data-vv-name="email"
+												aria-invaild="false" id="__BVID__641">
+										</div>
+										<small class="hide-text" style="color: red; display: none">재설정할 비밀번호와 비밀번호 확인이 다릅니다</small>
 									</fieldset>
 								</div>
 								<div data-v-4d09de91 class="col-12">
-									<small data-v-4d09de91 class="notice form-text text-muted">
-										가입하신 이메일 주소를 입력해주시면 <br> 새로운 비밀번호를 설정 가능한 링크를 보내드립니다.
-									</small>
-								</div>
-								<div data-v-4d09de91 class="col-12">
-									<button data-v-4d09de91 type="submit"
+									<button data-v-4d09de91 type="button" onclick="send()"
 										class="btn btn-primary btn-block">
-										<span data-v-4d09de91>이메일 전송하기</span> <span data-v-4d09de91
+										<span data-v-4d09de91>재설정하기</span> <span data-v-4d09de91
 											style="display: none;">
 											<div data-v-fc3fcce8 data-v-4d09de91 class>
 												<div data-v-fc3fcce8="" class="indicator-body center"
@@ -293,5 +293,6 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/find-password.js"></script>
+<script
+	src="${pageContext.request.contextPath}/static/js/find-password-setting.js"></script>
 </html>

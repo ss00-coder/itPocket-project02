@@ -1,26 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header-main2.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/global-header-main2.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/main.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/footer.css">
 <title>메인페이지</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath}/static/image/shortcut.png">
 </head>
 <body class="home">
 	<div id="app">
-	
-		<div class="__cov-progress" style="background-color: rgb(0, 199, 174); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div>
+
+		<div class="__cov-progress"
+			style="background-color: rgb(0, 199, 174); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div>
 		<!-- <header class="global-header hide-border-bottom" id="app-header"></header> 진혁님 -->
 		<header class="global-header">
 			<div class="global-navigation-bar">
@@ -30,27 +40,27 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a href="main"> 
-									<img src="${pageContext.request.contextPath}/static/image/logo.png">
+								<a href="main"> <img
+									src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item"><a href="how-to-use.jsp" class="gnb-link">
-										<span>사이트소개</span>
+									<li class="nav-item left-section-item"><a
+										href="how-to-use.jsp" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.jsp" class="gnb-link"> 
-										<span>스터디</span>
+									<li class="nav-item left-section-item"><a href="study.jsp"
+										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a href="master-know-how-free.jsp" class="gnb-link">
-										<span>노하우</span>
+									<li class="nav-item left-section-item"><a
+										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
-									<li class="nav-item left-section-item"><a href="list-by-language.jsp" class="gnb-link"> 
-										<span>Q&A</span>
+									<li class="nav-item left-section-item"><a
+										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
@@ -61,11 +71,16 @@
 								<form class="global-search-bar">
 									<div class="input-group">
 										<div class="input-group-prepend">
-											<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQgNCkiIHN0cm9rZT0iI0I1QjVCNSIgc3Ryb2tlLXdpZHRoPSIxLjYiPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGN4PSI2LjUiIGN5PSI2LjUiIHI9IjYuNSIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Im0xMS41IDExLjUgNSA1Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+											<img
+												src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQgNCkiIHN0cm9rZT0iI0I1QjVCNSIgc3Ryb2tlLXdpZHRoPSIxLjYiPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGN4PSI2LjUiIGN5PSI2LjUiIHI9IjYuNSIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Im0xMS41IDExLjUgNSA1Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+												alt="">
 										</div>
-										<input type="text" placeholder="어떤 서비스가 필요하세요?" class="form-control">
+										<input type="text" placeholder="어떤 서비스가 필요하세요?"
+											class="form-control">
 										<div class="input-group-append">
-											<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgMykiPgogICAgICAgICAgICA8Y2lyY2xlIGZpbGw9IiNDNUM1QzUiIGN4PSI5IiBjeT0iOSIgcj0iOSIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Im02IDYgNi4wMDUgNi4wMDZNMTIuMDA1IDYgNiAxMi4wMDYiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="" style="display: none;">
+											<img
+												src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgMykiPgogICAgICAgICAgICA8Y2lyY2xlIGZpbGw9IiNDNUM1QzUiIGN4PSI5IiBjeT0iOSIgcj0iOSIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Im02IDYgNi4wMDUgNi4wMDZNMTIuMDA1IDYgNiAxMi4wMDYiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo="
+												alt="" style="display: none;">
 										</div>
 									</div>
 								</form>
@@ -75,14 +90,31 @@
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a href="login.member" class="gnb-link"><span>로그인</span> </a></li>
-									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a href="mypageOk.member" class="gnb-link"><span>회원가입</span> </a></li>
+									<c:choose>
+										<c:when test="${not empty memberId}">
+											<!-- 로그아웃 -->
+											<li class="nav-item right-section-item"><a
+												href="logout.member" class="gnb-link"><span>로그아웃</span> </a></li>
+											<!-- 마이페이지 -->
+											<li class="nav-item right-section-item"><a
+												href="mypageOk.member" class="gnb-link"><span>마이페이지</span>
+											</a></li>
+										</c:when>
+										<c:otherwise>
+											<!-- 로그인 -->
+											<li class="nav-item right-section-item"><a
+												href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+											<!-- 회원가입 -->
+											<li class="nav-item right-section-item"><a
+												href="join.member" class="gnb-link"><span>회원가입</span>
+											</a></li>
+										</c:otherwise>
+									</c:choose>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
-							<button type="button" class="btn pro-signup-btn right-section-item btn-primary">
+							<button type="button"
+								class="btn pro-signup-btn right-section-item btn-primary">
 								<a>전문가신청</a>
 							</button>
 						</div>
@@ -98,14 +130,16 @@
 					<div class="main-banner" id="banner">
 						<div class="slick-slider slick-initialized">
 							<div class="slick-list">
-								<div class="slick-track" style="width: 12610px; opacity: 1; transform: translate(-970px);">
+								<div class="slick-track"
+									style="width: 12610px; opacity: 1; transform: translate(-970px);">
 									<!-- 같은거 복붙 (6개) -->
 									<div class="slick-slide" style="outline: none; width: 970px;">
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner6.png" class="banner-image">
+												<a href="" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner6.png"
+													class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -114,8 +148,9 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="main.jsp" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
+												<a href="main.jsp" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner1.png"
+													class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
 										</div>
@@ -124,8 +159,9 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="main.jsp" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner2.png" class="banner-image">
+												<a href="main.jsp" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner2.png"
+													class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -134,8 +170,9 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="master-know-how-free.jsp" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner3.png" class="banner-image">
+												<a href="master-know-how-free.jsp" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner3.png"
+													class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -144,8 +181,9 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="study.jsp" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner4.png" class="banner-image">
+												<a href="study.jsp" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner4.png"
+													class="banner-image">
 												</a>
 											</div>
 										</div>
@@ -154,26 +192,31 @@
 										<div>
 											<div class="banner-item"
 												style="width: 100%; display: inline-blick;">
-												<a href="list-by-language.jsp" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner5.png" class="banner-image">
+												<a href="list-by-language.jsp" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner5.png"
+													class="banner-image">
 												</a>
 											</div>
 										</div>
 									</div>
 									<div class="slick-slide" style="outline: none; width: 970px;">
 										<div>
-											<div class="banner-item" style="width: 100%; display: inline-blick;">
-												<a href="" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner6.png" class="banner-image">
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner6.png"
+													class="banner-image">
 												</a>
 											</div>
 										</div>
 									</div>
 									<div class="slick-slide" style="outline: none; width: 970px;">
 										<div>
-											<div class="banner-item" style="width: 100%; display: inline-blick;">
-												<a href="main.jsp" target="_self">
-													<img src="${pageContext.request.contextPath}/static/image/main_banner1.png" class="banner-image" style="object-fit: cover;">
+											<div class="banner-item"
+												style="width: 100%; display: inline-blick;">
+												<a href="main.jsp" target="_self"> <img
+													src="${pageContext.request.contextPath}/static/image/main_banner1.png"
+													class="banner-image" style="object-fit: cover;">
 												</a>
 											</div>
 										</div>
@@ -184,10 +227,12 @@
 						</div>
 						<div class="button-wrapper" style="display: none;">
 							<div class="slide-button prev-button">
-								<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTE0IDE5LTctNyA3LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
+								<img
+									src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTE0IDE5LTctNyA3LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
 							</div>
 							<div class="slide-button next-button">
-								<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEwIDE5IDctNy03LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
+								<img
+									src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEwIDE5IDctNy03LTciLz4KICAgIDwvZz4KPC9zdmc+Cg==">
 							</div>
 						</div>
 						<div class="indicator">1/6</div>
@@ -206,12 +251,14 @@
 								<div class="category-title">C</div>
 							</div>
 					</a></li>
-					<li class="category-item python"><a href="list-by-language.jsp">
+					<li class="category-item python"><a
+						href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">Python</div>
 							</div>
 					</a></li>
-					<li class="category-item oracle"><a href="list-by-language.jsp">
+					<li class="category-item oracle"><a
+						href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">Oracle</div>
 							</div>
@@ -231,7 +278,8 @@
 								<div class="category-title">CSS</div>
 							</div>
 					</a></li>
-					<li class="category-item javascript"><a href="list-by-language.jsp">
+					<li class="category-item javascript"><a
+						href="list-by-language.jsp">
 							<div class="category-icon">
 								<div class="category-title">JavaScript</div>
 							</div>
@@ -243,8 +291,9 @@
 					<div class="main-popular-pro">
 						<section class="header">
 							<h2 class="title">지금 인기 있는 전문가</h2>
-							<a href="" class="go-list"> <span>전체보기</span> 
-							<img src="${pageContext.request.contextPath}/static/image/arrow6.png" alt="">
+							<a href="" class="go-list"> <span>전체보기</span> <img
+								src="${pageContext.request.contextPath}/static/image/arrow6.png"
+								alt="">
 							</a>
 						</section>
 						<section class="chips">
@@ -272,12 +321,14 @@
 									<div class="slick-track"
 										style="width: 2574px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
 										<!-- 고수 링크 -->
-										<div class="slick-slide" aria-hidden="" style="outline: none; width: 198px;">
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 198px;">
 											<div>
 												<div style="width: 100%; display: inline-block;">
 													<section class="meet-provider">
-														<img class="meet-provider-icon"	src="${pageContext.request.contextPath}/static/image/find.png" alt=""> 
-														<span class="meet-provider-text total">1234명</span>
+														<img class="meet-provider-icon"
+															src="${pageContext.request.contextPath}/static/image/find.png"
+															alt=""> <span class="meet-provider-text total">1234명</span>
 														<span class="meet-provider-text">의</span> <br>
 														<div class="meet-provider-link">
 															<span class="meet-provider-text">전문가 만나보기</span> <img
@@ -291,7 +342,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -299,8 +351,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -311,10 +364,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -323,7 +374,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -331,8 +383,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -343,10 +396,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -355,7 +406,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -363,8 +415,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -375,10 +428,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -387,7 +438,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -395,8 +447,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -407,10 +460,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -419,7 +470,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -427,8 +479,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -439,10 +492,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -451,7 +502,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -459,8 +511,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -471,10 +524,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -483,7 +534,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -491,8 +543,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -503,10 +556,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -515,7 +566,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -523,8 +575,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -535,10 +588,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -547,7 +598,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -555,8 +607,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -567,10 +620,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -579,7 +630,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -587,8 +639,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -599,10 +652,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -611,7 +662,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -619,8 +671,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -631,10 +684,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -643,7 +694,8 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 198px;">
 											<div>
-												<a href="profile.jsp" style="width: 100%; display: inline-block;">
+												<a href="profile.jsp"
+													style="width: 100%; display: inline-block;">
 													<div class="main-pro-card" data-testid="main-pro-card">
 														<section class="header">
 															<div
@@ -651,8 +703,9 @@
 																class="thumb" data-src="" lazy="loaded"></div>
 															<!-- 프로필 사진 -->
 															<div class="review">
-																<img src="${pageContext.request.contextPath}/static/image/like.png" alt=""> 
-																<span class="rate">200</span>
+																<img
+																	src="${pageContext.request.contextPath}/static/image/like.png"
+																	alt=""> <span class="rate">200</span>
 															</div>
 														</section>
 														<p class="name">⭐강트럭⭐(✔믿음 친절 숨고1위 용달ㆍ화물업체✔)</p>
@@ -663,10 +716,8 @@
 															</span>
 														</section>
 														<section class="sub-info">
-															<span>조회수 100</span> 
-															<span
-																class="avg-response-time has-career"> 답변 총 100개
-															</span>
+															<span>조회수 100</span> <span
+																class="avg-response-time has-career"> 답변 총 100개 </span>
 														</section>
 													</div>
 												</a>
@@ -686,19 +737,26 @@
 					<h2 class="title">인기 스터디 모집</h2>
 					<div class="main-desktop-slide">
 						<div class="slick-slider slick-initialized">
-							<button type="button" class="slick-arrow slick-prev slick-disabled" style="display: block;">Previous</button>
+							<button type="button"
+								class="slick-arrow slick-prev slick-disabled"
+								style="display: block;">Previous</button>
 							<div class="slick-list">
 								<div class="slick-track"
 									style="width: 1976px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
 									<!-- 이런거 여러개 복붙 (8개) -->
-									<div class="slick-slide" aria-hidden="" style="outline: none; width: 247px;">
+									<div class="slick-slide" aria-hidden=""
+										style="outline: none; width: 247px;">
 										<div>
 											<a href="" style="width: 100%; display: inline-block;">
 												<div class="main-service-card">
-													<img class="service-image" data-sre="" src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png" alt="" lazy="loaded">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
 													<p class="service-name">영어 과외</p>
 													<div class="request-count">
-														<img class="request-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt=""> <span>1234</span> 명 요청
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
 													</div>
 												</div>
 											</a>
@@ -709,10 +767,14 @@
 										<div>
 											<a href="" style="width: 100%; display: inline-block;">
 												<div class="main-service-card">
-													<img class="service-image" data-sre="" src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png" alt="" lazy="loaded">
+													<img class="service-image" data-sre=""
+														src="https://dmmj3ljielax6.cloudfront.net/upload/service/05389ab5-c05d-45c8-abe1-d0b90019cb75.png"
+														alt="" lazy="loaded">
 													<p class="service-name">영어 과외</p>
 													<div class="request-count">
-														<img class="request-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt=""> <span>1234</span> 명 요청
+														<img class="request-icon"
+															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgxNnYxNkgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMykiPgogICAgICAgICAgICA8cmVjdCBmaWxsPSIjQzVDNUM1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTEyIDIuNS01IDMtNS0zIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+															alt=""> <span>1234</span> 명 요청
 													</div>
 												</div>
 											</a>
@@ -847,8 +909,9 @@
 							<div class="curation-container half-list">
 								<ul data-testid="curation-list" class="curation-list">
 									<li data-testid="curation-item" class="curation-list-item">
-										<!-- 글 개수만큼 붙여넣기 (3개) --> 
-										<a href="master-know-how-free-detail.jsp" class="curation-list-wrapper">
+										<!-- 글 개수만큼 붙여넣기 (3개) --> <a
+										href="master-know-how-free-detail.jsp"
+										class="curation-list-wrapper">
 											<div class="curation-contents has-thumbnail">
 												<p class="topic-name">궁금해요</p>
 												<p class="curation-title">메인페이지 언제 끝나요?</p>
@@ -859,8 +922,8 @@
 														class="comment-count">12</span>
 												</div>
 											</div>
-										</a> 
-										<a href="master-know-how-free-detail.jsp" class="curation-list-wrapper">
+									</a> <a href="master-know-how-free-detail.jsp"
+										class="curation-list-wrapper">
 											<div class="curation-contents has-thumbnail">
 												<p class="topic-name">궁금해요</p>
 												<p class="curation-title">메인페이지 언제 끝나요?</p>
@@ -871,8 +934,8 @@
 														class="comment-count">12</span>
 												</div>
 											</div>
-										</a> 
-										<a href="master-know-how-free-detail.jsp" class="curation-list-wrapper">
+									</a> <a href="master-know-how-free-detail.jsp"
+										class="curation-list-wrapper">
 											<div class="curation-contents has-thumbnail">
 												<p class="topic-name">궁금해요</p>
 												<p class="curation-title">메인페이지 언제 끝나요?</p>
@@ -883,15 +946,15 @@
 														class="comment-count">12</span>
 												</div>
 											</div>
-										</a> 
-										<!-- 여기까지 -->
+									</a> <!-- 여기까지 -->
 									</li>
 								</ul>
 							</div>
 							<div class="knowhow-container half-list">
 								<!-- 같은거 복붙 (2개) -->
-								<a href="master-know-how-free-detail.jsp" class="knowhow-card-slide" data-testid="knowhow-item">
-									<img class="thumb-image" data-src=""
+								<a href="master-know-how-free-detail.jsp"
+									class="knowhow-card-slide" data-testid="knowhow-item"> <img
+									class="thumb-image" data-src=""
 									src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?h=320&w=480"
 									alt="" lazy="loaded">
 									<div class="card-desc">
@@ -904,10 +967,9 @@
 										</div>
 										<p class="author">임희수</p>
 									</div>
-								</a> 
-								<a href="master-know-how-free-detail.jsp" class="knowhow-card-slide"
-									data-testid="knowhow-item"> <img class="thumb-image"
-									data-src=""
+								</a> <a href="master-know-how-free-detail.jsp"
+									class="knowhow-card-slide" data-testid="knowhow-item"> <img
+									class="thumb-image" data-src=""
 									src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?h=320&w=480"
 									alt="" lazy="loaded">
 									<div class="card-desc">
@@ -949,17 +1011,8 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/java_icon.png"
-													alt="" lazy="loaded">
-													<p class="service-name">이거 모르겠어영</p>
-												</a>
-											</div>
-										</div>
-										<div class="slick-slide" aria-hidden=""
-											style="outline: none; width: 247px;">
-											<div>
-												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/css_icon.png"
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/java_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -970,16 +1023,7 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="${pageContext.request.contextPath}/static/image/oracle_icon.png" alt="" lazy="loaded">
-													<p class="service-name">이거 모르겠어영</p>
-												</a>
-											</div>
-										</div>
-										<div class="slick-slide" aria-hidden=""
-											style="outline: none; width: 247px;">
-											<div>
-												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
+													src="${pageContext.request.contextPath}/static/image/css_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -989,7 +1033,8 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/oracle_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -999,7 +1044,30 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
+													alt="" lazy="loaded">
+													<p class="service-name">이거 모르겠어영</p>
+												</a>
+											</div>
+										</div>
+										<div class="slick-slide" aria-hidden=""
+											style="outline: none; width: 247px;">
+											<div>
+												<a href="" style="width: 100%; display: inline-block;">
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/mysql_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -1028,7 +1096,8 @@
 											style="outline: none; width: 247px;">
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/C_icon.png"
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/C_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -1037,9 +1106,10 @@
 										<div class="slick-slide" aria-hidden=""
 											style="outline: none; width: 247px;">
 											<div>
-												
+
 												<a href="" style="width: 100%; display: inline-block;">
-													<img class="service-image" data-src="" src="${pageContext.request.contextPath}/static/image/html_icon.png"
+													<img class="service-image" data-src=""
+													src="${pageContext.request.contextPath}/static/image/html_icon.png"
 													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
@@ -1050,7 +1120,8 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="${pageContext.request.contextPath}/static/image/python_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/python_icon.png"
+													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1060,7 +1131,8 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="${pageContext.request.contextPath}/static/image/python_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/python_icon.png"
+													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1070,7 +1142,8 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="${pageContext.request.contextPath}/static/image/python_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/python_icon.png"
+													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1080,7 +1153,8 @@
 											<div>
 												<a href="" style="width: 100%; display: inline-block;">
 													<img class="service-image" data-src=""
-													src="${pageContext.request.contextPath}/static/image/javascript_icon.png" alt="" lazy="loaded">
+													src="${pageContext.request.contextPath}/static/image/javascript_icon.png"
+													alt="" lazy="loaded">
 													<p class="service-name">이거 모르겠어영</p>
 												</a>
 											</div>
@@ -1157,8 +1231,7 @@
 					<ul class="content-list">
 						<li class="open-padding"><span
 							class="text-middle title category"> 숨고소개 <span
-								class="new-badge" style="display: none;">N</span>
-							<!----></span>
+								class="new-badge" style="display: none;">N</span> <!----></span>
 							<div>
 								<a href="/about" class="text-middle category">회사소개 <span
 									class="new-badge" style="display: none;">N</span>
