@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
+import com.itPocket.post.controller.KnowHowColumnController;
+import com.itPocket.post.controller.KnowHowController;
 
 
 public class PostFrontController extends HttpServlet{
@@ -17,6 +19,17 @@ public class PostFrontController extends HttpServlet{
 		
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
+		
+		if(target.equals("KnowHowlistOk")) {
+			result = new KnowHowController().execute(req,resp);
+		}
+		
+		if(target.equals("KnowHowColumnlistOk")) {
+			result = new KnowHowColumnController().execute(req,resp);
+		}
+		
+		
+		
 		
 		if(result != null) {
 			if(result.isRedirect()) {

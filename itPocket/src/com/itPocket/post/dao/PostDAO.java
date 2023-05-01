@@ -64,4 +64,17 @@ public class PostDAO {
 		selectMap.put("sort", sort);
 		return sqlSession.selectList("post.selectMyQuestion", selectMap);
 	}
+	
+//  knowHow 게시판 조회
+	public List<PostDTO> knowHowSelect(HashMap<String, Object> pagable){
+		List<PostDTO> list = sqlSession.selectList("post.knowHowSelect",pagable);
+		System.out.println(list.get(1));
+		return list;
+}
+//		knowHow column 조회
+	public List<PostDTO> knowHowColumnSelect(HashMap<String, Object> pagable){
+		List<PostDTO> list = sqlSession.selectList("post.knowHowColumnSelect", pagable);
+		return list;
+	}
+		
 }

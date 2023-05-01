@@ -336,77 +336,10 @@
 									</button>
 								</section> -->
 								<!-- 커뮤니티 글 -->
-								<article class="community-feed-list">
+								<article class="community-feed-list" id = "content-wrap">
 									<ul class="feed-list">
 										<!-- 첫번쨰 글 -->
-										<li class="feed-item"><a class="soomgo-life-feed-item"
-											href="list-by-language-detail.jsp"> <!-- 목록 이름 -->
-												<p
-													class="topic-name sg-text-description sg-font-regular sg-text-gray-500">고수찾아요
-													· 집 인테리어</p>
-												<div class="feed-content service-address-info">
-													<div>
-														<section class="item-wrapper">
-															<h3
-																class="sg-text-subhead5 sg-font-medium sg-text-gray-900">드레스룸
-																해체 및 이전설치조립 가능하신분</h3>
-															<p
-																class="content sg-text-body2 sg-font-regular sg-text-gray-500">
-																이 제품 다른방으로 옮기려고하는데 해체하고 재조립 가능하신 고수님 계신가요</p>
-														</section>
-														<p
-															class="sub-information sg-text-description sg-font-regular sg-text-gray-500">대전/중구</p>
-													</div>
-													<img
-														src="https://static.cdn.soomgo.com/upload/media/698917af-7966-4cfb-b820-812eed2c2692.jpg?h=80&w=80&webp=1">
-												</div>
-												<div class="feed-footer">
-													<div class="user-interaction">
-														<span
-															class="like sg-text-description sg-font-regular sg-text-gray-300">0</span>
-														<span
-															class="comment sg-text-description sg-font-regular sg-text-gray-300">0</span>
-													</div>
-													<span
-														class="sg-text-description sg-font-regular sg-text-gray-300">방금
-														전</span>
-												</div>
-										</a></li>
-										<!-- 두번째 글 -->
-										<li class="feed-item"><a class="soomgo-life-feed-item">
-												<!-- 목록 이름 -->
-												<p
-													class="topic-name sg-text-description sg-font-regular sg-text-gray-500">고수찾아요
-													· 집 인테리어</p>
-												<div class="feed-content service-address-info">
-													<div>
-														<section class="item-wrapper">
-															<h3
-																class="sg-text-subhead5 sg-font-medium sg-text-gray-900">드레스룸
-																해체 및 이전설치조립 가능하신분</h3>
-															<p
-																class="content sg-text-body2 sg-font-regular sg-text-gray-500">
-																이 제품 다른방으로 옮기려고하는데 해체하고 재조립 가능하신 고수님 계신가요</p>
-														</section>
-														<p
-															class="sub-information sg-text-description sg-font-regular sg-text-gray-500">대전/중구</p>
-													</div>
-													<img
-														src="https://static.cdn.soomgo.com/upload/media/698917af-7966-4cfb-b820-812eed2c2692.jpg?h=80&w=80&webp=1">
-												</div>
-												<div class="feed-footer">
-													<div class="user-interaction">
-														<span
-															class="like sg-text-description sg-font-regular sg-text-gray-300">0</span>
-														<span
-															class="comment sg-text-description sg-font-regular sg-text-gray-300">0</span>
-													</div>
-													<span
-														class="sg-text-description sg-font-regular sg-text-gray-300">방금
-														전</span>
-												</div>
-										</a></li>
-									</ul>
+																			</ul>	
 								</article>
 							</div>
 						</div>
@@ -541,5 +474,18 @@
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let KH = `${KH}`;
+	let contextPath = `${pageContext.request.contextPath}`;
+</script>
 <script src="../../static/js/master-know-how-free.js"></script>
 </html>
+
+
+
+
+
+
+
+
+

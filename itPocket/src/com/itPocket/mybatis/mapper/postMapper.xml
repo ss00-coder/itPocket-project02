@@ -97,6 +97,24 @@
 		on m.member_id = p.member_id and m.member_id = #{memberId} and post_type = #{sort}
 		order by post_id desc
 	</select>
+	
+	<!-- knowHow free 선택 -->
+   <select id="knowHowSelect" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+   </select>
+   
+   <!-- knowHow column 선택 -->
+   <select id="knowHowColumnSelect" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+     <!--  where post_type = 'jsCU' -->
+   </select>
+	
+	
+	
 </mapper>
 
 

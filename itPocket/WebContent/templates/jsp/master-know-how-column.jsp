@@ -119,80 +119,10 @@
 							</li>
 						</ul>
 						<!-- 노하우들  -->
-						<article class="pro-knowhow-list">
-							<ul>
+						<article class="pro-knowhow-list" id = "content-wrap">
+							<ul >
 								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item">
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item">
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item">
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item">
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item">
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item">
+								<li class="pro-knowhow-list-item" >
 									<section class="item-wrapper">
 										<a href="master-know-how-free-detail.jsp">
 											<figure class="image-wrapper">
@@ -337,4 +267,11 @@
 		</nav>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let KHC = `${KHC}`;
+	let contextPath = `${pageContext.request.contextPath}`;
+</script>
+<script src="../../static/js/master-know-how-column.js"></script>
+
 </html>
