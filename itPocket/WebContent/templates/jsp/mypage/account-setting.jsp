@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -147,7 +148,8 @@
                             <a class="item-container" href="passwordSetting.member">
                                 <div class="item">
                                     <div class="item-title">비밀번호</div>
-                                    <div class="item-info"><c:out value="${memberPassword}"/></div>
+                                    <c:set var="memberPassword" value="${memberPassword}"/>
+                                    <div class="item-info"><c:forEach begin="1" end="${fn:length(memberPassword)}">•</c:forEach> </div>
                                 </div>
                                 <div>
                                     <img src="	https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
@@ -302,5 +304,6 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/modal.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/account-setting.js"></script>
 </html>

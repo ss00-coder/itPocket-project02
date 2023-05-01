@@ -69,14 +69,14 @@
 								<ul class="nav-list">
 									<!--로그인-->
 									<li class="nav-item right-section-item">
-										<a class="gnb-link" href="login.member">
+										<a class="gnb-link" href="logout.member">
 											<span>
 												로그아웃
 											</span> 
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -111,6 +111,11 @@
                     	<ul class="list">
                         </ul>
                     </section>
+	                <section id="replies-wrap">
+		            	<div class="logo-area">
+							<img src="${pageContext.request.contextPath}/static/image/dimmed-reply.png" class="infinite_rotating_logo" width="48">
+						</div>
+		            </section>
                 </div>
             </div>
         </div>
@@ -242,5 +247,5 @@
 	let posts = JSON.parse(`${posts}`);
 	let contextPath = "${pageContext.request.contextPath}";
 </script>
-<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/list-my-page.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/qlist-my-page.js"></script>
 </html>

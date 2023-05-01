@@ -102,13 +102,13 @@ ul li {
 }
 
 .h-100 {
-    height: 100%!important;
+    height: 100% !important;
 }
 
 .user-profile-picture img{
 	display: block;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     border-radius: 50%;
     border: 0.0625rem solid #f2f2f2;

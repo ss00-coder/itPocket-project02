@@ -13,6 +13,10 @@
 			alias="postDTO" />
 		<typeAlias type="com.itPocket.post.domain.PostFileDTO"
 			alias="postFileDTO" />
+		<typeAlias type="com.itPocket.post.domain.PostVO"
+         alias="postVO" />	
+		<typeAlias type="com.itPocket.comment.domain.CommentDTO"
+			alias="commentDTO" />
 	</typeAliases>
 
 
@@ -33,5 +37,6 @@
 	<mappers>
 		<mapper resource="com/itPocket/mybatis/mapper/memberMapper.xml" />
 		<mapper resource="com/itPocket/mybatis/mapper/postMapper.xml" />
+		<mapper resource="com/itPocket/mybatis/mapper/commentMapper.xml" />
 	</mappers>
 </configuration>

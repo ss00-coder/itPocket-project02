@@ -48,6 +48,11 @@ public class MemberDAO {
       sqlSession.update("updatePassword",settingMap);
    }
    
+   //전문가 수 검색 
+   public int countExpert() {
+      return sqlSession.selectOne("member.countExpert");
+   }
+   
    //마이페이지 아이디로 회원조회
    public MemberVO select(Long memberId) {
 	   return sqlSession.selectOne("member.select", memberId);
