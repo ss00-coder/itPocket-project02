@@ -10,7 +10,7 @@ import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.post.dao.PostDAO;
 
-public class DeletOkController implements Action {
+public class AdminDeleteController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

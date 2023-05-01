@@ -19,7 +19,7 @@ import com.itPocket.post.domain.PostDTO;
 import com.itPocket.post.domain.Criteria;
 import com.itPocket.post.domain.Search;
 
-public class ListOkController implements Action {
+public class AdminInquiryListOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
