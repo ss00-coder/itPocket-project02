@@ -10,7 +10,7 @@ import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.post.dao.PostDAO;
 
-public class DeletOkController implements Action {
+public class AdminDeletController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -19,7 +19,7 @@ public class DeletOkController implements Action {
 		
 		postDAO.delete(Long.valueOf(req.getParameter("postId")));
 		
-		result.setPath(req.getContextPath() + "/listOk.post");
+		result.setPath(req.getContextPath() + "/listOk.board");
 		result.setRedirect(true);
 		
 		return result;

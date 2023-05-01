@@ -17,7 +17,7 @@ public class Criteria {
 	
 	public Criteria(int page, int total) {
 	//	한 페이지에 출력되는 게시글의 개수
-		rowCount = 5;
+		rowCount = 10;
 	//	한 페이지에서 나오는 페이지 버튼의 개수
 		int pageCount = 5;
 		
