@@ -37,24 +37,25 @@
 		desc
 	</sql>
 	
-   <select id="AdminSelectAll" resultType="postVO">
-      select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
-      from tbl_post
-      where (post_type like '스터디' or post_type like '노하우' or post_type like 'QnA')
-      order by post_register_date desc
-      limit #{offset}, #{rowCount};
-   </select>
-   
-   <select id="AdminSelectInquiry" resultType="postVO">
-      select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
-      from tbl_post
-      where (post_type like '문의')
-      order by post_register_date desc
-      limit #{offset}, #{rowCount};
-   </select>
+	<select id="AdminSelectAll" resultType="postVO">
+		select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
+		from tbl_post
+		where (post_type like '스터디' or post_type like '노하우' or post_type like 'QnA')
+		order by post_register_date desc
+		limit #{offset}, #{rowCount};
+	</select>
 	
+	<select id="AdminSelectInquiry" resultType="postVO">
+		select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
+		from tbl_post
+		where (post_type like '문의')
+		order by post_register_date desc
+		limit #{offset}, #{rowCount};
+	</select>
+
 	<select id="selectAll" resultType="postDTO">
-		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		select post_id, post_name, post_content, post_register_date, m.member_id    
+>>>>>>> woosub
 		from tbl_member m join tbl_post p
 		<trim suffixOverrides="and"> 
 			on m.member_id = p.member_id and
@@ -80,14 +81,18 @@
 	</insert>
 	
 	<select id="select" resultType="postDTO">
-		select post_id, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname  
+		select post_id, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
 		from tbl_member m join tbl_post p
 		on m.member_id = p.member_id and post_id = #{postId}
 	</select>
 	
 	<update id="update">
 		update tbl_post
+<<<<<<< HEAD
 		set post_name = #{postName}, post_content = #{postContent}, post_is_blinded = #{postIsBlinded}
+=======
+		set post_is_blinded = #{postIsBlinded}
+>>>>>>> woosub
 		where post_id = #{postId}
 	</update>
 	
