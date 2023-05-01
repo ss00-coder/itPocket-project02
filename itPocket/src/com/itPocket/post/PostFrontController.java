@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
+import com.itPocket.post.controller.KnowHowColumnController;
+import com.itPocket.post.controller.KnowHowController;
 import com.itPocket.post.controller.AdminDeletController;
 import com.itPocket.post.controller.AdminInquiryListOkController;
 import com.itPocket.post.controller.AdminWriteOkController;
@@ -27,8 +29,7 @@ import com.itPocket.post.controller.SelectOracleController;
 import com.itPocket.post.controller.SelectPyhonController;
 import com.itPocket.post.controller.StudyController;
 
-
-public class PostFrontController extends HttpServlet{
+public class PostFrontController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
@@ -36,10 +37,22 @@ public class PostFrontController extends HttpServlet{
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
 		
+		
+		
+		
+		
 		 if(target.equals("adminListOk")) {
 	         result = new AdminListOkController().execute(req, resp);
 	         
-	      } else if(target.equals("adminwrite")) {
+	      }else if(target.equals("KnowHowlistOk")) {
+				result = new KnowHowController().execute(req,resp);
+			}
+			
+	      else if(target.equals("KnowHowColumnlistOk")) {
+				result = new KnowHowColumnController().execute(req,resp);
+			}
+
+		 else if(target.equals("adminwrite")) {
 	         result = new Result();
 	         result.setPath("templates/board/write.jsp");
 	         
@@ -96,7 +109,7 @@ public class PostFrontController extends HttpServlet{
 			}
 		}
 	}
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
