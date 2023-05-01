@@ -17,6 +17,15 @@ public class PostDAO {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
+//  	관리자 게시글 조회
+	public List<PostVO> AdminSelectAll(HashMap<String, Object> pagable){
+	return sqlSession.selectList("post.AdminSelectAll", pagable);
+	}
+//  	문의 게시글 조회
+	public List<PostVO> AdminSelectInquiry(HashMap<String, Object> pagable){
+	return sqlSession.selectList("post.AdminSelectInquiry", pagable);
+	}
+	
 //		게시글 전체 조회
 	public List<PostDTO> selectAll(HashMap<String, Object> pagable){
 		return sqlSession.selectList("post.selectAll", pagable);
