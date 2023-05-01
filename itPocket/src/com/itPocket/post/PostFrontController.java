@@ -8,16 +8,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
-import com.itPocket.post.controller.KnowHowColumnController;
-import com.itPocket.post.controller.KnowHowController;
-import com.itPocket.post.controller.AdminDeletController;
+import com.itPocket.post.controller.AdminDeleteController;
+import com.itPocket.post.controller.AdminDetailOkController;
 import com.itPocket.post.controller.AdminInquiryListOkController;
+import com.itPocket.post.controller.AdminListOkController;
 import com.itPocket.post.controller.AdminWriteOkController;
 import com.itPocket.post.controller.BlindedPostController;
-import com.itPocket.post.controller.AdminDetailOkController;
-import com.itPocket.post.controller.AdminListOkController;
-import com.itPocket.post.controller.UpdateOkController;
 import com.itPocket.post.controller.DetailOkController;
+import com.itPocket.post.controller.KnowHowColumnController;
+import com.itPocket.post.controller.KnowHowController;
 import com.itPocket.post.controller.ListOkController;
 import com.itPocket.post.controller.SelectCController;
 import com.itPocket.post.controller.SelectCssController;
@@ -28,6 +27,7 @@ import com.itPocket.post.controller.SelectMysqlController;
 import com.itPocket.post.controller.SelectOracleController;
 import com.itPocket.post.controller.SelectPyhonController;
 import com.itPocket.post.controller.StudyController;
+import com.itPocket.post.controller.UpdateOkController;
 
 public class PostFrontController extends HttpServlet {
 	@Override
@@ -43,10 +43,12 @@ public class PostFrontController extends HttpServlet {
 		} else if (target.equals("KnowHowlistOk")) {
 			result = new KnowHowController().execute(req, resp);
 			
-		} else if (target.equals("KnowHowColumnlistOk")) {
+		}
+		else if (target.equals("KnowHowColumnlistOk")) {
 			result = new KnowHowColumnController().execute(req, resp);
 			
-		} else if (target.equals("adminwrite")) {
+		}
+		else if (target.equals("adminwrite")) {
 			result = new Result();
 			result.setPath("templates/board/write.jsp");
 
@@ -63,15 +65,17 @@ public class PostFrontController extends HttpServlet {
 			result = new UpdateOkController().execute(req, resp);
 
 		} else if (target.equals("delete")) {
-			result = new AdminDeletController().execute(req, resp);
+			result = new AdminDeleteController().execute(req, resp);
 
 		} else if (target.equals("adminInquiryListOk")) {
 			result = new AdminInquiryListOkController().execute(req, resp);
 
 		} else if (target.equals("study")) {
 			result = new StudyController().execute(req, resp);
+			
 		} else if (target.equals("QnAListAllOk")) {
 			result = new ListOkController().execute(req, resp);
+			
 
 		} else if (target.equals("QnAListDetail")) {
 			result = new DetailOkController().execute(req, resp);
@@ -99,6 +103,7 @@ public class PostFrontController extends HttpServlet {
 			
 		} else if (target.equals("QnAlistJavascriptOk")) {
 			result = new SelectJavascriptController().execute(req, resp);
+			
 		}
 
 		if (result != null) {
