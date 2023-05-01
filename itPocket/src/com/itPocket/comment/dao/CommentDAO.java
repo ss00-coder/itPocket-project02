@@ -27,5 +27,11 @@ public class CommentDAO {
 	public List<CommentDTO> selectMyCommentAdd(HashMap<String, Object> commentListMap){
 		return sqlSession.selectList("comment.selectMyCommentAdd", commentListMap);
 	}
+	
+//	Q&A 상세보기
+    public List<CommentDTO> selectByBoardId(Long postId) {
+        return sqlSession.selectList("comment.selectByBoardId", postId);
+     }
+
    
 }

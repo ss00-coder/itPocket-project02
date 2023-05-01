@@ -22,4 +22,11 @@
 		order by comment_id desc
 		limit #{offset}, #{rowCount}
 	</select>
+	
+	<!-- Q&A 상세 댓글 추가 -->
+	<select id="selectByBoardId" resultType="commentDTO">
+      select comment_id, post_id, comment_content, comment_register_date, comment_update_date, m.member_id, m.member_nickname
+      from tbl_member m join tbl_comment c
+      on m.member_id = c.member_id and post_id = #{postId}
+   </select>
 </mapper>

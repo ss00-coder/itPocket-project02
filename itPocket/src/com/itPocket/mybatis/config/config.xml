@@ -11,6 +11,8 @@
 			alias="memberVO" />
 		<typeAlias type="com.itPocket.post.domain.PostDTO"
 			alias="postDTO" />
+		<typeAlias type="com.itPocket.post.domain.PostVO"
+         alias="postVO" />	
 		<typeAlias type="com.itPocket.comment.domain.CommentDTO"
 			alias="commentDTO" />
 	</typeAliases>
