@@ -34,6 +34,16 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>Comment</servlet-name>
+		<servlet-class>com.itPocket.comment.commentFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Comment</servlet-name>
+		<url-pattern>*.comment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>Main</servlet-name>
 		<servlet-class>com.itPocket.main.MainFrontController</servlet-class>
 	</servlet>
