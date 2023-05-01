@@ -42,13 +42,11 @@ public class PostFrontController extends HttpServlet {
 
 		} else if (target.equals("KnowHowlistOk")) {
 			result = new KnowHowController().execute(req, resp);
-		}
-
-		else if (target.equals("KnowHowColumnlistOk")) {
+			
+		} else if (target.equals("KnowHowColumnlistOk")) {
 			result = new KnowHowColumnController().execute(req, resp);
-		}
-
-		else if (target.equals("adminwrite")) {
+			
+		} else if (target.equals("adminwrite")) {
 			result = new Result();
 			result.setPath("templates/board/write.jsp");
 
@@ -77,20 +75,28 @@ public class PostFrontController extends HttpServlet {
 
 		} else if (target.equals("QnAListDetail")) {
 			result = new DetailOkController().execute(req, resp);
+			
 		} else if (target.equals("QnAListJavaOk")) {
 			result = new SelectJavaController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistCOk")) {
 			result = new SelectCController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistPythonOk")) {
 			result = new SelectPyhonController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistOracleOk")) {
 			result = new SelectOracleController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistMysqlOk")) {
 			result = new SelectMysqlController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistHtmlOk")) {
 			result = new SelectHtmlController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistCssOk")) {
 			result = new SelectCssController().execute(req, resp);
+			
 		} else if (target.equals("QnAlistJavascriptOk")) {
 			result = new SelectJavascriptController().execute(req, resp);
 		}
