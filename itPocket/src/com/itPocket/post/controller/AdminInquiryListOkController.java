@@ -62,4 +62,5 @@ public class AdminInquiryListOkController implements Action {
 
 		result.setPath("templates/jsp/administrator-inquiry.jsp");
 		return result;
+	}
 }
