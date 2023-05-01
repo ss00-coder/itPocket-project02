@@ -72,7 +72,7 @@ public class MemberFrontController extends HttpServlet {
 			result.setPath("templates/jsp/find-password.jsp");
 		}
 		
-		else if(target.equals("findPasswordOk")) { 
+		else if(target.equals("findPasswordOk")) {
 			result = new FindPasswordController().execute(req, resp); 
 		}
 		
