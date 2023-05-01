@@ -7,13 +7,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.JSONObject;
+
 import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
 import com.itPocket.member.domain.MemberVO;
-import com.oreilly.servlet.MultipartRequest;
 
-public class AccountSettingOkController implements Action{
+public class MyProfileOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
@@ -22,16 +23,17 @@ public class AccountSettingOkController implements Action{
 		Result result = new Result();
 		
 		Long memberId = (Long)session.getAttribute("memberId");
-		
+	      
 		memberVO = memberDAO.select(memberId);
+		JSONObject jsonObject = new JSONObject(memberVO);
 		
+		req.setAttribute("member", jsonObject);
 		req.setAttribute("memberNickname", memberVO.getMemberNickname());
 		req.setAttribute("memberEmail", memberVO.getMemberEmail());
-		req.setAttribute("memberPassword", memberVO.getMemberPassword());
 		req.setAttribute("memberRegion", memberVO.getMemberRegion());
 		req.setAttribute("memberFileName", memberVO.getMemberFileName());
-
-		result.setPath("templates/jsp/mypage/account-setting.jsp");
+		result.setPath("templates/jsp/mypage/my-profile.jsp");
+		
 		return result;
 	}
 }

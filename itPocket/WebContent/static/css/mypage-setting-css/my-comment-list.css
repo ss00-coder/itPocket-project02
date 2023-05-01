@@ -97,8 +97,8 @@ p {
 
 #app, #app-body {
     opacity: 1;
-    height: 100%;
-    position: relative;
+    /* height: 100%; */
+    /* position: relative; */
     flex-grow: 1;
     transition: opacity .3s ease-in;
 }
@@ -153,7 +153,7 @@ li.selected {
     font-weight: 700;
 }
 
-li+li {
+.tab-list li+li {
     margin-left: 1rem;
 }
 
@@ -314,4 +314,26 @@ section.d-none {
  */
 .text {
 	padding: 0;
+}
+
+/* 로딩중 */
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+div.logo-area {
+	text-align: center;
+}
+
+img.infinite_rotating_logo{
+	display: none;
+    animation: rotate_image 1s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+div.dimmed-wrap {
+	display: flex;
+	justify-content: space-between;
 }

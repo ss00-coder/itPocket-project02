@@ -1,56 +1,85 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko" class style="-gnb-height: 72px;">
 <head>
 <meta charset="UTF-8">
-<title>내 답변 목록</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/my-answer-list.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/find-password.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/footer.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/public.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+	rel="stylesheet">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath}/static/image/shortcut.png">
+<link rel="logo"
+	href="${pageContext.request.contextPath}/static/image/logo.png">
+<title>비밀번호 찾기</title>
 </head>
-<body>
-    <div id="app">
-        <header id="app-header" class="global-header">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="fragment" content="!">
+<meta data-vmid="title" name="title"
+	content="숨고:숨은고수 - 800만명이 선택한 전국민 생활 솔루션">
+<!-- 일단 헤더부분 스킵하고 다른부분 먼저 구현 -->
+
+
+<body class="find-password">
+	<!-- 비밀번호 찾기 -->
+	<div id="app" class="webp-bgroup" data-browser="Chrome"
+		data-is-loaded="true">
+		<div class="progress"
+			style="backgroud-color: rgb(0, 199, 174); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div>
+		<header class="global-header">
 			<div class="global-navigation-bar">
 				<section class="d-none d-lg-block d-xl-block d-xl-block">
 					<div class="desktop-header">
-						<!--숨고로그, 서비스, 고수찾기 마켓, 커뮤니티-->
+						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
 						<div class="left-section">
-							<!--숨고 로고 대체제 만들어야되요-->
+							<!-- 숨고 로고 대체제 만들어야되요 -->
 							<div class="logo">
-								<a href="main">
-									<img src="${pageContext.request.contextPath}/static/image/logo.png">
+								<a href="main"> <img
+									src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
 							<nav>
 								<ul class="nav-list">
-									<!--서비스 요청-->
+									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>사이트소개</span>
+										class="gnb-link"> <span>서비스요청</span>
 									</a></li>
-									<!--고수찾기-->
+									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.jsp"
-										class="gnb-link"> <span>스터디</span>
+										class="gnb-link"> <span>고수찾기</span>
 									</a></li>
-									<!--마켓-->
+									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>노하우</span>
+											<span>마켓</span>
 									</a></li>
-									<!--커뮤니티-->
+									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+										href="list-by-language.jsp" class="gnb-link"> <span>커뮤니티</span>
 									</a></li>
 								</ul>
 							</nav>
 						</div>
-						<!--어떤 서비스가 필요하세요(이부분은 희수님만 하시면 됩니당)-->
+						<!-- 어떤 서비스가 필요하세요(이부분은 희수님만 하시면 됩니당)-->
 						<div class="center-section" style="display: none;">
 							<div class="service-searcher-desktop">
 								<form class="global-search-bar">
@@ -62,24 +91,19 @@
 								</form>
 							</div>
 						</div>
-						<!--로그인, 회원가입, 고수가입-->
+						<!-- 로그인, 회원가입, 고수가입 -->
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!--로그인-->
-									<li class="nav-item right-section-item">
-										<a class="gnb-link" href="login.member">
-											<span>
-												로그아웃
-											</span> 
-										</a>
-									</li>
-									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
-										class="gnb-link"><span>마이페이지</span> </a></li>
+									<!-- 로그인 -->
+									<li class="nav-item right-section-item"><a
+										href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+									<!-- 회원가입 -->
+									<li class="nav-item right-section-item"><a
+										href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
 								</ul>
 							</nav>
-							<!--고수가입-->
+							<!-- 전문가신청 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
 								<a>전문가신청</a>
@@ -88,66 +112,67 @@
 					</div>
 				</section>
 			</div>
-        </header>
-        
-        <!-- 중간 메뉴 -->
-        <div id="app-body">
-            <div class="my-page-community-activity-container">
-                <div class="community-activity-container">
-                    <section class="community-title-section">
-                        <h1 class="community-activity-title">내 답변 목록</h1>
-                    </section>
-                    <ul class="tab-list">
-                        <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
-                            Q&A
-                        </li>
-                        <!-- <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
-                            메뉴2
-                        </li> -->
-                    </ul>
-                    
-                    <section class="community-activity-content-section">
-                    	<section class="community-activity-list-section">
-                    		<ul class="community-activity-list">
-                    			<li class="community-activity-item">
-                    				<div class="collapsed">
-                    					<div class="line-clamp" style="line-height: 1.5; max-height: 3rem; -webkit-line-clamp: 2; margin: 0 0 0.25rem;">
-                    						<p class="community-activity-content sg-text-subhead5 sg-font-medium">내가 쓴 글 나오는 곳</p>
-                    					</div>
-                    				</div>
-                    				<div class="collapsed">
-                    					<div class="line-clamp" style="line-height: 1.5; max-height: 1.5rem; -webkit-line-clamp: 1;">
-                    						<p class="community-activity-title sg-text-body2 sg-font-regular sg-text-gray-500">제목이 나오는 곳</p>
-                    					</div>
-                    				</div>
-                    				<span class="sg-text-body2 sg-font-regular sg-text-gray-300">
-                    					2023.04.20
-                    				</span>
-                    			</li>
-                    		</ul>
-                    		<div class="infinite-loading-container">
-                    			
-                    		</div>
-                    	</section>
-                    </section>
-                    
-                    <!-- <section class="community-content-section white">
-                        <article class="no-items align-self-center text-center no-items">
-                            <i>
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-coupon-empty.svg" alt="empty">
-                            </i>
-                            <h3>작성 글이 없습니다</h3>
-                            <p class="help-block p2">설명글을 입력하세요</p>
-                        </article>
-                    </section> -->
-                </div>
-            </div>
-        </div>
-        <nav id="app-footer" class="footer-container">
+		</header>
+		<div id="app-sticky-nav" class="vue-portal-target"></div>
+		<div id="app-body">
+			<!-- 앱 바디 구현 -->
+			<div class="find-password-container" data-v-5bbda200>
+				<div class="find-password container" data-v-5bbda200>
+
+					<h2 data-v-5bbda200>비밀번호 재설정</h2>
+					<div data-v-5bbda200 class="card">
+						<!-- 이메일 주소 입력칸 -->
+						<form data-v-4d09de91 data-v-5bbda200 action="findPasswordOk2.member" method="post"
+							name="setting">
+							<div data-v-4d09de91 class="form-row">
+								<!-- 이메일 주소 입력칸 속 더 작은(?) 박스 -->
+								<div data-v-4d09de91 class="col-12">
+									<fieldset class="form-group" id="__BVID__640">
+										<!-- "가입한 이메일 주소를 입력해주세요" 및 입력 칸  -->
+										<legend tabindex="-1"
+											class="bv-no-focus-ring col-form-label pt-0"
+											id="__BVID__640__BV_label_">재설정할 비밀번호를 입력해주세요</legend>
+										<div>
+											<input data-v-4d09de91 name="memberPassword" type="password"
+												placeholder="영문+숫자 조합 8자리 이상 입력해주세요" class="form-control"
+												data-vv-name="email" aria-invaild="false" id="__BVID__641">
+										</div>
+										<legend tabindex="-1"
+											class="bv-no-focus-ring col-form-label pt-0"
+											id="__BVID__640__BV_label_">비밀번호 확인</legend>
+										<div>
+											<input data-v-4d09de91 name="memberPasswordCheck"
+												type="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요"
+												class="form-control" data-vv-name="email"
+												aria-invaild="false" id="__BVID__641">
+										</div>
+										<small class="hide-text" style="color: red; display: none">재설정할 비밀번호와 비밀번호 확인이 다릅니다</small>
+									</fieldset>
+								</div>
+								<div data-v-4d09de91 class="col-12">
+									<button data-v-4d09de91 type="button" onclick="send()"
+										class="btn btn-primary btn-block">
+										<span data-v-4d09de91>재설정하기</span> <span data-v-4d09de91
+											style="display: none;">
+											<div data-v-fc3fcce8 data-v-4d09de91 class>
+												<div data-v-fc3fcce8="" class="indicator-body center"
+													style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
+												<p data-v-fc3fcce8 style="display: none;"></p>
+											</div>
+										</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
 					<p class="text contact">1599-5319</p>
-					<p class="text middle">
+					<p class="text-middle">
 						평일 10:00 - 18:00 <br> (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
 					</p>
 					<a class="download"
@@ -264,6 +289,10 @@
 				</div>
 			</div>
 		</nav>
-    </div>
+	</div>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script
+	src="${pageContext.request.contextPath}/static/js/find-password-setting.js"></script>
 </html>

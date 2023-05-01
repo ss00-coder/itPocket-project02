@@ -10,28 +10,17 @@ import javax.servlet.http.HttpSession;
 import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
-import com.itPocket.member.domain.MemberVO;
-import com.oreilly.servlet.MultipartRequest;
 
-public class AccountSettingOkController implements Action{
+public class MyAnswerListOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
-		MemberVO memberVO = new MemberVO();
 		HttpSession session = req.getSession();
 		Result result = new Result();
 		
 		Long memberId = (Long)session.getAttribute("memberId");
 		
-		memberVO = memberDAO.select(memberId);
-		
-		req.setAttribute("memberNickname", memberVO.getMemberNickname());
-		req.setAttribute("memberEmail", memberVO.getMemberEmail());
-		req.setAttribute("memberPassword", memberVO.getMemberPassword());
-		req.setAttribute("memberRegion", memberVO.getMemberRegion());
-		req.setAttribute("memberFileName", memberVO.getMemberFileName());
-
-		result.setPath("templates/jsp/mypage/account-setting.jsp");
+		result.setPath("templates/jsp/mypage/my-answer-list.jsp");
 		return result;
 	}
 }

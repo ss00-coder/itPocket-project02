@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.itPocket.Action;
@@ -25,9 +26,12 @@ public class MypageOkController implements Action {
 		Long memberId = (Long)session.getAttribute("memberId");
 	      
 		memberVO = memberDAO.select(memberId);
+		JSONObject jsonObject = new JSONObject(memberVO);
 		
+		req.setAttribute("member", jsonObject);
 		req.setAttribute("memberNickname", memberVO.getMemberNickname());
 		req.setAttribute("memberEmail", memberVO.getMemberEmail());
+		req.setAttribute("memberFileName", memberVO.getMemberFileName());
 		result.setPath("templates/jsp/mypage/mypage.jsp");
 		
 		return result;

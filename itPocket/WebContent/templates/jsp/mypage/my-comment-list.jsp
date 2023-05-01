@@ -25,7 +25,7 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a href="../main.jsp">
+								<a href="main">
 									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
@@ -68,14 +68,14 @@
 								<ul class="nav-list">
 									<!--로그인-->
 									<li class="nav-item right-section-item">
-										<a class="gnb-link" href="login.member">
+										<a class="gnb-link" href="logout.member">
 											<span>
 												로그아웃
 											</span> 
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -89,32 +89,32 @@
 				</section>
 			</div>
         </header>
-        <div id="app-body">
+		<div id="app-body" display="block">
             <div class="my-page-community-activity-container">
                 <div class="community-activity-container">
                     <section class="community-title-section">
                         <h1 class="community-activity-title">내 댓글 목록</h1>
                     </section>
                     <ul class="tab-list">
-                        <li class="tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected">
-                            스터디
+                        <li class="${param.sort == null or param.sort == 'question' ? 'tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected' : 'tab sg-text-body2 sg-font-regular sg-text-gray-400'}">
+                            Q&A
                         </li>
-                        <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
+                        <li class="${param.sort == 'study' ? 'tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected' : 'tab sg-text-body2 sg-font-regular sg-text-gray-400'}">
+                           	스터디
+                        </li>
+                        <li class="${param.sort == 'knowhow' ? 'tab router-link-exact-active router-link-active sg-text-subhead4 sg-font-bold sg-text-gray-900 selected' : 'tab sg-text-body2 sg-font-regular sg-text-gray-400'}">
                             노하우
                         </li>
-                        <!-- <li class="tab sg-text-body2 sg-font-regular sg-text-gray-400">
-                            
-                        </li> -->
                     </ul>
                     <section class="community-content-section white">
-                        <article class="no-items align-self-center text-center no-items">
-                            <i>
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-coupon-empty.svg" alt="empty">
-                            </i>
-                            <h3>작성 글이 없습니다</h3>
-                            <p class="help-block p2">설명글을 입력하세요</p>
-                        </article>
+                    	<ul class="list">
+                        </ul>
                     </section>
+                    <section id="replies-wrap">
+		            	<div class="logo-area">
+							<img src="${pageContext.request.contextPath}/static/image/dimmed-reply.png" class="infinite_rotating_logo" width="48">
+						</div>
+		            </section>
                 </div>
             </div>
         </div>
@@ -241,4 +241,10 @@
 		</nav>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let comments = JSON.parse(`${comments}`);
+	let contextPath = "${pageContext.request.contextPath}";
+</script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/clist-my-page.js"></script>
 </html>

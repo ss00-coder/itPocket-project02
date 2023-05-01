@@ -26,7 +26,7 @@
 						<div class="left-section">
 							<!--숨고 로고 대체제 만들어야되요-->
 							<div class="logo">
-								<a href="../main.jsp">
+								<a href="main">
 									<img src="${pageContext.request.contextPath}/static/image/logo.png">
 								</a>
 							</div>
@@ -92,6 +92,11 @@
         </header>
         <!-- 중간부분 -->
         <div id="app-body">
+            <div class="modal">
+	            <div class="warn-modal">
+	                <div id="content-wrap"></div>
+	            </div>
+	        </div>
             <div class="container container-md">
                 <div class="mypage-container">
                     <h1 class="mypage-title">마이페이지</h1>
@@ -101,7 +106,15 @@
                         <a href="accountSettingOk.member" class="profile-setting">
                             <span class="thumb">
                                 <span class="user-profile-picture h-100">
-                                    <div data-name="image" class="is-square"></div>
+		            				<c:choose>
+											<c:when test="${not empty memberFileName}">
+					                            <img src="${pageContext.request.contextPath}/upload/${memberFileName}">
+											</c:when>
+											<c:otherwise>
+					                            <img src="${pageContext.request.contextPath}/static/image/profile_icon.png">
+											</c:otherwise>
+									</c:choose>                                	
+                                    <%-- <div data-name="image" class="is-square" style="background-image: url(${pageContext.request.contextPath}/static/image/profile_icon.png);"></div> --%>
                                 </span>
                             </span>
                             <span class="user-info">
@@ -131,8 +144,8 @@
                                 나만의 페이지
                                 <a role="button"></a>
                             </li>
-                            <li class="sub-menu-container soomgopay-list">
-                                <a href="../profile.jsp" class="sub-menu-list">
+                            <li href="" class="sub-menu-container soomgopay-list">
+                                <a class="sub-menu-list" id="gosu">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나의 전문가 페이지로 이동</span>
@@ -154,7 +167,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="my-qustion-list.jsp" class="sub-menu-list">
+                                <a href="myQuestionListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 글</span>
@@ -167,8 +180,8 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="sub-menu-container soomgopay-list">
-                                <a href="my-answer-list.jsp" class="sub-menu-list">
+                            <!-- <li class="sub-menu-container soomgopay-list">
+                                <a href="myAnswerListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 답변</span>
@@ -180,9 +193,9 @@
                                         </span>
                                     </div>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="my-comment-list.jsp" class="sub-menu-list">
+                                <a href="myCommentListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나만의 댓글</span>
@@ -204,7 +217,7 @@
                                 <a role="button"></a>
                             </li>
                             <li class="sub-menu-container soomgopay-list">
-                                <a href="../study.jsp" class="sub-menu-list">
+                                <a href="study.post" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">스터디 모집글 보러가기</span>
@@ -475,4 +488,9 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let member = JSON.parse(`${member}`);
+</script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/modal.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/mypage.js"></script>
 </html>

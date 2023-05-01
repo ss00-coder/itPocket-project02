@@ -10,25 +10,21 @@ import javax.servlet.http.HttpSession;
 import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
-import com.itPocket.member.domain.MemberVO;
 
-public class UserOutOkController implements Action {
+public class FindPasswordController2 implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
-		MemberVO memberVO = new MemberVO();
 		HttpSession session = req.getSession();
 		Result result = new Result();
 		
-		Long memberId = (Long)session.getAttribute("memberId");
-		memberVO = memberDAO.select(memberId);
-		memberVO.setMemberIsRemaining(false);
+		String memberEmail = (String)session.getAttribute("memberEmail");
+		String memberPassword = req.getParameter("memberPassword");
 		
-		memberDAO.updateIsRemaining(memberVO);
-		
-		result.setPath(req.getContextPath() + "/logout.member");
 		result.setRedirect(true);
-		
+		memberDAO.updatePassword(memberPassword, memberEmail);
+		result.setPath(req.getContextPath() + "/login.member");
+		req.getSession().invalidate();	
 		return result;
 	}
 }

@@ -1,4 +1,4 @@
-package com.itPocket.member.controller;
+package com.itPocket.main.controller;
 
 import java.io.IOException;
 
@@ -7,28 +7,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.JSONArray;
+
 import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
 import com.itPocket.member.domain.MemberVO;
 
-public class UserOutOkController implements Action {
+public class MainController implements Action {
+
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
-		MemberVO memberVO = new MemberVO();
-		HttpSession session = req.getSession();
+		JSONArray jsonArray = new JSONArray();
+		
 		Result result = new Result();
+		HttpSession session = req.getSession();
 		
-		Long memberId = (Long)session.getAttribute("memberId");
-		memberVO = memberDAO.select(memberId);
-		memberVO.setMemberIsRemaining(false);
 		
-		memberDAO.updateIsRemaining(memberVO);
 		
-		result.setPath(req.getContextPath() + "/logout.member");
-		result.setRedirect(true);
-		
+		result.setPath("templates/jsp/main.jsp");
 		return result;
 	}
+
 }

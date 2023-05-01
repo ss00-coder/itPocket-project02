@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
+import com.itPocket.member.controller.AccountFileSettingOkController;
 import com.itPocket.member.controller.AccountSettingOkController;
 import com.itPocket.member.controller.CheckEmailOkController;
 import com.itPocket.member.controller.CheckNicknameOkController;
@@ -15,6 +16,12 @@ import com.itPocket.member.controller.EmailSettingController;
 import com.itPocket.member.controller.EmailSettingOkController;
 import com.itPocket.member.controller.JoinOkController;
 import com.itPocket.member.controller.LoginOkController;
+import com.itPocket.member.controller.MyAnswerListOkController;
+import com.itPocket.member.controller.MyCommentAddOkController;
+import com.itPocket.member.controller.MyCommentListOkController;
+import com.itPocket.member.controller.MyProfileOkController;
+import com.itPocket.member.controller.MyQuestionAddOkController;
+import com.itPocket.member.controller.MyQuestionListOkController;
 import com.itPocket.member.controller.MypageOkController;
 import com.itPocket.member.controller.NameSettingController;
 import com.itPocket.member.controller.NameSettingOkController;
@@ -24,6 +31,7 @@ import com.itPocket.member.controller.RegionSettingController;
 import com.itPocket.member.controller.RegionSettingOkController;
 import com.itPocket.member.controller.UserOutOkController;
 import com.itPocket.member.controller.FindPasswordController;
+import com.itPocket.member.controller.FindPasswordController2;
 
 public class MemberFrontController extends HttpServlet {
 
@@ -70,9 +78,18 @@ public class MemberFrontController extends HttpServlet {
 		
 		else if(target.equals("findPassword2")) {
 			result = new Result();
-			System.out.println("hi");
 			result.setPath("templates/jsp/find-password2.jsp");
 		}
+		else if(target.equals("findPasswordSetting")) {
+			result = new Result();
+			result.setPath("templates/jsp/find-password-setting.jsp");
+		}
+		else if(target.equals("findPasswordOk2")) { 
+			result = new FindPasswordController2().execute(req, resp); 
+		}
+		
+		
+
 		else if (target.equals("mypageOk")) {
 			result = new MypageOkController().execute(req, resp);
 		}
@@ -110,7 +127,27 @@ public class MemberFrontController extends HttpServlet {
 		else if (target.equals("userOutOk")) {
 			result = new UserOutOkController().execute(req, resp);
 		}
-		
+		else if (target.equals("myProfile")) {
+			result = new MyProfileOkController().execute(req, resp);
+		}
+		else if (target.equals("myQuestionListOk")) {
+			result = new MyQuestionListOkController().execute(req, resp);
+		}
+		else if (target.equals("myQuestionAddOk")) {
+			result = new MyQuestionAddOkController().execute(req, resp);
+		}
+		else if (target.equals("myAnswerListOk")) {
+			result = new MyAnswerListOkController().execute(req, resp);
+		}
+		else if (target.equals("myCommentListOk")) {
+			result = new MyCommentListOkController().execute(req, resp);
+		}
+		else if (target.equals("myCommentAddOk")) {
+			result = new MyCommentAddOkController().execute(req, resp);
+		}
+		else if (target.equals("accountFileSettingOk")) {
+			result = new AccountFileSettingOkController().execute(req, resp);
+		}
 		if (result != null) {
 			if (result.isRedirect()) {
 				resp.sendRedirect(result.getPath());

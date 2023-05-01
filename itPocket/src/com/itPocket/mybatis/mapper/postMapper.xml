@@ -36,9 +36,25 @@
 		</choose>
 		desc
 	</sql>
-
+	
+   <select id="AdminSelectAll" resultType="postVO">
+      select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
+      from tbl_post
+      where (post_type like '스터디' or post_type like '노하우' or post_type like 'QnA')
+      order by post_register_date desc
+      limit #{offset}, #{rowCount};
+   </select>
+   
+   <select id="AdminSelectInquiry" resultType="postVO">
+      select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
+      from tbl_post
+      where (post_type like '문의')
+      order by post_register_date desc
+      limit #{offset}, #{rowCount};
+   </select>
+	
 	<select id="selectAll" resultType="postDTO">
-		select post_id, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
 		from tbl_member m join tbl_post p
 		<trim suffixOverrides="and"> 
 			on m.member_id = p.member_id and
@@ -71,7 +87,7 @@
 	
 	<update id="update">
 		update tbl_post
-		set post_name = #{postName}, post_content = #{postContent}
+		set post_name = #{postName}, post_content = #{postContent}, post_is_blinded = #{postIsBlinded}
 		where post_id = #{postId}
 	</update>
 	
@@ -89,6 +105,104 @@
 	<select id="selectCurrentSequence" resultType="long">
 		select last_insert_id()
 	</select>
+	
+   <select id="selectStudyPost"  resultType="postFileDTO">
+      select post_name, post_view_count, file_name
+      from tbl_post p join tbl_file f
+      on p.post_id = f.post_id
+      where post_type = "스터디"
+      order by post_view_count
+   </select>
+   
+   <!-- Q&A 자바 선택 -->
+   <select id="selectJava" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'java'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A C 선택 -->
+   <select id="selectC" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'c'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A Pyhton 선택 -->
+   <select id="selectPython" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'python'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A Oracle 선택 -->
+   <select id="selectOracle" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'oracle'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A MySQl 선택 -->
+   <select id="selectMysql" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'mysql'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A Html 선택 -->
+   <select id="selectHtml" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'html'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A Css 선택 -->
+   <select id="selectCss" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'css'
+      order by post_id desc
+   </select>
+   
+   <!-- Q&A Javascript 선택 -->
+   <select id="selectScript" resultType="postDTO">
+      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+      from tbl_member m join tbl_post p
+      on m.member_id = p.member_id  
+      where post_language_type = 'javascript'
+      order by post_id desc
+   </select>
+	
+	<!-- 마이페이지 내 글 보기 -->
+	<select id="selectMyQuestion" resultType="postDTO">
+		select post_id, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname  
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and m.member_id = #{memberId} and post_type = #{sort}
+		order by post_id desc
+		limit 0, 5		
+	</select>
+	
+	<!-- 마이페이지 내 글 추가 -->
+	<select id="selectMyQuestionAdd" resultType="postDTO">
+		select post_id, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname  
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and m.member_id = #{memberId} and post_type = #{sort}
+		order by post_id desc
+		limit #{offset}, 5
+	</select>	
 </mapper>
 
 

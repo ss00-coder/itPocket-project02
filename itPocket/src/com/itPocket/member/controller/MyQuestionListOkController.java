@@ -7,31 +7,31 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
-import com.itPocket.member.domain.MemberVO;
-import com.oreilly.servlet.MultipartRequest;
+import com.itPocket.post.dao.PostDAO;
 
-public class AccountSettingOkController implements Action{
+public class MyQuestionListOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
-		MemberVO memberVO = new MemberVO();
+		PostDAO postDAO = new PostDAO();
+		JSONArray jsonArray = new JSONArray();
 		HttpSession session = req.getSession();
 		Result result = new Result();
+		String sort = req.getParameter("sort");
+		sort = sort == null ? "question" : sort;
 		
 		Long memberId = (Long)session.getAttribute("memberId");
+		req.setAttribute("sort", sort);
+		postDAO.selectMyQuestion(memberId, sort).stream().map(post -> new JSONObject(post)).forEach(jsonArray::put);
+		req.setAttribute("posts", jsonArray.toString());
 		
-		memberVO = memberDAO.select(memberId);
-		
-		req.setAttribute("memberNickname", memberVO.getMemberNickname());
-		req.setAttribute("memberEmail", memberVO.getMemberEmail());
-		req.setAttribute("memberPassword", memberVO.getMemberPassword());
-		req.setAttribute("memberRegion", memberVO.getMemberRegion());
-		req.setAttribute("memberFileName", memberVO.getMemberFileName());
-
-		result.setPath("templates/jsp/mypage/account-setting.jsp");
+		result.setPath("templates/jsp/mypage/my-question-list.jsp");
 		return result;
 	}
 }

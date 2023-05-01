@@ -102,12 +102,13 @@ ul li {
 }
 
 .h-100 {
-    height: 100%!important;
+    height: 100% !important;
 }
 
-.user-profile-picture div[data-name=image] {
+.user-profile-picture img{
+	display: block;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     border-radius: 50%;
     border: 0.0625rem solid #f2f2f2;
@@ -171,4 +172,48 @@ section {
 
 section.d-none {
 	margin: 0px;
+}
+
+#input-file{
+	display: none;
+}
+
+@keyframes popUp {
+    from {scale: 0;}
+    to {scale: 1;}
+}
+
+@keyframes popDown {
+    from {scale: 1;}
+    to {scale: 0;}
+}
+
+div.modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    inset: 0px;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #8586898a;
+}
+
+div.warn-modal {
+    box-sizing: border-box;
+    position: unset;
+    width: 288px;
+    margin: 20vh 0px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(33 35 41 / 12%) 0px 2px 12px;
+    border-radius: 8px;
+}
+
+div.warn-modal {
+    padding: 24px;
+}
+
+div#content-wrap span{
+    display: block;
 }
