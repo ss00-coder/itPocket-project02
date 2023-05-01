@@ -1,15 +1,17 @@
 package com.itPocket.comment.domain;
 
-public class CommentVO {
-
+public class CommentDTO {
 	private Long commentId;
 	private Long memberId;
 	private Long postId;
 	private String commentContent;
 	private String commentRegisterDate;
 	private String commentUpdateDate;
+	private String memberNickname;
+	private String postType;
+	private String postName;
 	
-	public CommentVO() {;}
+	public CommentDTO() {;}
 
 	public Long getCommentId() {
 		return commentId;
@@ -59,11 +61,36 @@ public class CommentVO {
 		this.commentUpdateDate = commentUpdateDate;
 	}
 
+	public String getMemberNickname() {
+		return memberNickname;
+	}
+
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
+	}
+
+	public String getPostType() {
+		return postType;
+	}
+
+	public void setPostType(String postType) {
+		this.postType = postType;
+	}
+
+	public String getPostName() {
+		return postName;
+	}
+
+	public void setPostName(String postName) {
+		this.postName = postName;
+	}
+
 	@Override
 	public String toString() {
-		return "CommentVO [commentId=" + commentId + ", memberId=" + memberId + ", postId=" + postId
+		return "CommentDTO [commentId=" + commentId + ", memberId=" + memberId + ", postId=" + postId
 				+ ", commentContent=" + commentContent + ", commentRegisterDate=" + commentRegisterDate
-				+ ", commentUpdateDate=" + commentUpdateDate + "]";
+				+ ", commentUpdateDate=" + commentUpdateDate + ", memberNickname=" + memberNickname + ", postType="
+				+ postType + ", postName=" + postName + "]";
 	}
 
 	@Override
@@ -82,7 +109,7 @@ public class CommentVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CommentVO other = (CommentVO) obj;
+		CommentDTO other = (CommentDTO) obj;
 		if (commentId == null) {
 			if (other.commentId != null)
 				return false;

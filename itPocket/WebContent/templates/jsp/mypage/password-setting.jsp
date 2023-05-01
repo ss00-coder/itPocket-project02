@@ -8,6 +8,7 @@
 <title>비밀번호 변경</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/password-setting.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/modal.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
@@ -76,7 +77,7 @@
 										</a>
 									</li>
 									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypage.member"
+									<li class="nav-item right-section-item"><a href="mypageOk.member"
 										class="gnb-link"><span>마이페이지</span> </a></li>
 								</ul>
 							</nav>
@@ -112,9 +113,9 @@
                     <div class="margin-bottm-8 col-12">
                         <fieldset class="form-group current-password">
                             <legend class="bv-no-focus-ring col-form-label pt-0">새로운 비밀번호</legend>
-                            <form action="passwordSettingOk.member" method="post" id="form">
+                            <form action="passwordSettingOk.member" method="post" id="form" name="form">
                                 <div class="input-group current-password">
-                                    <input name="memberNewPassword" type="password" placeholder="영문+숫자 조합 8자리 이상 입력하주세요" class="form-control is-invalid" name="middle-input">
+                                    <input name="memberNewPassword" type="password" placeholder="영문+숫자 조합 8자리 이상 입력하주세요" class="form-control is-invalid">
                                     <!-- <button class="btn btn-secondary" type="button">표시</button> -->
                                 </div>
                                 <div id="middle-div" class="invalid-feedback">비밀번호를 입력해주세요.</div>
@@ -126,7 +127,7 @@
                             <legend class="bv-no-focus-ring col-form-label pt-0">새로운 비밀번호 확인</legend>
                             <div>
                                 <div class="input-group current-password">
-                                    <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" class="form-control is-invalid" name="bottom-input">
+                                    <input name="memberNewPasswordCheck" type="password" placeholder="비밀번호를 한번 더 입력해주세요" class="form-control is-invalid">
                                     <!-- <button class="btn btn-secondary" type="button">표시</button> -->
                                 </div>
                                 <div id="bottom-div" class="invalid-feedback">비밀번호를 한번 더 입력해주세요.</div>
@@ -136,7 +137,7 @@
                 </div>
                 <footer class="button-group">
                     <a href="accountSettingOk.member" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
-                    <button form="form" type="submit" class="btn btn-primary">변경 완료</button>
+                    <button form="form" type="submit" class="btn btn-primary button-submit">변경 완료</button>
                 </footer>
             </div>
         </div>
@@ -264,5 +265,8 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../../static/js/mypage-setting-js/password-setting.js"></script>
+<script>
+	let password = `${memberPassword}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/password-setting.js"></script>
 </html>

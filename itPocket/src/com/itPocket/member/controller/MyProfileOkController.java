@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.itPocket.Action;
@@ -15,7 +14,7 @@ import com.itPocket.Result;
 import com.itPocket.member.dao.MemberDAO;
 import com.itPocket.member.domain.MemberVO;
 
-public class MypageOkController implements Action {
+public class MyProfileOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
@@ -31,8 +30,9 @@ public class MypageOkController implements Action {
 		req.setAttribute("member", jsonObject);
 		req.setAttribute("memberNickname", memberVO.getMemberNickname());
 		req.setAttribute("memberEmail", memberVO.getMemberEmail());
+		req.setAttribute("memberRegion", memberVO.getMemberRegion());
 		req.setAttribute("memberFileName", memberVO.getMemberFileName());
-		result.setPath("templates/jsp/mypage/mypage.jsp");
+		result.setPath("templates/jsp/mypage/my-profile.jsp");
 		
 		return result;
 	}

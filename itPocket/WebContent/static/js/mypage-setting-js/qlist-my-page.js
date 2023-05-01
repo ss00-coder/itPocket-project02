@@ -72,5 +72,59 @@ function elapsedTime(date) {
 const $orders = $(".tab-list li");
 $orders.on("click", function(e){
 	let i = $orders.index(this);
-	location.href = `${contextPath}/myQuestionListOk.member?sort=${ i==0 ? 'question' : i==1 ? 'study' : 'knowhow'}`;
+	let sort = i==0 ? 'question' : i==1 ? 'study' : 'knowhow';
+	page = 0;
+	location.href = `${contextPath}/myQuestionListOk.member?sort=${sort}`;
 });
+
+/* 무한스크롤 */
+let page = 1;
+
+$(window).scroll(function(){
+	if(Math.ceil($(window).scrollTop()) == $(document).height() - $(window).height()){
+		$(".infinite_rotating_logo").show();
+		page++;
+		showAddList();
+	}
+});
+
+/* Ajax CRUD */
+function showAddList(){
+	$.ajax({
+		url: contextPath + `/myQuestionAddOk.member?sort=${selectQueryString("sort")}&page=${page}`,
+		dataType: "json",
+		success: function(posts){
+			$(".infinite_rotating_logo").hide();
+			const $ul = $("ul.list");
+			let text = "";
+			posts.forEach(post => {
+				text += `<li class="community-activity-item">
+							<a href="javascript:location.href='${contextPath}/detailOk.board?boardId=${post.postId}'">
+								<div class="collapsed">
+									<div class="line-clamp" style="line-height: 1.5; max-height: 1.5rem; -webkit-line-clamp: 1;">
+										<p class="community-activity-title sg-text-body2 sg-font-regular sg-text-gray-500">${post.memberNickname}</p>
+									</div>
+								</div>
+								<div class="collapsed">
+									<div class="line-clamp" style="line-height: 1.5; max-height: 3rem; -webkit-line-clamp: 2; margin: 0 0 0.25rem;">
+										<h3>${post.postName}</h3>
+									</div>
+								</div>
+								<span class="sg-text-body2 sg-font-regular sg-text-gray-300">조회 ${post.postViewCount}&nbsp&nbsp</span>
+								<span class="sg-text-body2 sg-font-regular sg-text-gray-300">
+									`+ elapsedTime(post.postRegisterDate) +`
+								</span>
+							</a>
+						</li>
+						`;
+				});
+				
+				$ul.append(text);
+			}	
+		});
+}
+
+/* 쿼리스트링 가져오기 */
+function selectQueryString(key){
+	return new URLSearchParams(location.search).get(key);
+}

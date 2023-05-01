@@ -28,6 +28,7 @@ public class AccountFileSettingOkController implements Action{
 		
 		Long memberId = (Long)session.getAttribute("memberId");
 		String root = req.getServletContext().getRealPath("/") + "upload/";
+		String rootFile = req.getServletContext().getRealPath("/") + "upload";
 		int fileSize = 1024 * 1024 * 20;
 		Path path = null;
 		
@@ -38,6 +39,13 @@ public class AccountFileSettingOkController implements Action{
 		Enumeration<String> inputTypeFileNames = multipartRequest.getFileNames();
 		
 		while(inputTypeFileNames.hasMoreElements()) {
+			if(memberVO.getMemberFileName() != null) {
+				File file = new File(rootFile, memberVO.getMemberFileName());
+				if(file.exists()) {
+					file.delete();
+				}
+			}
+			
 			String inputTypeFileName = inputTypeFileNames.nextElement();
 			String fileName = multipartRequest.getFilesystemName(inputTypeFileName);
 			memberVO.setMemberFileName(fileName);

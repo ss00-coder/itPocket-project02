@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.itPocket.comment.domain.CommentDTO;
 import com.itPocket.mybatis.config.MyBatisConfig;
 import com.itPocket.post.domain.PostDTO;
 import com.itPocket.post.domain.PostVO;
@@ -64,4 +65,8 @@ public class PostDAO {
 		selectMap.put("sort", sort);
 		return sqlSession.selectList("post.selectMyQuestion", selectMap);
 	}
+//		마이페이지에서 나의 댓글 추가 조회
+	public List<PostDTO> selectMyQuestionAdd(HashMap<String, Object> postListMap){
+		return sqlSession.selectList("post.selectMyQuestionAdd", postListMap);
+	}	
 }

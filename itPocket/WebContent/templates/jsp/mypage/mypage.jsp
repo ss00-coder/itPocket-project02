@@ -92,6 +92,11 @@
         </header>
         <!-- 중간부분 -->
         <div id="app-body">
+            <div class="modal">
+	            <div class="warn-modal">
+	                <div id="content-wrap"></div>
+	            </div>
+	        </div>
             <div class="container container-md">
                 <div class="mypage-container">
                     <h1 class="mypage-title">마이페이지</h1>
@@ -139,8 +144,8 @@
                                 나만의 페이지
                                 <a role="button"></a>
                             </li>
-                            <li class="sub-menu-container soomgopay-list">
-                                <a href="myProfile.member" class="sub-menu-list">
+                            <li href="" class="sub-menu-container soomgopay-list">
+                                <a class="sub-menu-list" id="gosu">
                                     <div class="sub-content">
                                         <div class="sub-menu">
                                             <span class="sub-menu-title">나의 전문가 페이지로 이동</span>
@@ -175,7 +180,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="sub-menu-container soomgopay-list">
+                            <!-- <li class="sub-menu-container soomgopay-list">
                                 <a href="myAnswerListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
                                         <div class="sub-menu">
@@ -188,7 +193,7 @@
                                         </span>
                                     </div>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="sub-menu-container soomgopay-list">
                                 <a href="myCommentListOk.member" class="sub-menu-list">
                                     <div class="sub-content">
@@ -483,4 +488,9 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let member = JSON.parse(`${member}`);
+</script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/modal.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/mypage.js"></script>
 </html>

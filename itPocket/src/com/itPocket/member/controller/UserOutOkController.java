@@ -25,7 +25,6 @@ public class UserOutOkController implements Action {
 		memberVO.setMemberIsRemaining(false);
 		
 		memberDAO.updateIsRemaining(memberVO);
-		System.out.println("들어옴");
 		
 		result.setPath(req.getContextPath() + "/logout.member");
 		result.setRedirect(true);
