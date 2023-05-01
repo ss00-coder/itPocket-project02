@@ -8,6 +8,7 @@
 <title>닉네임 수정</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/name-setting.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage-setting-css/modal.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
@@ -92,6 +93,11 @@
         </header>
         <!-- 중간부분 -->
         <div id="app-body">
+	        <div class="modal">
+	            <div class="warn-modal">
+	                <div id="content-wrap"></div>
+	            </div>
+	        </div>
             <div class="container container-md">
                 <main class="account-info-container">
                     <h1>닉네임 수정</h1>
@@ -117,7 +123,7 @@
                     </section>
                     <footer class="button-group">
                         <a href="accountSettingOk.member" class="btn btn-cancel btn-active btn-outline-secondary" target="_self">취소</a>
-                        <button form="form" type="submit" class="btn btn-primary">수정 완료</button>
+                        <button form="form" type="submit" class="btn btn-primary" id="button">수정 완료</button>
                     </footer>
                 </main>
             </div>
@@ -246,5 +252,6 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../../static/js/mypage-setting-js/name-setting.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/name-setting.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/modal.js"></script>
 </html>

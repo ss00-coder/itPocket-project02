@@ -37,7 +37,7 @@ public class MemberDAO {
 	  
 	   
 	   return sqlSession.selectOne("member.login",loginMap);
-   }  
+   } 
 
    //비밀번호 재설정
    public void updatePassword(String memberPassword, String memberEmail) {
@@ -46,6 +46,11 @@ public class MemberDAO {
       settingMap.put("memberEmail", memberEmail);
       
       sqlSession.update("updatePassword",settingMap);
+   }
+   
+   //전문가 수 검색 
+   public int countExpert() {
+      return sqlSession.selectOne("member.countExpert");
    }
    
    //마이페이지 아이디로 회원조회
