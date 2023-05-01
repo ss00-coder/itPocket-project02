@@ -19,6 +19,7 @@ public class PostDAO {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 
+
 //		게시글 전체 조회
 	public List<PostDTO> selectAll(HashMap<String, Object> pagable) {
 		return sqlSession.selectList("post.selectAll", pagable);
