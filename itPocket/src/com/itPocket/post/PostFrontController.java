@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.itPocket.Result;
+import com.itPocket.post.controller.KnowHowColumnController;
+import com.itPocket.post.controller.KnowHowController;
 import com.itPocket.post.controller.AdminDeletController;
 import com.itPocket.post.controller.AdminInquiryListOkController;
 import com.itPocket.post.controller.AdminWriteOkController;
@@ -38,7 +40,15 @@ public class PostFrontController extends HttpServlet {
 		if (target.equals("adminListOk")) {
 			result = new AdminListOkController().execute(req, resp);
 
-		} else if (target.equals("adminwrite")) {
+		} else if (target.equals("KnowHowlistOk")) {
+			result = new KnowHowController().execute(req, resp);
+		}
+
+		else if (target.equals("KnowHowColumnlistOk")) {
+			result = new KnowHowColumnController().execute(req, resp);
+		}
+
+		else if (target.equals("adminwrite")) {
 			result = new Result();
 			result.setPath("templates/board/write.jsp");
 
