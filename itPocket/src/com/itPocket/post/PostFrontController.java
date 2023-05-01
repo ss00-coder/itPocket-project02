@@ -11,12 +11,12 @@ import com.itPocket.Result;
 import com.itPocket.post.controller.KnowHowColumnController;
 import com.itPocket.post.controller.KnowHowController;
 import com.itPocket.post.controller.AdminDeletController;
+import com.itPocket.post.controller.AdminDeleteController;
+import com.itPocket.post.controller.AdminDetailOkController;
 import com.itPocket.post.controller.AdminInquiryListOkController;
+import com.itPocket.post.controller.AdminListOkController;
 import com.itPocket.post.controller.AdminWriteOkController;
 import com.itPocket.post.controller.BlindedPostController;
-import com.itPocket.post.controller.AdminDetailOkController;
-import com.itPocket.post.controller.AdminListOkController;
-import com.itPocket.post.controller.UpdateOkController;
 import com.itPocket.post.controller.DetailOkController;
 import com.itPocket.post.controller.ListOkController;
 import com.itPocket.post.controller.SelectCController;
@@ -28,6 +28,8 @@ import com.itPocket.post.controller.SelectMysqlController;
 import com.itPocket.post.controller.SelectOracleController;
 import com.itPocket.post.controller.SelectPyhonController;
 import com.itPocket.post.controller.StudyController;
+import com.itPocket.post.controller.UpdateOkController;
+
 
 public class PostFrontController extends HttpServlet {
 	@Override
@@ -69,7 +71,7 @@ public class PostFrontController extends HttpServlet {
 	         result = new UpdateOkController().execute(req, resp);
 	         
 	      } else if(target.equals("delete")) {
-	         result = new AdminDeletController().execute(req, resp);
+	         result = new AdminDeleteController().execute(req, resp);
 	         
 	      } else if(target.equals("adminInquiryListOk")) {
 	         result = new AdminInquiryListOkController().execute(req, resp);
@@ -98,8 +100,6 @@ public class PostFrontController extends HttpServlet {
 	      }else if(target.equals("QnAlistJavascriptOk")) {
 	         result = new SelectJavascriptController().execute(req, resp);
 	      }
-		 
-
 		
 		if(result != null) {
 			if(result.isRedirect()) {
