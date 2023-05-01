@@ -25,7 +25,6 @@ public class MyQuestionListOkController implements Action{
 		Result result = new Result();
 		String sort = req.getParameter("sort");
 		sort = sort == null ? "question" : sort;
-		System.out.println(sort);
 		
 		Long memberId = (Long)session.getAttribute("memberId");
 		req.setAttribute("sort", sort);

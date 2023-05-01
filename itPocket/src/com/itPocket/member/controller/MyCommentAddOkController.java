@@ -17,24 +17,32 @@ import com.itPocket.Result;
 import com.itPocket.comment.dao.CommentDAO;
 import com.itPocket.member.dao.MemberDAO;
 
-public class MyCommentListOkController implements Action{
+public class MyCommentAddOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
-		MemberDAO memberDAO = new MemberDAO();
+		
+		rep.setContentType("text/html;charset=utf-8");
 		CommentDAO commentDAO = new CommentDAO();
 		JSONArray jsonArray = new JSONArray();
 		HttpSession session = req.getSession();
-		Result result = new Result();
-		String sort = req.getParameter("sort");
-		sort = sort == null ? "question" : sort;
+		PrintWriter out = rep.getWriter();
 		
 		Long memberId = (Long)session.getAttribute("memberId");
 		
-		req.setAttribute("sort", sort);
-		commentDAO.selectMyComment(memberId, sort).stream().map(comment -> new JSONObject(comment)).forEach(jsonArray::put);
-		req.setAttribute("comments", jsonArray.toString());
+		String sort = req.getParameter("sort"); 
+		sort = sort.equals("null") ? "question" : sort;
+		int page = Integer.parseInt(req.getParameter("page"));
+		int offset = (page - 1) * 5;
+		HashMap<String, Object> commentListMap = new HashMap<String, Object>();
+		commentListMap.put("memberId", memberId);
+		commentListMap.put("offset", offset);
+		commentListMap.put("sort", sort);
+		commentListMap.put("rowCount", 5);
+		
+		commentDAO.selectMyCommentAdd(commentListMap).stream().map(comment -> new JSONObject(comment)).forEach(jsonArray::put);
+		out.print(jsonArray.toString());
+		out.close();
 				
-		result.setPath("templates/jsp/mypage/my-comment-list.jsp");
-		return result;
+		return null;
 	}
 }

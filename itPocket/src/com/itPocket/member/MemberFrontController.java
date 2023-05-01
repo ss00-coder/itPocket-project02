@@ -17,7 +17,10 @@ import com.itPocket.member.controller.EmailSettingOkController;
 import com.itPocket.member.controller.JoinOkController;
 import com.itPocket.member.controller.LoginOkController;
 import com.itPocket.member.controller.MyAnswerListOkController;
+import com.itPocket.member.controller.MyCommentAddOkController;
 import com.itPocket.member.controller.MyCommentListOkController;
+import com.itPocket.member.controller.MyProfileOkController;
+import com.itPocket.member.controller.MyQuestionAddOkController;
 import com.itPocket.member.controller.MyQuestionListOkController;
 import com.itPocket.member.controller.MypageOkController;
 import com.itPocket.member.controller.NameSettingController;
@@ -125,17 +128,22 @@ public class MemberFrontController extends HttpServlet {
 			result = new UserOutOkController().execute(req, resp);
 		}
 		else if (target.equals("myProfile")) {
-			result = new Result();
-			result.setPath("templates/jsp/profile.jsp");
+			result = new MyProfileOkController().execute(req, resp);
 		}
 		else if (target.equals("myQuestionListOk")) {
 			result = new MyQuestionListOkController().execute(req, resp);
+		}
+		else if (target.equals("myQuestionAddOk")) {
+			result = new MyQuestionAddOkController().execute(req, resp);
 		}
 		else if (target.equals("myAnswerListOk")) {
 			result = new MyAnswerListOkController().execute(req, resp);
 		}
 		else if (target.equals("myCommentListOk")) {
 			result = new MyCommentListOkController().execute(req, resp);
+		}
+		else if (target.equals("myCommentAddOk")) {
+			result = new MyCommentAddOkController().execute(req, resp);
 		}
 		else if (target.equals("accountFileSettingOk")) {
 			result = new AccountFileSettingOkController().execute(req, resp);
