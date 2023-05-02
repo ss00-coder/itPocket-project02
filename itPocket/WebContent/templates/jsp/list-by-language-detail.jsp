@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,7 +97,7 @@
 							<div class="post-header">
 								<!-- 글위치 -->
 								<div class="post-category-subject">
-									<ol class="category-breadcrumb list-inline">
+									<!-- <ol class="category-breadcrumb list-inline">
 										<li class="category-breadcrumb-item"><a
 											class="breadcrumb-item"> <span
 												class="sg-text-body2 sg-font-regular sg-text-gray-400">커뮤니티</span>
@@ -106,14 +107,13 @@
 											class="breadcrumb-item"> <span
 												class="sg-text-body2 sg-font-regular sg-text-gray-400">얼마예요</span>
 										</a></li>
-									</ol>
+									</ol> -->
 								</div>
 								<!-- 글제목 -->
 								<div class="post-header-title-wrapper has-service">
-									<p class="post-service-name">자동차 외부수리</p>
-									<h1 class="post-header-title sg-text-display3 sg-font-bold">자동차
-										쇼바 수리 요청</h1>
-									<p class="post-address-info">광주 전체</p>
+									<p class="post-service-name"><c:out value="${post.postLanguageType}"/></p>
+									<h1 class="post-header-title sg-text-display3 sg-font-bold">Q : <c:out value="${post.postName}"/></h1>
+									<!-- <p class="post-address-info">광주 전체</p> -->
 								</div>
 								<!-- 글쓴이 -->
 								<div class="user-profile-bar-container">
@@ -123,10 +123,9 @@
 												<img class="profile-image"
 													src="https://static.cdn.soomgo.com/upload/profile/8e83e2c1-4e36-430e-b1a8-62e6dd8401a9.jpg">
 												<div class="profile-post-info">
-													<span class="user-name sg-text-subhead5 sg-font-medium">변세정</span>
+													<span class="user-name sg-text-subhead5 sg-font-medium"><c:out value="${post.memberNickname}"/></span>
 													<span
-														class="post-created-at sg-text-description sg-font-regular">18분
-														전 · 조회 17</span>
+														class="post-created-at sg-text-description sg-font-regular">조회 <c:out value="${post.postViewCount}"/></span>
 												</div>
 											</div>
 											<div class="post-actions">
@@ -145,9 +144,7 @@
 							<!-- 글내용 -->
 							<div class="body-container">
 								<div class="body-contents">
-									<p class="text sg-text-body1 sg-font-regular"><span style="display: inline-block;">자동차 왼쪽 쇼바 수리 견적 요청합니다~
-차 견인비도 함께 요청합니다
-첨단동부아파트입니다~~ </span></p>
+									<p class="text sg-text-body1 sg-font-regular"><span style="display: inline-block;">Q : <c:out value = "${post.postContent}"/></span></p>
 								</div>
 							</div>
 							<!-- 좋아요 수, 댓글  -->
@@ -172,82 +169,15 @@
 										<textarea rows="1" placeholder="댓글을 남겨보세요" class="sg-text-body2 sg-font-regular comment-input form-control" maxlength="500" style="height: 22px; overflow: hidden; resize: none;"></textarea>
 									</div>
 								</div>
+								
 								<!-- 댓글 목록 -->
-								<ul class="post-comments-list">
+								<ul class="post-comments-list" id="content-wrap">
 									<!-- 첫벗째 댓글  -->
-									<li class="post-comments-list-item">
-										<div class="post-comment-wrapper">
-											<div class="profile-image provider">
-												<img class="image" src="https://static.cdn.soomgo.com/upload/profile/89c0eaab-67ef-4897-938d-0bfa3f67e6d7.jpg?h=110&w=110">
-											</div>
-											<div class="comment-information">
-												<div class="user-info provider">
-													<div class="user-info-wrapper pro-user">
-														<div class="user">
-															<span class="user-name sg-text-subhead4 sg-font-bold sg-text-gray-900">곽성광</span>
-														</div>
-														<div class="pro-user-services">
-															<span class="service sg-text-description sg-font-regular sg-text-gray-500 main-service">사무실/상업공간 청소 업체</span>
-															<span class="service sg-text-description sg-font-regular sg-text-gray-500">+ 9개 서비스</span>
-															<span class="service sg-text-description sg-font-regular sg-text-gray-500">고수</span>
-														</div>
-													</div>
-													<button class="send-request-button sg-text-subhead7 sg-font-medium">견적요청</button>
-												</div>
-												<div class="content">
-													<p class="text sg-text-body2 sg-font-regular">
-														<span>합리적인 가격에 좋은 업체 만나시길 바래요</span>
-													</p>
-												</div>
-												<div class="comment-action-group sg-text-description sg-font-regular">
-													<div class="comment-react">
-														<span class="text">56분 전</span>
-														<span class="divider-dot">·</span>
-														<div class="like-area">
-															<span>좋아요 0</span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
+									<!-- <li class="post-comments-list-item">
+										
+									</li> -->
 									<!-- 두번째 글 -->
-									<li class="post-comments-list-item">
-										<div class="post-comment-wrapper">
-											<div class="profile-image provider">
-												<img class="image" src="https://static.cdn.soomgo.com/upload/profile/89c0eaab-67ef-4897-938d-0bfa3f67e6d7.jpg?h=110&w=110">
-											</div>
-											<div class="comment-information">
-												<div class="user-info provider">
-													<div class="user-info-wrapper pro-user">
-														<div class="user">
-															<span class="user-name sg-text-subhead4 sg-font-bold sg-text-gray-900">곽성광</span>
-														</div>
-														<div class="pro-user-services">
-															<span class="service sg-text-description sg-font-regular sg-text-gray-500 main-service">사무실/상업공간 청소 업체</span>
-															<span class="service sg-text-description sg-font-regular sg-text-gray-500">+ 9개 서비스</span>
-															<span class="service sg-text-description sg-font-regular sg-text-gray-500">고수</span>
-														</div>
-													</div>
-													<button class="send-request-button sg-text-subhead7 sg-font-medium">견적요청</button>
-												</div>
-												<div class="content">
-													<p class="text sg-text-body2 sg-font-regular">
-														<span>합리적인 가격에 좋은 업체 만나시길 바래요</span>
-													</p>
-												</div>
-												<div class="comment-action-group sg-text-description sg-font-regular">
-													<div class="comment-react">
-														<span class="text">56분 전</span>
-														<span class="divider-dot">·</span>
-														<div class="like-area">
-															<span>좋아요 0</span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
+									
 								</ul>
 								<!-- 앞으로 추가될 댓글 -->
 								<div class="infinite-loading-container"></div>
@@ -389,4 +319,11 @@
 		</nav>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/count-time.js"></script>
+<script>
+	let postId = `${post.postId}`;
+	let contextPath = `${pageContext.request.contextPath}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/comment-list.js"></script>
 </html>
