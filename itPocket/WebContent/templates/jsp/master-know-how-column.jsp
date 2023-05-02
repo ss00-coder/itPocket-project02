@@ -35,20 +35,20 @@
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>사이트소개</span>
+									<li class="nav-item left-section-item"><a
+										href="how-to-use.jsp" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.jsp"
+									<li class="nav-item left-section-item"><a href="study.post"
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>노하우</span>
+									<li class="nav-item left-section-item"><a
+										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
-									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+									<li class="nav-item left-section-item"><a 
+										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
@@ -121,20 +121,6 @@
 						<!-- 노하우들  -->
 						<article class="pro-knowhow-list" id = "content-wrap">
 							<ul >
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item" >
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
 							</ul>
 						</article>
 						<!-- 위로 가기 버튼 -->
