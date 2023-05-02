@@ -70,7 +70,6 @@ public class PostDAO {
 //  knowHow 게시판 조회
 	public List<PostDTO> knowHowSelect(HashMap<String, Object> pagable){
 		List<PostDTO> list = sqlSession.selectList("post.knowHowSelect",pagable);
-		System.out.println(list.get(1));
 		return list;
 }
 //		knowHow column 조회
@@ -142,7 +141,6 @@ public class PostDAO {
 //	스터디 목록
 	public List<PostDTO> selectStudy(HashMap<String, Object> pagable){
 	      List<PostDTO> list = sqlSession.selectList("post.selectStudy", pagable);
-	      System.out.println(list.get(0));
 	      return list;
 	   }
 }

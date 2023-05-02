@@ -51,7 +51,7 @@
 										href="how-to-use.jsp" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.jsp"
+									<li class="nav-item left-section-item"><a href="study.post"
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
