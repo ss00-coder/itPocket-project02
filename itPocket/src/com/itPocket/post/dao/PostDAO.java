@@ -85,6 +85,11 @@ public class PostDAO {
 		return sqlSession.selectList("post.selectMyQuestionAdd", postListMap);
 	}
 
+//	QnA게시판 조회
+	public List<PostDTO> selectAllQnA(HashMap<String, Object> pagable){
+		return sqlSession.selectList("post.selectAllQnA", pagable);
+	}
+
 //  자바게시판 조회
 	public List<PostDTO> selectJava(HashMap<String, Object> pagable) {
 		return sqlSession.selectList("post.selectJava", pagable);
