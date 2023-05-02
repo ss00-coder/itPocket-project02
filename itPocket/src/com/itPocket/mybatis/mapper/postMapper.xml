@@ -127,77 +127,90 @@
       order by post_view_count
    </select>
    
-   <!-- Q&A 자바 선택 -->
-   <select id="selectJava" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'java'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A C 선택 -->
-   <select id="selectC" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'c'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A Pyhton 선택 -->
-   <select id="selectPython" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'python'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A Oracle 선택 -->
-   <select id="selectOracle" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'oracle'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A MySQl 선택 -->
-   <select id="selectMysql" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'mysql'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A Html 선택 -->
-   <select id="selectHtml" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'html'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A Css 선택 -->
-   <select id="selectCss" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'css'
-      order by post_id desc
-   </select>
-   
-   <!-- Q&A Javascript 선택 -->
-   <select id="selectScript" resultType="postDTO">
-      select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
-      where post_language_type = 'javascript'
-      order by post_id desc
-   </select>
+   <!-- QnA전체 선택 -->
+	<select id="selectAllQnA" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date,
+		 post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		<trim suffixOverrides="and"> 
+			on m.member_id = p.member_id and post_type = 'QnA' and
+			<include refid="search"/>
+		</trim>
+			<include refid="order"/>
+		limit #{offset}, #{rowCount}
+	</select>
+	
+	<!-- Q&A 자바 선택 -->
+	<select id="selectJava" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'java'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A C 선택 -->
+	<select id="selectC" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'c'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A Pyhton 선택 -->
+	<select id="selectPython" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'python'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A Oracle 선택 -->
+	<select id="selectOracle" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'oracle'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A MySQl 선택 -->
+	<select id="selectMysql" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'mysql'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A Html 선택 -->
+	<select id="selectHtml" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'html'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A Css 선택 -->
+	<select id="selectCss" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'css'
+		order by post_id desc
+	</select>
+	
+	<!-- Q&A Javascript 선택 -->
+	<select id="selectScript" resultType="postDTO">
+		select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
+		from tbl_member m join tbl_post p
+		on m.member_id = p.member_id and post_type = 'QnA'
+		where post_language_type = 'javascript'
+		order by post_id desc
+	</select>
 	
 	<!-- 마이페이지 내 글 보기 -->
 	<select id="selectMyQuestion" resultType="postDTO">
