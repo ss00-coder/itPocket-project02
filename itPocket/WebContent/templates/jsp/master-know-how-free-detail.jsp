@@ -1,19 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>노하우 게시판(컬럼 게시판) 싱세보기</title>
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/master-know-how-free-detail.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/master-know-how-free-detail.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="../../static/image/shortcut.png">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+	rel="stylesheet">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
 </head>
 <body class="life-topic">
 	<div class="webp-bgroup">
@@ -25,28 +29,27 @@
 						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
-                     <div class="logo">
-                        <a href="main.jsp"> 
-                           <img src="../../static/image/logo.png">
-                        </a>
-                     </div>
+							<div class="logo">
+								<a href="main"> <img src="${pageContext.request.contextPath}/static/image/logo.png">
+								</a>
+							</div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>사이트소개</span>
+									<li class="nav-item left-section-item"><a href=""
+										class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.jsp"
-										class="gnb-link"> <span>스터디</span>
+									<li class="nav-item left-section-item"><a
+										href="study.post" class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>노하우</span>
+									<li class="nav-item left-section-item"><a
+										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
 									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
@@ -64,24 +67,38 @@
 							</div>
 						</div>
 						<!-- 로그인, 회원가입, 고수가입 -->
+						<!-- 로그인, 회원가입, 고수가입 -->
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>로그인</span> </a></li>
-									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>회원가입</span> </a></li>
+									<c:choose>
+										<c:when test="${not empty memberId}">
+											<!-- 로그아웃 -->
+											<li class="nav-item right-section-item"><a
+												href="logout.member" class="gnb-link"><span>로그아웃</span>
+											</a></li>
+											<!-- 마이페이지 -->
+											<li class="nav-item right-section-item"><a
+												href="mypageOk.member" class="gnb-link"><span>마이페이지</span>
+											</a></li>
+										</c:when>
+										<c:otherwise>
+											<!-- 로그인 -->
+											<li class="nav-item right-section-item"><a
+												href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+											<!-- 회원가입 -->
+											<li class="nav-item right-section-item"><a
+												href="join.member" class="gnb-link"><span>회원가입</span> </a></li>
+										</c:otherwise>
+									</c:choose>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
-					</div>
 				</section>
 			</div>
 		</header>
@@ -95,7 +112,8 @@
 							<article>
 								<!-- 전체 대표 이미지 -->
 								<section class="cover-image-wrapper">
-									<img class="cover-image" src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1">
+									<img class="cover-image"
+										src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1">
 								</section>
 								<!-- 제목 -->
 								<h1 class="title">'시간 가는 줄 모르는 수업' 만드는 고수</h1>
@@ -114,8 +132,8 @@
 									</a>
 								</div>
 								<!-- 본인 소개  -->
-								<p class="brief-intro">안녕하세요. 노이아틀리에 권지안입니다.
-제가 수업을 하며 얻게 된 노하우를 고수 여러분께 공유해드리려고해요.</p>
+								<p class="brief-intro">안녕하세요. 노이아틀리에 권지안입니다. 제가 수업을 하며 얻게 된
+									노하우를 고수 여러분께 공유해드리려고해요.</p>
 								<!-- 메인 글 -->
 								<div class="put-main-post">메인 글</div>
 								<!-- 고수 프로필 2 -->
@@ -131,7 +149,8 @@
 											</section>
 											<button class="btn request-btn btn-primary">견적 요청</button>
 										</section>
-										<p class="profile-desc">권지안 멘토의 일대일 맞춤 프로그램 [아동미술 레슨, 소묘/드로잉 레슨]</p>
+										<p class="profile-desc">권지안 멘토의 일대일 맞춤 프로그램 [아동미술 레슨,
+											소묘/드로잉 레슨]</p>
 									</a>
 								</section>
 							</article>
@@ -141,7 +160,7 @@
 			</div>
 		</div>
 		<!-- 하단부  -->
-				<nav id="app-footer" class="footer-container">
+		<nav id="app-footer" class="footer-container">
 			<div class="footer-container-row container">
 				<div class="col-content margin-bottom">
 					<p class="text contact">1599-5319</p>
@@ -164,8 +183,7 @@
 					<ul class="content-list">
 						<li class="open-padding"><span
 							class="text-middle title category"> 숨고소개 <span
-								class="new-badge" style="display: none;">N</span>
-							<!----></span>
+								class="new-badge" style="display: none;">N</span> <!----></span>
 							<div>
 								<a href="/about" class="text-middle category">회사소개 <span
 									class="new-badge" style="display: none;">N</span>

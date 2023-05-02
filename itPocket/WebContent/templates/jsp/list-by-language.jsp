@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,27 +29,27 @@
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
                      <div class="logo">
-                        <a href="main.jsp"> 
-                           <img src="../../static/image/logo.png">
+                        <a href="main"> 
+                           <img src="${pageContext.request.contextPath}/static/image/logo.png">
                         </a>
                      </div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>사이트소개</span>
+									<li class="nav-item left-section-item"><a
+										href="" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.jsp"
+									<li class="nav-item left-section-item"><a href="study.post"
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
-									<!-- 노하우 -->
+									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a
-										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
+										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
 									</a></li>
-									<!-- Q&A -->
-									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+									<!-- 커뮤니티 -->
+									<li class="nav-item left-section-item"><a 
+										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
@@ -69,18 +70,32 @@
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>로그인</span> </a></li>
-									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>회원가입</span> </a></li>
+									<c:choose>
+										<c:when test="${not empty memberId}">
+											<!-- 로그아웃 -->
+											<li class="nav-item right-section-item"><a
+												href="logout.member" class="gnb-link"><span>로그아웃</span> </a></li>
+											<!-- 마이페이지 -->
+											<li class="nav-item right-section-item"><a
+												href="mypageOk.member" class="gnb-link"><span>마이페이지</span>
+											</a></li>
+										</c:when>
+										<c:otherwise>
+											<!-- 로그인 -->
+											<li class="nav-item right-section-item"><a
+												href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+											<!-- 회원가입 -->
+											<li class="nav-item right-section-item"><a
+												href="join.member" class="gnb-link"><span>회원가입</span>
+											</a></li>
+										</c:otherwise>
+									</c:choose>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
 					</div>
