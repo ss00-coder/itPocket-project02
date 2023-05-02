@@ -18,40 +18,40 @@
 </head>
 <body>
 <div id="app">
-        <header id="app-header" class="global-header">
+		<header class="global-header">
 			<div class="global-navigation-bar">
 				<section class="d-none d-lg-block d-xl-block d-xl-block">
 					<div class="desktop-header">
-						<!--숨고로그, 서비스, 고수찾기 마켓, 커뮤니티-->
+						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
 						<div class="left-section">
-							<!--숨고 로고 대체제 만들어야되요-->
-							<div class="logo">
-								<a href="main">
-									<img src="${pageContext.request.contextPath}/static/image/logo.png">
-								</a>
-							</div>
+							<!-- 숨고 로고 대체제 만들어야되요 -->
+                     <div class="logo">
+                        <a href="main"> 
+                           <img src="${pageContext.request.contextPath}/static/image/logo.png">
+                        </a>
+                     </div>
 							<nav>
 								<ul class="nav-list">
-									<!--서비스 요청-->
-									<li class="nav-item left-section-item "><a
-										class="gnb-link"> <span>사이트소개</span>
+									<!-- 서비스 요청 -->
+									<li class="nav-item left-section-item"><a
+										href="" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
-									<!--고수찾기-->
-									<li class="nav-item left-section-item"><a href="study.jsp"
+									<!-- 고수찾기 -->
+									<li class="nav-item left-section-item"><a href="study.post"
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
-									<!--마켓-->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>노하우</span>
-									</a></li>
-									<!--커뮤니티-->
+									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
+									</a></li>
+									<!-- 커뮤니티 -->
+									<li class="nav-item left-section-item"><a 
+										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
 						</div>
-						<!--어떤 서비스가 필요하세요(이부분은 희수님만 하시면 됩니당)-->
+						<!-- 어떤 서비스가 필요하세요(이부분은 희수님만 하시면 됩니당)-->
 						<div class="center-section" style="display: none;">
 							<div class="service-searcher-desktop">
 								<form class="global-search-bar">
@@ -63,24 +63,33 @@
 								</form>
 							</div>
 						</div>
-						<!--로그인, 회원가입, 고수가입-->
+						<!-- 로그인, 회원가입, 고수가입 -->
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!--로그인-->
-									<li class="nav-item right-section-item">
-										<a class="gnb-link" href="login.member">
-											<span>
-												로그아웃
-											</span> 
-										</a>
-									</li>
-									<!--회원가입-->
-									<li class="nav-item right-section-item"><a href="mypageOk.member"
-										class="gnb-link"><span>마이페이지</span> </a></li>
+									<c:choose>
+										<c:when test="${not empty memberId}">
+											<!-- 로그아웃 -->
+											<li class="nav-item right-section-item"><a
+												href="logout.member" class="gnb-link"><span>로그아웃</span> </a></li>
+											<!-- 마이페이지 -->
+											<li class="nav-item right-section-item"><a
+												href="mypageOk.member" class="gnb-link"><span>마이페이지</span>
+											</a></li>
+										</c:when>
+										<c:otherwise>
+											<!-- 로그인 -->
+											<li class="nav-item right-section-item"><a
+												href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+											<!-- 회원가입 -->
+											<li class="nav-item right-section-item"><a
+												href="join.member" class="gnb-link"><span>회원가입</span>
+											</a></li>
+										</c:otherwise>
+									</c:choose>
 								</ul>
 							</nav>
-							<!--고수가입-->
+							<!-- 고수가입 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
 								<a>전문가신청</a>
@@ -89,7 +98,7 @@
 					</div>
 				</section>
 			</div>
-        </header>
+		</header>
         <!-- 중간부분 -->
         <div id="app-body">
             <div class="modal">

@@ -224,15 +224,15 @@
 	<!-- knowHow free 선택 -->
    <select id="knowHowSelect" resultType="postDTO">
       select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
-      from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
+      from tbl_member m join tbl_post p 
+      on m.member_id = p.member_id  and post_type = '노하우 free'
    </select>
    
    <!-- knowHow column 선택 -->
    <select id="knowHowColumnSelect" resultType="postDTO">
       select post_id, post_type, post_name, post_content, post_register_date, post_update_date, post_view_count, m.member_id, member_nickname 
       from tbl_member m join tbl_post p
-      on m.member_id = p.member_id  
+      on m.member_id = p.member_id   and post_type = '노하우 column'
      <!--  where post_type = 'jsCU' -->
    </select>
 	

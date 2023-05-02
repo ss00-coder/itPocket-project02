@@ -48,7 +48,7 @@
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
 									<li class="nav-item left-section-item"><a
-										href="how-to-use.jsp" class="gnb-link"> <span>사이트소개</span>
+										href="" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
 									<li class="nav-item left-section-item"><a href="study.post"

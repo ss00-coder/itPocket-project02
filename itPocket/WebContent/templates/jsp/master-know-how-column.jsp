@@ -1,21 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>노하우 게시판(컬럼 게시판)</title>
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/master-know-how-column.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/master-know-how-column.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
-<link rel="shortcut icon" href="../../static/image/shortcut.png">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath}/static/image/shortcut.png">
 </head>
 <body class="life-topic">
 	<div class="webp-bgroup">
@@ -27,27 +34,27 @@
 						<!-- 숨고로그, 서비스, 고수찾기 마켓, 커뮤니티 -->
 						<div class="left-section">
 							<!-- 숨고 로고 대체제 만들어야되요 -->
-                     <div class="logo">
-                        <a href="main.jsp"> 
-                           <img src="../../static/image/logo.png">
-                        </a>
-                     </div>
+							<div class="logo">
+								<a href="main"> <img
+									src="${pageContext.request.contextPath}/static/image/logo.png">
+								</a>
+							</div>
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item"><a
-										href="how-to-use.jsp" class="gnb-link"> <span>사이트소개</span>
+									<li class="nav-item left-section-item"><a href=""
+										class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.post"
-										class="gnb-link"> <span>스터디</span>
+									<li class="nav-item left-section-item"><a
+										href="study.post" class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a
 										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
-									<li class="nav-item left-section-item"><a 
+									<li class="nav-item left-section-item"><a
 										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
@@ -69,18 +76,32 @@
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>로그인</span> </a></li>
-									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>회원가입</span> </a></li>
+									<c:choose>
+										<c:when test="${not empty memberId}">
+											<!-- 로그아웃 -->
+											<li class="nav-item right-section-item"><a
+												href="logout.member" class="gnb-link"><span>로그아웃</span> </a></li>
+											<!-- 마이페이지 -->
+											<li class="nav-item right-section-item"><a
+												href="mypageOk.member" class="gnb-link"><span>마이페이지</span>
+											</a></li>
+										</c:when>
+										<c:otherwise>
+											<!-- 로그인 -->
+											<li class="nav-item right-section-item"><a
+												href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+											<!-- 회원가입 -->
+											<li class="nav-item right-section-item"><a
+												href="join.member" class="gnb-link"><span>회원가입</span>
+											</a></li>
+										</c:otherwise>
+									</c:choose>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
 					</div>
@@ -99,10 +120,10 @@
 								<!-- 글쓰기 버튼 -->
 								<div>
 									<div class="write-button-desktop">
-									<a href="write.jsp">
-										<button type="button" class="btn write-button btn-primary">
-											글쓰기 <i class="write"></i>
-										</button>
+										<a href="write.jsp">
+											<button type="button" class="btn write-button btn-primary">
+												글쓰기 <i class="write"></i>
+											</button>
 									</div>
 									</a>
 								</div>
@@ -112,15 +133,17 @@
 						<ul class="category">
 							<li id="ul-li1"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400"><a
-								href="javascript:location.href='${contextPath}/KnowHowlistOk.post'" class="link-text">자유</a></li>
+								href="javascript:location.href='${contextPath}/KnowHowlistOk.post'"
+								class="link-text">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-subhead4 sg-font-bold lg:sg-text-subhead2 lg:sg-font-bold sg-text-gray-900 selected">
-								<a class="link-text" href="javascript:location.href='${contextPath}/KnowHowColumnlistOk.post'">칼럼</a>
+								<a class="link-text"
+								href="javascript:location.href='${contextPath}/KnowHowColumnlistOk.post'">칼럼</a>
 							</li>
 						</ul>
 						<!-- 노하우들  -->
-						<article class="pro-knowhow-list" id = "content-wrap">
-							<ul >
+						<article class="pro-knowhow-list" id="content-wrap">
+							<ul>
 							</ul>
 						</article>
 						<!-- 위로 가기 버튼 -->
@@ -258,6 +281,6 @@
 	let KHC = `${KHC}`;
 	let contextPath = `${pageContext.request.contextPath}`;
 </script>
-<script src="../../static/js/master-know-how-column.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/master-know-how-column.js"></script>
 
 </html>
