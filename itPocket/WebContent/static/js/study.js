@@ -9,6 +9,59 @@ const $selectbox_area = $(".option-group-selectbox ul.area li");
 const $refresh = $(".refresh");
 
 
+showList();
+
+function showList() {
+	console.log(posts);
+	posts = JSON.parse(posts);
+	//files = JSON.parse(files);
+	const $div = $("#content-wrap");
+	let text = "";
+
+	posts.forEach(post => {
+		text += `
+			<a>
+				<div class="pro-card search-pro-card">
+					<div class="d-flex">
+						<div class="pro-info text-truncate">
+							<h5 class="pro-name text-truncate">${post.postName}</h5>
+							<p class="pro-introduction text-truncate">${post.postType}</p>
+							<div class="profile-badges">
+								<div class="review-rate">
+									<img alt=""
+										src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhl…GQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo=">
+									<span class="rate">${post.postLanguageType}</span> <span class="count">
+										</span>
+								</div>
+								<span class="badge-item"> ${post.postViewCount}회 조회 </span>
+								 <span class="soomgopay-chip d-flex"> 
+								</span>
+							</div>
+						</div>
+
+						<div class="user-profile-picture pro-profile-picture">
+							<div class="is-square" style="background-image: url("
+								https://static.cdn.soomgo.com/upload/profile/5a656257-02e1-4fc3-9e40-2a8a755a89b1.jpg?h=320&w=320");">
+							</div>
+						</div>
+					</div>
+					<div class="pro-extra-info">
+						<span>${post.memberNickname}</span> <span class="avg-response-time">` + elapsedTime(post.postRegisterDate) + `</span>
+					</div>
+				</div>
+			</a>
+		`;
+	});
+
+	if (posts.length == 0) {
+		text += `<div class="row list-header first-section">
+					<span>현재 게시글이 없습니다. 게시글 작성을 해보세요!</span>
+				 </div>`
+	}
+	console.log(text);
+	$div.append(text);
+}
+
 /*분야 클릭이벤트*/
 $button_modal.eq(0).on("click", function() {
 	$modal.css("display", "block");

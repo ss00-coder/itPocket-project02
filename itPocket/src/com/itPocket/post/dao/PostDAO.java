@@ -139,4 +139,10 @@ public class PostDAO {
 	public List<PostVO> AdminSelectInquiry(HashMap<String, Object> pagable) {
 		return sqlSession.selectList("post.AdminSelectInquiry", pagable);
 	}
+//	스터디 목록
+	public List<PostDTO> selectStudy(HashMap<String, Object> pagable){
+	      List<PostDTO> list = sqlSession.selectList("post.selectStudy", pagable);
+	      System.out.println(list.get(0));
+	      return list;
+	   }
 }

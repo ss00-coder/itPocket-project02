@@ -5,17 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>스터디 목록</title>
-<link rel="stylesheet" href="../../static/css/public.css">
-<link rel="stylesheet" href="../../static/css/global-header.css">
-<link rel="stylesheet" href="../../static/css/font.css">
-<link rel="stylesheet" href="../../static/css/study.css">
-<link rel="stylesheet" href="../../static/css/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/public.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/global-header.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/study.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
-<link rel="shortcut icon" href="../../static/image/shortcut.png">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/image/shortcut.png">
 
 </head>
 <body class="life-topic">
@@ -30,7 +30,7 @@
 							<!-- 숨고 로고 대체제 만들어야되요 -->
                      <div class="logo">
                         <a href="main.jsp"> 
-                           <img src="../../static/image/logo.png">
+                           <img src="${pageContext.request.contextPath}/static/image/logo.png">
                         </a>
                      </div>
 							<nav>
@@ -138,7 +138,7 @@
 							</div>
 						</section>
 						<article class="search-pro-list">
-							<div class="list-item">
+							<div class="list-item" id="content-wrap">
 								<div class="row list-header first-section">
 									<span>바로 가입 가능한 스터디</span>
 									<div class="tooltip-container">
@@ -148,134 +148,8 @@
 										</button>
 									</div>
 								</div>
-								<a>
-									<div class="pro-card search-pro-card">
-										<div class="d-flex">
-											<div class="pro-info text-truncate">
-												<h5 class="pro-name text-truncate">⭐담스홈케어 1호점⭐정직☺만족☺ 약속
-													하겠습니다.</h5>
-												<p class="pro-introduction text-truncate">💖정직하게 청소하는
-													담스홈케어 입니다💖정성을 담다.진심을 담다.마음을 담다.</p>
-												<div class="profile-badges">
-													<div class="review-rate">
-														<img alt=""
-															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhl…GQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo=">
-														<span class="rate"> 5.0 </span> <span class="count">
-															(2,345) </span>
-													</div>
-													<span class="badge-item"> 1,664회 고용 </span> <span
-														class="soomgopay-chip d-flex"> <img
-														src="   data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhl…wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg==">
-														<span>숨고페이</span>
-													</span>
-												</div>
-											</div>
-
-											<div class="user-profile-picture pro-profile-picture">
-												<div class="is-square" style="background-image: url("
-													https://static.cdn.soomgo.com/upload/profile/5a656257-02e1-4fc3-9e40-2a8a755a89b1.jpg?h=320&w=320");">
-												</div>
-											</div>
-										</div>
-										<div class="pro-extra-info">
-											<span>경력 8년</span> <span class="avg-response-time"> 평균
-												2시간 내 응답 </span>
-										</div>
-									</div>
-								</a>
 							</div>
-							<div class="list-item">
-								<div class="row list-header first-section">
-									<span>바로 답변 가능한 고수</span>
-									<div class="tooltip-container">
-										<button class="btn btn-tootip btn-none">
-											<img alt="바로 답변 가능한 고수 안내"
-												src="PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik05IDEuNWE3LjUgNy41IDAgMSAxIDAgMTUgNy41IDcuNSAwIDAgMSAwLTE1em0wIC45NzVhNi41MjUgNi41MjUgMCAxIDAgMCAxMy4wNSA2LjUyNSA2LjUyNSAwIDAgMCAwLTEzLjA1em0uMDEyIDYuMDM3Yy4yNTIgMCAuNDYuMTguNDk1LjQxNkw5LjUxMiA5djIuODEzYzAgLjI2OS0uMjIzLjQ4Ny0uNS40ODdhLjQ5Ni40OTYgMCAwIDEtLjQ5NC0uNDE1bC0uMDA2LS4wNzJWOWMwLS4yNy4yMjQtLjQ4OC41LS40ODh6TTkuMDEgNS40MzdhLjc1Ljc1IDAgMCAxIC4wODggMS40OTVMOSA2LjkzN2EuNzUuNzUgMCAwIDEtLjA4Ny0xLjQ5NGwuMDk2LS4wMDV6IiBmaWxsPSIjODg4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc">
-										</button>
-									</div>
-								</div>
-								<a>
-									<div class="pro-card search-pro-card">
-										<div class="d-flex">
-											<div class="pro-info text-truncate">
-												<h5 class="pro-name text-truncate">⭐담스홈케어 1호점⭐정직☺만족☺ 약속
-													하겠습니다.</h5>
-												<p class="pro-introduction text-truncate">💖정직하게 청소하는
-													담스홈케어 입니다💖정성을 담다.진심을 담다.마음을 담다.</p>
-												<div class="profile-badges">
-													<div class="review-rate">
-														<img alt=""
-															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhl…GQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo=">
-														<span class="rate"> 5.0 </span> <span class="count">
-															(2,345) </span>
-													</div>
-													<span class="badge-item"> 1,664회 고용 </span> <span
-														class="soomgopay-chip d-flex"> <img
-														src="   data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhl…wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg==">
-														<span>숨고페이</span>
-													</span>
-												</div>
-											</div>
-
-											<div class="user-profile-picture pro-profile-picture">
-												<div class="is-square" style="background-image: url("
-													https://static.cdn.soomgo.com/upload/profile/5a656257-02e1-4fc3-9e40-2a8a755a89b1.jpg?h=320&w=320");">
-												</div>
-											</div>
-										</div>
-										<div class="pro-extra-info">
-											<span>경력 8년</span> <span class="avg-response-time"> 평균
-												2시간 내 응답 </span>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list-item">
-								<div class="row list-header first-section">
-									<span>바로 답변 가능한 고수</span>
-									<div class="tooltip-container">
-										<button class="btn btn-tootip btn-none">
-											<img alt="바로 답변 가능한 고수 안내"
-												src="PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik05IDEuNWE3LjUgNy41IDAgMSAxIDAgMTUgNy41IDcuNSAwIDAgMSAwLTE1em0wIC45NzVhNi41MjUgNi41MjUgMCAxIDAgMCAxMy4wNSA2LjUyNSA2LjUyNSAwIDAgMCAwLTEzLjA1em0uMDEyIDYuMDM3Yy4yNTIgMCAuNDYuMTguNDk1LjQxNkw5LjUxMiA5djIuODEzYzAgLjI2OS0uMjIzLjQ4Ny0uNS40ODdhLjQ5Ni40OTYgMCAwIDEtLjQ5NC0uNDE1bC0uMDA2LS4wNzJWOWMwLS4yNy4yMjQtLjQ4OC41LS40ODh6TTkuMDEgNS40MzdhLjc1Ljc1IDAgMCAxIC4wODggMS40OTVMOSA2LjkzN2EuNzUuNzUgMCAwIDEtLjA4Ny0xLjQ5NGwuMDk2LS4wMDV6IiBmaWxsPSIjODg4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc">
-										</button>
-									</div>
-								</div>
-								<a>
-									<div class="pro-card search-pro-card">
-										<div class="d-flex">
-											<div class="pro-info text-truncate">
-												<h5 class="pro-name text-truncate">⭐담스홈케어 1호점⭐정직☺만족☺ 약속
-													하겠습니다.</h5>
-												<p class="pro-introduction text-truncate">💖정직하게 청소하는
-													담스홈케어 입니다💖정성을 담다.진심을 담다.마음을 담다.</p>
-												<div class="profile-badges">
-													<div class="review-rate">
-														<img alt=""
-															src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhl…GQ0UyMSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo=">
-														<span class="rate"> 5.0 </span> <span class="count">
-															(2,345) </span>
-													</div>
-													<span class="badge-item"> 1,664회 고용 </span> <span
-														class="soomgopay-chip d-flex"> <img
-														src="   data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhl…wNDEiIGZpbGw9IiNGRkYiLz4KICAgIDwvZz4KPC9zdmc+Cg==">
-														<span>숨고페이</span>
-													</span>
-												</div>
-											</div>
-
-											<div class="user-profile-picture pro-profile-picture">
-												<div class="is-square" style="background-image: url("
-													https://static.cdn.soomgo.com/upload/profile/5a656257-02e1-4fc3-9e40-2a8a755a89b1.jpg?h=320&w=320");">
-												</div>
-											</div>
-										</div>
-										<div class="pro-extra-info">
-											<span>경력 8년</span> <span class="avg-response-time"> 평균
-												2시간 내 응답 </span>
-										</div>
-									</div>
-								</a>
-							</div>
+					
 						</article>
 					</section>
 				</div>
@@ -539,5 +413,10 @@
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/study.js"></script>
+<script >
+	let posts = `${posts}`;
+	let contextPath = '${pageContext.request.contextPath}';
+</script>
+<script src="${pageContext.request.contextPath}/static/js/study-time.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/study.js"></script>
 </html>
