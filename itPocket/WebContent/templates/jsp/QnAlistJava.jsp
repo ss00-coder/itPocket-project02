@@ -125,21 +125,22 @@
 
 										<ul class="topic">
 											<!-- 전체 -->
-											<li class="selected"><a
+											<li><a
 												class="topic-link-item router-link-active" href="javascript:location.href='${contextPath}/QnAListAllOk.post'">
 													<div class="icon-wrapper">
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/community/634d181f-f6cc-470c-9a1a-cfed6d9c909a.png">
 													</div> <span
-													class="sg-text-subhead4 sg-font-bold sg-text-gray-900">전체</span>
-											</a></li>
+													class="sg-text-body2 sg-font-regular sg-text-gray-400">전체</span>
+											</a>
+											</li>
 											<!-- 궁금해요 -->
-											<li><a class="topic-link-item router-link-active" href="javascript:location.href='${contextPath}/QnAListJavaOk.post'">
+											<li class="selected"><a class="topic-link-item router-link-active color" href="javascript:location.href='${contextPath}/QnAListJavaOk.post'">
 													<div class="icon-wrapper">
 														<img
 															src="https://d2xc1tuir9mfs4.cloudfront.net/upload/community/f1e39209-9357-4412-b962-99a9d62e6cc5.png">
 													</div> <span
-													class="sg-text-body2 sg-font-regular sg-text-gray-400">Java</span>
+													class="sg-text-subhead4 sg-font-bold sg-text-gray-900">Java</span>
 											</a></li>
 											<!-- 얼마예요 -->
 											<li><a class="topic-link-item router-link-active" href="javascript:location.href='${contextPath}/QnAlistCOk.post'">
@@ -220,22 +221,22 @@
 									</form>
 								</div>
 								<!-- 지금 가장 뜨거운 숨고픽, 공지사항 -->
-								<section class="curation">
-									<!-- 지금 가장 뜨거운 숨고픽 -->
+								<!-- <section class="curation">
+									지금 가장 뜨거운 숨고픽
 									<div class="curation-header">
 										<h2 class="sg-text-headline sg-font-bold sg-text-gray-900">지금
 											지금 가장 뜨거운 핫토픽🔥</h2>
 										<span class="curation-page">1/2</span>
 									</div>
-									<!-- 공지사항 -->
+									공지사항
 									<div class="slick-slider slick-initialized">
-										<!-- <버튼 -->
+										<버튼
 										<button type="button" class="slick-arrow slick-prev"
 											style="display: none;">prev</button>
-										<!-- 공지사항 배너 -->
+										공지사항 배너
 										<div class="slick-list">
 											<div class="slick-track">
-												<!-- 배너 하나 -->
+												배너 하나
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
 													<div>
@@ -252,7 +253,7 @@
 														</a>
 													</div>
 												</div>
-												<!-- 두번쨰 베너 -->
+												두번쨰 베너
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
 													<div>
@@ -269,7 +270,7 @@
 														</a>
 													</div>
 												</div>
-												<!-- 세번쨰 베너 -->
+												세번쨰 베너
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
 													<div>
@@ -286,7 +287,7 @@
 														</a>
 													</div>
 												</div>
-												<!-- 4번쨰 베너 -->
+												4번쨰 베너
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
 													<div>
@@ -303,7 +304,7 @@
 														</a>
 													</div>
 												</div>
-												<!-- 5번쨰 베너 -->
+												5번쨰 베너
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
 													<div>
@@ -320,7 +321,7 @@
 														</a>
 													</div>
 												</div>
-												<!-- 6번쨰 베너 -->
+												6번쨰 베너
 												<div class="slick-slide slick-active slick-current"
 													style="outline: none; width: 204px;">
 													<div>
@@ -340,11 +341,11 @@
 
 											</div>
 										</div>
-										<!-- >버튼 -->
+										>버튼
 										<button type="button" class="slick-arrow slick-next"
 											style="display: block;">next</button>
 									</div>
-								</section>
+								</section> -->
 								<!-- 서비스, 지역 -->
 <!-- 								<section class="service-area-filter all fixed">
 									<button type="button" class="btn btn-none chip-btn filter-btn">

@@ -15,10 +15,11 @@ public class DetailOkController implements Action {
 //	수정 필요!
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		resp.setContentType("text/html;charset=utf-8");
 		PostDAO postDAO = new PostDAO();
 		Result result = new Result();
 		Long postId = Long.valueOf(req.getParameter("postId"));
-		postDAO.updateReadCount(postId);
+//		postDAO.updateReadCount(postId);
 
 		req.setAttribute("post", postDAO.select(postId));
 		
