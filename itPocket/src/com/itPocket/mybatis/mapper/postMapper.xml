@@ -234,5 +234,3 @@
 		limit #{offset}, 5
 	</select>	
 </mapper>
-
-

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,112 +56,49 @@
                                 <div class="member-id">회원번호</div>
                                 <div class="post-is-answered">답변여부</div>
                             </div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">10</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">미답변</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">9</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">8</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">7</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">6</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">5</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">4</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">3</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">2</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
-                            <div class="post"><a href="administrator-inquiry-answer.jsp">
-                                <div class="checkbox"><input type="checkbox"></div>
-                                <div class="post-id">1</div>
-                                <div class="post-name">글이 안써져여</div>
-                                <div class="post-content">글이 안써져요. 글이 안써져요 글이 안써져요. 글이 안써져요.</div>
-                                <div class="post-register-date">2023.04.16</div>
-                                <div class="member-id">1</div>
-                                <div class="post-is-answered">답변완료</div>
-                            </a></div>
                         </div>
-                        <div class="board-page">
-                            <a href="" class="button first"><<</a>
-                            <a href="" class="button prev"><</a>
-                            <a href="" class="number active">1</a>
-                            <a href="" class="number">2</a>
-                            <a href="" class="number">3</a>
-                            <a href="" class="number">4</a>
-                            <a href="" class="number">5</a>
-                            <a href="" class="button next">></a>
-                            <a href="" class="button last">>></a>
-                        </div>
+                       <div class="board-page">
+							<c:if test="${prev}">
+								<a href="${startPage - 1}" class="paging paging-move change-page"><</a>
+							</c:if>
+							<c:forEach var="i" begin="${startPage}" end="${endPage}">
+								<c:choose>
+									<c:when test="${i eq page}">
+										<a href="javascript:void(0)" class="paging paging-checked"><c:out value="${i}"/></a>
+									</c:when>
+									<c:otherwise>
+										<a href="${i}" class="paging change-page"><c:out value="${i}" /></a>
+									</c:otherwise>
+								</c:choose>
+							</c:forEach>
+							<c:if test="${next}">
+								<a href="${endPage + 1}" class="paging paging-move change-page">></a>
+							</c:if>
+						</div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    <form action="${pageContext.request.contextPath}/adminInquiryListOk.post" name="page-form">
+    	<input type="hidden" name="page" value="${page}">
+    	<input type="hidden" name="sort" value="${sort}">
+    	<input type="hidden" name="type" value="${type}">
+    	<input type="hidden" name="keyword" value="${keyword}">
+    </form>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let postes = `${postes}`
+	let postId = `${postId}`
+	let contextPath = `${pageContext.request.contextPath}`;
+	let $form = $("form[name='page-form']");
+	$("a.change-page").on("click", function(e) {
+		e.preventDefault();
+		$form.find("input[name='page']").val($(this).attr("href"));
+		$form.submit();
+	});
+</script>
+<script
+	src="${pageContext.request.contextPath}/static/js/administrator-inquiry.js"></script>
 </html>

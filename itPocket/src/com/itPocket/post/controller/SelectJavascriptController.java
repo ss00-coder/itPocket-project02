@@ -1,9 +1,7 @@
- package com.itPocket.post.controller;
+package com.itPocket.post.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -15,12 +13,11 @@ import org.json.JSONObject;
 import com.itPocket.Action;
 import com.itPocket.Result;
 import com.itPocket.post.dao.PostDAO;
-import com.itPocket.post.domain.PostDTO;
 import com.itPocket.post.domain.Criteria;
 import com.itPocket.post.domain.Search;
 
-public class ListOkController implements Action {
-
+public class SelectJavascriptController implements Action{
+	
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		PostDAO postDAO = new PostDAO();
@@ -43,7 +40,7 @@ public class ListOkController implements Action {
 		pagable.put("rowCount", criteria.getRowCount());
 		pagable.put("sort", sort);
 		
-		postDAO.selectAll(pagable).stream().map(post -> new JSONObject(post)).forEach(jsonArray::put);
+		postDAO.selectJavascript(pagable).stream().map(post -> new JSONObject(post)).forEach(jsonArray::put);
 		req.setAttribute("posts", jsonArray.toString());
 		req.setAttribute("total", postDAO.getTotal(search));
 		req.setAttribute("page", page);
@@ -56,17 +53,7 @@ public class ListOkController implements Action {
 		req.setAttribute("keyword", keyword);
 		
 //		게시판마다 수정이 필요해보임
-		result.setPath("templates/jsp/administrator-post.jsp");
-		result.setPath("templates/jsp/list-by-language.jsp");
+		result.setPath("templates/jsp/QnAlistJavascript.jsp");
 		return result;
 	}
 }
-
-
-
-
-
-
-
-
-
