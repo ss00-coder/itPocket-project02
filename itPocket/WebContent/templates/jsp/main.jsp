@@ -56,11 +56,11 @@
 									</a></li>
 									<!-- 마켓 -->
 									<li class="nav-item left-section-item"><a
-										href="master-know-how-free.jsp" class="gnb-link"> <span>노하우</span>
+										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
-									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+									<li class="nav-item left-section-item"><a 
+										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>

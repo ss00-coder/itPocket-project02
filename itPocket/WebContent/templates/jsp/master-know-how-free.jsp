@@ -16,6 +16,7 @@
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
 <link rel="shortcut icon" href="../../static/image/shortcut.png">
+
 </head>
 <body class="life-topic">
 	<div class="webp-bgroup">
@@ -69,18 +70,32 @@
 						<div class="right-section">
 							<nav class="nav-list">
 								<ul class="nav-list">
-									<!-- 로그인 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>로그인</span> </a></li>
-									<!-- 회원가입 -->
-									<li class="nav-item right-section-item"><a
-										class="gnb-link"><span>회원가입</span> </a></li>
+									<c:choose>
+										<c:when test="${not empty memberId}">
+											<!-- 로그아웃 -->
+											<li class="nav-item right-section-item"><a
+												href="logout.member" class="gnb-link"><span>로그아웃</span> </a></li>
+											<!-- 마이페이지 -->
+											<li class="nav-item right-section-item"><a
+												href="mypageOk.member" class="gnb-link"><span>마이페이지</span>
+											</a></li>
+										</c:when>
+										<c:otherwise>
+											<!-- 로그인 -->
+											<li class="nav-item right-section-item"><a
+												href="login.member" class="gnb-link"><span>로그인</span> </a></li>
+											<!-- 회원가입 -->
+											<li class="nav-item right-section-item"><a
+												href="join.member" class="gnb-link"><span>회원가입</span>
+											</a></li>
+										</c:otherwise>
+									</c:choose>
 								</ul>
 							</nav>
 							<!-- 고수가입 -->
 							<button type="button"
 								class="btn pro-signup-btn right-section-item btn-primary">
-								<a>고수가입</a>
+								<a>전문가신청</a>
 							</button>
 						</div>
 					</div>
@@ -112,11 +127,11 @@
 						<!-- 숨고생활, 고수의 노하우 -->
 						<ul class="category">
 							<li id="ul-li1" class="link-text router-link-active"><a
-								href="master-know-how-free.jsp"
+								href="javascript:location.href='${contextPath}/KnowHowlistOk.post'" class="link-text"
 								class="link-text router-link-active">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400">
-								<a href="master-know-how-column.jsp" class="link-text">칼럼</a>
+								<a href="javascript:location.href='${contextPath}/KnowHowColumnlistOk.post'" class="link-text">칼럼</a>
 							</li>
 						</ul>
 						<!-- 그 아래 모든 내용 -->

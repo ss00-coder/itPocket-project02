@@ -35,20 +35,20 @@
 							<nav>
 								<ul class="nav-list">
 									<!-- 서비스 요청 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>사이트소개</span>
+									<li class="nav-item left-section-item"><a
+										href="how-to-use.jsp" class="gnb-link"> <span>사이트소개</span>
 									</a></li>
 									<!-- 고수찾기 -->
-									<li class="nav-item left-section-item"><a href="study.jsp"
+									<li class="nav-item left-section-item"><a href="study.post"
 										class="gnb-link"> <span>스터디</span>
 									</a></li>
 									<!-- 마켓 -->
-									<li class="nav-item left-section-item"><a class="gnb-link">
-											<span>노하우</span>
+									<li class="nav-item left-section-item"><a
+										href="KnowHowlistOk.post" class="gnb-link"> <span>노하우</span>
 									</a></li>
 									<!-- 커뮤니티 -->
-									<li class="nav-item left-section-item"><a
-										href="list-by-language.jsp" class="gnb-link"> <span>Q&A</span>
+									<li class="nav-item left-section-item"><a 
+										href="QnAListAllOk.post" class="gnb-link"> <span>Q&A</span>
 									</a></li>
 								</ul>
 							</nav>
@@ -112,29 +112,15 @@
 						<ul class="category">
 							<li id="ul-li1"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400"><a
-								href="master-know-how-free.jsp" class="link-text">자유</a></li>
+								href="javascript:location.href='${contextPath}/KnowHowlistOk.post'" class="link-text">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-subhead4 sg-font-bold lg:sg-text-subhead2 lg:sg-font-bold sg-text-gray-900 selected">
-								<a class="link-text" href="master-know-how-column.jsp">칼럼</a>
+								<a class="link-text" href="javascript:location.href='${contextPath}/KnowHowColumnlistOk.post'">칼럼</a>
 							</li>
 						</ul>
 						<!-- 노하우들  -->
 						<article class="pro-knowhow-list" id = "content-wrap">
 							<ul >
-								<!-- 노하우 -->
-								<li class="pro-knowhow-list-item" >
-									<section class="item-wrapper">
-										<a href="master-know-how-free-detail.jsp">
-											<figure class="image-wrapper">
-												<img
-													src="https://static.cdn.soomgo.com/upload/talkboard/f075fba9-b4bd-4611-b21b-3dfda78f4c05.jpg?webp=1"
-													class="content-image">
-											</figure>
-											<h3 class="content-title">'시간 가는 줄 모르는 수업' 만드는 고수</h3>
-											<p class="content-writer">권지안</p>
-										</a>
-									</section>
-								</li>
 							</ul>
 						</article>
 						<!-- 위로 가기 버튼 -->
