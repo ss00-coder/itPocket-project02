@@ -16,6 +16,7 @@
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
 	rel="stylesheet">
 <link rel="shortcut icon" href="../../static/image/shortcut.png">
+
 </head>
 <body class="life-topic">
 	<div class="webp-bgroup">
@@ -112,11 +113,11 @@
 						<!-- 숨고생활, 고수의 노하우 -->
 						<ul class="category">
 							<li id="ul-li1" class="link-text router-link-active"><a
-								href="master-know-how-free.jsp"
+								href="javascript:location.href='${contextPath}/KnowHowlistOk.post'" class="link-text"
 								class="link-text router-link-active">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400">
-								<a href="master-know-how-column.jsp" class="link-text">칼럼</a>
+								<a href="javascript:location.href='${contextPath}/KnowHowColumnlistOk.post'" class="link-text">칼럼</a>
 							</li>
 						</ul>
 						<!-- 그 아래 모든 내용 -->

@@ -112,10 +112,10 @@
 						<ul class="category">
 							<li id="ul-li1"
 								class="sg-text-body2 sg-font-regular lg:sg-text-body1 lg:sg-font-regular sg-text-gray-400"><a
-								href="master-know-how-free.jsp" class="link-text">자유</a></li>
+								href="javascript:location.href='${contextPath}/KnowHowlistOk.post'" class="link-text">자유</a></li>
 							<li id="ul-li2"
 								class="sg-text-subhead4 sg-font-bold lg:sg-text-subhead2 lg:sg-font-bold sg-text-gray-900 selected">
-								<a class="link-text" href="master-know-how-column.jsp">칼럼</a>
+								<a class="link-text" href="javascript:location.href='${contextPath}/KnowHowColumnlistOk.post'">칼럼</a>
 							</li>
 						</ul>
 						<!-- 노하우들  -->
