@@ -45,6 +45,19 @@
       limit #{offset}, #{rowCount};
    </select>
    
+   	<select id="selectStudy" resultType="postDTO">
+		select post_id, m.member_id, post_type, post_name, post_view_count,
+		 post_register_date, post_update_date, post_content, post_is_blinded,
+		  member_nickname
+		from tbl_member m join tbl_post p
+		<trim suffixOverrides="and"> 
+			on m.member_id = p.member_id and p.post_type = '스터디'
+			<include refid="search"/>
+		</trim>
+ 			<include refid="order"/>
+		limit #{offset}, #{rowCount}
+	</select>
+   
    <select id="AdminSelectInquiry" resultType="postVO">
       select post_id, post_type, post_name, post_content, post_register_date, member_id, post_is_blinded 
       from tbl_post
