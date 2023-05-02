@@ -25,8 +25,8 @@ function showList(){
 					<div class="feed-footer">
 						<div class="user-interaction">
 							<span
-								class="like sg-text-description sg-font-regular sg-text-gray-300">조회 수${post.postViewCount}</span>
-							<span class="comment sg-text-description sg-font-regular sg-text-gray-300">댓글 수${post.postViewCount}</span>
+								class="like sg-text-description sg-font-regular sg-text-gray-300">조회 수 ${post.postViewCount}</span>
+							<span class="comment sg-text-description sg-font-regular sg-text-gray-300">댓글 수 ${post.postViewCount}</span>
 						</div>
 						<span class="sg-text-description sg-font-regular sg-text-gray-300"> ` + elapsedTime(post.postRegisterDate) +` </span>
 					</div>

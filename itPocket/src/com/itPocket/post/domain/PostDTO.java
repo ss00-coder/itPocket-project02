@@ -10,11 +10,13 @@ public class PostDTO {
 	private String postUpdateDate;
 	private String postContent;
 	private boolean postIsBlinded;
-	private String postLanguage;
+	private String postLanguageType;
 	private String postKnowhow;
 	private String memberNickname;
-	
-	public PostDTO() {;}
+
+	public PostDTO() {
+		;
+	}
 
 	public Long getPostId() {
 		return postId;
@@ -88,12 +90,12 @@ public class PostDTO {
 		this.postIsBlinded = postIsBlinded;
 	}
 
-	public String getPostLanguage() {
-		return postLanguage;
+	public String getPostLanguageType() {
+		return postLanguageType;
 	}
 
-	public void setPostLanguage(String postLanguage) {
-		this.postLanguage = postLanguage;
+	public void setPostLanguageType(String postLanguageType) {
+		this.postLanguageType = postLanguageType;
 	}
 
 	public String getPostKnowhow() {
@@ -117,7 +119,7 @@ public class PostDTO {
 		return "PostDTO [postId=" + postId + ", memberId=" + memberId + ", postType=" + postType + ", postName="
 				+ postName + ", postViewCount=" + postViewCount + ", postRegisterDate=" + postRegisterDate
 				+ ", postUpdateDate=" + postUpdateDate + ", postContent=" + postContent + ", postIsBlinded="
-				+ postIsBlinded + ", postLanguage=" + postLanguage + ", postKnowhow=" + postKnowhow
+				+ postIsBlinded + ", postLanguageType=" + postLanguageType + ", postKnowhow=" + postKnowhow
 				+ ", memberNickname=" + memberNickname + "]";
 	}
 
@@ -145,6 +147,6 @@ public class PostDTO {
 			return false;
 		return true;
 	}
-	
+
 	
 }

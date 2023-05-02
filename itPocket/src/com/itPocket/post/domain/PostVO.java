@@ -10,8 +10,10 @@ public class PostVO {
 	private String postUpdateDate;
 	private String postContent;
 	private boolean postIsBlinded;
-	private String postLanguage;
+	private String postLanguageType;
 	private String postKnowhow;
+	
+	public PostVO () {;}
 	
 	public Long getPostId() {
 		return postId;
@@ -67,11 +69,11 @@ public class PostVO {
 	public void setPostIsBlinded(boolean postIsBlinded) {
 		this.postIsBlinded = postIsBlinded;
 	}
-	public String getPostLanguage() {
-		return postLanguage;
+	public String getPostLanguageType() {
+		return postLanguageType;
 	}
-	public void setPostLanguage(String postLanguage) {
-		this.postLanguage = postLanguage;
+	public void setPostLanguageType(String postLanguageType) {
+		this.postLanguageType = postLanguageType;
 	}
 	public String getPostKnowhow() {
 		return postKnowhow;
@@ -82,17 +84,17 @@ public class PostVO {
 	
 	@Override
 	public String toString() {
-		return "PostVO [memberId=" + memberId + ", postContent=" + postContent + ", postId=" + postId
-				+ ", postIsBlinded=" + postIsBlinded + ", postKnowhow=" + postKnowhow + ", postLanguage=" + postLanguage
-				+ ", postName=" + postName + ", postRegisterDate=" + postRegisterDate + ", postType=" + postType
-				+ ", postUpdateDate=" + postUpdateDate + ", postViewCount=" + postViewCount + "]";
+		return "PostVO [postId=" + postId + ", memberId=" + memberId + ", postType=" + postType + ", postName="
+				+ postName + ", postViewCount=" + postViewCount + ", postRegisterDate=" + postRegisterDate
+				+ ", postUpdateDate=" + postUpdateDate + ", postContent=" + postContent + ", postIsBlinded="
+				+ postIsBlinded + ", postLanguageType=" + postLanguageType + ", postKnowhow=" + postKnowhow + "]";
 	}
 	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((postId == null) ? 0 : postId.hashCode());
+		result = prime * result + ((memberId == null) ? 0 : memberId.hashCode());
 		return result;
 	}
 	
@@ -105,14 +107,13 @@ public class PostVO {
 		if (getClass() != obj.getClass())
 			return false;
 		PostVO other = (PostVO) obj;
-		if (postId == null) {
-			if (other.postId != null)
+		if (memberId == null) {
+			if (other.memberId != null)
 				return false;
-		} else if (!postId.equals(other.postId))
+		} else if (!memberId.equals(other.memberId))
 			return false;
 		return true;
 	}
-	
 	
 	
 }

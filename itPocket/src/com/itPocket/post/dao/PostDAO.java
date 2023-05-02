@@ -35,8 +35,8 @@ public class PostDAO {
 	}
 
 //		게시글 조회
-	public PostVO select(Long postId) {
-		return sqlSession.selectOne("post.select", postId);
+	public PostDTO select(Long postId) { 
+		return sqlSession.selectOne("post.select", postId); 
 	}
 
 //		게시글 수정
