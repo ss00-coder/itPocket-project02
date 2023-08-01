@@ -342,6 +342,6 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../../static/js/mypage-setting-js/email-setting.js"></script>
-<script src="../../../static/js/mypage-setting-js/region-modal.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/email-setting.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage-setting-js/region-modal.js"></script>
 </html>
